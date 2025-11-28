@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Rapidez y velocidad",
+    "image": "https://cdn.diferenciador.com/imagenes/usar-final-distancia-cke.jpg",
+    "description": "LA RAPIDEZ PROMEDIO (MAGNITUD PROMEDIO DE LA RAPIDEZ) ($v_{prom}$) es una medida de qué tan rápido viaja un objeto en el espacio y también es una cantidad escalar. Imagine un objeto que tarda un tiempo $t$ para recorrer una distancia $l$. La rapidez promedio durante ese intervalo se define mediante:\\n\\n$$\\footnotesize \\text{Rapidez promedio} \\mathbf{=} \\frac{\\text{distancia total recorrida}}{\\text{tiempo transcurrido}}$$\\n\\n$$v_{prom} = \\frac{l}{t}$$"
+  },
+  {
+    "title": "Velocidad Instantánea",
+    "image": "https://img.freepik.com/fotos-premium/velocimetro-numeros-10-0-el_1177960-24389.jpg?w=1060",
+    "description": "Hay ocasiones en que la velocidad media es lo único que necesitamos saber acerca del movimiento de una partícula. Por ejemplo, una carrera en pista recta es en realidad una competencia para determinar quién tuvo la mayor velocidad media, $v_{med-x}$. Se entrega el premio al competidor que haya recorrido el desplazamiento $\\Delta x$ de la línea de salida a la de meta en el intervalo de tiempo más corto, $\\Delta t$ .\\n\\nSin embargo, la velocidad media de una partícula durante un intervalo de tiempo no nos indica con qué rapidez, o en qué dirección, la partícula se estaba moviendo en un instante dado del intervalo. Para describir el movimiento con mayor detalle, necesitamos definir la velocidad en cualquier instante específico o punto específico del camino. Ésta es la velocidad instantánea, y debe definirse con cuidado."
+  },
+  {
+    "title": "MUA",
+    "image": "https://img.freepik.com/fotos-premium/velocimetro-numeros-10-0-el_1177960-24389.jpg?w=1060",
+    "description": "Descripción de MUA."
+  }
+]
