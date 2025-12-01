@@ -154,6 +154,10 @@ export const topicDetails = {
 
       <p>En dos dimensiones, el ángulo de la resultante con el eje $x$ se encuentra a partir de la relación</p>
       $$ \\tan \\theta = \\frac{R_y}{R_x} $$
+
+      <h3>Los Vectores Unitarios</h3>
+      <p><strong>LOS VECTORES UNITARIOS</strong> tienen una magnitud de uno y se representan con un símbolo en negritas coronado con un acento circunflejo. Los vectores unitarios especiales $\\hat{\\mathbf{i}}$, $\\hat{\\mathbf{j}}$ y $\\hat{\\mathbf{k}}$ se asignan a los ejes $x$, $y$ y $z$, respectivamente. Un vector $3\\hat{\\mathbf{i}}$ representa un vector de 3 unidades en la dirección $+x$, mientras que $-5\\hat{\\mathbf{k}}$ representa un vector de 5 unidades en la dirección $-z$. Un vector $\\vec{R}$ que tiene componentes $x$, $y$ y $z$ escalares $R_x$, $R_y$ y $R_z$, respectivamente, se escribe como</p>
+      $$ \\vec{R} = R_x\\hat{\\mathbf{i}} + R_y\\hat{\\mathbf{j}} + R_z\\hat{\\mathbf{k}} $$
     `,
   },
 }
