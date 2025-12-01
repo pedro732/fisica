@@ -118,6 +118,42 @@ export const topicDetails = {
         <img src="/assets/figura_1_9_10.png" alt="Suma de vectores" class="img-fluid" style="max-width: 100%; height: auto;">
         <p class="text-muted">Método gráfico para sumar vectores</p>
       </div>
+
+      <hr class="my-5">
+
+      <h3>Las Funciones Trigonométricas</h3>
+      <p>Las funciones trigonométricas se definen en relación con un ángulo recto. Para el triángulo rectángulo de la figura 1-6, por definición:</p>
+
+      $$ \\text{sen } \\theta = \\frac{\\text{opuesto}}{\\text{hipotenusa}} = \\frac{B}{C} \\quad \\cos \\theta = \\frac{\\text{adyacente}}{\\text{hipotenusa}} = \\frac{A}{C} \\quad \\tan \\theta = \\frac{\\text{opuesto}}{\\text{adyacente}} = \\frac{B}{A} $$
+
+      <p>Se suelen utilizar en las formas:</p>
+      $$ B = C \\text{sen } \\theta \\quad A = C \\cos \\theta \\quad B = A \\tan \\theta $$
+
+      <div class="text-center my-4">
+        <img src="/assets/teoria_trigonometria.png" alt="Figura 1-6" class="img-fluid" style="max-width: 100%; height: auto;">
+        <p class="text-muted">Figura 1-6</p>
+      </div>
+
+      <h3>Componentes de un Vector</h3>
+      <p><strong>UNA COMPONENTE DE UN VECTOR</strong> es su valor real en una dirección determinada. Por ejemplo, la componente $x$ de un desplazamiento es el desplazamiento paralelo al eje $x$ causado por el desplazamiento determinado. Un vector en tres direcciones se puede considerar como la resultante de sus vectores componentes resueltas a lo largo de tres direcciones <em>mutuamente perpendiculares</em>. Asimismo, un vector en dos dimensiones se resuelve en dos vectores componentes que actúan a lo largo de dos direcciones mutuamente perpendiculares. La figura 1-7 muestra el vector $\\vec{R}$ y sus vectores componentes $x$ y $y$, $\\vec{R}_x$ y $\\vec{R}_y$, los cuales tienen magnitudes</p>
+
+      $$ |\\vec{R}_x| = |\\vec{R}| \\cos \\theta \\quad \\text{y} \\quad |\\vec{R}_y| = |\\vec{R}| \\text{sen } \\theta $$
+
+      <p>lo cual equivale a</p>
+      $$ R_x = R \\cos \\theta \\quad \\text{y} \\quad R_y = R \\text{sen } \\theta $$
+
+      <div class="text-center my-4">
+        <img src="/assets/teoria_componentes.png" alt="Figura 1-7" class="img-fluid" style="max-width: 100%; height: auto;">
+        <p class="text-muted">Figura 1-7</p>
+      </div>
+
+      <h3>Método de Componentes para Sumar Vectores</h3>
+      <p>Cada vector se resuelve en sus componentes $x$, $y$ y $z$, con las componentes que tienen direcciones negativas consideradas como negativas. La componente escalar $R_x$ de la resultante $\\vec{R}$ es la suma algebraica de todas las componentes escalares de $x$. Las componentes escalares de $y$ y de $z$ de la resultante se obtienen de manera similar. Con las componentes conocidas, la magnitud de la resultante se determina mediante</p>
+
+      $$ R = \\sqrt{R_x^2 + R_y^2 + R_z^2} $$
+
+      <p>En dos dimensiones, el ángulo de la resultante con el eje $x$ se encuentra a partir de la relación</p>
+      $$ \\tan \\theta = \\frac{R_y}{R_x} $$
     `,
   },
 }
