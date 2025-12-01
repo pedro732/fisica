@@ -13,5 +13,10 @@
     "title": "MUA",
     "image": "https://img.freepik.com/fotos-premium/velocimetro-numeros-10-0-el_1177960-24389.jpg?w=1060",
     "description": "Descripción de MUA."
+  },
+  {
+    "title": "Vectores",
+    "image": "/assets/figura_1_9_10.png",
+    "description": "Un vector es una cantidad física que tiene tanto magnitud como dirección. Los desplazamientos, la velocidad y la fuerza son ejemplos de vectores. En esta sección estudiaremos cómo sumar vectores utilizando métodos gráficos y analíticos."
   }
 ]

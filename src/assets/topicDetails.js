@@ -105,6 +105,21 @@ export const topicDetails = {
       <p>El <strong>Movimiento Uniformemente Acelerado (MUA)</strong> es aquel movimiento en el que la aceleración que experimenta un cuerpo permanece constante (en magnitud y dirección) en el transcurso del tiempo.</p>
     `,
   },
+  Vectores: {
+    title: 'Vectores',
+    image: '/assets/figura_1_9_10.png',
+    content: `
+      <h2>Vectores y Suma de Vectores</h2>
+      <p>Muchas cantidades físicas, como el desplazamiento, la velocidad y la fuerza, son vectores. Un vector se caracteriza por tener magnitud y dirección. En contraste, una cantidad escalar solo tiene magnitud (como la temperatura o la masa).</p>
+
+      <p>Para sumar vectores, podemos usar el método gráfico (método del triángulo o del paralelogramo) o el método analítico (usando componentes). En el método gráfico, dibujamos los vectores a escala y medimos la resultante. En el método analítico, descomponemos cada vector en sus componentes $x$ y $y$, sumamos las componentes, y luego encontramos la magnitud y dirección de la resultante.</p>
+
+      <div class="text-center my-4">
+        <img src="/assets/figura_1_9_10.png" alt="Suma de vectores" class="img-fluid" style="max-width: 100%; height: auto;">
+        <p class="text-muted">Método gráfico para sumar vectores</p>
+      </div>
+    `,
+  },
 }
 
 export function getTopicDetails(title) {
