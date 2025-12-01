@@ -143,7 +143,7 @@ export const topicDetails = {
       $$ R_x = R \\cos \\theta \\quad \\text{y} \\quad R_y = R \\text{sen } \\theta $$
 
       <div class="text-center my-4">
-        <img src="/assets/teoria_componentes.png" alt="Figura 1-7" class="img-fluid" style="max-width: 100%; height: auto;">
+        <img src="/assets/teoria_componentes.png" alt="Figura 1-7" class="img-fluid" style="width: 100%; height: auto;">
         <p class="text-muted">Figura 1-7</p>
       </div>
 
