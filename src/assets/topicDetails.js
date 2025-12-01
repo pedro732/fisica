@@ -7,7 +7,7 @@ export const topicDetails = {
       <p>Suponga que una piloto de autos de arrancones conduce su vehículo por una pista recta (figura 2.1). Para estudiar su movimiento, necesitamos un sistema de coordenadas. Elegimos que el eje $x$ vaya a lo largo de la trayectoria recta del auto, con el origen $O$ en la línea de salida. También elegimos un punto en el auto, digamos su extremo delantero, y representamos todo el vehículo con ese punto y lo tratamos como una <strong>partícula</strong>.</p>
 
       <div class="text-center my-4">
-        <img src="/src/assets/auto_carrera.png" alt="Figura 2.1" class="img-fluid" style="max-width: 100%; height: auto;">
+        <img src="/assets/auto_carrera.png" alt="Figura 2.1" class="img-fluid" style="max-width: 100%; height: auto;">
         <p class="text-muted">Figura 2.1</p>
       </div>
 
@@ -38,7 +38,7 @@ export const topicDetails = {
       <p>Si una partícula se mueve en la dirección $x$ negativa durante un intervalo de tiempo, su velocidad media en ese lapso es negativa. Por ejemplo, suponga que la camioneta de un juez se mueve hacia la izquierda sobre la pista (figura 2.2). La camioneta está en $x_1 = 277\\text{ m}$ en $t_1 = 16.0\\text{ s}$, y en $x_2 = 19\\text{ m}$ en $t_2 = 25.0\\text{ s}$. Entonces, $\\Delta x = (19\\text{ m} - 277\\text{ m}) = -258\\text{ m}$ y $\\Delta t = (25.0\\text{ s} - 16.0\\text{ s}) = 9.0\\text{ s}$. La componente $x$ de la velocidad media es $v_{med-x} = \\Delta x/\\Delta t = (-258\\text{ m})/(9.0\\text{ s}) = -29\\text{ m/s}$.</p>
 
       <div class="text-center my-4">
-        <img src="/src/assets/camioneta.png" alt="Figura 2.2" class="img-fluid" style="max-width: 100%; height: auto;">
+        <img src="/assets/camioneta.png" alt="Figura 2.2" class="img-fluid" style="max-width: 100%; height: auto;">
         <p class="text-muted">Figura 2.2</p>
       </div>
 
@@ -47,7 +47,7 @@ export const topicDetails = {
       <p>En el movimiento rectilíneo por lo general llamaremos a $\\Delta x$ el desplazamiento y a $v_{med-x}$ la velocidad media. Sin embargo, no olvide que éstas son realmente las componentes $x$ de cantidades vectoriales que, en este caso especial, <em>sólo</em> tienen componentes $x$. En el capítulo 3, los vectores de desplazamiento, velocidad y aceleración tendrán dos o tres componentes distintas de cero.</p>
 
       <div class="text-center my-4">
-        <img src="/src/assets/pediente.png" alt="Figura 2.3" class="img-fluid" style="max-width: 100%; height: auto;">
+        <img src="/assets/pediente.png" alt="Figura 2.3" class="img-fluid" style="max-width: 100%; height: auto;">
         <p class="text-muted">Figura 2.3</p>
       </div>
 
@@ -88,7 +88,7 @@ export const topicDetails = {
       'https://img.freepik.com/fotos-premium/velocimetro-numeros-10-0-el_1177960-24389.jpg?w=1060',
     content: `
       <div class="text-center my-4">
-        <img src="/src/assets/auto_carrera.png" alt="Figura 2.1" class="img-fluid" style="max-width: 100%; height: auto;">
+        <img src="/assets/auto_carrera.png" alt="Figura 2.1" class="img-fluid" style="max-width: 100%; height: auto;">
         <p class="text-muted">Figura 2.1</p>
       </div>
 

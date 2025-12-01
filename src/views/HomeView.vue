@@ -12,7 +12,6 @@ export default {
   name: 'HomeView',
   components: {
     ModalIndex,
-    MathExpression,
   },
 }
 </script>
