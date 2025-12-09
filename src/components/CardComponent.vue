@@ -1,12 +1,13 @@
 <template>
   <div class="container mt-5 d-flex justify-content-center">
-    <div v-if="topic" class="card shadow-lg" style="width: 24rem">
+    <div v-if="topic" class="card shadow-lg" style="max-width: 24rem; width: 100%">
       <img
         v-if="topic.image"
         :src="topic.image"
-        class="card-img-top"
+        class="card-img-top clickable-image"
         :alt="topic.title"
         style="height: 200px; object-fit: contain"
+        @click="openLightbox(topic.image, topic.title)"
       />
       <div class="card-body text-center">
         <h5 class="card-title mb-3">{{ topic.title }}</h5>
@@ -27,20 +28,37 @@
       </p>
       <button class="btn btn-secondary mt-2" @click="goBack">Regresar</button>
     </div>
+
+    <!-- Image Lightbox -->
+    <ImageLightbox
+      :show="lightbox.show"
+      :src="lightbox.src"
+      :alt="lightbox.alt"
+      @close="closeLightbox"
+    />
   </div>
 </template>
 
 <script>
 import topics from '../assets/fisica.json'
+import ImageLightbox from './ImageLightbox.vue'
 import katex from 'katex'
 import 'katex/dist/katex.min.css'
 
 export default {
   name: 'CardComponent',
+  components: {
+    ImageLightbox,
+  },
   props: ['title'],
   data() {
     return {
       topic: null,
+      lightbox: {
+        show: false,
+        src: '',
+        alt: '',
+      },
     }
   },
   computed: {
@@ -96,6 +114,25 @@ export default {
         params: { title: this.topic.title },
       })
     },
+    openLightbox(src, alt) {
+      this.lightbox.src = src
+      this.lightbox.alt = alt
+      this.lightbox.show = true
+    },
+    closeLightbox() {
+      this.lightbox.show = false
+    },
   },
 }
 </script>
+
+<style scoped>
+.clickable-image {
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.clickable-image:hover {
+  opacity: 0.85;
+}
+</style>
