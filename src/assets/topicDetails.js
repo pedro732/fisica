@@ -142,9 +142,15 @@ export const topicDetails = {
       <p>lo cual equivale a</p>
       $$ R_x = R \\cos \\theta \\quad \\text{y} \\quad R_y = R \\text{sen } \\theta $$
 
-      <div class="text-center my-4">
-        <img src="/assets/teoria_componentes.png" alt="Figura 1-7" class="img-fluid" style="width: 100%; height: auto;">
-        <p class="text-muted">Figura 1-7</p>
+      <div class="row my-4">
+        <div class="col-md-6 text-center mb-3 mb-md-0">
+          <img src="/assets/figura_1_17.png" alt="Figura 1.17 - Componentes de un vector" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 1.17: Representación de un vector en términos de sus componentes</p>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="/assets/figura_1_18.png" alt="Figura 1.18 - Componentes positivas y negativas" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 1.18: Las componentes de un vector pueden ser números positivos o negativos</p>
+        </div>
       </div>
 
       <h3>Método de Componentes para Sumar Vectores</h3>
