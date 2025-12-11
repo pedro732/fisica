@@ -94,6 +94,12 @@ export default {
       // Replace newlines with <br>
       text = text.replace(/\\n/g, '<br>').replace(/\n/g, '<br>')
 
+      // Replace markdown headers (##) with HTML headings
+      text = text.replace(
+        /<br>## ([^<]+)<br>/g,
+        '<br><h6 class="mt-3 mb-2 fw-bold text-dark">$1</h6>',
+      )
+
       return text
     },
   },
