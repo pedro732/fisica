@@ -97,14 +97,6 @@ export const topicDetails = {
       $$ v_x = \\lim_{\\Delta t \\to 0} \\frac{\\Delta x}{\\Delta t} = \\frac{dx}{dt} \\quad \\text{(velocidad instantánea, movimiento rectilíneo)} \\quad (2.3) $$
     `,
   },
-  MUA: {
-    title: 'MUA',
-    image:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/MUA_grafica_v_t.svg/1200px-MUA_grafica_v_t.svg.png',
-    content: `
-      <p>El <strong>Movimiento Uniformemente Acelerado (MUA)</strong> es aquel movimiento en el que la aceleración que experimenta un cuerpo permanece constante (en magnitud y dirección) en el transcurso del tiempo.</p>
-    `,
-  },
   Vectores: {
     title: 'Vectores',
     image: '/assets/figura_1_9_10.png',
@@ -164,6 +156,57 @@ export const topicDetails = {
       <h3>Los Vectores Unitarios</h3>
       <p><strong>LOS VECTORES UNITARIOS</strong> tienen una magnitud de uno y se representan con un símbolo en negritas coronado con un acento circunflejo. Los vectores unitarios especiales $\\hat{\\mathbf{i}}$, $\\hat{\\mathbf{j}}$ y $\\hat{\\mathbf{k}}$ se asignan a los ejes $x$, $y$ y $z$, respectivamente. Un vector $3\\hat{\\mathbf{i}}$ representa un vector de 3 unidades en la dirección $+x$, mientras que $-5\\hat{\\mathbf{k}}$ representa un vector de 5 unidades en la dirección $-z$. Un vector $\\vec{R}$ que tiene componentes $x$, $y$ y $z$ escalares $R_x$, $R_y$ y $R_z$, respectivamente, se escribe como</p>
       $$ \\vec{R} = R_x\\hat{\\mathbf{i}} + R_y\\hat{\\mathbf{j}} + R_z\\hat{\\mathbf{k}} $$
+    `,
+  },
+  aceleracion: {
+    title: 'aceleracion',
+    image: '/assets/aceleracion.png',
+    content: `
+      <h2>Aceleración media</h2>
+      <p>Consideremos otra vez el movimiento de una partícula en el eje $x$. Suponga que, en el tiempo $t_1$, la partícula está en el punto $P_1$ y tiene una componente $x$ de velocidad (instantánea) $v_{1x}$; en instante posterior $t_2$ está en $P_2$ tiene una componente $x$ de velocidad $v_{2x}$. Así, la componente $x$ de la velocidad cambia en $\\Delta v_x = v_{2x} - v_{1x}$ en el intervalo $\\Delta t = t_2 - t_1$.</p>
+
+      <p>Definimos la <strong>aceleración media</strong> de la partícula al moverse de $P_1$ a $P_2$ como una cantidad vectorial cuya componente $x$ es $a_{med-x}$ igual a $\\Delta v_x$, el cambio en la componente $x$ de la velocidad, dividido entre el intervalo de tiempo $\\Delta t$:</p>
+
+      $$ a_{med-x} = \\frac{v_{2x} - v_{1x}}{t_2 - t_1} = \\frac{\\Delta v_x}{\\Delta t} \\quad \\text{(aceleración media, movimiento rectilíneo)} \\quad (2.4) $$
+
+      <div class="text-center my-4">
+        <img src="/assets/aceleracion.png" alt="Aceleración media" class="img-fluid" style="max-width: 100%; height: auto;">
+        <p class="text-muted">Concepto de aceleración media</p>
+      </div>
+
+      <p>En el movimiento rectilíneo a lo largo del eje $x$, por lo general llamaremos $a_{med-x}$ a la aceleración media. (Veremos otras componentes del vector de aceleración media en el capítulo 3.)</p>
+
+      <p>Si expresamos la velocidad en metros por segundo y el tiempo en segundos, la aceleración media está en metros por segundo por segundo, o bien (m/s)/s. Esto suele escribirse como m/s<sup>2</sup> y se lee "metros por segundo al cuadrado".</p>
+
+      <div class="alert alert-warning">
+        <strong>CUIDADO</strong> Aceleración contra velocidad ¿No confunda aceleración con velocidad! La velocidad describe qué tan rápido se mueve un cuerpo, qué tan deprisa cambia su posición con el tiempo; es una medida con unidades de distancia dividida entre tiempo, como m/s. La aceleración describe cómo cambia la velocidad con el tiempo; es decir, qué tan rápido cambia la rapidez y la dirección del movimiento. Podría ser útil recordar la frase "aceleración es a velocidad lo que velocidad es a posición". También ayudará imaginarse a usted mismo yendo en un automóvil con el cuerpo en movimiento. Si el auto acelera hacia delante y aumenta su rapidez, usted se sentirá empujado hacia atrás hacia el asiento. Si el auto frena, usted se sentirá empujado hacia delante. Si el auto hace una curva, la velocidad es constante y no hay aceleración, no sentirá sensación alguna. (Analizaremos la aceleración en curvas en la sección 3.2.)
+      </div>
+
+      <h3>Ejemplo: Aceleración media de un auto de arrancones</h3>
+      <p>Un auto de arrancones "top fuel" puede alcanzar una rapidez de 100 m/s en los primeros 4.5 s de la carrera. Calcule la aceleración media durante este intervalo.</p>
+
+      <p><strong>Solución:</strong></p>
+      <p>Tomamos el eje $x$ a lo largo de la pista, con el origen en la línea de salida. La velocidad inicial es $v_{1x} = 0$ en $t_1 = 0$, y la velocidad final es $v_{2x} = 100$ m/s en $t_2 = 4.5$ s.</p>
+
+      $$ a_{med-x} = \\frac{v_{2x} - v_{1x}}{t_2 - t_1} = \\frac{100\\,\\text{m/s} - 0\\,\\text{m/s}}{4.5\\,\\text{s} - 0\\,\\text{s}} = 22\\,\\text{m/s}^2 $$
+
+      <p>La aceleración media es positiva, lo que significa que la velocidad aumenta en la dirección $+x$ (hacia adelante).</p>
+
+      <h3 class="mt-5">Aceleración instantánea</h3>
+      <p>Ya podemos definir la <strong>aceleración instantánea</strong> con el mismo procedimiento que seguimos para la velocidad instantánea. Como ejemplo, suponga que un piloto de carreras acaba de entrar en una recta como se muestra en la figura 2.11, y definir la aceleración instantánea en $P_1$, tomamos el segundo punto $P_2$ en la figura 2.11 cada vez más cerca del primer punto $P_1$, de modo que la aceleración media se calcula en intervalos cada vez más cortos.</p>
+
+      <p><em>La aceleración instantánea es el límite de la aceleración media conforme el intervalo de tiempo se acerca a cero.</em> En el lenguaje del cálculo, la <strong>aceleración instantánea es la tasa instantánea de cambio de la velocidad con el tiempo.</strong> Así,</p>
+
+      $$ a_x = \\lim_{\\Delta t \\to 0} \\frac{\\Delta v_x}{\\Delta t} = \\frac{dv_x}{dt} \\quad \\text{(aceleración instantánea, movimiento rectilíneo)} \\quad (2.5) $$
+
+      <div class="text-center my-4">
+        <img src="/assets/prix.png" alt="Auto de carreras en aceleración" class="img-fluid" style="max-width: 100%; height: auto;">
+        <p class="text-muted">Figura 2.11: Piloto de carreras entrando en una recta</p>
+      </div>
+
+      <p class="alert alert-info">
+        <strong>Nota:</strong> La aceleración instantánea nos permite conocer con precisión cómo cambia la velocidad en cada instante específico del movimiento, no solo en un intervalo promedio.
+      </p>
     `,
   },
 }

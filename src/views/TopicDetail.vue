@@ -29,7 +29,11 @@
 
               <div class="text-center mt-4">
                 <button
-                  v-if="topic.title === 'Velocidad Instantánea' || topic.title === 'Vectores'"
+                  v-if="
+                    topic.title === 'Velocidad Instantánea' ||
+                    topic.title === 'Vectores' ||
+                    topic.title === 'aceleracion'
+                  "
                   class="btn btn-success me-2"
                   @click="goToExercises"
                 >

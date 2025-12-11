@@ -488,6 +488,255 @@ export const exercisesData = {
       `,
     },
   ],
+  aceleracion: [
+    {
+      enunciado: `
+        <p>Un guepardo acecha 20 m al este del escondite de un observador (figura 2-6a). En el tiempo $t = 0$, el guepardo ataca a un antílope y empieza a correr en línea recta. Durante los primeros 2.0 s del ataque, la coordenada $x$ del guepardo varía con el tiempo según la ecuación $x = 20\\,\\text{m} + (5.0\\,\\text{m/s}^2) t^2$.</p>
+
+        <p>Obtenga:</p>
+        <p><strong>a)</strong> El desplazamiento del guepardo entre $t_1 = 1.0\\,\\text{s}$ y $t_2 = 2.0\\,\\text{s}$.</p>
+        <p><strong>b)</strong> Calcule la velocidad media en dicho intervalo.</p>
+        <p><strong>c)</strong> Calcule la velocidad instantánea en $t_1 = 1.0\\,\\text{s}$ tomando $\\Delta t = 0.1\\,\\text{s}$, luego $\\Delta t = 0.01\\,\\text{s}$, luego $\\Delta t = 0.001\\,\\text{s}$.</p>
+        <p><strong>d)</strong> Deduzca una expresión general para la velocidad instantánea en función del tiempo, y con ella calcule $v_x$ en $t = 1.0\\,\\text{s}$ y $t = 2.0\\,\\text{s}$.</p>
+      `,
+      solucion: `
+        <div class="text-center my-4">
+          <img src="/assets/guepardo.png" alt="Guepardo atacando" class="img-fluid" style="max-width: 50%; height: auto;">
+          <p class="text-muted">Figura 2-6a: Guepardo en movimiento acelerado</p>
+        </div>
+
+        <p>El ejercicio describe el movimiento rectilíneo acelerado de un guepardo cuya posición sobre el eje $x$ viene dada por:</p>
+        $$ x(t) = 20\\,\\text{m} + 5.0\\,\\text{m/s}^2\\,t^2 $$
+        <p>durante los primeros $2.0\\,\\text{s}$ del ataque.</p>
+
+        <h6 class="mt-4">a) Desplazamiento entre 1.0 s y 2.0 s</h6>
+        <p><strong>Posición en $t_1 = 1.0\\,\\text{s}$:</strong></p>
+        $$ x(1.0) = 20 + 5.0(1.0)^2 = 20 + 5.0(1) = 25\\,\\text{m} $$
+
+        <p><strong>Posición en $t_2 = 2.0\\,\\text{s}$:</strong></p>
+        $$ x(2.0) = 20 + 5.0(2.0)^2 = 20 + 5.0(4) = 40\\,\\text{m} $$
+
+        <p><strong>Desplazamiento:</strong></p>
+        $$ \\Delta x = x(2.0) - x(1.0) = 40 - 25 = 15\\,\\text{m} $$
+
+        <h6 class="mt-4">b) Velocidad media en el intervalo</h6>
+        <p>La velocidad media entre $t_1 = 1.0\\,\\text{s}$ y $t_2 = 2.0\\,\\text{s}$ es:</p>
+        $$ v_{\\text{med}} = \\frac{\\Delta x}{\\Delta t} = \\frac{15\\,\\text{m}}{2.0 - 1.0\\,\\text{s}} = \\frac{15}{1.0} = 15\\,\\text{m/s} $$
+
+        <h6 class="mt-4">c) Velocidad instantánea aproximada en $t_1 = 1.0\\,\\text{s}$</h6>
+        <p>Se aproxima con el cociente incremental:</p>
+        $$ v(t) \\approx \\frac{x(t + \\Delta t) - x(t)}{\\Delta t} $$
+        <p>para distintos valores de $\\Delta t$.</p>
+
+        <p><strong>1. Con $\\Delta t = 0.1\\,\\text{s}$:</strong></p>
+        $$ x(1.0) = 25\\,\\text{m} $$
+        $$ x(1.1) = 20 + 5(1.1)^2 = 20 + 5(1.21) = 26.05\\,\\text{m} $$
+        $$ v \\approx \\frac{26.05 - 25}{0.1} = \\frac{1.05}{0.1} = 10.5\\,\\text{m/s} $$
+
+        <p><strong>2. Con $\\Delta t = 0.01\\,\\text{s}$:</strong></p>
+        $$ x(1.01) = 20 + 5(1.01)^2 \\approx 20 + 5(1.0201) = 25.1005\\,\\text{m} $$
+        $$ v \\approx \\frac{25.1005 - 25}{0.01} = \\frac{0.1005}{0.01} = 10.05\\,\\text{m/s} $$
+
+        <p><strong>3. Con $\\Delta t = 0.001\\,\\text{s}$:</strong></p>
+        $$ x(1.001) = 20 + 5(1.001)^2 \\approx 20 + 5(1.002001) = 25.010005\\,\\text{m} $$
+        $$ v \\approx \\frac{25.010005 - 25}{0.001} = \\frac{0.010005}{0.001} = 10.005\\,\\text{m/s} $$
+
+        <p class="alert alert-info mt-3">Los valores se acercan a $10\\,\\text{m/s}$ conforme $\\Delta t$ disminuye.</p>
+
+        <h6 class="mt-4">d) Expresión general de la velocidad instantánea y valores</h6>
+        <p>La velocidad instantánea es la derivada de la posición:</p>
+        $$ v_x(t) = \\frac{dx}{dt} = \\frac{d}{dt}\\left(20 + 5.0\\,t^2\\right) = 10.0\\,t $$
+
+        <p><strong>Entonces:</strong></p>
+        <ul>
+          <li>En $t = 1.0\\,\\text{s}$:
+            $$ v_x(1.0) = 10.0(1.0) = 10.0\\,\\text{m/s} $$
+          </li>
+          <li>En $t = 2.0\\,\\text{s}$:
+            $$ v_x(2.0) = 10.0(2.0) = 20.0\\,\\text{m/s} $$
+          </li>
+        </ul>
+
+        <p class="alert alert-success mt-3">
+          <strong>Resumen:</strong><br>
+          • Desplazamiento: $\\Delta x = 15\\,\\text{m}$<br>
+          • Velocidad media: $v_{\\text{med}} = 15\\,\\text{m/s}$<br>
+          • Velocidad instantánea aproximada en $t = 1.0\\,\\text{s}$: $\\approx 10\\,\\text{m/s}$<br>
+          • Función de velocidad: $v_x(t) = 10t$<br>
+          • $v_x(1.0\\,\\text{s}) = 10\\,\\text{m/s}$ y $v_x(2.0\\,\\text{s}) = 20\\,\\text{m/s}$
+        </p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Una astronauta sale de una nave espacial para probar una unidad personal de maniobras. Mientras se mueve en línea recta, su compañera a bordo mide su velocidad cada 2.0 s, empezando en el instante $t = 1.0$ s:</p>
+
+        <table class="table table-bordered table-striped my-3">
+          <thead>
+            <tr>
+              <th>$t$ (s)</th>
+              <th>$v_x$ (m/s)</th>
+              <th>$t$ (s)</th>
+              <th>$v_x$ (m/s)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1.0</td><td>0.8</td><td>9.0</td><td>-0.4</td></tr>
+            <tr><td>3.0</td><td>1.2</td><td>11.0</td><td>-1.0</td></tr>
+            <tr><td>5.0</td><td>1.6</td><td>13.0</td><td>-1.6</td></tr>
+            <tr><td>7.0</td><td>1.2</td><td>15.0</td><td>-0.8</td></tr>
+          </tbody>
+        </table>
+
+        <p>Calcule la aceleración media y diga si la rapidez de la astronauta aumenta o disminuye para cada uno de estos intervalos:</p>
+        <p><strong>a)</strong> $t_1 = 1.0$ s a $t_2 = 3.0$ s</p>
+        <p><strong>b)</strong> $t_1 = 5.0$ s a $t_2 = 7.0$ s</p>
+        <p><strong>c)</strong> $t_1 = 9.0$ s a $t_2 = 11.0$ s</p>
+        <p><strong>d)</strong> $t_1 = 13.0$ s a $t_2 = 15.0$ s</p>
+      `,
+      solucion: `
+        <div class="text-center my-4">
+          <img src="/assets/astronauta.png" alt="Astronauta en el espacio" class="img-fluid" style="max-width: 70%; height: auto;">
+          <p class="text-muted">Figura: Astronauta probando unidad personal de maniobras</p>
+        </div>
+
+        <p>La aceleración media en cada intervalo se obtiene con:</p>
+        $$ a_{\\text{med}} = \\frac{v_2 - v_1}{t_2 - t_1} $$
+
+        <p>Para este problema, el intervalo de cada inciso es $\\Delta t = 2.0\\,\\text{s}$, así que basta con restar velocidades consecutivas de la tabla y dividir entre 2; luego se analiza si la rapidez aumenta o disminuye según si la velocidad y la aceleración tienen el mismo signo o signos opuestos.</p>
+
+        <h6 class="mt-4">Cálculo de aceleraciones medias</h6>
+
+        <p><strong>a) De $t = 1.0$ s a $t = 3.0$ s:</strong></p>
+        $$ a_{\\text{med}} = \\frac{1.2 - 0.8}{2.0} = \\frac{0.4}{2.0} = +0.20\\,\\text{m/s}^2 $$
+        <p>Como $v_x > 0$ y $a > 0$ (mismo signo), la <strong>rapidez aumenta</strong>.</p>
+
+        <p><strong>b) De $t = 5.0$ s a $t = 7.0$ s:</strong></p>
+        $$ a_{\\text{med}} = \\frac{1.2 - 1.6}{2.0} = \\frac{-0.4}{2.0} = -0.20\\,\\text{m/s}^2 $$
+        <p>Como $v_x > 0$ y $a < 0$ (signos opuestos), la <strong>rapidez disminuye</strong>.</p>
+
+        <p><strong>c) De $t = 9.0$ s a $t = 11.0$ s:</strong></p>
+        $$ a_{\\text{med}} = \\frac{-1.0 - (-0.4)}{2.0} = \\frac{-0.6}{2.0} = -0.30\\,\\text{m/s}^2 $$
+        <p>Como $v_x < 0$ y $a < 0$ (mismo signo), la <strong>rapidez aumenta</strong>.</p>
+
+        <p><strong>d) De $t = 13.0$ s a $t = 15.0$ s:</strong></p>
+        $$ a_{\\text{med}} = \\frac{-0.8 - (-1.6)}{2.0} = \\frac{0.8}{2.0} = +0.40\\,\\text{m/s}^2 $$
+        <p>Como $v_x < 0$ y $a > 0$ (signos opuestos), la <strong>rapidez disminuye</strong>.</p>
+
+        <h6 class="mt-4">Resumen en tabla</h6>
+        <table class="table table-bordered my-3">
+          <thead>
+            <tr>
+              <th>Intervalo (s)</th>
+              <th>$v_1$ (m/s)</th>
+              <th>$v_2$ (m/s)</th>
+              <th>$a_{\\text{med}}$ (m/s²)</th>
+              <th>Cambio de rapidez</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1.0 – 3.0</td><td>0.8</td><td>1.2</td><td>+0.20</td><td>Aumenta</td></tr>
+            <tr><td>5.0 – 7.0</td><td>1.6</td><td>1.2</td><td>−0.20</td><td>Disminuye</td></tr>
+            <tr><td>9.0 – 11.0</td><td>−0.4</td><td>−1.0</td><td>−0.30</td><td>Aumenta</td></tr>
+            <tr><td>13.0 – 15.0</td><td>−1.6</td><td>−0.8</td><td>+0.40</td><td>Disminuye</td></tr>
+          </tbody>
+        </table>
+
+        <div class="alert alert-info mt-3">
+          <strong>Regla importante:</strong> La rapidez aumenta cuando velocidad y aceleración tienen el mismo signo, y disminuye cuando tienen signos opuestos.
+        </div>
+
+        <div class="text-center my-4">
+          <img src="/assets/grafica-veloc.png" alt="Gráfica de velocidad y aceleración contra tiempo" class="img-fluid" style="max-width: 80%; height: auto;">
+          <p class="text-muted">Figura 2.10: Gráfica de velocidad contra tiempo (arriba) y aceleración media contra tiempo (abajo) para la astronauta</p>
+        </div>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Suponga que la velocidad $v_x$ del auto en la figura 2.11 en el tiempo $t$ está dada por:</p>
+        $$ v_x = 60\\,\\text{m/s} + (0.50\\,\\text{m/s}^3)t^2 $$
+
+        <p>Calcule:</p>
+        <p><strong>a)</strong> El cambio de velocidad del auto en el intervalo entre $t_1 = 1.0$ s y $t_2 = 3.0$ s.</p>
+        <p><strong>b)</strong> La aceleración media en este intervalo.</p>
+        <p><strong>c)</strong> Obtenga la aceleración instantánea en $t_1 = 1.0$ s tomando $\\Delta t$ primero como 0.1 s, después como 0.01 s, luego como 0.001 s.</p>
+        <p><strong>d)</strong> Deduzca una expresión para la aceleración instantánea en cualquier instante y úsela para calcular la aceleración en $t = 1.0$ s y $t = 3.0$ s.</p>
+      `,
+      solucion: `
+        <div class="text-center my-4">
+          <img src="/assets/autito.png" alt="Auto en movimiento acelerado" class="img-fluid" style="max-width: 60%; height: auto;">
+          <p class="text-muted">Ejemplo 2.3: Aceleraciones media e instantánea</p>
+        </div>
+
+        <p>La velocidad del auto está dada por $v_x(t) = 60\\,\\text{m/s} + (0.50\\,\\text{m/s}^3)t^2$. Con esta expresión se puede hallar el cambio de velocidad, la aceleración media y la aceleración instantánea usando cálculo básico.</p>
+
+        <h6 class="mt-4">a) Cambio de velocidad</h6>
+        <p>La velocidad es $v_x(t) = 60 + 0.50t^2$ (m/s).</p>
+
+        <p><strong>En $t_1 = 1.0$ s:</strong></p>
+        $$ v_1 = v_x(1) = 60 + 0.50(1)^2 = 60.5\\,\\text{m/s} $$
+
+        <p><strong>En $t_2 = 3.0$ s:</strong></p>
+        $$ v_2 = v_x(3) = 60 + 0.50(3)^2 = 60 + 4.5 = 64.5\\,\\text{m/s} $$
+
+        <p><strong>Cambio de velocidad:</strong></p>
+        $$ \\Delta v = v_2 - v_1 = 64.5 - 60.5 = 4.0\\,\\text{m/s} $$
+
+        <h6 class="mt-4">b) Aceleración media en 1–3 s</h6>
+        $$ a_{\\text{med}} = \\frac{\\Delta v}{\\Delta t} = \\frac{v_2 - v_1}{t_2 - t_1} = \\frac{4.0\\,\\text{m/s}}{3.0 - 1.0\\,\\text{s}} = 2.0\\,\\text{m/s}^2 $$
+        <p>Por tanto, la aceleración media entre 1.0 s y 3.0 s es $2.0\\,\\text{m/s}^2$.</p>
+
+        <h6 class="mt-4">c) Aceleración instantánea numérica en $t = 1.0$ s</h6>
+        <p>Se usa la definición $a \\approx \\Delta v/\\Delta t$ con intervalos cada vez más pequeños alrededor de $t = 1$.</p>
+
+        <p><strong>1. Para $\\Delta t = 0.1$ s:</strong></p>
+        $$ v(1.1) = 60 + 0.50(1.1)^2 = 60.605\\,\\text{m/s} $$
+        $$ a \\approx \\frac{60.605 - 60.5}{0.1} = 1.05\\,\\text{m/s}^2 $$
+
+        <p><strong>2. Para $\\Delta t = 0.01$ s:</strong></p>
+        $$ v(1.01) = 60 + 0.50(1.01)^2 \\approx 60.50505\\,\\text{m/s} $$
+        $$ a \\approx \\frac{60.50505 - 60.5}{0.01} \\approx 1.005\\,\\text{m/s}^2 $$
+
+        <p><strong>3. Para $\\Delta t = 0.001$ s:</strong></p>
+        $$ v(1.001) = 60 + 0.50(1.001)^2 \\approx 60.5005005\\,\\text{m/s} $$
+        $$ a \\approx \\frac{60.5005005 - 60.5}{0.001} \\approx 1.0005\\,\\text{m/s}^2 $$
+
+        <p class="alert alert-info">Al hacer $\\Delta t$ muy pequeño, el valor se acerca a $1.0\\,\\text{m/s}^2$ en $t = 1$ s.</p>
+
+        <h6 class="mt-4">d) Expresión de la aceleración instantánea y valores en 1 s y 3 s</h6>
+        <p>La aceleración instantánea es la derivada de la velocidad:</p>
+        $$ a(t) = \\frac{dv_x}{dt} = \\frac{d}{dt}\\left(60 + 0.50t^2\\right) = 1.0t \\quad (\\text{m/s}^2) $$
+
+        <p><strong>Entonces:</strong></p>
+        <ul>
+          <li>$a(1) = 1.0(1) = 1.0\\,\\text{m/s}^2$</li>
+          <li>$a(3) = 1.0(3) = 3.0\\,\\text{m/s}^2$</li>
+        </ul>
+
+        <h6 class="mt-4">Resumen numérico</h6>
+        <table class="table table-bordered my-3">
+          <thead>
+            <tr>
+              <th>Magnitud</th>
+              <th>Resultado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Cambio de velocidad $\\Delta v$</td><td>$4.0\\,\\text{m/s}$</td></tr>
+            <tr><td>Aceleración media (1–3 s)</td><td>$2.0\\,\\text{m/s}^2$</td></tr>
+            <tr><td>Aceleración instantánea $a(t)$</td><td>$a(t) = t\\,\\text{m/s}^2$</td></tr>
+            <tr><td>$a(1.0\\,\\text{s})$</td><td>$1.0\\,\\text{m/s}^2$</td></tr>
+            <tr><td>$a(3.0\\,\\text{s})$</td><td>$3.0\\,\\text{m/s}^2$</td></tr>
+          </tbody>
+        </table>
+
+        <div class="alert alert-success mt-3">
+          <strong>Observación:</strong> La aceleración instantánea aumenta linealmente con el tiempo según $a(t) = t$, mientras que la aceleración media en un intervalo es el promedio de las aceleraciones instantáneas en ese intervalo.
+        </div>
+      `,
+    },
+  ],
 }
 
 export function getExercises(title) {
