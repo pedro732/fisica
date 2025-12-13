@@ -736,6 +736,240 @@ export const exercisesData = {
         </div>
       `,
     },
+    {
+      enunciado: `
+        <p>Un robot llamado Fred se mueve inicialmente a 2.20 m/s por un pasillo en una terminal espacial. Después acelera a 4.80 m/s en un tiempo de 0.20 s. Determine el tamaño o la <em>magnitud</em> de su aceleración media a lo largo de la trayectoria recorrida.</p>
+      `,
+      solucion: `
+        <p>La aceleración media se calcula con la expresión:</p>
+        $$ a_{\\text{med}}=\\frac{v_f - v_i}{\\Delta t} $$
+
+        <div class="text-center my-4">
+          <img src="/assets/robot.png" alt="Robot Fred" class="img-fluid" style="max-width: 60%; height: auto;">
+          <p class="text-muted">Figura: Robot Fred moviéndose por el pasillo</p>
+        </div>
+
+        <p>donde $v_i=2.20\\ \\text{m/s}$, $v_f=4.80\\ \\text{m/s}$ y $\\Delta t=0.20\\ \\text{s}$.</p>
+
+        <p><strong>Sustituyendo:</strong></p>
+        $$ a_{\\text{med}}=\\frac{4.80-2.20}{0.20} =\\frac{2.60}{0.20} =13\\ \\text{m/s}^2 $$
+
+        <p>Por lo tanto, la magnitud de la aceleración media del robot a lo largo de la trayectoria recorrida es:</p>
+        $$ \\boxed{13\\ \\text{m/s}^2} $$
+
+        <div class="alert alert-success mt-3">
+          <strong>Respuesta:</strong> La aceleración media del robot Fred es $13\\ \\text{m/s}^2$.
+        </div>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Un objeto parte del reposo con una aceleración constante de $8.00\\ \\text{m/s}^2$ a lo largo de una línea recta. Encuentre:</p>
+        <p><strong>a)</strong> la rapidez después de $5.00\\ \\text{s}$</p>
+        <p><strong>b)</strong> la rapidez media para el intervalo de $5.00\\ \\text{s}$</p>
+        <p><strong>c)</strong> la distancia total recorrida en los $5.00\\ \\text{s}$</p>
+      `,
+      solucion: `
+        <p>El movimiento es rectilíneo uniformemente acelerado (MRUA), con velocidad inicial cero, aceleración constante de $8.00\\ \\text{m/s}^2$ y tiempo $t = 5.00\\ \\text{s}$.</p>
+
+        <h6 class="mt-4">Datos</h6>
+        <ul>
+          <li>$v_0 = 0\\ \\text{m/s}$ (parte del reposo)</li>
+          <li>$a = 8.00\\ \\text{m/s}^2$</li>
+          <li>$t = 5.00\\ \\text{s}$</li>
+        </ul>
+
+        <h6 class="mt-4">a) Rapidez después de 5.00 s</h6>
+        <p>Se usa la ecuación de MRUA $v = v_0 + a t$:</p>
+        $$ v = 0 + (8.00)(5.00) = 40.0\\ \\text{m/s} $$
+        <p>Por lo tanto, la rapidez al cabo de $5.00\\ \\text{s}$ es $40.0\\ \\text{m/s}$.</p>
+
+        <h6 class="mt-4">b) Rapidez media en 5.00 s</h6>
+        <p>Para aceleración constante, la rapidez media es el promedio entre rapidez inicial y final: $\\bar{v} = \\frac{v_0 + v}{2}$.</p>
+        $$ \\bar{v} = \\frac{0 + 40.0}{2} = 20.0\\ \\text{m/s} $$
+
+        <h6 class="mt-4">c) Distancia total recorrida</h6>
+        <p>Se usa la ecuación $x = x_0 + v_0 t + \\frac{1}{2} a t^2$:</p>
+        $$ x = 0 + 0\\cdot 5.00 + \\frac{1}{2}(8.00)(5.00)^2 $$
+        $$ x = 4.00 \\times 25.0 = 100\\ \\text{m} $$
+        <p>La distancia total recorrida en los $5.00\\ \\text{s}$ es $100\\ \\text{m}$.</p>
+
+        <div class="text-center my-4">
+          <img src="/assets/bus1.png" alt="Objeto con aceleración constante" class="img-fluid" style="max-width: 80%; height: auto;">
+          <p class="text-muted">Figura: Enunciado del problema</p>
+        </div>
+      `,
+    },
+    {
+      enunciado: `
+        <p>La rapidez de un camión se incrementa uniformemente desde $15\\ \\text{km/h}$ hasta $60\\ \\text{km/h}$ en $20\\ \\text{s}$. Determine:</p>
+        <p><strong>a)</strong> la rapidez promedio</p>
+        <p><strong>b)</strong> la aceleración</p>
+        <p><strong>c)</strong> la distancia recorrida</p>
+        <p>todo en unidades de metros y segundos.</p>
+      `,
+      solucion: `
+        <p>La situación describe un movimiento rectilíneo uniformemente acelerado: la rapidez pasa de $15\\ \\text{km/h}$ a $60\\ \\text{km/h}$ en $20\\ \\text{s}$. Se pide rapidez promedio, aceleración y distancia en unidades del SI.</p>
+
+        <h6 class="mt-4">Conversión de unidades</h6>
+        <p>Primero se convierten las velocidades a m/s usando que $1\\ \\text{km/h} = \\frac{1}{3.6}\\ \\text{m/s}$.</p>
+        <ul>
+          <li>Rapidez inicial:
+            $$ v_i = 15\\ \\text{km/h} = \\frac{15}{3.6} \\approx 4.17\\ \\text{m/s} $$
+          </li>
+          <li>Rapidez final:
+            $$ v_f = 60\\ \\text{km/h} = \\frac{60}{3.6} \\approx 16.67\\ \\text{m/s} $$
+          </li>
+        </ul>
+
+        <h6 class="mt-4">a) Rapidez promedio</h6>
+        <p>Con aceleración constante, la rapidez promedio es el promedio aritmético de $v_i$ y $v_f$.</p>
+        $$ v_{\\text{prom}} = \\frac{v_i + v_f}{2} = \\frac{4.17 + 16.67}{2} \\approx 10.42\\ \\text{m/s} $$
+
+        <h6 class="mt-4">b) Aceleración</h6>
+        <p>Se usa la ecuación $a = \\frac{v_f - v_i}{\\Delta t}$.</p>
+        $$ a = \\frac{16.67 - 4.17}{20} = \\frac{12.50}{20} \\approx 0.625\\ \\text{m/s}^2 $$
+
+        <h6 class="mt-4">c) Distancia recorrida</h6>
+        <p>En MRUA, la distancia se puede hallar como $d = v_{\\text{prom}} \\cdot t$, porque la rapidez promedio multiplicada por el tiempo da el espacio recorrido.</p>
+        $$ d = 10.42\\ \\text{m/s} \\times 20\\ \\text{s} \\approx 208.4\\ \\text{m} $$
+
+        <p class="mt-3">Por lo tanto:</p>
+        <ul>
+          <li>Rapidez promedio: $10.4\\ \\text{m/s}$ (aprox.).</li>
+          <li>Aceleración: $0.625\\ \\text{m/s}^2$.</li>
+          <li>Distancia recorrida: $2.08\\times10^2\\ \\text{m}$ (unos $208\\ \\text{m}$).</li>
+        </ul>
+
+        <div class="text-center my-4">
+          <img src="/assets/scania.png" alt="Camión Scania" class="img-fluid" style="max-width: 80%; height: auto;">
+          <p class="text-muted">Figura: Camión Scania acelerando</p>
+        </div>
+      `,
+    },
+    {
+      enunciado: `
+        <p>El movimiento vertical de un objeto está graficado en la figura 2-2. Describa su movimiento cualitativamente y calcule la velocidad instantánea en los puntos $A$, $B$ y $C$.</p>
+
+        <div class="text-center my-4">
+          <img src="/assets/grafica_tangente.png" alt="Gráfica desplazamiento vs tiempo" class="img-fluid" style="max-width: 60%; height: auto;">
+          <p class="text-muted">Figura 2-2: Desplazamiento a lo largo del eje y vs Tiempo</p>
+        </div>
+      `,
+      solucion: `
+        <p>El gráfico muestra la posición vertical $y$ de un objeto en función del tiempo $t$. La velocidad instantánea en cada punto es la pendiente de la recta tangente a la curva $y(t)$ en ese punto, es decir $v = \\Delta y / \\Delta t$ tomando el triángulo dibujado alrededor de cada punto.</p>
+
+        <h6 class="mt-4">Descripción cualitativa del movimiento</h6>
+        <ul>
+          <li>Desde $t=0$ hasta cerca del punto $B$, la curva sube cada vez más lentamente: el objeto se mueve hacia arriba, pero su velocidad disminuye (aceleración hacia abajo).</li>
+          <li>En las cercanías de $B$ la curva es casi horizontal: allí el objeto alcanza su altura máxima y su velocidad instantánea es aproximadamente cero.</li>
+          <li>Después de $B$ la curva desciende y se hace más inclinada: el objeto baja y su rapidez aumenta en sentido hacia abajo (velocidad negativa si se toma hacia arriba como positivo).</li>
+        </ul>
+
+        <h6 class="mt-4">Velocidad en el punto A</h6>
+        <p>En $A$ se traza un triángulo rectángulo cuyo cateto horizontal es $\\Delta t_A$ (lectura del eje tiempo) y el vertical es $\\Delta y_A$ (lectura del eje desplazamiento). La velocidad instantánea se aproxima como:</p>
+        $$ v_A \\approx \\frac{\\Delta y_A}{\\Delta t_A} $$
+        <p>Usando los valores que se leen de la gráfica (la pendiente es positiva y bastante grande).</p>
+
+        <h6 class="mt-4">Velocidad en el punto B</h6>
+        <p>En $B$ la recta tangente es prácticamente horizontal, por lo que $\\Delta y_B \\approx 0$ aunque $\\Delta t_B \\neq 0$.</p>
+        $$ v_B \\approx 0\\ \\text{cm/s} $$
+
+        <h6 class="mt-4">Velocidad en el punto C</h6>
+        <p>En $C$ el triángulo dibujado tiene pendiente negativa: $\\Delta y_C$ es negativo mientras que $\\Delta t_C$ es positivo. La velocidad es:</p>
+        $$ v_C \\approx \\frac{\\Delta y_C}{\\Delta t_C} $$
+        <p>que numéricamente resulta de varios $\\text{cm/s}$ negativos (valor de magnitud similar al de $A$, pero con signo opuesto).</p>
+
+        <p class="alert alert-info mt-3">
+          <strong>Resumen:</strong> Se lee cada triángulo de la gráfica y se divide su cambio vertical entre el cambio horizontal para obtener la velocidad instantánea en $A$, $B$ y $C$.
+        </p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Se deja caer una pelota, inicialmente en reposo, desde una altura de 50 m sobre el nivel del suelo.</p>
+        <p><strong>a)</strong> ¿Cuál será la rapidez de la pelota justo en el momento anterior al choque contra el suelo?</p>
+        <p><strong>b)</strong> ¿Cuánto tiempo requiere para llegar al suelo?</p>
+
+        <div class="text-center my-4">
+          <img src="/assets/futbol.png" alt="Caída libre" class="img-fluid" style="max-width: 60%; height: auto;">
+          <p class="text-muted">Figura: Pelota en caída libre desde 50 m</p>
+        </div>
+      `,
+      solucion: `
+        <p>El ejercicio describe una caída libre desde 50 m, con velocidad inicial cero y aceleración constante $g = 9.81\\ \\text{m/s}^2$ hacia abajo. La rapidez justo antes de chocar con el suelo es aproximadamente $31.3\\ \\text{m/s}$ y el tiempo de caída es alrededor de $3.19\\ \\text{s}$.</p>
+
+        <h6 class="mt-4">Datos e hipótesis</h6>
+        <ul>
+          <li>Altura inicial: $y_0 = 50\\ \\text{m}$.</li>
+          <li>Velocidad inicial: $v_0 = 0\\ \\text{m/s}$ (se “deja caer” desde el reposo).</li>
+          <li>Aceleración: $a = g = 9.81\\ \\text{m/s}^2$ hacia abajo (sin rozamiento con el aire).</li>
+          <li>Se toma positiva la dirección de la caída, es decir, hacia abajo, por lo que todas las magnitudes serán positivas.</li>
+        </ul>
+
+        <h6 class="mt-4">Ecuaciones de MRUA para caída libre</h6>
+        <p>La caída libre es un caso de movimiento rectilíneo uniformemente acelerado (MRUA), donde se usan estas dos ecuaciones cinemáticas:</p>
+        <ul>
+          <li>Posición en función del tiempo:<br>
+          $$ y = y_0 + v_0 t + \\tfrac{1}{2} a t^2 $$</li>
+          <li>Relación entre velocidades y desplazamiento:<br>
+          $$ v^2 = v_0^2 + 2 a (y - y_0) $$</li>
+        </ul>
+        <p>Como $v_0 = 0$, estas expresiones se simplifican y permiten hallar primero el tiempo y luego la velocidad, o viceversa.</p>
+
+        <h6 class="mt-4">Cálculo del tiempo de caída</h6>
+        <p>Se sabe que el cuerpo recorre 50 m hasta el suelo; tomando la dirección de caída como positiva, el desplazamiento es $y - y_0 = 50\\ \\text{m}$. Con $v_0 = 0$, la ecuación de posición queda:</p>
+        $$ 50 = \\tfrac{1}{2} \\cdot 9.81 \\cdot t^2 $$
+
+        <p>Despejando $t$:</p>
+        $$ t^2 = \\frac{2 \\cdot 50}{9.81} \\approx 10.19 $$
+        $$ t \\approx 3.19\\ \\text{s} $$
+        <p>Este es el tiempo que tarda la pelota en llegar al suelo.</p>
+
+        <h6 class="mt-4">Cálculo de la rapidez final</h6>
+        <p>Usando la ecuación que relaciona velocidad y desplazamiento, con $v_0 = 0$ y desplazamiento de 50 m:</p>
+        $$ v^2 = 0 + 2 \\cdot 9.81 \\cdot 50 $$
+        $$ v^2 \\approx 981, \\quad v \\approx 31.3\\ \\text{m/s} $$
+
+        <p class="alert alert-success mt-3">
+          <strong>Resumen:</strong> Esa es la rapidez justo antes del impacto, dirigida hacia abajo (la magnitud es 31.3 m/s).
+        </p>
+
+        <div class="text-center my-4">
+
+        </div>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Un esquiador parte del reposo y se desliza $9.0\\ \\text{m}$ hacia abajo, por una pendiente, en $3.0\\ \\text{s}$. ¿Cuánto tiempo, después del inicio, el esquiador habrá adquirido una velocidad de $24\\ \\text{m/s}$? Considere la aceleración constante y la trayectoria recta.</p>
+      `,
+      solucion: `
+        <p>El esquiador tiene una aceleración constante de $2\\ \\text{m/s}^2$ y tarda $12\\ \\text{s}$ desde que parte del reposo en alcanzar una velocidad de $24\\ \\text{m/s}$.</p>
+         <img src="/assets/esquiador.png" alt="Esquiador" class="img-fluid" style="max-width: 60%; height: auto;">
+        <h6 class="mt-4">Datos del problema</h6>
+        <ul>
+          <li>Parte del reposo: $v_0 = 0\\ \\text{m/s}$.</li>
+          <li>Recorre $9.0\\ \\text{m}$ en $3.0\\ \\text{s}$ por una pendiente recta.</li>
+          <li>Movimiento rectilíneo uniformemente acelerado (aceleración constante).</li>
+        </ul>
+
+        <h6 class="mt-4">Paso 1: hallar la aceleración</h6>
+        <p>Se usa la ecuación de posición para MRUA:</p>
+        $$ x = x_0 + v_0 t + \\tfrac{1}{2} a t^2 $$
+        <p>Tomando $x_0 = 0$, $v_0 = 0$, $x = 9\\ \\text{m}$ y $t = 3\\ \\text{s}$:</p>
+        $$ 9 = \\tfrac{1}{2} a (3)^2 = \\tfrac{1}{2} a \\cdot 9 $$
+        $$ 9 = 4.5 a \\quad \\Rightarrow \\quad a = \\frac{9}{4.5} = 2\\ \\text{m/s}^2 $$
+        <p>Así se obtiene que la aceleración del esquiador a lo largo de la pendiente es $a = 2\\ \\text{m/s}^2$.</p>
+
+        <h6 class="mt-4">Paso 2: tiempo para llegar a 24 m/s</h6>
+        <p>Ahora se usa la ecuación de velocidad en MRUA:</p>
+        $$ v = v_0 + a t $$
+        <p>Se sabe que $v = 24\\ \\text{m/s}$, $v_0 = 0$ y $a = 2\\ \\text{m/s}^2$:</p>
+        $$ 24 = 0 + 2 t \\quad \\Rightarrow \\quad t = \\frac{24}{2} = 12\\ \\text{s} $$
+        <p>Por tanto, el esquiador alcanzará una velocidad de $24\\ \\text{m/s}$ a los $12\\ \\text{s}$ de iniciado el movimiento.</p>
+      `,
+    },
   ],
 }
 

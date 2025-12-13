@@ -170,14 +170,14 @@ export const topicDetails = {
       $$ a_{med-x} = \\frac{v_{2x} - v_{1x}}{t_2 - t_1} = \\frac{\\Delta v_x}{\\Delta t} \\quad \\text{(aceleración media, movimiento rectilíneo)} \\quad (2.4) $$
 
       <div class="text-center my-4">
-        <img src="/assets/aceleracion.png" alt="Aceleración media" class="img-fluid" style="max-width: 100%; height: auto;">
+
         <p class="text-muted">Concepto de aceleración media</p>
       </div>
 
       <p>En el movimiento rectilíneo a lo largo del eje $x$, por lo general llamaremos $a_{med-x}$ a la aceleración media. (Veremos otras componentes del vector de aceleración media en el capítulo 3.)</p>
 
       <p>Si expresamos la velocidad en metros por segundo y el tiempo en segundos, la aceleración media está en metros por segundo por segundo, o bien (m/s)/s. Esto suele escribirse como m/s<sup>2</sup> y se lee "metros por segundo al cuadrado".</p>
-
+       <img src="/assets/graf-aceler-media.png" alt="Aceleración media" class="img-fluid" style="max-width: 100%; height: auto;center">
       <div class="alert alert-warning">
         <strong>CUIDADO</strong> Aceleración contra velocidad ¿No confunda aceleración con velocidad! La velocidad describe qué tan rápido se mueve un cuerpo, qué tan deprisa cambia su posición con el tiempo; es una medida con unidades de distancia dividida entre tiempo, como m/s. La aceleración describe cómo cambia la velocidad con el tiempo; es decir, qué tan rápido cambia la rapidez y la dirección del movimiento. Podría ser útil recordar la frase "aceleración es a velocidad lo que velocidad es a posición". También ayudará imaginarse a usted mismo yendo en un automóvil con el cuerpo en movimiento. Si el auto acelera hacia delante y aumenta su rapidez, usted se sentirá empujado hacia atrás hacia el asiento. Si el auto frena, usted se sentirá empujado hacia delante. Si el auto hace una curva, la velocidad es constante y no hay aceleración, no sentirá sensación alguna. (Analizaremos la aceleración en curvas en la sección 3.2.)
       </div>
@@ -207,6 +207,175 @@ export const topicDetails = {
       <p class="alert alert-info">
         <strong>Nota:</strong> La aceleración instantánea nos permite conocer con precisión cómo cambia la velocidad en cada instante específico del movimiento, no solo en un intervalo promedio.
       </p>
+
+      <hr class="my-5">
+
+      <h3>Obtención de las ecuaciones del MRUA sin cálculo</h3>
+      <p>Las ecuaciones del MRUA también se pueden obtener solo con conceptos de física básica y álgebra, sin hablar de derivadas ni integrales. Se usan las ideas de aceleración como cambio de velocidad por unidad de tiempo y de velocidad media como espacio recorrido por unidad de tiempo.</p>
+
+      <h4>Aceleración como cambio de velocidad</h4>
+      <p>Por definición en MRUA (aceleración constante):</p>
+      $$ a = \\frac{\\Delta v}{\\Delta t} = \\frac{v - v_0}{t} $$
+      <p>Despejando $v$:</p>
+      $$ v = v_0 + a t $$
+      <p>Esta es la primera ecuación: la velocidad aumenta de manera lineal porque cada segundo se suma la misma cantidad $a$.</p>
+
+      <h4>Desplazamiento a partir de la velocidad media</h4>
+      <p>En cualquier movimiento rectilíneo:</p>
+      $$ \\text{velocidad media} = \\frac{\\text{desplazamiento}}{\\text{tiempo}} = \\frac{x - x_0}{t} $$
+      <p>En MRUA el gráfico velocidad–tiempo es una recta, así que la velocidad media es el promedio entre la inicial y la final:</p>
+      $$ v_{\\text{med}} = \\frac{v_0 + v}{2} $$
+
+      <p>Igualando ambas expresiones:</p>
+      $$ \\frac{x - x_0}{t} = \\frac{v_0 + v}{2} \\Rightarrow x = x_0 + \\frac{v_0 + v}{2}\\,t $$
+      <p>Esta es la cuarta ecuación (posición usando velocidad media).</p>
+
+      <h4>Posición en función del tiempo</h4>
+      <p>Ahora se reemplaza en la ecuación anterior la expresión de $v$ obtenida antes $v = v_0 + a t$:</p>
+      $$ x = x_0 + \\frac{v_0 + (v_0 + a t)}{2}\\,t = x_0 + \\frac{2v_0 + a t}{2}\\,t = x_0 + v_0 t + \\frac{1}{2} a t^2 $$
+      <p>Esta es la segunda ecuación: combina el avance uniforme $v_0 t$ más el “extra” debido a la aceleración $\\tfrac{1}{2} a t^2$.</p>
+
+      <h4>Relación entre velocidad y desplazamiento</h4>
+      <p>Se parte de la ecuación de la velocidad media:</p>
+      $$ x - x_0 = \\frac{v_0 + v}{2}\\,t $$
+      <p>y se sustituye el tiempo usando $t = \\frac{v - v_0}{a}$ (de $a = \\frac{v - v_0}{t}$):</p>
+      $$ x - x_0 = \\frac{v_0 + v}{2}\\,\\frac{v - v_0}{a} $$
+      <p>El numerador es una diferencia de cuadrados:</p>
+      $$ (v_0 + v)(v - v_0) = v^2 - v_0^2 $$
+      <p>Entonces:</p>
+      $$ x - x_0 = \\frac{v^2 - v_0^2}{2a} \\Rightarrow v^2 = v_0^2 + 2a(x - x_0) $$
+      <p>Esta es la tercera ecuación, que relaciona directamente la velocidad con el desplazamiento sin usar el tiempo.</p>
+
+      <hr class="my-5">
+
+      <h3>Interpretación de Derivadas e Integrales en Física</h3>
+      <p>Integrar y derivar son dos operaciones matemáticas complementarias: derivar estudia “cómo cambia” una magnitud, integrar suma o “acumula” cambios. En física se usan para pasar de posición a velocidad y aceleración (derivar) o al revés, de aceleración a velocidad y posición (integrar).</p>
+
+      <h4>Qué significa derivar</h4>
+      <ul>
+        <li>Derivar mide la rapidez de cambio de una función: la derivada de $x(t)$ es la velocidad $v(t)$, y la derivada de $v(t)$ es la aceleración $a(t)$.</li>
+        <li>Geométricamente, la derivada es la pendiente de la recta tangente a la curva en un punto (qué tan “empinada” está la gráfica allí).</li>
+      </ul>
+
+      <h5>Cuándo y por qué se deriva</h5>
+      <ul>
+        <li>Se deriva cuando se quiere pasar de una magnitud global a su cambio instantáneo: por ejemplo, de posición a velocidad, o de temperatura a “ritmo de enfriamiento”.</li>
+        <li>En notación:
+          <ul>
+            <li>$v(t) = \\frac{dx}{dt}$: velocidad es cambio de posición respecto del tiempo.</li>
+            <li>$a(t) = \\frac{dv}{dt}$: aceleración es cambio de velocidad respecto del tiempo.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h4>Qué significa integrar</h4>
+      <ul>
+        <li>Integrar es, en esencia, sumar infinitos aportes pequeños: el área bajo una curva.</li>
+        <li>Si se conoce la aceleración $a(t)$, integrarla respecto del tiempo devuelve la velocidad $v(t)$; si se integra la velocidad, se obtiene la posición $x(t)$.</li>
+      </ul>
+
+      <h5>Cuándo y por qué se integra</h5>
+      <ul>
+        <li>Se integra cuando se conoce “cómo cambia algo” (su derivada) y se quiere recuperar la magnitud original.</li>
+        <li>En notación:
+          <ul>
+            <li>Si $a(t) = \\frac{dv}{dt}$, entonces $v(t) = \\int a(t)\\,dt + C$.</li>
+            <li>Si $v(t) = \\frac{dx}{dt}$, entonces $x(t) = \\int v(t)\\,dt + C$.</li>
+          </ul>
+        </li>
+        <li>La constante $C$ se fija usando condiciones iniciales (por ejemplo, velocidad o posición en $t=0$).</li>
+      </ul>
+
+      <h4 class="mt-4">Cuadro resumen</h4>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Concepto</th>
+            <th>Derivada</th>
+            <th>Integral</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Significado</strong></td>
+            <td>Cambio instantáneo, pendiente</td>
+            <td>Suma continua, área bajo la curva</td>
+          </tr>
+          <tr>
+            <td><strong>Dirección</strong></td>
+            <td>De función a su cambio</td>
+            <td>De cambio a función original</td>
+          </tr>
+          <tr>
+            <td><strong>Ejemplo físico</strong></td>
+            <td>$v = \\frac{dx}{dt}$, $a = \\frac{dv}{dt}$</td>
+            <td>$v = \\int a\\,dt$, $x = \\int v\\,dt$</td>
+          </tr>
+          <tr>
+            <td><strong>Relación</strong></td>
+            <td>Si se deriva y luego se integra (o viceversa) se vuelve, salvo la constante $C$.</td>
+            <td>Operaciones inversas: derivar deshace integrar y al revés.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr class="my-5">
+
+      <h3>Obtención de las ecuaciones del MRUA con cálculo</h3>
+      <p>Las cuatro ecuaciones del MRUA se obtienen partiendo de que la aceleración es constante y usando las definiciones de velocidad y aceleración como razones de cambio (derivadas) e integrando respecto del tiempo.</p>
+
+      <h4>Punto de partida: definiciones</h4>
+      <ul>
+        <li>Velocidad instantánea: $\\displaystyle v(t) = \\frac{dx}{dt}$.</li>
+        <li>Aceleración instantánea: $\\displaystyle a(t) = \\frac{dv}{dt}$.</li>
+      </ul>
+      <p>En MRUA se cumple que la aceleración es constante: $a(t) = a$, un número fijo.</p>
+
+      <h4>Primera ecuación: $v = v_0 + a t$</h4>
+      <ol>
+        <li>De la definición de aceleración con $a$ constante se tiene $\\frac{dv}{dt} = a$.</li>
+        <li>Se integra respecto del tiempo entre $t = 0$ y un tiempo cualquiera $t$:
+          $$ \\int_{v_0}^{v} dv = \\int_{0}^{t} a\\,dt $$
+          En el lado izquierdo se cambia de $v_0$ a $v(t)$ porque la velocidad evoluciona, y en el derecho se mantiene $a$ constante.
+        </li>
+        <li>Al integrar: $v - v_0 = a t$.</li>
+        <li>Se despeja $v$: $$ v = v_0 + a t $$</li>
+      </ol>
+
+      <h4>Segunda ecuación: $x = x_0 + v_0 t + \\tfrac{1}{2} a t^2$</h4>
+      <ol>
+        <li>De la definición de velocidad: $v(t) = \\frac{dx}{dt}$. Pero ya se conoce $v(t)$ de la ecuación anterior: $v(t) = v_0 + a t$.</li>
+        <li>Sustituyendo: $\\frac{dx}{dt} = v_0 + a t$.</li>
+        <li>Se integra respecto del tiempo entre $t=0$ y $t$:
+          $$ \\int_{x_0}^{x} dx = \\int_{0}^{t} (v_0 + a t)\\, dt $$
+        </li>
+        <li>Al integrar el lado derecho término a término: $x - x_0 = v_0 t + \\tfrac{1}{2} a t^2$.</li>
+        <li>Sumando $x_0$ a ambos lados:
+          $$ x = x_0 + v_0 t + \\tfrac{1}{2} a t^2 $$
+        </li>
+      </ol>
+
+      <h4>Tercera ecuación: $v^2 = v_0^2 + 2 a (x - x_0)$</h4>
+      <p>Se quiere una relación entre $v$ y $x$ que no incluya explícitamente al tiempo.</p>
+      <ol>
+        <li>Se parte de la primera ecuación $v = v_0 + a t$ y se despeja el tiempo: $t = \\frac{v - v_0}{a}$.</li>
+        <li>Se sustituye este $t$ en la segunda ecuación:
+          $$ x = x_0 + v_0 \\left(\\frac{v - v_0}{a}\\right) + \\tfrac{1}{2} a \\left(\\frac{v - v_0}{a}\\right)^2 $$
+        </li>
+        <li>Se multiplica toda la ecuación por $2a$ para simplificar fracciones y, tras simplificar, se llega a:
+          $$ v^2 = v_0^2 + 2a(x - x_0) $$
+        </li>
+      </ol>
+
+      <h4>Cuarta ecuación: $x = x_0 + \\tfrac{1}{2}(v_0 + v)t$</h4>
+      <p>Esta ecuación se basa en que, con aceleración constante, la velocidad promedio es el promedio aritmético de la velocidad inicial y final.</p>
+      <ol>
+        <li>La velocidad media en un intervalo se define como $v_{\\text{med}} = \\frac{x - x_0}{t}$.</li>
+        <li>Si la aceleración es constante, la velocidad media es la media de $v_0$ y $v$: $v_{\\text{med}} = \\frac{v_0 + v}{2}$.</li>
+        <li>Igualando y despejando $x$:
+          $$ x = x_0 + \\tfrac{1}{2}(v_0 + v)t $$
+        </li>
+      </ol>
     `,
   },
 }
