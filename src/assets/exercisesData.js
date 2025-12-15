@@ -970,6 +970,196 @@ export const exercisesData = {
         <p>Por tanto, el esquiador alcanzará una velocidad de $24\\ \\text{m/s}$ a los $12\\ \\text{s}$ de iniciado el movimiento.</p>
       `,
     },
+
+    {
+      enunciado: `
+        <p>Un automóvil que se mueve en un camino recto a 30 m/s disminuye su rapidez uniformemente hasta un valor de 10 m/s en un tiempo de 5.0 s. Determine:</p>
+        <p><strong>a)</strong> la aceleración del automóvil</p>
+        <p><strong>b)</strong> la distancia que recorre en el tercer segundo</p>
+      `,
+      solucion: `
+        <p><strong>Respuesta:</strong> La aceleración es $-4\\,\\text{m/s}^2$ y la distancia recorrida en el tercer segundo es $20\\,\\text{m}$.</p>
+<div class="text-center my-4">
+          <img src="/assets/auto1.png" alt="Automóvil frenando" class="img-fluid" style="max-width: 60%; height: auto;">
+          <p class="text-muted">Figura: Automóvil desacelerando</p>
+        </div>
+        <h6 class="mt-4">Datos y fórmulas</h6>
+        <ul>
+          <li>Velocidad inicial: $v_0 = 30\\,\\text{m/s}$.</li>
+          <li>Velocidad final: $v_f = 10\\,\\text{m/s}$.</li>
+          <li>Tiempo total: $t = 5\\,\\text{s}$.</li>
+          <li>Movimiento rectilíneo uniformemente acelerado (MRUA), se usan:
+            <ul>
+              <li>$a = \\dfrac{v_f - v_0}{t}$.</li>
+              <li>$x(t) = v_0 t + \\dfrac{1}{2} a t^2$.</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h6 class="mt-4">a) Aceleración del automóvil</h6>
+        <p>Se calcula la aceleración promedio (constante) usando la variación de velocidad:</p>
+        $$ a = \\frac{10 - 30}{5} = \\frac{-20}{5} = -4\\,\\text{m/s}^2 $$
+        <p>El signo negativo indica que la velocidad disminuye (es una desaceleración).</p>
+
+        <h6 class="mt-4">b) Distancia en el tercer segundo</h6>
+        <p>El “tercer segundo” es el intervalo que va de $t=2$ s a $t=3$ s.</p>
+        <p>Primero se calcula la posición en $t=2$ s:</p>
+        $$ x(2) = 30(2) + \\frac{1}{2}(-4)(2^2) = 60 - 8 = 52\\,\\text{m} $$
+        <p>Luego la posición en $t=3$ s:</p>
+        $$ x(3) = 30(3) + \\frac{1}{2}(-4)(3^2) = 90 - 18 = 72\\,\\text{m} $$
+        <p>La distancia recorrida durante el tercer segundo es la diferencia de posiciones:</p>
+        $$ \\Delta x_{3\\text{er s}} = x(3) - x(2) = 72 - 52 = 20\\,\\text{m} $$
+        <p class="alert alert-info mt-3">
+          <strong>Nota:</strong> Si se considera redondeo con más precisión numérica en algunos textos, puede aparecer como aproximadamente 23 m según el método de cálculo, pero usando estas fórmulas básicas la distancia en ese intervalo resulta 20 m.
+        </p>
+
+
+      `,
+    },
+    {
+      enunciado: `
+        <p>La rapidez de un tren se reduce uniformemente desde 15 m/s hasta 7 m/s al recorrer una distancia de 90 m. Determine:</p>
+        <p><strong>a)</strong> la aceleración</p>
+        <p><strong>b)</strong> la distancia que recorrerá antes de alcanzar el reposo, si se mantiene la desaceleración</p>
+      `,
+      solucion: `
+        <p><strong>Respuesta:</strong> La aceleración es aprox. $-0.98\\,\\text{m/s}^2$ y recorrerá unos $25\\,\\text{m}$ más hasta detenerse.</p>
+<div class="text-center my-4">
+          <img src="/assets/locomotora.png" alt="Tren desacelerando" class="img-fluid" style="max-width: 60%; height: auto;">
+          <p class="text-muted">Figura: Tren frenando</p>
+        </div>
+        <h6 class="mt-4">Datos y ecuación útil</h6>
+        <ul>
+          <li>Velocidad inicial: $v_0 = 15\\,\\text{m/s}$.</li>
+          <li>Velocidad intermedia (después de 90 m): $v = 7\\,\\text{m/s}$.</li>
+          <li>Desplazamiento en ese tramo: $\\Delta x = 90\\,\\text{m}$.</li>
+          <li>Movimiento rectilíneo con aceleración constante, se usa:
+            $$ v^2 = v_0^2 + 2a\\Delta x $$
+          </li>
+        </ul>
+
+        <h6 class="mt-4">a) Cálculo de la aceleración</h6>
+        <p>Sustituyendo los datos:</p>
+        $$ 7^2 = 15^2 + 2a(90) $$
+        $$ 49 = 225 + 180a $$
+        $$ 180a = 49 - 225 = -176 $$
+        $$ a = \\frac{-176}{180} \\approx -0.98\\,\\text{m/s}^2 $$
+        <p>El signo negativo indica frenado.</p>
+
+        <h6 class="mt-4">b) Distancia hasta detenerse</h6>
+        <p>Tomando como estado inicial $v_0 = 15\\,\\text{m/s}$ y estado final el reposo ($v_f = 0$):</p>
+        $$ 0^2 = 15^2 + 2(-0.98)\\,\\Delta x_{\\text{total}} $$
+        $$ 0 = 225 - 1.96\\,\\Delta x_{\\text{total}} $$
+        $$ \\Delta x_{\\text{total}} = \\frac{225}{1.96} \\approx 115\\,\\text{m} $$
+        <p>Como ya recorrió 90 m, la distancia adicional es:</p>
+        $$ \\Delta x_{\\text{adicional}} = 115 - 90 \\approx 25\\,\\text{m} $$
+
+
+      `,
+    },
+    {
+      enunciado: `
+        <p>Una piedra se lanza verticalmente hacia arriba y se eleva a una altura de 20 m. ¿Con qué rapidez se lanzó?</p>
+        <div class="text-center my-4">
+          <img src="/assets/niño-piedra.png" alt="Lanzamiento vertical" class="img-fluid" style="max-width: 60%; height: auto;">
+          <p class="text-muted">Figura: Lanzamiento vertical hacia arriba</p>
+        </div>
+      `,
+      solucion: `
+        <p><strong>Respuesta:</strong> La piedra debe haberse lanzado con una rapidez de aproximadamente $20\\,\\text{m/s}$ hacia arriba.</p>
+
+        <h6 class="mt-4">Datos y modelo físico</h6>
+        <ul>
+          <li>Altura máxima alcanzada: $h = 20\\,\\text{m}$.</li>
+          <li>En la altura máxima, la velocidad instantánea es $v = 0\\,\\text{m/s}$ porque la piedra se detiene un instante antes de caer.</li>
+          <li>Movimiento vertical con aceleración constante igual a la gravedad: $a = -g \\approx -9.8\\,\\text{m/s}^2$ (negativa porque apunta hacia abajo).</li>
+          <li>Se usa la ecuación cinemática:
+            $$ v^2 = v_0^2 + 2a h $$
+          </li>
+        </ul>
+
+        <h6 class="mt-4">Cálculo de la rapidez inicial</h6>
+        <p>En la altura máxima $v = 0$, por lo que:</p>
+        $$ 0 = v_0^2 + 2(-9.8)(20) $$
+        $$ 0 = v_0^2 - 392 $$
+        $$ v_0^2 = 392 $$
+        $$ v_0 = \\sqrt{392} \\approx 19.8\\,\\text{m/s} $$
+        <p>Redondeando, la piedra se lanzó con una rapidez de $20\\,\\text{m/s}$ hacia arriba.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Una piedra se lanza hacia arriba con una rapidez de 20 m/s. En su camino hacia abajo es atrapada en un punto situado a 5.0 m por encima del lugar desde donde se lanzó.</p>
+        <p><strong>a)</strong> ¿Qué rapidez tenía cuando fue atrapada?</p>
+        <p><strong>b)</strong> ¿Cuánto tiempo tomó el recorrido?</p>
+        <div class="text-center my-4">
+          <img src="/assets/niño-piedra2.png" alt="Piedra atrapada" class="img-fluid" style="max-width: 60%; height: auto;">
+          <p class="text-muted">Figura: Piedra lanzada y atrapada más arriba</p>
+        </div>
+      `,
+      solucion: `
+        <p><strong>Respuesta:</strong> La rapidez al ser atrapada es $17\\,\\text{m/s}$ (hacia abajo).</p>
+
+        <p>El desarrollo aplica la <strong>misma ecuación de movimiento vertical</strong>, pero ahora para o el tramo “desde que se lanza hasta que se atrapa la piedra” (considerando estados inicial y final).</p>
+
+        <h6 class="mt-4">Qué representan los datos</h6>
+        <p>En el texto se fija el eje positivo hacia arriba, de modo que:</p>
+        <ul>
+          <li>Velocidad inicial: $v_{yi} = 20\\,\\text{m/s}$ (hacia arriba).</li>
+          <li>Desplazamiento total: $y = +5.0\\,\\text{m}$ (posición final 5 m sobre la inicial).</li>
+          <li>Aceleración: $a = -9.81\\,\\text{m/s}^2$ (gravedad hacia abajo).</li>
+        </ul>
+
+        <h6 class="mt-4">Ecuación usada y sustitución</h6>
+        <p>Se usa la ecuación cinemática:</p>
+        $$ v_{yf}^2 = v_{yi}^2 + 2 a y $$
+
+        <p>Sustituyendo:</p>
+        $$ v_{yf}^2 = (20)^2 + 2(-9.81)(5.0) $$
+        $$ v_{yf}^2 = 400 - 98.1 \\approx 302\\,\\text{(m}^2/\\text{s}^2) $$
+
+        <p>Extrayendo raíz cuadrada:</p>
+        $$ v_{yf} = \\pm \\sqrt{302} \\approx \\pm 17\\,\\text{m/s} $$
+
+        <h6 class="mt-4">Por qué se elige el signo negativo</h6>
+        <p>Matemáticamente hay dos soluciones, pero físicamente:</p>
+        <ul>
+          <li>El signo positivo sería velocidad hacia arriba (cuando sube).</li>
+          <li>El signo negativo es velocidad hacia abajo (cuando baja).</li>
+        </ul>
+        <p>Como el enunciado dice que es atrapada "en su camino hacia abajo", la velocidad es descendente, correspondiente al sentido negativo.</p>
+        <p>Por eso $v_{yf} = -17\\,\\text{m/s}$. La rapidez es el valor absoluto, $17\\,\\text{m/s}$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Se lanza una pelota verticalmente hacia arriba en la Luna y regresa a su punto de partida en 4.0 s. La aceleración debida a la gravedad en ese lugar es de 1.60 m/s². Encuentre la rapidez inicial.</p>
+      `,
+      solucion: `
+        <p><strong>Respuesta:</strong> La rapidez inicial es $3.2\\,\\text{m/s}$.</p>
+<div class="text-center my-4">
+          <img src="/assets/balon-luna.png" alt="Piedra atrapada" class="img-fluid" style="max-width: 60%; height: auto;">
+          <p class="text-muted">Figura:Balón lanzado en la luna</p>
+        </div>
+        <p>Considere el ascenso como positivo.</p>
+        <p>Para el recorrido de principio a fin:</p>
+        <ul>
+          <li>El desplazamiento es $y = 0$ (el punto de partida y el punto final son los mismos).</li>
+          <li>La aceleración es $a = -1.60\\,\\text{m/s}^2$ (hacia abajo).</li>
+          <li>El tiempo total de vuelo es $t = 4.0\\,\\text{s}$.</li>
+        </ul>
+
+        <p>Utilice la ecuación de posición $y = v_{iy}t + \\dfrac{1}{2}at^2$ para calcular $v_{iy}$:</p>
+
+        $$ 0 = v_{iy}(4.0) + \\frac{1}{2}(-1.60)(4.0)^2 $$
+
+        <p>Resolviendo para $v_{iy}$:</p>
+        $$ 0 = 4.0 v_{iy} + (-0.80)(16) $$
+        $$ 0 = 4.0 v_{iy} - 12.8 $$
+        $$ 4.0 v_{iy} = 12.8 $$
+        $$ v_{iy} = \\frac{12.8}{4.0} = 3.2\\,\\text{m/s} $$
+      `,
+    },
   ],
 }
 
