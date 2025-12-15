@@ -1160,6 +1160,57 @@ export const exercisesData = {
         $$ v_{iy} = \\frac{12.8}{4.0} = 3.2\\,\\text{m/s} $$
       `,
     },
+    {
+      enunciado: `
+        <p>Se lanza una pelota de béisbol verticalmente hacia arriba en la superficie lunar con una rapidez inicial de $35\\ \\text{m/s}$. Calcule:</p>
+        <p><strong>a)</strong> la máxima altura que alcanza la pelota</p>
+        <p><strong>b)</strong> el tiempo que tarda en alcanzar esa altura</p>
+        <p><strong>c)</strong> su velocidad $30\\ \\text{s}$ después de lanzarse</p>
+        <p><strong>d)</strong> cuándo la pelota está a $100\\ \\text{m}$ de altura</p>
+      `,
+      solucion: `
+        <p>En la Luna la pelota se mueve con una aceleración constante hacia abajo (gravedad lunar), así que se resuelve con las ecuaciones de movimiento rectilíneo uniformemente acelerado sustituyendo $g_{\\text{Luna}}\\approx 1.6\\ \\text{m/s}^2$.</p>
+         <div class="text-center my-4">
+          <img src="/assets/luna-beisbol.png" alt="Piedra atrapada" class="img-fluid" style="max-width: 60%; height: auto;">
+          <p class="text-muted">Figura:Balón lanzado en la luna</p>
+        </div>
+        <h6 class="mt-4">Datos e ideas clave</h6>
+        <ul>
+          <li>Velocidad inicial: $v_0 = 35\\ \\text{m/s}$ hacia arriba.</li>
+          <li>Aceleración: $a = -g_{\\text{Luna}} \\approx -1.6\\ \\text{m/s}^2$.</li>
+          <li>Ecuación de posición (tomando $y_0=0$):<br>
+          $$ y(t)=v_0 t+\\tfrac12 a t^2 $$</li>
+          <li>Ecuación de velocidad:<br>
+          $$ v(t)=v_0 + a t $$</li>
+        </ul>
+
+        <h6 class="mt-4">a) Máxima altura</h6>
+        <p>En la altura máxima la velocidad es cero: $v=0$.</p>
+        $$ 0 = v_0 + a t_{\\text{max}} \\Rightarrow t_{\\text{max}} = \\frac{-v_0}{a}=\\frac{35}{1.6}\\approx 21.9\\ \\text{s} $$
+        $$ y_{\\text{max}} = v_0 t_{\\text{max}}+\\tfrac12 a t_{\\text{max}}^2 = 35(21.9)-0.8(21.9)^2 \\approx 384\\ \\text{m} $$
+
+        <h6 class="mt-4">b) Tiempo en alcanzar esa altura</h6>
+        <p>El tiempo de subida es el que se obtuvo arriba:</p>
+        $$ t_{\\text{max}}\\approx 21.9\\ \\text{s} $$
+
+        <h6 class="mt-4">c) Velocidad a los 30 s</h6>
+        <p>Se usa $v(t)=v_0 + a t$.</p>
+        $$ v(30)=35-1.6(30)=35-48=-13\\ \\text{m/s} $$
+        <p>El signo negativo indica que la pelota ya baja con rapidez de $13\\ \\text{m/s}$.</p>
+
+        <h6 class="mt-4">d) Velocidad cuando está a 100 m de altura</h6>
+        <p>Se impone $y=100$ en la ecuación de posición:</p>
+        $$ 100 = 35 t -0.8 t^2 \\Rightarrow 0.8 t^2 -35 t +100 =0 $$
+        <p>Resolviendo la ecuación cuadrática:</p>
+        $$ t=\\frac{35\\pm\\sqrt{35^2-4(0.8)(100)}}{2(0.8)} =\\frac{35\\pm\\sqrt{1121}}{1.6}\\approx 3.3\\ \\text{s},\\ 37.9\\ \\text{s} $$
+        <p>Para cada tiempo se calcula la velocidad:</p>
+        $$ v(3.3)\\approx 35-1.6(3.3)\\approx 29.7\\ \\text{m/s} \\quad (\\text{subiendo}) $$
+        $$ v(37.9)\\approx 35-1.6(37.9)\\approx -25.6\\ \\text{m/s} \\quad (\\text{bajando}) $$
+        <p class="alert alert-success mt-3">
+          <strong>Respuesta:</strong> Por tanto, a 100 m la pelota tiene $29.7\\ \\text{m/s}$ hacia arriba y, más tarde, $25.6\\ \\text{m/s}$ hacia abajo.
+        </p>
+      `,
+    },
   ],
 }
 
