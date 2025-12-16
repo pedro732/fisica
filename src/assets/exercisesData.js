@@ -1211,6 +1211,319 @@ export const exercisesData = {
         </p>
       `,
     },
+    {
+      enunciado: `
+        <p>Desde un globo que está a 300 m sobre el suelo y se eleva a 13 m/s, se deja caer una bolsa de lastre. Para la bolsa, encuentre:</p>
+        <p><strong>a)</strong> la altura máxima que alcanza</p>
+        <p><strong>b)</strong> su posición y velocidad después de 5.0 s de haberse desprendido</p>
+        <p><strong>c)</strong> el tiempo que tarda en bajar y golpear el suelo</p>
+      `,
+      solucion: `
+        <p><strong>Respuesta:</strong> a) 309 m; b) 242.5 m y -36 m/s; c) 9.3 s.</p>
+
+        <div class="text-center my-4">
+          <img src="/assets/globo_lastre.png" alt="Globo y lastre" class="img-fluid" style="max-width: 60%; height: auto;">
+          <p class="text-muted">Figura: Problema del globo y la bolsa de lastre</p>
+        </div>
+
+        <h6 class="mt-4">Datos e ideas clave</h6>
+        <ul>
+          <li>Origen en el suelo: $y=0$.</li>
+          <li>Posición inicial: $y_0 = 300\\ \\text{m}$.</li>
+          <li>Velocidad inicial: $v_0 = +13\\ \\text{m/s}$ (hacia arriba).</li>
+          <li>Aceleración: $a = -g = -9.8\\ \\text{m/s}^2$.</li>
+        </ul>
+
+        <h6 class="mt-4">a) Altura máxima</h6>
+        <p>En la altura máxima $v = 0$. Usamos $v^2 = v_0^2 + 2 a (y_{\\max} - y_0)$:</p>
+        $$ 0 = (13)^2 + 2(-9.8)(y_{\\max} - 300) $$
+        $$ 0 = 169 - 19.6(y_{\\max} - 300) $$
+        $$ y_{\\max} - 300 = \\frac{169}{19.6} \\approx 8.62\\ \\text{m} $$
+        $$ y_{\\max} \\approx 308.6\\ \\text{m} \\approx 309\\ \\text{m} $$
+
+        <h6 class="mt-4">b) Posición y velocidad a los 5.0 s</h6>
+        <p><strong>Velocidad:</strong> $v(t) = v_0 + a t$</p>
+        $$ v(5) = 13 + (-9.8)(5) = 13 - 49 = -36\\ \\text{m/s} $$
+        <p>El signo negativo indica que la bolsa ya va bajando.</p>
+
+        <p><strong>Posición:</strong> $y(t) = y_0 + v_0 t + \\tfrac{1}{2} a t^2$</p>
+        $$ y(5) = 300 + 13(5) + \\tfrac{1}{2}(-9.8)(5)^2 $$
+        $$ y(5) = 300 + 65 - 4.9(25) $$
+        $$ y(5) = 365 - 122.5 = 242.5\\ \\text{m} $$
+
+        <h6 class="mt-4">c) Tiempo para llegar al suelo</h6>
+        <p>Golpea el suelo cuando $y = 0$.</p>
+        $$ 0 = 300 + 13 t - 4.9 t^2 $$
+        <p>Reordenando: $4.9 t^2 - 13 t - 300 = 0$. Usando la fórmula cuadrática:</p>
+        $$ t = \\frac{13 \\pm \\sqrt{(-13)^2 - 4(4.9)(-300)}}{2(4.9)} $$
+        $$ t = \\frac{13 \\pm \\sqrt{169 + 5880}}{9.8} = \\frac{13 \\pm \\sqrt{6049}}{9.8} $$
+        $$ t \\approx \\frac{13 \\pm 77.8}{9.8} $$
+        <p>Dos soluciones matemáticas:</p>
+        <ul>
+          <li>$t_1 = (13 + 77.8)/9.8 \\approx 9.27\\ \\text{s}$</li>
+          <li>$t_2 = (13 - 77.8)/9.8 < 0$ (descartada)</li>
+        </ul>
+        <p class="alert alert-success mt-3">
+          <strong>Conclusión:</strong> La bolsa tarda aproximadamente $9.3\\ \\text{s}$ en llegar al suelo.
+        </p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Como se muestra en la figura 2-4, desde la cima de un risco de 80 m de alto se dispara un proyectil con una rapidez horizontal de 30 m/s.</p>
+        <p><strong>a)</strong> ¿Cuánto tiempo necesitará para chocar contra el suelo en la base del risco?</p>
+        <p><strong>b)</strong> ¿A qué distancia del pie del risco será el choque?</p>
+        <p><strong>c)</strong> ¿Con qué velocidad se estrellará?</p>
+        <div class="text-center my-4">
+          <img src="/assets/cañon.png" alt="Proyectil desde risco" class="img-fluid" style="max-width: 80%; height: auto;">
+          <p class="text-muted">Lanzamiento horizontal desde un risco</p>
+        </div>
+         <div class="text-center my-4">
+          <img src="/assets/cañon1.png" alt="Proyectil desde risco" class="img-fluid" style="max-width: 80%; height: auto;">
+          <p class="text-muted">Figura 2-4:Esquema del Lanzamiento horizontal desde un risco</p>
+        </div>
+      `,
+      solucion: `
+        <p><strong>Respuesta:</strong> a) 4.0 s; b) 121 m; c) 50 m/s.</p>
+
+        <h6 class="mt-4">Datos y separación de movimientos</h6>
+        <ul>
+          <li>Altura inicial: $y_0 = 80\\ \\text{m}$.</li>
+          <li>Velocidad horizontal inicial: $v_{0x} = 30\\ \\text{m/s}$.</li>
+          <li>Velocidad vertical inicial: $v_{0y} = 0$ (sale horizontal).</li>
+          <li>Aceleración vertical: $a_y = -g = -9.8\\ \\text{m/s}^2$.</li>
+          <li>En el eje $x$ no hay aceleración (MRU), por lo que $v_x$ es constante.</li>
+        </ul>
+
+        <h6 class="mt-4">a) Tiempo hasta llegar al suelo</h6>
+        <p>Tomando $y=0$ en la cima del risco, el suelo está en $y=-80\\ \\text{m}$.</p>
+        $$ y = y_0 + v_{0y} t + \\tfrac{1}{2} a_y t^2 \\Rightarrow -80 = 0 + 0\\cdot t + \\tfrac{1}{2}(-9.8)t^2 $$
+        $$ -80 = -4.9 t^2 \\Rightarrow t^2 = \\frac{80}{4.9} \\approx 16.33 $$
+        $$ t \\approx \\sqrt{16.33} \\approx 4.04\\ \\text{s} $$
+        <p>El tiempo de vuelo es aproximadamente <strong>4.0 s</strong>.</p>
+
+        <h6 class="mt-4">b) Distancia horizontal al pie del risco</h6>
+        <p>En el eje $x$ el movimiento es uniforme:</p>
+        $$ x = v_{0x} t = 30\\ \\text{m/s} \\times 4.04\\ \\text{s} \\approx 121.2\\ \\text{m} $$
+        <p>El proyectil impactará a unos <strong>121 m</strong> del pie del risco.</p>
+
+        <h6 class="mt-4">c) Velocidad con que se estrella</h6>
+        <ul>
+          <li>Componente horizontal: $v_x = 30\\ \\text{m/s}$ (constante).</li>
+          <li>Componente vertical: $v_y = v_{0y} + a_y t = 0 + (-9.8)(4.04) \\approx -39.6\\ \\text{m/s}$.</li>
+        </ul>
+        <p>La rapidez al impactar es la resultante:</p>
+        $$ v = \\sqrt{v_x^2 + v_y^2} = \\sqrt{30^2 + (-39.6)^2} = \\sqrt{900 + 1568} \\approx \\sqrt{2468} \\approx 49.7\\ \\text{m/s} $$
+        <p>Redondeando, se estrella con una rapidez de <strong>50 m/s</strong>.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Un piloto acróbata vuela a 15 m/s en dirección paralela al suelo plano, que se encuentra 100 m debajo. En el instante en que el avión pasa por un punto A, el blanco está 150 m más adelante, medidos horizontalmente desde A. ¿Desde qué altura debería volar el avión para que, si deja caer un saco de harina en A, el saco golpee el blanco?</p>
+      `,
+      solucion: `
+        <p><strong>Respuesta:</strong> El avión debería volar a unos 490 m de altura.</p>
+          </div>
+         <div class="text-center my-4">
+          <img src="/assets/avioneta.png" alt="Proyectil desde risco" class="img-fluid" style="max-width: 80%; height: auto;">
+          <p class="text-muted">Avioneta en pleno vuelo</p>
+        </div>
+        <h6 class="mt-4">1. Datos y objetivo</h6>
+        <ul>
+          <li>Velocidad horizontal del avión (y del saco): $v_x = 15\\ \\text{m/s}$.</li>
+          <li>Distancia horizontal hasta el blanco desde el punto de lanzamiento A: $x = 150\\ \\text{m}$.</li>
+          <li>Se desprecia resistencia del aire.</li>
+          <li>Incógnita: altura $h$ del avión sobre el suelo para acertar el blanco.</li>
+        </ul>
+        <p>La condición para acertar es que el tiempo que tarda el saco en caer desde la altura $h$ sea el mismo que tarda en recorrer 150 m horizontalmente.</p>
+
+        <h6 class="mt-4">2. Tiempo necesario para llegar al blanco</h6>
+        <p>Movimiento horizontal (MRU):</p>
+        $$ x = v_x t \\Rightarrow t = \\frac{x}{v_x} = \\frac{150}{15} = 10\\ \\text{s} $$
+        <p>El saco debe permanecer <strong>10 s</strong> en el aire para avanzar 150 m.</p>
+
+        <h6 class="mt-4">3. Altura necesaria para que tarde 10 s en caer</h6>
+        <p>Movimiento vertical (caída libre, velocidad vertical inicial cero):</p>
+        $$ h = \\tfrac{1}{2} g t^2 $$
+        <p>con $g \\approx 9.8\\ \\text{m/s}^2$ y $t = 10\\ \\text{s}$:</p>
+        $$ h = \\tfrac{1}{2} (9.8)(10)^2 = 4.9 \\times 100 = 490\\ \\text{m} $$
+        <p class="alert alert-success mt-3">
+          <strong>Conclusión:</strong> Por lo tanto, para que al soltar el saco cuando está 150 m antes del blanco este caiga justo sobre él, <strong>el avión tendría que volar a unos 490 m de altura</strong>, no a 100 m.
+        </p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Un piloto acróbata vuela a 15 m/s en dirección paralela al suelo plano que se encuentra 100 m debajo, como se muestra en la figura 2-5. ¿A qué distancia $x$ del objetivo debe estar el avión para que, si deja caer un saco de harina, éste choque con el blanco?</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura-avioneta.png" alt="Figura 2-5: Avión soltando saco" class="img-fluid" style="max-width: 80%; height: auto;">
+          <p class="text-muted">Figura 2-5</p>
+        </div>
+      `,
+      solucion: `
+        <p><strong>Respuesta:</strong> El avión debe estar a unos <strong>68 m</strong> antes del blanco.</p>
+
+        <h6 class="mt-4">Planteo del problema</h6>
+        <ul>
+          <li>Velocidad horizontal del avión (y del saco al soltarlo): $v_x = 15\\ \\text{m/s}$.</li>
+          <li>Altura del avión sobre el suelo: $h = 100\\ \\text{m}$.</li>
+          <li>El saco se deja caer, así que su velocidad vertical inicial es $v_{0y} = 0$.</li>
+          <li>Aceleración vertical: $a_y = g = 9.8\\ \\text{m/s}^2$ hacia abajo.</li>
+        </ul>
+        <p>El movimiento vertical determina cuánto tarda en caer; ese mismo tiempo es el que avanza horizontalmente.</p>
+
+        <h6 class="mt-4">1. Tiempo de caída del saco</h6>
+        <p>Desde la altura $h$, caída libre con $v_{0y}=0$:</p>
+        $$ h = \\tfrac{1}{2} g t^2 $$
+        $$ 100 = \\tfrac{1}{2} (9.8) t^2 \\Rightarrow 100 = 4.9 t^2 $$
+        $$ t^2 = \\frac{100}{4.9} \\approx 20.41 \\Rightarrow t \\approx 4.52\\ \\text{s} $$
+        <p>El saco tarda aproximadamente <strong>4.5 s</strong> en llegar al suelo.</p>
+
+        <h6 class="mt-4">2. Distancia horizontal que recorre</h6>
+        <p>El movimiento horizontal es uniforme (sin aceleración), por lo que:</p>
+        $$ x = v_x \\, t = 15\\ \\text{m/s} \\times 4.52\\ \\text{s} \\approx 67.8\\ \\text{m} $$
+        <p>Eso significa que, mientras cae, el saco avanza unos <strong>68 m</strong> horizontalmente.</p>
+
+        <h6 class="mt-4">3. Interpretación física</h6>
+        <p class="alert alert-success mt-3">
+          <strong>Conclusión:</strong> Para que el saco impacte en el blanco, el avión debe estar <strong>68 m antes del objetivo</strong> cuando se suelta el saco.
+        </p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Se lanza una pelota de béisbol con una velocidad inicial de $100\\ \\text{m/s}$ con un ángulo de $30.0^\\circ$ en relación con la horizontal, como se muestra en la figura 2-6. ¿A qué distancia del punto de lanzamiento alcanzará la pelota su nivel inicial?</p>
+        <div class="text-center my-4">
+          <img src="/assets/beisbol_parabolico.png" alt="Figura 2-6: Pelota de béisbol" class="img-fluid" style="max-width: 80%; height: auto;">
+          <p class="text-muted">Figura 2-6</p>
+        </div>
+      `,
+      solucion: `
+        <p><strong>Respuesta:</strong> La pelota volverá a su nivel inicial a una distancia horizontal de unos <strong>883 m</strong> del punto de lanzamiento.</p>
+         <div class="text-center my-4">
+          <img src="/assets/beisbolista.png" alt="Figura 2-6: Pelota de béisbol" class="img-fluid" style="max-width: 80%; height: auto;">
+          <p class="text-muted">Figura 2-6</p>
+        </div>
+        <h6 class="mt-4">Enunciado y descomposición del movimiento</h6>
+        <p>Se trata de un <strong>tiro parabólico</strong> desde el suelo que vuelve al mismo nivel, así que interesa el <strong>alcance horizontal</strong>. Para ello se separan las componentes de la velocidad inicial:</p>
+        $$ v_{0x} = v_0 \\cos\\theta,\\quad v_{0y} = v_0 \\sin\\theta $$
+        <p>con $v_0 = 100\\ \\text{m/s}$, $\\theta = 30^\\circ$.</p>
+
+        <h6 class="mt-4">Paso 1: Tiempo total de vuelo</h6>
+        <p>Componente vertical de la posición (tomando $y=0$ en el suelo):</p>
+        $$ y(t) = v_{0y} t - \\tfrac{1}{2} g t^2 $$
+        <p>Para volver al nivel inicial, $y(t)=0$ (distinto de $t=0$). Se factoriza:</p>
+        $$ 0 = t(v_{0y} - \\tfrac{1}{2} g t) \\Rightarrow t = \\frac{2 v_{0y}}{g} $$
+        <p>Se toma el tiempo de vuelo:</p>
+        $$ t_{\\text{vuelo}} = \\frac{2 v_0 \\sin\\theta}{g} = \\frac{2 \\cdot 100 \\cdot \\sin 30^\\circ}{9.8} $$
+        <p>Como $\\sin 30^\\circ = 0.5$:</p>
+        $$ t_{\\text{vuelo}} = \\frac{2 \\cdot 100 \\cdot 0.5}{9.8} = \\frac{100}{9.8} \\approx 10.2\\ \\text{s} $$
+
+        <h6 class="mt-4">Paso 2: Alcance horizontal</h6>
+        <p>La velocidad horizontal es constante:</p>
+        $$ v_{0x} = v_0 \\cos\\theta = 100 \\cos 30^\\circ \\approx 86.6\\ \\text{m/s} $$
+        <p>El alcance horizontal es:</p>
+        $$ R = v_{0x}\\, t_{\\text{vuelo}} \\approx 86.6 \\times 10.2 \\approx 883.3\\ \\text{m} $$
+        <p class="alert alert-success mt-3">
+          <strong>Conclusión:</strong> La pelota alcanza de nuevo su altura inicial a unos <strong>883 m</strong> del punto de lanzamiento.
+        </p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Desde la azotea de un edificio se lanza una pelota hacia otro edificio más alto, situado a 50 m horizontalmente. La rapidez inicial es $v_0 = 20\\ \\text{m/s}$ con un ángulo de $40^\\circ$ sobre la horizontal. Se pide: ¿a qué distancia vertical, por encima o por debajo del nivel inicial, chocará contra la pared opuesta?</p>
+        <div class="text-center my-4">
+          <img src="/assets/edificios.png" alt="Lanzamiento entre edificios" class="img-fluid" style="max-width: 80%; height: auto;">
+          <p class="text-muted">Figura: Lanzamiento de proyectil hacia edificio opuesto</p>
+        </div>
+      `,
+      solucion: `
+        <p><strong>Respuesta:</strong> La pelota golpeará el edificio opuesto aproximadamente <strong>11 m por debajo</strong> del nivel desde el que fue lanzada.</p>
+         <div class="text-center my-4">
+          <img src="/assets/edificios1.png" alt="Lanzamiento entre edificios" class="img-fluid" style="max-width: 80%; height: auto;">
+          <p class="text-muted">Figura: Lanzamiento de proyectil hacia edificio opuesto</p>
+        </div>
+        <h6 class="mt-4">Datos y descomposición del movimiento</h6>
+        <p>Se separan componentes de la velocidad inicial:</p>
+        $$ v_{0x} = v_0 \\cos 40^\\circ \\approx 20 \\cdot 0{.}766 = 15{.}3\\ \\text{m/s} $$
+        $$ v_{0y} = v_0 \\sin 40^\\circ \\approx 20 \\cdot 0{.}643 = 12{.}9\\ \\text{m/s} $$
+        <p>En el eje $x$ el movimiento es uniforme; en el eje $y$ hay aceleración $-g$.</p>
+
+        <h6 class="mt-4">Paso 1: tiempo hasta llegar a la pared opuesta</h6>
+        <p>En horizontal:</p>
+        $$ x(t) = v_{0x} t $$
+        <p>Debe cumplirse $x = 50\\ \\text{m}$:</p>
+        $$ 50 = 15{.}3\\, t \\Rightarrow t \\approx \\frac{50}{15{.}3} \\approx 3{.}27\\ \\text{s} $$
+        <p>Ese es el tiempo que tarda en alcanzar el edificio opuesto.</p>
+
+        <h6 class="mt-4">Paso 2: altura en ese instante</h6>
+        <p>Tomando $y=0$ en el punto de lanzamiento, el movimiento vertical es:</p>
+        $$ y(t) = v_{0y} t - \\tfrac12 g t^2 $$
+        <p>Con $v_{0y} \\approx 12{.}9\\ \\text{m/s}$, $g = 9{.}8\\ \\text{m/s}^2$ y $t = 3{.}27\\ \\text{s}$:</p>
+        $$ y(3{.}27) \\approx 12{.}9(3{.}27) - 4{.}9(3{.}27)^2 $$
+        $$ 12{.}9(3{.}27) \\approx 42{.}2,\\quad (3{.}27)^2 \\approx 10{.}7,\\quad 4{.}9(10{.}7) \\approx 52{.}4 $$
+        $$ y \\approx 42{.}2 - 52{.}4 \\approx -10{.}2\\ \\text{m} $$
+
+        <div class="alert alert-success mt-3">
+          <strong>Conclusión:</strong> El valor negativo indica que la pelota está separada unos <strong>10–11 m por debajo</strong> del nivel desde el que fue lanzada cuando choca con el edificio opuesto.
+        </div>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>a)</strong> Encuentre el alcance $x$ de una pistola que dispara un proyectil con una velocidad de salida $v$ y con un ángulo de elevación $\\theta$.</p>
+        <p><strong>b)</strong> Encuentre el ángulo de elevación $\\theta$ de la pistola que dispara un proyectil con una velocidad de salida de $120\\ \\text{m/s}$ y alcanza un blanco localizado en el mismo nivel, pero a una distancia de $1\\ 300\\ \\text{m}$ (véase la figura 2-8).</p>
+        <div class="text-center my-4">
+          <img src="/assets/alcance_proyectil.png" alt="Figura 2-8: Alcance de un proyectil" class="img-fluid" style="max-width: 80%; height: auto;">
+          <p class="text-muted">Figura 2-8</p>
+        </div>
+        <div class="text-center my-4">
+          <img src="/assets/alcance_proyectil1.png" alt="Figura 2-8: Alcance de un proyectil" class="img-fluid" style="max-width: 80%; height: auto;">
+          <p class="text-muted">Figura 2-8</p>
+        </div>
+      `,
+      solucion: `
+        <p>El problema describe el tiro parabólico de una pistola que dispara un proyectil con rapidez inicial $v$ y ángulo de elevación $\\theta$.</p>
+
+        <h6 class="mt-4">a) Alcance de un proyectil</h6>
+        <p>Para un disparo y caída al mismo nivel (misma altura de salida y llegada), el alcance horizontal $x$ viene de combinar las ecuaciones de movimiento horizontal y vertical (con aceleración $g$ hacia abajo):</p>
+        <ul>
+          <li>Movimiento horizontal: $x = v \\cos\\theta \\cdot t$</li>
+          <li>Movimiento vertical: $0 = v \\sin\\theta \\cdot t - \\tfrac{1}{2} g t^2$ (se toma $y=0$ al inicio y al final).</li>
+        </ul>
+
+        <p>De la ecuación vertical se obtiene el tiempo de vuelo distinto de cero:</p>
+        $$ t = \\frac{2v \\sin\\theta}{g} $$
+
+        <p>Sustituyendo en la ecuación horizontal:</p>
+        $$ x = v \\cos\\theta \\cdot \\frac{2v \\sin\\theta}{g} = \\frac{v^2 \\sin(2\\theta)}{g} $$
+
+        <p>Por tanto, el alcance es:</p>
+        $$ x = \\frac{v^2 \\sin(2\\theta)}{g} $$
+
+        <h6 class="mt-4">b) Ángulo para alcanzar 1300 m con $v = 120\\ \\text{m/s}$</h6>
+        <p>Se conoce $x = 1300\\ \\text{m}$, $v = 120\\ \\text{m/s}$ y $g \\approx 9.8\\ \\text{m/s}^2$. Se usa la misma fórmula:</p>
+        $$ x = \\frac{v^2 \\sin(2\\theta)}{g} $$
+
+        <p>Despejando $\\sin(2\\theta)$:</p>
+        $$ \\sin(2\\theta) = \\frac{x g}{v^2} = \\frac{1300 \\cdot 9.8}{120^2} = \\frac{12740}{14400} \\approx 0.885 $$
+
+        <p>Entonces:</p>
+        $$ 2\\theta = \\arcsin(0.885) \\approx 62.3^\\circ $$
+        <p>o el ángulo suplementario (ya que $\\sin(180^\\circ - \\alpha) = \\sin(\\alpha)$):</p>
+        $$ 2\\theta = 180^\\circ - 62.3^\\circ = 117.7^\\circ $$
+
+        <p>Por tanto hay dos ángulos posibles:</p>
+        <ul>
+          <li>$\\theta_1 \\approx 31.1^\\circ$</li>
+          <li>$\\theta_2 \\approx 58.9^\\circ$</li>
+        </ul>
+
+        <div class="alert alert-success mt-3">
+          <strong>Conclusión:</strong> Ambos ángulos permiten que el proyectil, disparado a $120\\ \\text{m/s}$, alcance un blanco a $1300\\ \\text{m}$ en el mismo nivel.
+        </div>
+      `,
+    },
   ],
 }
 
