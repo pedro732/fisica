@@ -376,6 +376,96 @@ export const topicDetails = {
           $$ x = x_0 + \\tfrac{1}{2}(v_0 + v)t $$
         </li>
       </ol>
+
+      <hr class="my-5">
+
+      <h2>Ante aceleraciones variadas</h2>
+      <p>Cuando la aceleración no es constante ya no se pueden usar las cuatro fórmulas “cerradas” del MRUA, porque todas se deducen suponiendo $a$ constante. En su lugar se trabaja directamente con las definiciones de velocidad y aceleración como derivadas, y se usan integrales para pasar de $a(t)$ a $v(t)$ y de $v(t)$ a $x(t)$.</p>
+
+      <h3>Idea general del procedimiento</h3>
+      <p>En una dimensión, las relaciones básicas son:</p>
+      <ul>
+        <li>$v(t) = \\dfrac{dx}{dt}$ (velocidad como derivada de la posición).</li>
+        <li>$a(t) = \\dfrac{dv}{dt} = \\dfrac{d^2x}{dt^2}$ (aceleración como derivada de la velocidad).</li>
+      </ul>
+
+      <p>Según qué función conozcas:</p>
+      <ul>
+        <li><strong>Si conoces $a(t)$ y un dato inicial $v(t_0)=v_0$:</strong>
+          <ol>
+            <li>Integra $a(t)$ entre $t_0$ y $t$:
+              $$ v(t)=v_0+\\int_{t_0}^{t} a(\\tau)\\,d\\tau $$
+            </li>
+            <li>Luego integra $v(t)$ para obtener $x(t)$ con $x(t_0)=x_0$:
+              $$ x(t)=x_0+\\int_{t_0}^{t} v(\\tau)\\,d\\tau $$
+            </li>
+          </ol>
+        </li>
+        <li><strong>Si conoces $v(t)$ y $x(t_0)=x_0$:</strong>
+          <ol>
+            <li>Derivas $v(t)$ si necesitas $a(t)$: $a(t)=\\dfrac{dv}{dt}$.</li>
+            <li>Integras $v(t)$ para hallar $x(t)$: $x(t)=x_0+\\int_{t_0}^{t} v(\\tau)\\,d\\tau$.</li>
+          </ol>
+        </li>
+        <li><strong>Si conoces $a(x)$ o $a(v)$:</strong> se usan cambios de variable: por ejemplo, $a = v\\dfrac{dv}{dx}$ cuando $a$ es función de la posición.</li>
+      </ul>
+
+      <p class="alert alert-info"><strong>En resumen:</strong> con aceleración variable no hay una sola fórmula universal; se plantea el problema como una ecuación diferencial sencilla y se resuelve integrando con las condiciones iniciales apropiadas.</p>
+
+      <hr class="my-5">
+
+      <h3>Ejemplo 1: aceleración como función del tiempo</h3>
+      <p>Una partícula se mueve en línea recta con aceleración $a(t) = 2t\\ \\text{m/s}^2$. En $t=0$ está en $x_0=1\\ \\text{m}$ y en reposo ($v_0=0$). Hallar $v(t)$ y $x(t)$.</p>
+
+      <p><strong>1. De $a(t)$ a $v(t)$</strong></p>
+      $$ v(t)=v_0+\\int_{0}^{t} 2\\tau\\, d\\tau = 0+\\left[\\tau^2\\right]_{0}^{t} = t^2\\ \\text{m/s} $$
+
+      <p><strong>2. De $v(t)$ a $x(t)$</strong></p>
+      $$ x(t)=x_0+\\int_{0}^{t} v(\\tau)\\, d\\tau = 1+\\int_{0}^{t} \\tau^2\\, d\\tau = 1+\\left[\\frac{\\tau^3}{3}\\right]_{0}^{t} = 1+\\frac{t^3}{3}\\ \\text{m} $$
+
+      <p><strong>3. Ejemplo de uso:</strong> ¿dónde está y con qué velocidad a los $3\\ \\text{s}$?</p>
+      <ul>
+        <li>$v(3)=3^2=9\\ \\text{m/s}$</li>
+        <li>$x(3)=1+\\dfrac{3^3}{3}=1+9=10\\ \\text{m}$</li>
+      </ul>
+      <p>Aquí no aparece ninguna fórmula tipo $x=v_0 t+\\tfrac12 a t^2$ porque $a$ no es constante.</p>
+
+      <hr class="my-5">
+
+      <h3>Ejemplo 2: velocidad dada como función del tiempo</h3>
+      <p>Un automóvil se mueve en línea recta con velocidad $v(t) = 0.860\\, t^2\\ \\text{m/s}$ (para $0\\le t\\le 5\\ \\text{s}$).</p>
+      <p><strong>a) Hallar la aceleración $a(t)$.</strong></p>
+      $$ a(t)=\\frac{dv}{dt} = \\frac{d}{dt}(0.860\\, t^2) = 2\\cdot 0.860\\, t = 1.72\\, t\\ \\text{m/s}^2 $$
+      <p>La aceleración crece linealmente con el tiempo; no es constante.</p>
+
+      <p><strong>b) Hallar el desplazamiento entre $t=0$ y $t=5\\ \\text{s}$.</strong></p>
+      <p>Tomando $x(0)=0$, el desplazamiento entre 0 y 5 s es:</p>
+      $$ \\Delta x = \\int_{0}^{5} v(t)\\, dt = \\int_{0}^{5} 0.860\\, t^2\\, dt = 0.860 \\left[\\frac{t^3}{3}\\right]_{0}^{5} = 0.860\\cdot \\frac{125}{3} \\approx 35.8\\ \\text{m} $$
+
+      <p class="alert alert-warning">Si se intentara usar $x=v_0 t+\\tfrac12 a t^2$ habría que elegir un solo valor de $a$, pero aquí $a$ cambia de 0 a $1.72\\cdot 5$, así que esa fórmula no describe correctamente el movimiento.</p>
+
+      <hr class="my-5">
+
+      <h3>Cómo abordar sistemáticamente estos problemas</h3>
+      <ol>
+        <li><strong>Identificar qué función te dan:</strong> ¿Te dan $a(t)$, $v(t)$, $x(t)$, $a(x)$ o $a(v)$?</li>
+        <li><strong>Escribir las relaciones diferenciales correctas:</strong>
+          <ul>
+            <li>Si tienes $a(t)$: $dv = a(t)\\,dt$, $dx = v(t)\\,dt$.</li>
+            <li>Si tienes $v(t)$: $a(t)=dv/dt$, $dx=v(t)\\,dt$.</li>
+            <li>Si tienes $a(x)$: usar $a=v\\,dv/dx$.</li>
+          </ul>
+        </li>
+        <li><strong>Integrar usando condiciones iniciales:</strong> Sustituir los datos iniciales (posición y velocidad en algún instante) para determinar constantes de integración.</li>
+        <li><strong>Responder lo que pide el problema:</strong>
+          <ul>
+            <li>Desplazamientos: diferencias $x(t_2)-x(t_1)$.</li>
+            <li>Velocidades en un instante: evaluar $v(t)$.</li>
+            <li>Tiempos para cierto $x$ o $v$: resolver la ecuación resultante.</li>
+          </ul>
+        </li>
+      </ol>
+      <p>De esta manera, cualquier problema de cinemática unidimensional con aceleración variable se reduce a aplicar derivadas e integrales a las funciones dadas, en lugar de memorizar nuevas “fórmulas especiales”.</p>
     `,
   },
 }

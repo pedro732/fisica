@@ -1650,10 +1650,7 @@ export const exercisesData = {
           <strong>Respuesta:</strong> La corriente de agua golpea la pared a una altura aproximada de <strong>$5.4\\ \\text{m}$</strong> sobre el piso.
         </p>
 
-        <div class="text-center my-4">
-          <img src="/assets/manguera_datos.png" alt="Datos del ejercicio" class="img-fluid" style="max-width: 100%; height: auto;">
-          <p class="text-muted">Figura: Resolución del problema</p>
-        </div>
+
       `,
     },
   ],
