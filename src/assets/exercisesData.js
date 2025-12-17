@@ -1524,6 +1524,138 @@ export const exercisesData = {
         </div>
       `,
     },
+    {
+      enunciado: `
+        <p>Un futbolista lanza el balón desde el piso dandole un angulo de 50° sobre la horizontal con una rapidez inicial de 40 m/s . Calcula </p>
+        <p>a) el tiempo de vuelo</p>
+        <p>b) el alcance horizontal y</p>
+        <p>c) El ángulo con la horizontal al chocar .</p>
+      `,
+      solucion: `
+        <p>El problema consiste en : $v_0 = 40\\ \\text{m/s}$, $\\theta_0 = 50^\\circ$, desde el nivel del piso, con $g = 9{,}8\\ \\text{m/s}^2$.</p>
+        <div class="text-center my-4">
+          <img src="/assets/futbol-parabolico.png" alt="Lanzamiento parabolico" class="img-fluid" style="max-width: 60%; height: auto;">
+          <p class="text-muted">Figura:Lanzamiento parabólico del balón</p>
+        </div>
+        <h6 class="mt-4">Componentes iniciales de la velocidad</h6>
+        $$ v_{0x} = v_0\\cos\\theta_0 = 40\\cos50^\\circ \\approx 25{,}7\\ \\text{m/s} $$
+        $$ v_{0y} = v_0\\sin\\theta_0 = 40\\sin50^\\circ \\approx 30{,}6\\ \\text{m/s} $$
+
+        <h6 class="mt-4">a) Tiempo de vuelo</h6>
+        <p>Se anula de nuevo la altura ($y=0$) cuando regresa al piso:</p>
+        $$ 0 = v_{0y}t - \\tfrac12 g t^2 \\Rightarrow t = \\frac{2v_{0y}}{g} $$
+        $$ t = \\frac{2\\cdot 30{,}6}{9{,}8} \\approx 6{,}2\\ \\text{s} \\approx 6{,}3\\ \\text{s} $$
+        <p><strong>Tiempo de vuelo $\\approx 6{,}3\\ \\text{s}$.</strong></p>
+
+        <h6 class="mt-4">b) Alcance horizontal</h6>
+        $$ R = v_{0x} t \\approx 25{,}7\\ \\text{m/s} \\times 6{,}2\\ \\text{s} \\approx 1{,}6\\times 10^2\\ \\text{m} $$
+        <p><strong>Alcance horizontal $\\approx 1{,}6\\times10^2\\ \\text{m} \\approx 0{,}16\\ \\text{km}$.</strong></p>
+
+        <h6 class="mt-4">c) Ángulo al chocar</h6>
+        <p>En el impacto:</p>
+        $$ v_x = v_{0x} \\approx 25{,}7\\ \\text{m/s} $$
+        $$ v_y = v_{0y} - g t \\approx 30{,}6 - 9{,}8(6{,}2) \\approx -30\\ \\text{m/s} $$
+        <p>El ángulo con la horizontal cumple</p>
+        $$ \\tan\\theta_f = \\frac{|v_y|}{v_x} \\approx \\frac{30}{25{,}7} \\approx 1{,}18 \\Rightarrow \\theta_f \\approx 50^\\circ $$
+        <p><strong>El balón llega con un ángulo de $50^\\circ$ por debajo de la horizontal.</strong></p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Se lanza un cuerpo <strong>hacia abajo</strong> desde lo alto de un edificio de $170\\ \\text{m}$ con rapidez inicial $v_0 = 40\\ \\text{m/s}$ y ángulo de $30^\\circ$ por debajo de la horizontal. Se pide:</p>
+        <p>a) tiempo hasta llegar al piso;</p>
+        <p>b) distancia horizontal desde el pie del edificio;</p>
+        <p>c) ángulo con la horizontal al chocar.</p>
+        <p>Tomemos $g = 9{,}8\\ \\text{m/s}^2$.</p>
+         <div class="text-center my-4">
+          <img src="/assets/azotea-proyectil.png" alt="Lanzamiento hacia abajo" class="img-fluid" style="max-width: 80%; height: auto;">
+          <p class="text-muted">Figura: Lanzamiento con ángulo negativo desde altura</p>
+        </div>
+      `,
+      solucion: `
+        <h6 class="mt-4">Datos y descomposición inicial</h6>
+        <p>Componentes de la velocidad inicial:</p>
+        $$ v_{0x} = v_0 \\cos 30^\\circ = 40\\cdot \\tfrac{\\sqrt3}{2} \\approx 34{,}6\\ \\text{m/s} $$
+        $$ v_{0y} = -v_0 \\sin 30^\\circ = -40\\cdot \\tfrac12 = -20\\ \\text{m/s} $$
+        <p>(signo negativo: hacia abajo).</p>
+        <p>Posición inicial: $y_0 = 170\\ \\text{m}$. Eje vertical positivo hacia arriba.</p>
+
+        <h6 class="mt-4">a) Tiempo hasta que llega al piso</h6>
+        <p>Movimiento vertical:</p>
+        $$ y(t) = y_0 + v_{0y} t - \\tfrac12 g t^2 $$
+        <p>Cuando llega al piso, $y(t)=0$:</p>
+        $$ 0 = 170 - 20 t - 4{,}9 t^2 $$
+        $$ 4{,}9 t^2 + 20 t - 170 = 0 $$
+        <p>Aplicando fórmula cuadrática:</p>
+        $$ t = \\frac{-20 \\pm \\sqrt{20^2 - 4(4{,}9)(-170)}}{2\\cdot 4{,}9} = \\frac{-20 \\pm \\sqrt{400 + 3332}}{9{,}8} $$
+        $$ t = \\frac{-20 \\pm \\sqrt{3732}}{9{,}8} $$
+        <p>Con $\\sqrt{3732} \\approx 61{,}1$, luego:</p>
+        $$ t = \\frac{-20 + 61{,}1}{9{,}8} \\approx \\frac{41{,}1}{9{,}8} \\approx 4{,}2\\ \\text{s} $$
+        <p>(se descarta la raíz negativa).</p>
+        <p><strong>a) Tiempo de vuelo $\\approx 4{,}2\\ \\text{s}$.</strong></p>
+
+        <h6 class="mt-4">b) Distancia horizontal desde el pie del edificio</h6>
+        <p>En $x$ el movimiento es uniforme:</p>
+        $$ x(t) = v_{0x} t \\Rightarrow x = 34{,}6\\ \\text{m/s} \\times 4{,}2\\ \\text{s} \\approx 145\\ \\text{m} $$
+        <p>En kilómetros:</p>
+        $$ 145\\ \\text{m} \\approx 0{,}15\\ \\text{km} $$
+        <p><strong>b) Golpea el piso a unos $0{,}15\\ \\text{km}$ del pie del edificio.</strong></p>
+
+        <h6 class="mt-4">c) Ángulo con la horizontal al chocar</h6>
+        <p>Componente horizontal de la velocidad (constante):</p>
+        $$ v_x = v_{0x} \\approx 34{,}6\\ \\text{m/s} $$
+        <p>Componente vertical en el instante del impacto:</p>
+        $$ v_y = v_{0y} - g t = -20 - 9{,}8(4{,}2) \\approx -20 - 41{,}2 \\approx -61\\ \\text{m/s} $$
+        <p>Ángulo $\\theta$ medido desde la horizontal:</p>
+        $$ \\tan\\theta = \\frac{v_y}{v_x} \\approx \\frac{-61}{34{,}6} \\approx -1{,}76 \\Rightarrow \\theta \\approx -60^\\circ $$
+        <p>(signo negativo: por debajo de la horizontal).</p>
+        <p><strong>c) Choca con un ángulo de aproximadamente $-60^\\circ$ respecto de la horizontal (60° por debajo de la horizontal).</strong></p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Una manguera que se encuentra tendida en el piso lanza una corriente de agua hacia arriba con un ángulo de $40^\\circ$ con la horizontal. La rapidez del agua es de $20\\ \\text{m/s}$ cuando sale de la manguera. ¿A qué altura golpeará sobre una pared que se encuentra a $8.0\\ \\text{m}$ de distancia?</p>
+        <div class="text-center my-4">
+          <img src="/assets/manguera_ilustracion.png" alt="Manguera lanzando agua" class="img-fluid" style="max-width: 60%; height: auto;">
+          <p class="text-muted">Figura: Lanzamiento de agua con ángulo de $40^\\circ$</p>
+        </div>
+         <div class="text-center my-4">
+          <img src="/assets/bombero.png" alt="Manguera lanzando agua" class="img-fluid" style="max-width: 60%; height: auto;">
+          <p class="text-muted">Figura: Lanzamiento de agua con ángulo de $40^\\circ$</p>
+        </div>
+      `,
+      solucion: `
+        <p>La manguera está en el piso ($y_0 = 0$) y lanza agua con rapidez inicial $v_0 = 20\\ \\text{m/s}$ formando un ángulo $\\theta = 40^\\circ$ sobre la horizontal. Se pregunta a qué altura golpea el chorro una pared situada a $x = 8.0\\ \\text{m}$ de distancia. Tomamos $g = 9.8\\ \\text{m/s}^2$.</p>
+
+        <h6 class="mt-4">1. Componentes de la velocidad inicial</h6>
+        <p>Descomponemos la velocidad en sus componentes horizontal ($x$) y vertical ($y$):</p>
+        $$ v_{0x} = v_0 \\cos\\theta = 20\\cos 40^\\circ $$
+        $$ v_{0y} = v_0 \\sin\\theta = 20\\sin 40^\\circ $$
+        <p>Usando $\\cos 40^\\circ \\approx 0.766$ y $\\sin 40^\\circ \\approx 0.643$:</p>
+        $$ v_{0x} \\approx 20(0.766) \\approx 15.3\\ \\text{m/s} $$
+        $$ v_{0y} \\approx 20(0.643) \\approx 12.9\\ \\text{m/s} $$
+
+        <h6 class="mt-4">2. Tiempo en que llega a la pared</h6>
+        <p>En el movimiento horizontal (MRU), la posición es $x(t) = v_{0x} t$. Despejamos el tiempo para $x = 8.0\\ \\text{m}$:</p>
+        $$ 8.0 = 15.3\\, t \\Rightarrow t = \\frac{8.0}{15.3} \\approx 0.52\\ \\text{s} $$
+
+        <h6 class="mt-4">3. Altura a esa distancia</h6>
+        <p>En el movimiento vertical (MRUA), la altura es:</p>
+        $$ y(t) = v_{0y} t - \\tfrac{1}{2} g t^2 $$
+        <p>Sustituyendo $t \\approx 0.52\\ \\text{s}$:</p>
+        $$ y \\approx 12.9(0.52) - \\tfrac{1}{2}(9.8)(0.52)^2 $$
+        $$ y \\approx 6.7 - 4.9(0.27) \\approx 6.7 - 1.3 \\approx 5.4\\ \\text{m} $$
+
+        <p class="alert alert-success mt-3">
+          <strong>Respuesta:</strong> La corriente de agua golpea la pared a una altura aproximada de <strong>$5.4\\ \\text{m}$</strong> sobre el piso.
+        </p>
+
+        <div class="text-center my-4">
+          <img src="/assets/manguera_datos.png" alt="Datos del ejercicio" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura: Resolución del problema</p>
+        </div>
+      `,
+    },
   ],
 }
 
