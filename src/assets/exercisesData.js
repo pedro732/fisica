@@ -1653,6 +1653,117 @@ export const exercisesData = {
 
       `,
     },
+    {
+      enunciado: `
+        <p>Demuestre que el disparo de una pistola puede alcanzar el triple de altura cuando tiene un ángulo de elevación de $60^\\circ$ que cuando su ángulo es de $30^\\circ$, pero que tendrá el mismo alcance horizontal.</p>
+        <div class="text-center my-4">
+          <img src="/assets/demostracion_pistola_enunciado.png" alt="Enunciado del problema" class="img-fluid" style="max-width: 80%; height: auto;">
+        </div>
+      `,
+      solucion: `
+        <div class="text-center my-4">
+          <img src="/assets/pistola-inclinada.png" alt="Disparo de pistola a diferentes ángulos" class="img-fluid" style="max-width: 60%; height: auto;">
+          <p class="text-muted">Figura: Comparación de trayectorias para $30^\\circ$ y $60^\\circ$</p>
+        </div>
+
+        <h6 class="mt-4">Altura máxima del proyectil</h6>
+        <p>Para un tiro parabólico (sin rozamiento) con rapidez inicial $v_0$ y ángulo $\theta$ respecto de la horizontal, la altura máxima es</p>
+        $$ H = \\frac{v_0^2 \\sin^2 \\theta}{2g} $$
+        <p>Esta expresión se obtiene tomando el movimiento vertical, imponiendo que en la altura máxima la velocidad vertical es cero, y usando la ecuación $v_y^2 = v_{0y}^2 - 2gH$, con $v_{0y} = v_0 \\sin \\theta$.</p>
+
+        <p>Ahora compara las alturas para $30^\\circ$ y $60^\\circ$:</p>
+        $$ H_{30} = \\frac{v_0^2 \\sin^2 30^\\circ}{2g}, \\qquad H_{60} = \\frac{v_0^2 \\sin^2 60^\\circ}{2g} $$
+
+        <p>Usa que $\\sin 30^\\circ = \\frac{1}{2}$ y $\\sin 60^\\circ = \\frac{\\sqrt{3}}{2}$. Entonces:</p>
+        $$ H_{30} = \\frac{v_0^2}{2g} \\left(\\frac{1}{2}\\right)^2 = \\frac{v_0^2}{8g} $$
+        $$ H_{60} = \\frac{v_0^2}{2g} \\left(\\frac{\\sqrt{3}}{2}\\right)^2 = \\frac{v_0^2}{2g} \\cdot \\frac{3}{4} = \\frac{3v_0^2}{8g} $$
+
+        <p>Por tanto:</p>
+        $$ \\frac{H_{60}}{H_{30}} = \\frac{3v_0^2/8g}{v_0^2/8g} = 3 $$
+        <p>Es decir, con $60^\\circ$ se alcanza una altura triple que con $30^\\circ$.</p>
+
+        <h6 class="mt-4">Alcance horizontal</h6>
+        <p>El alcance máximo (distancia horizontal recorrida hasta volver al suelo) es</p>
+        $$ R = \\frac{v_0^2 \\sin 2\\theta}{g} $$
+        <p>Esta fórmula se obtiene combinando el movimiento horizontal uniforme $x = v_0 \\cos \\theta \\, t$ con el tiempo de vuelo $T = \\frac{2v_0 \\sin \\theta}{g}$, y sustituyendo $T$ en $x$.</p>
+
+        <p>Para $\theta = 30^\\circ$ y $\theta = 60^\\circ$:</p>
+        $$ R_{30} = \\frac{v_0^2 \\sin 60^\\circ}{g}, \\qquad R_{60} = \\frac{v_0^2 \\sin 120^\\circ}{g} $$
+
+        <p>Pero $\\sin 60^\\circ = \\sin 120^\\circ$. Por lo tanto:</p>
+        $$ R_{30} = R_{60} $$
+
+        <p class="alert alert-success mt-3">
+          <strong>Conclusión:</strong> Aunque con $60^\\circ$ la bala sube tres veces más alto, el alcance horizontal es el mismo que con $30^\\circ$.
+        </p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Se lanza una pelota hacia arriba formando un ángulo de $30^\\circ$ con la horizontal y cae en la parte más alta de un edificio que está a $20\\text{ m}$ de distancia. El borde superior se encuentra a $5.0\\text{ m}$ por encima del punto de lanzamiento. ¿Con qué rapidez se lanzó la pelota? <strong>Resp. $20\\text{ m/s}$.</strong></p>
+        <div class="text-center my-4">
+          <img src="/assets/lanzamiento-balon1.png" alt="Enunciado del problema" class="img-fluid" style="max-width: 80%; height: auto;">
+        </div>
+      `,
+      solucion: `
+        <p>La pelota se lanzó con rapidez <strong>$v_0 = 20\\text{ m/s}$</strong>.</p>
+
+        <h6 class="mt-4">Datos del problema</h6>
+        <ul>
+          <li>Ángulo de lanzamiento: $\\theta = 30^\\circ$</li>
+          <li>Distancia horizontal hasta el edificio: $x = 20\\text{ m}$</li>
+          <li>Diferencia de altura (edificio sobre el punto de lanzamiento): $y = +5\\text{ m}$</li>
+          <li>Aceleración de la gravedad: $g = 10\\text{ m/s}^2$</li>
+        </ul>
+
+        <p>Se descompone la velocidad inicial:</p>
+        $$ v_{0x} = v_0\\cos 30^\\circ,\\quad v_{0y} = v_0\\text{sen } 30^\\circ $$
+
+        <h6 class="mt-4">Ecuación horizontal</h6>
+        <p>Movimiento horizontal uniforme:</p>
+        $$ x = v_{0x} t = v_0\\cos 30^\\circ \\, t $$
+        <p>Despejando el tiempo:</p>
+        $$ t = \\frac{x}{v_0\\cos 30^\\circ} = \\frac{20}{v_0\\cos 30^\\circ} $$
+
+        <h6 class="mt-4">Ecuación vertical</h6>
+        <p>Movimiento vertical uniformemente acelerado:</p>
+        $$ y = v_{0y} t - \\frac{1}{2} g t^2 = v_0\\text{sen } 30^\\circ \\, t - \\frac{1}{2} g t^2 $$
+        <p>Sustituimos $y = 5$ y el tiempo $t$ obtenido de la ecuación horizontal:</p>
+        $$ 5 = v_0\\text{sen } 30^\\circ \\left(\\frac{20}{v_0\\cos 30^\\circ}\\right) - \\frac{1}{2} g \\left(\\frac{20}{v_0\\cos 30^\\circ}\\right)^2 $$
+
+        <p>Usamos $\\text{sen } 30^\\circ = \\frac{1}{2}$, $\\cos 30^\\circ = \\frac{\\sqrt{3}}{2}$ y $g = 10\\text{ m/s}^2$.</p>
+
+        <p><strong>Primer término:</strong></p>
+        $$ v_0\\text{sen } 30^\\circ \\left(\\frac{20}{v_0\\cos 30^\\circ}\\right) = \\frac{1}{2} \\cdot \\frac{20}{\\cos 30^\\circ} = \\frac{10}{\\cos 30^\\circ} $$
+
+        <p><strong>Segundo término (con $g = 10$):</strong></p>
+        $$ \\frac{1}{2} g \\left(\\frac{20}{v_0\\cos 30^\\circ}\\right)^2 = 5 \\cdot \\frac{400}{v_0^2\\cos^2 30^\\circ} = \\frac{2000}{v_0^2\\cos^2 30^\\circ} $$
+
+        <p>Queda entonces:</p>
+        $$ 5 = \\frac{10}{\\cos 30^\\circ} - \\frac{2000}{v_0^2\\cos^2 30^\\circ} $$
+
+        <p>Multiplicamos todo por $\\cos^2 30^\\circ$:</p>
+        $$ 5\\cos^2 30^\\circ = 10\\cos 30^\\circ - \\frac{2000}{v_0^2} $$
+
+        <p>Sustituimos $\\cos 30^\\circ = \\frac{\\sqrt{3}}{2}$ y $\\cos^2 30^\\circ = \\frac{3}{4}$:</p>
+        $$ 5 \\cdot \\frac{3}{4} = 10 \\cdot \\frac{\\sqrt{3}}{2} - \\frac{2000}{v_0^2} $$
+        $$ \\frac{15}{4} = 5\\sqrt{3} - \\frac{2000}{v_0^2} $$
+
+        <p>Despejamos el término con $v_0^2$:</p>
+        $$ \\frac{2000}{v_0^2} = 5\\sqrt{3} - \\frac{15}{4} = \\frac{20\\sqrt{3} - 15}{4} $$
+
+        <p>Invertimos para hallar $v_0^2$:</p>
+        $$ v_0^2 = 2000 \\cdot \\frac{4}{20\\sqrt{3} - 15} = \\frac{8000}{20\\sqrt{3} - 15} $$
+
+        <p>Numéricamente $20\\sqrt{3} \\approx 34.64$, así que:</p>
+        $$ 20\\sqrt{3} - 15 \\approx 19.64 \\quad \\Rightarrow \\quad v_0^2 \\approx \\frac{8000}{19.64} \\approx 407 $$
+        $$ v_0 \\approx \\sqrt{400} \\approx 20\\text{ m/s} $$
+
+        <p class="alert alert-success mt-3">
+          <strong>Conclusión:</strong> La rapidez inicial con la que se lanzó la pelota es de aproximadamente <strong>$20\\text{ m/s}$</strong>.
+        </p>
+      `,
+    },
   ],
 }
 
