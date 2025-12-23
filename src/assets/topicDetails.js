@@ -605,6 +605,14 @@ $$
   <li>Trabajo o energía: se mide en <strong>joule</strong> (J), que corresponde al trabajo realizado cuando una fuerza de 1 N desplaza un objeto 1 m en la dirección de la fuerza.[7][5]</li>
 </ul>
 
+<hr class="my-5">
+
+<p>Al analizar las fuerzas que actúan sobre un cuerpo, muchas veces es necesario recurrir a un <strong>análisis</strong> vectorial para representarlas de manera clara y completa. En lugar de considerar solo un valor numérico, cada fuerza se expresa como un vector que tiene módulo, dirección y sentido, lo que permite visualizar cómo y hacia dónde “empuja” o “tira” cada una de ellas. A partir de esta representación vectorial es posible determinar la fuerza resultante, es decir, el vector que equivale al efecto combinado de todas las fuerzas aplicadas sobre el cuerpo. Este procedimiento será, en parte, el que se utilizará en la sección de ejercicios, donde se descompondrán fuerzas, se sumarán vectores y se obtendrá la resultante para comprender mejor la interacción de las fuerzas en distintas situaciones físicas.</p>
+
+<div class="text-center my-4">
+  <img src="/assets/multiples-fuerzas.png" alt="Análisis vectorial de múltiples fuerzas" class="img-fluid" style="max-width: 100%; height: auto;">
+  <p class="text-muted">Efecto combinado de múltiples fuerzas (Fuerza Resultante)</p>
+</div>
    `,
   },
 }
