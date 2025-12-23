@@ -32,7 +32,8 @@
                   v-if="
                     topic.title === 'Velocidad Instantánea' ||
                     topic.title === 'Vectores' ||
-                    topic.title === 'aceleracion'
+                    topic.title === 'aceleracion' ||
+                    topic.title === 'Fuerzas y principios de Newton'
                   "
                   class="btn btn-success me-2"
                   @click="goToExercises"
@@ -122,7 +123,7 @@ export default {
         let html = this.topic.content.replace(/\$\$([^$]+)\$\$/g, (match, tex) => {
           try {
             return katex.renderToString(tex, { displayMode: true, throwOnError: false })
-          } catch (e) {
+          } catch {
             return match
           }
         })
@@ -131,7 +132,7 @@ export default {
         html = html.replace(/\$([^$]+)\$/g, (match, tex) => {
           try {
             return katex.renderToString(tex, { displayMode: false, throwOnError: false })
-          } catch (e) {
+          } catch {
             return match
           }
         })

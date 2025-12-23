@@ -1765,6 +1765,21 @@ export const exercisesData = {
       `,
     },
   ],
+  'Fuerzas y principios de Newton': [
+    {
+      enunciado: `
+        <p>Cuatro fuerzas coplanares actúan sobre un cuerpo en el punto $O$ presentado en la figura 3-1a. Determine su resultante de manera gráfica.</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura3-1.png" alt="Figura 3-1a" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 3-1a</p>
+        </div>
+      `,
+      solucion: `
+        <p>A partir de $O$ se grafican uno tras otro los cuatro vectores, como en la figura 3-1b. Se ubica el extremo de la cola de cada vector en la punta del anterior. La flecha de $O$ a la punta del último vector representa la resultante de los vectores.</p>
+        <p>Se mide $R$ del dibujo a escala en la figura 3-1b y se observa que es $119\\text{ N}$. El ángulo $\\alpha$ se mide con un transportador y es de $37^\\circ$. Por tanto, la resultante hace un ángulo $\\theta = 180^\\circ - 37^\\circ = 143^\\circ$ con el eje $x$ positivo. La resultante es $119\\text{ N}$ en $143^\\circ$.</p>
+      `,
+    },
+  ],
 }
 
 export function getExercises(title) {
