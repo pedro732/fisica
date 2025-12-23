@@ -1779,6 +1779,68 @@ export const exercisesData = {
         <p>Se mide $R$ del dibujo a escala en la figura 3-1b y se observa que es $119\\text{ N}$. El ángulo $\\alpha$ se mide con un transportador y es de $37^\\circ$. Por tanto, la resultante hace un ángulo $\\theta = 180^\\circ - 37^\\circ = 143^\\circ$ con el eje $x$ positivo. La resultante es $119\\text{ N}$ en $143^\\circ$.</p>
       `,
     },
+    {
+      enunciado: `
+        <p>Las cinco fuerzas coplanares presentadas en la figura 3-2a actúan sobre un objeto. Encuentre su resultante.</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura3-2.png" alt="Figura 3-2a" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 3-2a</p>
+        </div>
+      `,
+      solucion: `
+        <p><strong>1) Primero se determinan las componentes $x$ y $y$ de cada fuerza. Éstas son las siguientes:</strong></p>
+
+        <table class="table table-bordered table-striped my-3">
+          <thead>
+            <tr>
+              <th>Fuerza</th>
+              <th>Componente $x$</th>
+              <th>Componente $y$</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>$19.0\\text{ N}$</td>
+              <td>$19.0\\text{ N}$</td>
+              <td>$0\\text{ N}$</td>
+            </tr>
+            <tr>
+              <td>$15.0\\text{ N}$</td>
+              <td>$(15.0\\text{ N}) \\cos 60.0^\\circ = 7.50\\text{ N}$</td>
+              <td>$(15.0\\text{ N}) \\text{sen } 60.0^\\circ = 13.0\\text{ N}$</td>
+            </tr>
+            <tr>
+              <td>$16.0\\text{ N}$</td>
+              <td>$-(16.0\\text{ N}) \\cos 45.0^\\circ = -11.3\\text{ N}$</td>
+              <td>$(16.0\\text{ N}) \\text{sen } 45.0^\\circ = 11.3\\text{ N}$</td>
+            </tr>
+            <tr>
+              <td>$11.0\\text{ N}$</td>
+              <td>$-(11.0\\text{ N}) \\cos 30.0^\\circ = -9.53\\text{ N}$</td>
+              <td>$-(11.0\\text{ N}) \\text{sen } 30.0^\\circ = -5.50\\text{ N}$</td>
+            </tr>
+            <tr>
+              <td>$22.0\\text{ N}$</td>
+              <td>$0\\text{ N}$</td>
+              <td>$-22.0\\text{ N}$</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>Observe los signos $+$ y $-$ para indicar una dirección.</p>
+
+        <p><strong>2) La resultante $\\vec{R}$ tiene componentes $R_x = \\sum F_x$ y $R_y = \\sum F_y$, en donde se lee $\\sum F_x$ como “la suma de todas las componentes de la fuerza $x$”. En tal caso, se tiene:</strong></p>
+        $$ R_x = 19.0\\text{ N} + 7.50\\text{ N} - 11.3\\text{ N} - 9.53\\text{ N} + 0\\text{ N} = +5.7\\text{ N} $$
+        $$ R_y = 0\\text{ N} + 13.0\\text{ N} + 11.3\\text{ N} - 5.50\\text{ N} - 22.0\\text{ N} = -3.2\\text{ N} $$
+
+        <p><strong>3) La magnitud de la resultante es</strong></p>
+        $$ R = \\sqrt{R_x^2 + R_y^2} = 6.5\\text{ N} $$
+
+        <p><strong>4) Por último, se traza la resultante igual que en la figura 3-2b y se halla su ángulo. Se observa que:</strong></p>
+        $$ \\tan \\phi = \\frac{3.2\\text{ N}}{5.7\\text{ N}} = 0.56 $$
+        <p>a partir de la cual $\\phi = 29^\\circ$. Entonces, $\\theta = 360^\\circ - 29^\\circ = 331^\\circ$. La resultante es $6.5\\text{ N}$ en $331^\\circ$ (o $-29^\\circ$) o $\\vec{R} = 6.5\\text{ N} / 331^\\circ$ DESDE EL EJE $+x$.</p>
+      `,
+    },
   ],
 }
 
