@@ -19,7 +19,7 @@ export const topicDetails = {
 
       $$ \\Delta x = x_2 - x_1 \\quad (2.1) $$
 
-      <p>El auto de arrancones se mueve sólo a lo largo del eje $x$, de manera que las componentes $y$ y $z$ del desplazamiento son iguales a cero.</p>
+      <p>El auto de carrera se mueve sólo a lo largo del eje $x$, de manera que las componentes $y$ y $z$ del desplazamiento son iguales a cero.</p>
 
       <div class="alert alert-warning">
         <strong>CUIDADO El significado de $\\Delta x$</strong> Note que $\\Delta x$ <em>no</em> es el producto de $\\Delta$ y $x$; es sólo un símbolo que significa “el cambio en la cantidad $x$”. Siempre usaremos la letra griega mayúscula $\\Delta$ (delta) para representar un <em>cambio</em> en cierta cantidad, calculada restando el valor <em>inicial</em> del valor <em>final</em>, y nunca a la inversa. Asimismo, el intervalo de tiempo de $t_1$ a $t_2$ es $\\Delta t$, el cambio en la cantidad $t$: $\\Delta t = t_2 - t_1$ (tiempo final menos tiempo inicial).
@@ -29,7 +29,7 @@ export const topicDetails = {
 
       $$ v_{med-x} = \\frac{x_2 - x_1}{t_2 - t_1} = \\frac{\\Delta x}{\\Delta t} \\quad \\text{(velocidad media, movimiento rectilíneo)} \\quad (2.2) $$
 
-      <p>En el ejemplo del auto de arrancones teníamos $x_1 = 19\\text{ m}$, $x_2 = 277\\text{ m}$, $t_1 = 1.0\\text{ s}$ y $t_2 = 4.0\\text{ s}$, así que la ecuación (2.2) da</p>
+      <p>En el ejemplo del auto de carrera teníamos $x_1 = 19\\text{ m}$, $x_2 = 277\\text{ m}$, $t_1 = 1.0\\text{ s}$ y $t_2 = 4.0\\text{ s}$, así que la ecuación (2.2) da</p>
 
       $$ v_{med-x} = \\frac{277\\text{ m} - 19\\text{ m}}{4.0\\text{ s} - 1.0\\text{ s}} = \\frac{258\\text{ m}}{3.0\\text{ s}} = 86\\text{ m/s} $$
 
@@ -82,6 +82,7 @@ export const topicDetails = {
       </div>
     `,
   },
+
   'Velocidad Instantánea': {
     title: 'Velocidad Instantánea',
     image:
@@ -467,6 +468,144 @@ export const topicDetails = {
       </ol>
       <p>De esta manera, cualquier problema de cinemática unidimensional con aceleración variable se reduce a aplicar derivadas e integrales a las funciones dadas, en lugar de memorizar nuevas “fórmulas especiales”.</p>
     `,
+  },
+  'Fuerzas y principios de Newton': {
+    title: 'Fuerzas y principios de Newton',
+    image: '/assets/fuerza-caballo.png',
+    content: ` <p><strong>LA MASA</strong> de un objeto es una medida de su inercia. Se llama <strong>inercia</strong> a la tendencia de un objeto en reposo a permanecer en este estado, y de un objeto en movimiento a continuarlo sin cambiar su velocidad. Durante varios siglos, los físicos habían encontrado útil concebir la masa como una representación de la cantidad de materia, pero esa idea ya no es sostenible (como se aprendió a partir de la Relatividad Especial).</p>
+
+<p><strong>EL KILOGRAMO PATRÓN</strong> es un objeto cuya masa se define como un kilogramo. Las masas de otros objetos se encuentran por comparación con esta masa. Un gramo masa equivale exactamente a $0.001 \\, \\text{kg}$.</p>
+
+<p><strong>FUERZA</strong>, en general, es el agente del cambio. En mecánica, es aquello que cambia la velocidad de un objeto. La fuerza es una cantidad vectorial, que tiene magnitud y dirección. Una <em>fuerza externa</em> es aquella cuya fuente se encuentra fuera del sistema que se está considerando.</p>
+
+<p><strong>LA FUERZA RESULTANTE</strong> que actúa sobre un objeto le proporciona una aceleración en la dirección de la fuerza. La aceleración es proporcional a la fuerza e inversamente proporcional a la masa del objeto. (A partir de la Teoría Especial de la Relatividad, ahora se sabe que este enunciado en realidad es una aproximación excelente, aplicable a todas las situaciones donde la rapidez es apreciablemente menor que la de la luz, $c$.)</p>
+
+<p><strong>EL NEWTON</strong> es la unidad de fuerza en el SI. Un newton ($1 \\, \\text{N}$) es la fuerza resultante que proporciona a $1 \\, \\text{kg}$ una aceleración de $1 \\, \\text{m/s}^2$. La <em>libra</em> equivale a $4.45 \\, \\text{N}$ o, de manera alternativa, un newton es aproximadamente un cuarto de libra.</p>
+
+<p><strong>PRIMERA LEY DE NEWTON:</strong> Un objeto en reposo permanecerá en reposo; un objeto en movimiento seguirá moviéndose con velocidad constante, excepto en cuanto recibe la acción de una fuerza externa. La fuerza es lo que cambia el movimiento.</p>
+
+<hr class="my-5">
+
+<h3>Segunda Ley de Newton</h3>
+<p>Como la enunció Newton, la segunda ley se estructuró en términos del concepto de cantidad movimiento. En el capítulo 8 se tratará un enunciado rigurosamente correcto. En este punto, el enfoque será sobre una variación menos fundamental, pero muy útil. Si la fuerza resultante (neta) $\\vec{F}$ que actúa sobre un objeto de masa $m$ no es cero, el objeto se acelerará en la dirección de la fuerza. La aceleración $\\vec{a}$ es proporcional a la fuerza e inversamente proporcional a la masa del objeto. Con $\\vec{F}$ en newtons, $m$ en kilogramos y $\\vec{a}$ en $\\text{m/s}^2$, esta proporcionalidad se puede escribir como una ecuación:</p>
+
+$$
+\\vec{a} = \\frac{\\vec{F}}{m} \\quad \\text{o} \\quad \\vec{F} = m \\vec{a}
+$$
+
+<p>La aceleración $\\vec{a}$ tiene la misma dirección que la fuerza resultante $\\vec{F}$.</p>
+<p>La ecuación vectorial $\\vec{F} = m \\vec{a}$ puede escribirse en términos de sus componentes como:</p>
+
+$$
+\\sum F_x = ma_x, \\quad \\sum F_y = ma_y, \\quad \\sum F_z = ma_z
+$$
+
+<p>donde las fuerzas son las componentes de las fuerzas externas que actúan sobre el objeto.</p>
+
+<hr class="my-5">
+
+<h3>Tercera Ley de Newton</h3>
+<p>La materia interactúa con la materia; las fuerzas se presentan en pares. Por cada fuerza que actúa sobre un cuerpo, existe otra igual, pero en sentido opuesto, actuando sobre algún otro cuerpo. Con frecuencia a ésta se le llama ley de acción y reacción. Note que las fuerzas de acción y reacción actúan en los dos diferentes cuerpos que interactúan.</p>
+
+<hr class="my-5">
+
+<h3>Ley de la Gravitación Universal</h3>
+<p>Cuando dos masas $m$ y $m'$ interactúan gravitacionalmente se atraen entre sí con fuerzas de igual magnitud. Para masas puntuales (o cuerpos con simetría esférica), la fuerza de atracción $F_G$ está dada por:</p>
+
+$$
+F_G = G \\frac{mm'}{r^2}
+$$
+
+<p>donde $r$ es la distancia entre los centros de las masas, y $G = 6.67 \\times 10^{-11} \\, \\text{N} \\cdot \\text{m}^2/\\text{kg}^2$ cuando $F_G$ está en newtons, $m$ y $m'$ están en kilogramos y $r$ está en metros.</p>
+
+<hr class="my-5">
+
+<p><strong>EL PESO</strong> de un cuerpo ($F_W$) es la fuerza gravitacional que atrae al cuerpo. En la Tierra, es la fuerza gravitacional que ejerce la Tierra sobre el cuerpo. Sus unidades son newtons (en el SI) y libras (en el sistema británico). Debido a que la Tierra no es una esfera uniforme perfecta, y sobre todo más por su rotación, el peso medido por una balanza (con frecuencia llamado peso efectivo) será diferente, de manera muy ligera, del que se acaba de definir.</p>
+
+<p><strong>RELACIÓN ENTRE MASA Y PESO:</strong> Un cuerpo de masa $m$ en caída libre hacia la Tierra está bajo la acción de una sola fuerza, la atracción gravitacional, a la que se conoce como peso $F_W$ del objeto. La aceleración $g$ que tiene un objeto en caída libre se debe a su peso $F_W$. Entonces, la ecuación $\\vec{F} = m \\vec{a}$ da la relación entre $F = F_W$, $a = g$ y $m$; esto es, $F_W = mg$. Como en la superficie terrestre, en promedio, $g = 9.81\\, \\text{m/s}^2$, un objeto de $1.00 \\, \\text{kg}$ pesa $9.81 \\, \\text{N}$ (o $2.20 \\, \\text{lb}$).</p>
+
+<p><strong>FUERZA DE TENSIÓN</strong> ($\\vec{F}_T$) es la fuerza con la que una cuerda o cadena tira del objeto al cual está unida. La magnitud de la fuerza de tensión es la <strong>tensión</strong> ($F_T$).</p>
+
+<p><strong>FUERZA DE FRICCIÓN</strong> ($\\vec{F}_f$) es una fuerza tangencial que actúa sobre una superficie que se opone al deslizamiento de la superficie a través de una superficie adyacente. La fuerza de fricción es paralela a la superficie y opuesta, en sentido, a su movimiento. Un objeto empezará a resbalar sólo cuando la fuerza aplicada sobrepase la fuerza máxima de fricción estática.</p>
+
+<p><strong>FUERZA NORMAL</strong> ($\\vec{F}_N$) sobre una superficie que descansa sobre una segunda superficie, es la componente perpendicular de la fuerza ejercida por la superficie de soporte sobre la superficie que está siendo soportada.</p>
+
+<p><strong>COEFICIENTE DE FRICCIÓN CINÉTICA</strong> ($\\mu_c$) se define para el caso en el que una superficie se desliza a través de otra con rapidez constante. Esto es:</p>
+
+$$
+\\mu_c = \\frac{\\text{fuerza de fricción}}{\\text{fuerza normal}} = \\frac{F_f}{F_N}
+$$
+
+<p><strong>EL COEFICIENTE DE FRICCIÓN ESTÁTICA</strong> ($\\mu_e$) se define para el caso en donde una superficie está a punto de deslizarse a través de otra superficie. Esto es:</p>
+
+$$
+\\mu_e = \\frac{\\text{fuerza de fricción crítica}}{\\text{fuerza normal}} = \\frac{F_f(\\text{máx})}{F_N}
+$$
+
+<p>donde la fuerza de fricción máxima es la fuerza de fricción cuando el objeto está a punto de iniciar su desplazamiento.</p>
+
+<h2>Análisis dimensional</h2>
+<p>Todas las cantidades mecánicas, tales como la aceleración y la fuerza, se pueden expresar en términos de tres dimensiones fundamentales: la longitud <strong>L</strong>, la masa <strong>M</strong> y el tiempo <strong>T</strong>. Por ejemplo, la aceleración es una longitud (una distancia) dividida entre (tiempo)<sup>2</sup>; se dice que sus dimensiones son $L/T^{2}$, que se puede escribir como $[LT^{-2}]$. Las dimensiones de volumen son $[L^{3}]$ y las de velocidad $[LT^{-1}]$. Como la fuerza es la masa multiplicada por la aceleración, sus dimensiones son $[MLT^{-2}]$.</p>
+
+<p>El análisis dimensional es muy útil para ver si una ecuación está correctamente escrita, ya que cada término de una ecuación debe tener las mismas dimensiones. Por ejemplo, considere la ecuación</p>
+
+$$
+s = v_i t + \\frac{1}{2} a t^{2}
+$$
+
+<p>Sus dimensiones son</p>
+
+$$
+[L] \\;\\to\\; [LT^{-1}][T] + [LT^{-2}][T^{2}]
+$$
+
+<p>y cada término tiene dimensiones de longitud. <em>Recuerde:</em> todos los términos en una ecuación deben tener las mismas dimensiones. Por ejemplo, una ecuación no puede tener un término de volumen $[L^{3}]$ sumado con otro de área $[L^{2}]$, o un término de fuerza $[MLT^{-2}]$ restarse a un término de velocidad $[LT^{-1}]$; estos términos no tienen las mismas dimensiones.</p>
+
+<h2>Operaciones matemáticas con unidades</h2>
+<p>En toda operación matemática, las unidades (por ejemplo, lb, cm, ft<sup>2</sup>, mi/h, m/s<sup>2</sup>) deben acompañar a los números y someterse a las mismas operaciones matemáticas. Las cantidades no pueden sumarse o restarse directamente a menos que tengan las mismas unidades (así como las mismas dimensiones). Sin embargo, cualquier tipo de cantidad se puede combinar con las operaciones de multiplicación o división, ya que las unidades, así como los números, obedecen a las leyes del álgebra en cuanto a elevar al cuadrado, simplificar, etc.</p>
+
+<p>Algunos ejemplos:</p>
+<ol>
+    <li>$6\\,\\mathrm{m}^{2} + 2\\,\\mathrm{m}^{2} = 8\\,\\mathrm{m}^{2} \\qquad (\\mathrm{m}^{2}+\\mathrm{m}^{2}\\to\\mathrm{m}^{2})$</li>
+    <li>$5\\,\\mathrm{cm} \\times 2\\,\\mathrm{cm}^{2} = 10\\,\\mathrm{cm}^{3} \\qquad (\\mathrm{cm}\\times\\mathrm{cm}^{2}\\to\\mathrm{cm}^{3})$</li>
+    <li>$2\\,\\mathrm{m}^{3} \\times 1500\\,\\frac{\\mathrm{kg}}{\\mathrm{m}^{3}} = 3000\\,\\mathrm{kg} \\qquad (\\mathrm{m}^{3}\\times\\frac{\\mathrm{kg}}{\\mathrm{m}^{3}}\\to\\mathrm{kg})$</li>
+    <li>$2\\,\\mathrm{s} \\times 3\\,\\frac{\\mathrm{km}}{\\mathrm{s}^{2}} = 6\\,\\frac{\\mathrm{km}}{\\mathrm{s}} \\qquad (\\mathrm{s}\\times\\frac{\\mathrm{km}}{\\mathrm{s}^{2}}\\to\\frac{\\mathrm{km}}{\\mathrm{s}})$</li>
+    <li>$\\frac{15\\,\\mathrm{g}}{3\\,\\mathrm{g}/\\mathrm{cm}^{3}} = 5\\,\\mathrm{cm}^{3} \\qquad \\left(\\frac{\\mathrm{g}}{\\mathrm{g}/\\mathrm{cm}^{3}}\\to\\mathrm{cm}^{3}\\right)$</li>
+</ol>
+
+<p>Si desea sumar o restar cantidades con diferentes unidades (por ejemplo, $5\\,\\mathrm{m}$ y $8\\,\\mathrm{cm}$), primero convierta las unidades a la misma base (por ejemplo, ambos a metros o ambos a centímetros) antes de operar algebraicamente.</p>
+
+<hr class="my-5">
+
+<p>Los caballos de fuerza miden <strong>potencia</strong>, no fuerza: indican qué tan rápido un motor puede realizar trabajo (por ejemplo mover un auto), mientras que la fuerza mide “cuánto empuja o tira” algo en un instante dado.[8][10]</p>
+
+<div class="text-center my-4">
+  <img src="/assets/caballo-fuerza.png" alt="Caballo de fuerza" class="img-fluid" style="max-width: 100%; height: auto;">
+  <p class="text-muted">Potencia vs Fuerza</p>
+</div>
+
+<h2>Caballos de fuerza (HP / CV)</h2>
+<ul>
+  <li>Un caballo de fuerza (<em>horsepower</em>, HP) se definió históricamente como la potencia necesaria para levantar 33 000 libras‑fuerza un pie en un minuto, lo que equivale a unos 745,7 W.[8]</li>
+  <li>En el sistema métrico se usa el caballo de vapor (CV), definido como la potencia necesaria para levantar 75 kgf a 1 m en 1 s, equivalente a unos 735,5 W.[8]</li>
+  <li>En autos, “200 HP” significa que el motor puede entregar una potencia máxima del orden de 150 kW, lo que afecta aceleración y velocidad pero no dice por sí solo cuánta fuerza aplica en cada momento.[10][12]</li>
+</ul>
+
+<h2>Fuerza y el newton (N)</h2>
+<ul>
+  <li>La fuerza es una magnitud que relaciona masa y aceleración mediante la segunda ley de Newton: $F = m \\cdot a$.[5][7]</li>
+  <li>En el Sistema Internacional la unidad de fuerza es el <strong>newton</strong> (N): 1 N es la fuerza necesaria para acelerar 1 kg a 1 m/s².[1][11]</li>
+  <li>Otras unidades de fuerza son el kilogramo‑fuerza (kgf) en el sistema técnico, la dina (dyn) en el sistema CGS y la libra‑fuerza (lbf) en el sistema anglosajón.[4][13]</li>
+</ul>
+
+<h2>Otras unidades relacionadas útiles</h2>
+<ul>
+  <li>Potencia: se mide en <strong>vatio</strong> (W), y 1 W es 1 joule de trabajo por segundo; los caballos de fuerza son una forma antigua de expresar vatios (1 HP $\\approx$ 746 W, 1 CV $\\approx$ 736 W).[8]</li>
+  <li>Presión: relaciona fuerza y área, y se mide en <strong>pascal</strong> (Pa = N/m²); también se usan bar o kg/cm² en contextos técnicos.[15]</li>
+  <li>Trabajo o energía: se mide en <strong>joule</strong> (J), que corresponde al trabajo realizado cuando una fuerza de 1 N desplaza un objeto 1 m en la dirección de la fuerza.[7][5]</li>
+</ul>
+
+   `,
   },
 }
 
