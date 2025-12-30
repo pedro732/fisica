@@ -2383,6 +2383,63 @@ export const exercisesData = {
         $$ F_{T1} - 300\\text{ N} = (m_B)(\\tfrac{1}{2}a) \\quad \\text{y} \\quad 200\\text{ N} - F_{T2} = m_A a $$
         <p>Pero $m = F_W/g$ entonces $m_A = (200/9.81)\\text{ kg}$ y $m_B = (300/9.81)\\text{ kg}$. Además $F_{T1} = 2F_{T2}$. La sustitución de estos valores en las dos ecuaciones permite calcular $F_{T2}$, $F_{T1}$ y $a$. Los resultados son</p>
         $$ F_{T1} = 327.27\\text{ N} \\text{ o } 327\\text{ N} \\quad F_{T2} = 163.64\\text{ N} \\text{ o } 164\\text{ N} \\quad a = 1.78\\text{ m/s}^2 $$
+
+        <hr />
+
+        <h3>Una explicación más</h3>
+        <p>La masa $B$ sube y la masa $A$ baja porque la polea móvil $P_2$ “multiplica” la fuerza que ejerce el peso de $A$, de modo que sobre $B$ actúa una fuerza efectiva mayor que su propio peso, a pesar de que $B$ es más pesado que $A$. Por la geometría de la cuerda, la tensión en un lado del sistema resulta el doble que en el otro, y además la aceleración de $B$ queda ligada cinemáticamente a la de $A$ como $a_B = a_A/2$.</p>
+
+        <h4>1. Esquema básico y datos</h4>
+        <ul>
+          <li>Peso de $A$: $W_A = 200\\text{ N}$.</li>
+          <li>Peso de $B$: $W_B = 300\\text{ N}$.</li>
+          <li>Poleas sin masa ni fricción; cuerdas inextensibles.</li>
+          <li>$F_{T2}$: tensión en la cuerda que pasa por $P_1$ y tira de la polea móvil $P_2$.</li>
+          <li>$F_{T1}$: tensión en la cuerda que sostiene directamente a $B$.</li>
+        </ul>
+        <p>En la configuración real se observa que $A$ desciende, $B$ asciende y la polea móvil también asciende.</p>
+
+        <h4>2. ¿Por qué $B$ sube si pesa más?</h4>
+        <p>Sobre la masa $B$ actúan dos fuerzas verticales:</p>
+        <ul>
+          <li>Hacia abajo: su peso $W_B = 300\\text{ N}$.</li>
+          <li>Hacia arriba: la tensión $F_{T1}$.</li>
+        </ul>
+        <p>Sobre la polea móvil $P_2$ actúan:</p>
+        <ul>
+          <li>Hacia abajo: la tensión $F_{T1}$ (porque cuelga de esa cuerda).</li>
+          <li>Hacia arriba: dos tramos de la cuerda de tensión $F_{T2}$ que la sostienen (uno a cada lado de la polea).</li>
+        </ul>
+        <p>Como la polea móvil no tiene masa, la suma de fuerzas sobre ella debe ser cero en todo instante:</p>
+        $$ 2F_{T2} - F_{T1} = 0 \\implies F_{T1} = 2F_{T2} $$
+        <p>Es decir, la cuerda asociada a $F_{T2}$ “duplica” la fuerza que se transmite a $B$.</p>
+
+        <h4>3. ¿Por qué $F_{T2}$ se multiplica por dos?</h4>
+        <p>La “multiplicación por dos” no es mágica, es puramente geométrica:</p>
+        <ul>
+          <li>La cuerda que pasa por la polea móvil tiene la <strong>misma tensión</strong> $F_{T2}$ en ambos lados.</li>
+          <li>Esos dos tramos tiran de la polea móvil hacia arriba, así que la fuerza total vertical hacia arriba sobre la polea es la <strong>suma</strong> de ambas: $F_{\\text{arriba}} = 2F_{T2}$.</li>
+          <li>Esa fuerza total debe equilibrar la tensión con que la polea móvil “sostiene” al bloque $B$.</li>
+        </ul>
+
+        <h4>4. ¿Por qué $a_B = \\frac{1}{2} a_A$?</h4>
+        <p>Esta relación surge de la <strong>geometría de la cuerda inextensible</strong>:</p>
+        <ul>
+          <li>Si la masa $A$ baja una cierta distancia $x$, el largo de uno de los tramos aumenta en $x$.</li>
+          <li>Para que la longitud total de esa cuerda siga siendo constante, los otros dos tramos (los que pasan por la polea móvil) deben acortarse en total la misma cantidad $x$.</li>
+        </ul>
+        <p>Como son dos tramos idénticos, cada uno se acorta $x/2$. Eso significa que la polea móvil sube una distancia $x/2$. Como el bloque $B$ está unido rígidamente a la polea móvil por la cuerda de tensión $F_{T1}$, su desplazamiento es el mismo que el de la polea móvil:</p>
+        $$ \\Delta y_B = \\frac{1}{2}\\Delta y_A $$
+        <p>Derivando dos veces respecto del tiempo, se obtiene la relación entre aceleraciones: $a_B = \\frac{1}{2} a_A$.</p>
+
+        <h4>5. Sistema de ecuaciones (visión global)</h4>
+        <p>Usando $m_A = W_A/g$ y $m_B = W_B/g$, y tomando como positivo “hacia abajo” para $A$ y “hacia arriba” para $B$:</p>
+        <ul>
+          <li>Para $A$: $W_A - F_{T2} = m_A a_A = m_A a$.</li>
+          <li>Para $B$ (y usando $a_B = a/2$): $F_{T1} - W_B = m_B a_B = m_B \\frac{a}{2}$.</li>
+          <li>Condición polea móvil: $F_{T1} = 2F_{T2}$.</li>
+        </ul>
+        <p>Al resolver estas ecuaciones se obtienen los resultados $F_{T1} \\approx 327\\text{ N}$, $F_{T2} \\approx 164\\text{ N}$, $a \\approx 1.78\\text{ m/s}^2$.</p>
       `,
     },
     {
@@ -2394,6 +2451,39 @@ export const exercisesData = {
         $$ mg = G\\frac{Mm}{r^2} $$
         <p>de donde</p>
         $$ M = \\frac{gr^2}{G} = \\frac{(9.81\\text{ m/s}^2)(6.37 \\times 10^6\\text{ m})^2}{6.67 \\times 10^{-11}\\text{ N}\\cdot\\text{m}^2/\\text{kg}^2} = 5.97 \\times 10^{24}\\text{ kg} $$
+      `,
+    },
+    {
+      enunciado: `
+        <p>Dos fuerzas actúan sobre un objeto en un punto del modo siguiente: $100\\text{ N}$ en $170.0^\\circ$ y $100\\text{ N}$ en $50.0^\\circ$. Determine su resultante.</p>
+        <div class="text-center my-4">
+          <img src="/assets/futbol-fuerzas.png" alt="Fuerzas sobre el objeto" class="img-fluid" style="max-width: 100%; height: auto;">
+        </div>
+      `,
+      solucion: `
+        <p>Para encontrar la resultante, descomponemos cada fuerza en sus componentes $x$ y $y$.</p>
+        <p><strong>Fuerza 1 ($F_1 = 100\\text{ N}$ a $170.0^\\circ$):</strong></p>
+        $$ F_{1x} = 100 \\cos(170^\\circ) = -98.48\\text{ N} $$
+        $$ F_{1y} = 100 \\sin(170^\\circ) = 17.36\\text{ N} $$
+
+        <p><strong>Fuerza 2 ($F_2 = 100\\text{ N}$ a $50.0^\\circ$):</strong></p>
+        $$ F_{2x} = 100 \\cos(50^\\circ) = 64.28\\text{ N} $$
+        $$ F_{2y} = 100 \\sin(50^\\circ) = 76.60\\text{ N} $$
+
+        <p><strong>Resultante ($R$):</strong> Sumamos las componentes:</p>
+        $$ R_x = F_{1x} + F_{2x} = -98.48 + 64.28 = -34.20\\text{ N} $$
+        $$ R_y = F_{1y} + F_{2y} = 17.36 + 76.60 = 93.96\\text{ N} $$
+
+        <p>Calculamos la magnitud:</p>
+        $$ R = \\sqrt{R_x^2 + R_y^2} = \\sqrt{(-34.20)^2 + (93.96)^2} = \\sqrt{1169.64 + 8828.48} = \\sqrt{9998.12} \\approx 100\\text{ N} $$
+
+        <p>Calculamos el ángulo:</p>
+        $$ \\theta = \\tan^{-1}\\left(\\frac{R_y}{R_x}\\right) = \\tan^{-1}\\left(\\frac{93.96}{-34.20}\\right) = -70.0^\\circ $$
+        <p>Como $R_x$ es negativo y $R_y$ es positivo, la resultante está en el <strong>segundo cuadrante</strong>. El ángulo respecto al eje $x$ positivo es:</p>
+        $$ \\theta = 180^\\circ - 70.0^\\circ = 110.0^\\circ $$
+
+        <p><strong>Respuesta:</strong> $100\\text{ N}$ en $110^\\circ$.</p>
+        <p><em>Nota:</em> Dado que las fuerzas tienen igual magnitud y el ángulo entre ellas es $120^\\circ$ ($170 - 50 = 120$), la resultante biseca el ángulo y tiene la misma magnitud que ellas.</p>
       `,
     },
   ],
