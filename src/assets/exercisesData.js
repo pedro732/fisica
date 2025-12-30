@@ -1841,6 +1841,561 @@ export const exercisesData = {
         <p>a partir de la cual $\\phi = 29^\\circ$. Entonces, $\\theta = 360^\\circ - 29^\\circ = 331^\\circ$. La resultante es $6.5\\text{ N}$ en $331^\\circ$ (o $-29^\\circ$) o $\\vec{R} = 6.5\\text{ N} / 331^\\circ$ DESDE EL EJE $+x$.</p>
       `,
     },
+    {
+      enunciado: `
+        <p>Una fuerza de $100\\text{ N}$ hace un ángulo de $\\theta$ con el eje $x$ y tiene una componente $y$ escalar de $30\\text{ N}$. Encuentre la componente $x$ escalar de la fuerza y el ángulo $\\theta$. (Recuerde que el número $100\\text{ N}$ tiene tres cifras significativas, mientras que $30\\text{ N}$ sólo tiene dos.)</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura3-4.png" alt="Figura 3-4" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 3-4</p>
+        </div>
+      `,
+      solucion: `
+        <p>Los datos se trazan aproximadamente en la figura 3-4. Se pretende encontrar $F_x$ y $\\theta$. Se sabe que</p>
+        $$ \\text{sen } \\theta = \\frac{30\\text{ N}}{100\\text{ N}} = 0.30 $$
+        <p>$\\theta = 17.46^\\circ$, y por tanto, con dos cifras significativas, $\\theta = 17^\\circ$. En tal caso, mediante $\\cos \\theta$, se tiene</p>
+        $$ F_x = (100\\text{ N}) \\cos 17.46^\\circ = 95\\text{ N} $$
+      `,
+    },
+    {
+      enunciado: `
+        <p>Un objeto de $5.0\\text{ kg}$ se jala hacia arriba mediante una cuerda acelerándolo a $2.0\\text{ m/s}^2$. Encuentre la tensión en la cuerda.</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura3-5.png" alt="Figura 3-5" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 3-5</p>
+        </div>
+      `,
+      solucion: `
+        <p>Como se muestra en la figura 3-5, la fuerza externa sobre el objeto es la tensión $T$. Se toma la dirección hacia arriba como positiva. Entonces,</p>
+        $$ \\sum F_y = ma_y \\Rightarrow T - mg = ma_y $$
+        $$ T - (5.0\\text{ kg})(9.8\\text{ m/s}^2) = (5.0\\text{ kg})(2.0\\text{ m/s}^2) $$
+        $$ T - 49\\text{ N} = 10\\text{ N} $$
+        $$ T = 59\\text{ N} $$
+      `,
+    },
+    {
+      enunciado: `
+        <p>Un automóvil que pesa $F_W$ está en una rampa que tiene un ángulo $\theta$ con la horizontal. ¿Cuál es la intensidad de la fuerza perpendicular que debe soportar la rampa para que no se rompa bajo el peso del automóvil?</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura3-6.png" alt="Figura 3-6" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 3-6</p>
+        </div>
+      `,
+      solucion: `
+        <p>Como se observa en la figura 3-6, el peso del vehículo es una fuerza $\\vec{F}_W$ que atrae el automóvil directamente hacia abajo. Se toma una componente de $\\vec{F}_W$ a lo largo del plano inclinado y la otra perpendicular a ella. La rampa debe equilibrar la componente de fuerza $F_W \\cos \\theta$ para que el automóvil no atraviese la rampa y caiga.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Tres fuerzas que actúan sobre una partícula están dadas mediante $\\vec{\\mathbf{F}}_1 = (20\\hat{\\mathbf{i}} - 36\\hat{\\mathbf{j}} + 73\\hat{\\mathbf{k}}) \\text{ N}$, $\\vec{\\mathbf{F}}_2 = (-17\\hat{\\mathbf{i}} + 21\\hat{\\mathbf{j}} - 46\\hat{\\mathbf{k}}) \\text{ N}$ y $\\vec{\\mathbf{F}}_3 = (-12\\hat{\\mathbf{k}}) \\text{ N}$. Encuentre su vector resultante. Determine también la magnitud de la resultante con dos cifras significativas.</p>
+      `,
+      solucion: `
+        <p>Se sabe que</p>
+        $$ R_x = \\sum F_x = 20\\text{ N} - 17\\text{ N} + 0\\text{ N} = 3\\text{ N} $$
+        $$ R_y = \\sum F_y = -36\\text{ N} + 21\\text{ N} + 0\\text{ N} = -15\\text{ N} $$
+        $$ R_z = \\sum F_z = 73\\text{ N} - 46\\text{ N} - 12\\text{ N} = 15\\text{ N} $$
+        <p>Dado que $\\vec{\\mathbf{R}} = R_x\\hat{\\mathbf{i}} + R_y\\hat{\\mathbf{j}} + R_z\\hat{\\mathbf{k}}$, se encuentra</p>
+        $$ \\vec{\\mathbf{R}} = 3\\hat{\\mathbf{i}} - 15\\hat{\\mathbf{j}} + 15\\hat{\\mathbf{k}} $$
+        <p>Para dos cifras significativas, el teorema de Pitágoras tridimensional produce</p>
+        $$ R = \\sqrt{R_x^2 + R_y^2 + R_z^2} = \\sqrt{459} = 21\\text{ N} $$
+      `,
+    },
+    {
+      enunciado: `
+        <p>Un objeto de $5.0\\text{ kg}$ se jala hacia arriba con una cuerda acelerándolo a $0.30\\text{ m/s}^2$. ¿Cuál debe ser la tensión en la cuerda?</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura3-9.png" alt="Figura 3-9" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 3-9</p>
+        </div>
+      `,
+      solucion: `
+        <p>El diagrama de cuerpo libre para el objeto se muestra en la figura 3-9. La tensión en la cuerda es $F_T$ y el peso del objeto es $F_W = mg = (5.0\\text{ kg})(9.81\\text{ m/s}^2) = 49.1\\text{ N}$. Usando $\\sum F_y = ma_y$, con la dirección hacia arriba tomada como positiva, se tiene</p>
+        $$ F_T - mg = ma_y \\quad o \\quad F_T - 49.1\\text{ N} = (5.0\\text{ kg})(0.30\\text{ m/s}^2) $$
+        <p>de lo cual $F_T = 50.6\\text{ N} = 51\\text{ N}$. Como comprobación, se puede ver que $F_T$ es mayor que $F_W$, como debe ser si el cuerpo se acelera hacia arriba.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Se necesita una fuerza horizontal de $140\\text{ N}$ para jalar una caja de $60.0\\text{ kg}$ sobre un piso horizontal con rapidez constante. ¿Cuál es el coeficiente de fricción entre el piso y la caja? Determínelo a tres cifras significativas, aun cuando esto no sea muy realista.</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura3-91.png" alt="Figura 3-91" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 3-91</p>
+        </div>
+      `,
+      solucion: `
+        <p>El diagrama de cuerpo libre para la caja se muestra en la figura 3-91. Como la caja no se mueve en dirección vertical, $a_y = 0$. Por tanto,</p>
+        $$ \\sum F_y = ma_y \\quad \\text{da} \\quad F_N - mg = (m)(0\\text{ m/s}^2) $$
+        <p>de donde se encuentra que $F_N = mg = (60.0\\text{ kg})(9.81\\text{ m/s}^2) = 588.6\\text{ N}$. Como la caja se mueve horizontalmente con rapidez constante, $a_x = 0$ y en consecuencia</p>
+        $$ \\sum F_x = ma_x \\quad \\text{da} \\quad 140\\text{ N} - F_f = 0 $$
+        <p>de donde la fuerza de fricción es $F_f = 140\\text{ N}$. Entonces se tiene</p>
+        $$ \\mu_c = \\frac{F_f}{F_N} = \\frac{140\\text{ N}}{588.6\\text{ N}} = 0.238 $$
+      `,
+    },
+    {
+      enunciado: `
+        <p>La única fuerza que actúa sobre un objeto de $5.0\\text{ kg}$ tiene por componentes $F_x = 20\\text{ N}$ y $F_y = 30\\text{ N}$. Encuentre la aceleración del objeto.</p>
+      `,
+      solucion: `
+        <p>Se utiliza $\\sum F_x = ma_x$ y $\\sum F_y = ma_y$ para obtener</p>
+        $$ a_x = \\frac{\\sum F_x}{m} = \\frac{20\\text{ N}}{5.0\\text{ kg}} = 4.0\\text{ m/s}^2 $$
+        $$ a_y = \\frac{\\sum F_y}{m} = \\frac{30\\text{ N}}{5.0\\text{ kg}} = 6.0\\text{ m/s}^2 $$
+        <p>Estas componentes de la aceleración se muestran en la figura 3-10. De la figura, se observa que</p>
+        $$ a = \\sqrt{(4.0)^2 + (6.0)^2}\\text{ m/s}^2 = 7.2\\text{ m/s}^2 $$
+        <p>y $\\theta = \\arctan(6.0/4.0) = 56^\\circ$.</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura3-10.png" alt="Figura 3-10" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 3-10</p>
+        </div>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Se desea aplicar una aceleración de $0.70\\text{ m/s}^2$ a un objeto de $600\\text{ N}$. ¿De qué magnitud debe ser la fuerza no balanceada que actúa sobre él? </p>
+      `,
+      solucion: `
+        <p>Observe que se da como dato el peso, no la masa. Si considera que el peso se determinó en la Tierra, se utiliza $F_W = mg$ para encontrar</p>
+        $$ m = \\frac{F_W}{g} = \\frac{600\\text{ N}}{9.81\\text{ m/s}^2} = 61\\text{ kg} $$
+        <p>Ahora que se conocen la masa del objeto ($61\\text{ kg}$) y la aceleración deseada ($0.70\\text{ m/s}^2$), se tiene</p>
+        $$ F = ma = (61\\text{ kg})(0.70\\text{ m/s}^2) = 43\\text{ N} $$
+      `,
+    },
+    {
+      enunciado: `
+        <p>Una fuerza constante actúa sobre un objeto de $5.0\\text{ kg}$ y disminuye su velocidad de $7.0\\text{ m/s}$ a $3.0\\text{ m/s}$ en un tiempo de $3.0\\text{ s}$. Encuentre la fuerza.</p>
+      `,
+      solucion: `
+        <p>En primer lugar, se debe calcular la aceleración del objeto, que es constante porque la fuerza también es constante. Tomando la dirección del movimiento como positiva, del capítulo 2 se tiene</p>
+        $$ a = \\frac{v_f - v_i}{t} = \\frac{3.0\\text{ m/s} - 7.0\\text{ m/s}}{3.0\\text{ s}} = -1.33\\text{ m/s}^2 $$
+        <p>Ahora se puede usar $F = ma$ con $m = 5.0\\text{ kg}$:</p>
+        $$ F = (5.0\\text{ kg})(-1.33\\text{ m/s}^2) = -6.7\\text{ N} $$
+        <p>El signo menos indica que la fuerza es una fuerza retardadora y que se opone al movimiento.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Un bloque de $400\\text{ g}$ con rapidez inicial de $80\\text{ cm/s}$ resbala sobre la cubierta de una mesa horizontal en contra de una fuerza de fricción de $0.70\\text{ N}$.</p>
+        <p>a) ¿Qué distancia recorrerá resbalando antes de detenerse? <br> b) ¿Cuál es el coeficiente de fricción entre el bloque y la cubierta de la mesa?</p>
+      `,
+      solucion: `
+        <p><b>a)</b> Considere la dirección del movimiento como positiva. La única fuerza no balanceada que actúa sobre el bloque es la fuerza de fricción, $-0.70\\text{ N}$. Por tanto,</p>
+        $$ \\sum F = ma \\quad \\text{se convierte en} \\quad -0.70\\text{ N} = (0.400\\text{ kg})(a) $$
+        <p>de donde $a = -1.75\\text{ m/s}^2$. (Note que $m$ siempre está en kilogramos). Para encontrar la distancia a la que resbala el bloque, se tiene que $v_{ix} = 0.80\\text{ m/s}$, $v_{fx} = 0$ y $a = -1.75\\text{ m/s}^2$. Entonces la ecuación $v_{fx}^2 - v_{ix}^2 = 2ax$ da por resultado</p>
+        $$ x = \\frac{v_{fx}^2 - v_{ix}^2}{2a} = \\frac{(0 - 0.64)\\text{ m}^2/\\text{s}^2}{(2)(-1.75\\text{ m/s}^2)} = 0.18\\text{ m} $$
+        <p><b>b)</b> Como las fuerzas verticales que actúan sobre el cuerpo deben cancelarse, el empuje hacia arriba $F_N$ de la mesa debe ser igual al peso $mg$ del bloque. Entonces</p>
+        $$ \\mu_c = \\frac{\\text{fuerza de fricción}}{F_N} = \\frac{0.70\\text{ N}}{(0.40\\text{ kg})(9.81\\text{ m/s}^2)} = 0.18 $$
+      `,
+    },
+    {
+      enunciado: `
+        <p>Un automóvil de 600 kg de peso se mueve en un camino nivelado a 30 m/s. a) ¿Qué tan grande debe ser la magnitud de la fuerza retardadora (supuesta constante) que se requiere para detener al automóvil en una distancia de 70 m? b) ¿Cuál es el mínimo coeficiente de fricción entre las llantas y el camino para que esto suceda? Suponga que las ruedas no están trabadas, en cuyo caso se trata con fricción estática; no hay resbalamiento.</p>
+      `,
+      solucion: `
+        <p><b>a)</b> En primer término se debe encontrar la aceleración del automóvil a partir de una ecuación de movimiento. Con los datos $v_{ix} = 30\\text{ m/s}$, $v_{fx} = 0$ y $x = 70\\text{ m}$ se usa la ecuación $v_{fx}^2 = v_{ix}^2 + 2ax$ para encontrar</p>
+        $$ a = \\frac{v_{fx}^2 - v_{ix}^2}{2x} = \\frac{0 - 900\\text{ m}^2/\\text{s}^2}{140\\text{ m}} = -6.43\\text{ m/s}^2 $$
+        <p>Ahora puede escribirse</p>
+        $$ F = ma = (600\\text{ kg})(-6.43\\text{ m/s}^2) = -3\\ 860\\text{ N} = -3.9\\text{ kN} $$
+        <p><b>b)</b> La fuerza calculada en a) es igual a la fuerza de fricción que existe entre las llantas y el camino. Por tanto, la magnitud de la fuerza de fricción sobre las llantas es $F_f = 3\\ 860\\text{ N}$. El coeficiente de fricción está dado por $\\mu_e = F_f / F_N$, donde $F_N$ es la fuerza normal. En este caso, el camino empuja hacia arriba sobre el automóvil con una fuerza igual al peso del automóvil. Así que,</p>
+        $$ F_N = F_W = mg = (600\\text{ kg})(9.81\\text{ m/s}^2) = 5\\ 886\\text{ N} $$
+        <p>entonces se tiene</p>
+        $$ \\mu_e = \\frac{F_f}{F_N} = \\frac{3\\ 860}{5\\ 886} = 0.66 $$
+        <p>El coeficiente de fricción debe ser al menos de 0.66 para que el automóvil se detenga dentro de los 70 m.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Una locomotora de $8 000\\text{ kg}$ tira de un tren de $40 000\\text{ kg}$ a lo largo de una vía nivelada y le proporciona una aceleración $a_1 = 1.20\\text{ m/s}^2$. ¿Qué aceleración ($a_2$) le proporcionaría a un tren de $16 000\\text{ kg}$?</p>
+      `,
+      solucion: `
+        <p>Para una fuerza dada de la locomotora, la aceleración es inversamente proporcional a la masa total. Entonces</p>
+        $$ a_2 = \\frac{m_1}{m_2}a_1 = \\frac{8 000\\text{ kg} + 40 000\\text{ kg}}{8 000\\text{ kg} + 16 000\\text{ kg}}(1.20\\text{ m/s}^2) = 2.40\\text{ m/s}^2 $$
+      `,
+    },
+    {
+      enunciado: `
+        <p>En la figura 3-11a un objeto de masa $m$ está colgado de una cuerda. Calcule la tensión en la cuerda si el objeto a) está en reposo, b) se mueve con velocidad constante, c) acelera hacia arriba con una aceleración $a = 3g/2$ y d) acelera hacia abajo con $a = 0.75g$.</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura3-11a.png" alt="Figura 3-11a" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 3-11a</p>
+        </div>
+      `,
+      solucion: `
+        <p>Dos fuerzas actúan sobre el objeto: la tensión hacia arriba $F_T$ y la atracción gravitacional hacia abajo $mg$, tal como se muestra en el diagrama de cuerpo libre de la figura 3-11b. Se considera como positiva la dirección hacia arriba y se escribe $\\sum F_y = ma_y$ en cada caso.</p>
+        <p><b>a)</b> $a_y = 0$: $F_T - mg = ma_y = 0 \\Rightarrow F_T = mg$</p>
+        <p><b>b)</b> $a_y = 0$: $F_T - mg = ma_y = 0 \\Rightarrow F_T = mg$</p>
+        <p><b>c)</b> $a_y = 3g/2$: $F_T - mg = m(3g/2) \\Rightarrow F_T = 2.5 mg$</p>
+        <p><b>d)</b> $a_y = -3g/4$: $F_T - mg = m(-3g/4) \\Rightarrow F_T = 0.25 mg$</p>
+        <p>Note que la tensión en la cuerda es menor que $mg$ en el inciso d); sólo entonces el objeto tiene una aceleración hacia abajo. ¿Podría explicar por qué $F_T = 0$ si $a_y = -g$?</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Una cuerda de remolque se romperá si la tensión sobre ella excede los $1\\ 500\\text{ N}$. Se utilizará para remolcar un automóvil de $700\\text{ kg}$ a lo largo de un piso nivelado. ¿Cuál es el valor máximo de la aceleración que se puede aplicar al automóvil con esta cuerda? (Recuerde que $1\\ 500$ tiene cuatro cifras significativas; vea el apéndice A.)</p>
+      `,
+      solucion: `
+        <p>Las fuerzas que actúan sobre el automóvil se muestran en la figura 3-12. Sólo son importantes las fuerzas en la dirección $x$, ya que las fuerzas en la dirección $y$ se equilibran entre sí. Indicando la dirección positiva con el signo $+$ y una pequeña flecha se tiene:</p>
+        $$ \\xrightarrow{+} \\sum F_x = ma_x \\quad \\text{se convierte en} \\quad 1\\ 500\\text{ N} = (700\\text{ kg})(a) $$
+        <p>de donde $a = 2.14\\text{ m/s}^2$.</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura3-12.png" alt="Figura 3-12" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 3-12</p>
+        </div>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Una caja de $70\\text{ kg}$ resbala a lo largo de un piso debido a una fuerza de $400\\text{ N}$, como se muestra en la figura 3-13. El coeficiente de fricción entre la caja y el piso cuando la caja resbala es de $0.50$. Calcule la aceleración de la caja.</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura3-13.png" alt="Figura 3-13" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 3-13</p>
+        </div>
+      `,
+      solucion: `
+        <p>Como las fuerzas en la dirección $y$ deben balancearse,</p>
+        $$ F_N = mg = (70\\text{ kg})(9.81\\text{ m/s}^2) = 687\\text{ N} $$
+        <p>Pero la fuerza de fricción $F_f$ está dada por</p>
+        $$ F_f = \\mu_c F_N = (0.50)(687\\text{ N}) = 344\\text{ N} $$
+        <p>Se puede escribir $\\sum F_x = ma_x$ para la caja, tomando como positiva la dirección del movimiento:</p>
+        $$ 400\\text{ N} - 344\\text{ N} = (70\\text{ kg})(a) \\quad \\text{o} \\quad a = 0.80\\text{ m/s}^2 $$
+      `,
+    },
+    {
+      enunciado: `
+        <p>Suponga, como se muestra en la figura 3-14, que una caja de $70\\text{ kg}$ se jala con una fuerza de $400\\text{ N}$ que forma un ángulo de $30^\\circ$ con la horizontal. El coeficiente de fricción cinética es $0.50$. Calcule la aceleración de la caja.</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura3-14.png" alt="Figura 3-14" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 3-14</p>
+        </div>
+      `,
+      solucion: `
+        <p>Como la caja no tiene movimiento en la dirección vertical, se tiene que $\\sum F_y = ma_y = 0$. A partir de la figura 3-14 se ve que esta ecuación es</p>
+        $$ F_N + 200\\text{ N} - mg = 0 $$
+        <p>Pero $mg = (70\\text{ kg})(9.81\\text{ m/s}^2) = 687\\text{ N}$, y se sigue que $F_N = 486\\text{ N}$.</p>
+        <p>A continuación se calcula la fuerza de fricción que actúa sobre la caja:</p>
+        $$ F_f = \\mu_c F_N = (0.50)(486\\text{ N}) = 243\\text{ N} $$
+        <p>Ahora se escribe $\\sum F_x = ma_x$ para la caja. Esto es</p>
+        $$ (346 - 243)\\text{ N} = (70\\text{ kg})(a_x) $$
+        <p>de donde $a_x = 1.5\\text{ m/s}^2$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Un automóvil que se mueve a $20\\text{ m/s}$ en un camino horizontal aplica de manera repentina los frenos y finalmente llega al reposo. ¿Cuál es la distancia más corta en que puede detenerse si el coeficiente de fricción entre las llantas y el camino es de $0.90$? Suponga que todas las llantas frenan idénticamente y que los frenos no traban la detención del automóvil mediante la fricción estática.</p>
+      `,
+      solucion: `
+        <p>La fuerza de fricción en una llanta, llámese llanta 1, es</p>
+        $$ F_{f1} = \\mu_c F_{N1} = \\mu F_{W1} $$
+        <p>donde $F_{W1}$ es el peso que soporta la llanta 1. La fuerza de fricción total $F_f$ se obtiene al sumar estos términos para las cuatro llantas:</p>
+        $$ F_f = \\mu_c F_{W1} + \\mu_c F_{W2} + \\mu_c F_{W3} + \\mu_c F_{W4} = \\mu_c (F_{W1} + F_{W2} + F_{W3} + F_{W4}) = \\mu_c F_W $$
+        <p>donde $F_W$ es el peso total del automóvil (observe que se supone un frenado óptimo en cada llanta). Esta fuerza de fricción es la única fuerza no balanceada sobre el automóvil (se desprecia la fricción del viento y factores similares). Al escribir $F = ma$ para el automóvil, y sustituir $F$ con $-\\mu_c F_W$, se obtiene $-\\mu_c F_W = ma$, donde $m$ es la masa del automóvil y la dirección positiva se considera como la dirección del movimiento. Sin embargo, $F_W = mg$; de modo que la aceleración del automóvil es</p>
+        $$ a = \\frac{-\\mu_c F_W}{m} = \\frac{-\\mu_c mg}{m} = -\\mu_c g = (-0.90)(9.81\\text{ m/s}^2) = -8.8\\text{ m/s}^2 $$
+        <p>Se puede calcular qué tan lejos viajó el automóvil antes de pararse resolviendo un problema de movimiento. Se conoce $v_i = 20\\text{ m/s}$, $v_f = 0$ y $a = -8.8\\text{ m/s}^2$, de la ecuación $v_f^2 - v_i^2 = 2ax$ se calcula</p>
+        $$ x = \\frac{(0 - 400)\\text{ m}^2/\\text{s}^2}{-17.6\\text{ m/s}^2} = 23\\text{ m} $$
+        <p>Si el frenado no fuera uniforme en las cuatro llantas, la distancia necesaria para detenerse sería más grande.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Como se muestra en la figura 3-15, una fuerza de $400\\text{ N}$ empuja una caja de $25\\text{ kg}$. Partiendo del reposo, la caja alcanza una velocidad de $2.0\\text{ m/s}$ en un tiempo de $4.0\\text{ s}$. Encuentre el coeficiente de fricción cinético entre la caja y el piso.</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura3-15.png" alt="Figura 3-15" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 3-15</p>
+        </div>
+      `,
+      solucion: `
+        <p>Es necesario encontrar $f$ usando la ecuación $F = ma$. Para esto se debe encontrar $a$ con las ecuaciones de movimiento. Se sabe que $v_i = 0$, $v_f = 2.0\\text{ m/s}$, $t = 4.0\\text{ s}$. Al usar $v_f = v_i + at$ se encuentra que</p>
+        $$ a = \\frac{v_f - v_i}{t} = \\frac{2.0\\text{ m/s}}{4.0\\text{ s}} = 0.50\\text{ m/s}^2 $$
+        <p>Ahora se puede escribir $\\Sigma F_x = ma_x$, donde $a_x = a = 0.50\\text{ m/s}^2$. De la figura 3-15, esta ecuación es</p>
+        $$ 257\\text{ N} - F_f = (25\\text{ kg})(0.50\\text{ m/s}^2) \\quad \\text{o} \\quad F_f = 245\\text{ N} $$
+        <p>Se desea calcular $\\mu_c = F_f / F_N$. Para calcular $F_N$ se escribe $\\Sigma F_y = ma_y = 0$, pues no hay movimiento vertical. De la figura 3-15,</p>
+        $$ F_N - 306\\text{ N} - (25)(9.81)\\text{ N} = 0 \\quad \\text{o} \\quad F_N = 551\\text{ N} $$
+        <p>Entonces</p>
+        $$ \\mu_c = \\frac{F_f}{F_N} = \\frac{245}{551} = 0.44 $$
+      `,
+    },
+    {
+      enunciado: `
+        <p>Cuando una fuerza de $500\\text{ N}$ empuja una caja de $25\\text{ kg}$, como se muestra en la figura 3-18, la aceleración de la caja al subir por el plano es $0.75\\text{ m/s}^2$. Calcule el coeficiente de fricción cinética entre la caja y el plano.</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura3-18.png" alt="Figura 3-18" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 3-18</p>
+        </div>
+      `,
+      solucion: `
+        <p>Las fuerzas que actúan y sus componentes se muestran en la figura 3-18. Note cómo se tomaron los ejes $x$ y $y$. Como la caja sube por el plano inclinado, la fuerza de fricción (que siempre actúa para retardar el movimiento) está dirigida hacia abajo.</p>
+        <p>Primero se encuentra $F_f$ escribiendo $\\Sigma F_x = ma_x$. De la figura 3-18, al usar $\\text{sen } 40^\\circ = 0.643$,</p>
+        $$ 383\\text{ N} - F_f - (0.64)(25)(9.81)\\text{ N} = (25\\text{ kg})(0.75\\text{ m/s}^2) $$
+        <p>de donde $F_f = 207\\text{ N}$.</p>
+        <p>También se necesita $F_N$. Al escribir $\\Sigma F_y = ma_y = 0$ y usar $\\cos 40^\\circ = 0.766$, se obtiene</p>
+        $$ F_N - 321\\text{ N} - (0.77)(25)(9.81)\\text{ N} = 0 \\quad \\text{o} \\quad F_N = 510\\text{ N} $$
+        <p>Entonces:</p>
+        $$ \\mu_c = \\frac{F_f}{F_N} = \\frac{207}{510} = 0.41 $$
+      `,
+    },
+    {
+      enunciado: `
+        <p>Dos bloques, de masas $m_1$ y $m_2$, son empujados por una fuerza $F$ como se muestra en la figura 3-19. El coeficiente de fricción entre cada bloque y la mesa es $0.40$. a) ¿Cuál debe ser el valor de la fuerza $F$ si los bloques han de tener una aceleración de $200\\text{ cm/s}^2$? b) ¿Qué fuerza ejerce $m_1$ sobre $m_2$? Utilice $m_1 = 300\\text{ g}$ y $m_2 = 500\\text{ g}$. Recuerde trabajar en unidades del Sistema Internacional.</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura3-19.png" alt="Figura 3-19" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 3-19</p>
+        </div>
+      `,
+      solucion: `
+        <p>La fuerza de fricción sobre cada bloque es $F_{f1} = 0.4m_1g$ y $F_{f2} = 0.4m_2g$. Para el análisis se toman los dos bloques como si fueran un solo objeto; las fuerzas horizontales externas sobre el objeto son $F$, $F_{f1}$ y $F_{f2}$. Aunque los dos bloques se empujan entre sí, los impulsos son fuerzas <em>internas</em>, por lo que no forman parte de la fuerza externa no balanceada que actúa sobre el objeto compuesto por dos masas. Para ese objeto,</p>
+        $$ \\Sigma F_x = ma_x \\quad \\text{se convierte en} \\quad F - F_{f1} - F_{f2} = (m_1 + m_2)a_x $$
+        <p><strong>a)</strong> Resolviendo para $F$ y sustituyendo los valores conocidos, se encuentra</p>
+        $$ F = 0.40g(m_1 + m_2) + (m_1 + m_2)a_x = 3.14\\text{ N} + 1.60\\text{ N} = 4.7\\text{ N} $$
+        <p><strong>b)</strong> Ahora considere sólo el bloque $m_2$. Las fuerzas que actúan sobre él en la dirección $x$ son el impulso debido al bloque $m_1$ (que se representa por $F_b$) y la fuerza de fricción retardadora $F_{f2} = 0.4m_2g$. Entonces, para éste,</p>
+        $$ \\Sigma F_x = ma_x \\quad \\text{se convierte en} \\quad F_b - F_{f2} = m_2a_x $$
+        <p>Se sabe que $a_x = 2.0\\text{ m/s}^2$ y por tanto</p>
+        $$ F_b = F_{f2} + m_2a_x = 1.96\\text{ N} + 1.00\\text{ N} = 2.96\\text{ N} = 3.0\\text{ N} $$
+      `,
+    },
+    {
+      enunciado: `
+        <p>Una masa de $7.0\\text{ kg}$ cuelga del extremo de una cuerda que pasa por una polea sin masa ni fricción, y en el otro extremo cuelga una masa de $9.0\\text{ kg}$, como se muestra en la figura 3-20. (Este arreglo se llama <em>máquina de Atwood</em>.) Encuentre la aceleración de las masas y la tensión en la cuerda.</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura3-20.png" alt="Figura 3-20" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 3-20</p>
+        </div>
+      `,
+      solucion: `
+        <p>Como no hay fricción en la polea, la tensión en la cuerda será la misma en sus dos lados. Las fuerzas que actúan en cada una de las dos masas están dibujadas en la figura 3-20. Recuerde que el peso de un objeto es $mg$.</p>
+        <p>En situaciones en las que los objetos están conectados por cuerdas, es conveniente considerar positiva la dirección del movimiento. En este caso, se considera positivo <em>hacia arriba</em> para la masa de $7.0\\text{ kg}$ y positivo <em>hacia abajo</em> para la masa de $9.0\\text{ kg}$. (Si se hace esto, la aceleración será positiva para cada masa. Como la cuerda no se estira, las aceleraciones son numéricamente iguales.) Al escribir $\\Sigma F_y = ma_y$ para cada masa, se tiene</p>
+        $$ F_T - (7.0)(9.81)\\text{ N} = (7.0\\text{ kg})(a) \\quad \\text{y} \\quad (9.0)(9.81)\\text{ N} - F_T = (9.0\\text{ kg})(a) $$
+        <p>Si se suman estas dos ecuaciones, se elimina la incógnita $F_T$, lo que resulta en</p>
+        $$ (9.0 - 7.0)(9.81)\\text{ N} = (16\\text{ kg})(a) $$
+        <p>para el cual $a = 1.23\\text{ m/s}^2$. Ahora se puede sustituir $a$ por $1.23\\text{ m/s}^2$ en cualquiera de las dos ecuaciones y obtener $F_T = 77\\text{ N}$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>En la figura 3-21, el coeficiente de fricción cinética entre el bloque $A$ y la mesa es $0.20$. Además, $m_A = 25\\text{ kg}$, $m_B = 15\\text{ kg}$. ¿Cuánto bajará el cuerpo $B$ en los primeros $3.0\\text{ s}$ después de liberar el sistema?</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura3-21.png" alt="Figura 3-21" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 3-21</p>
+        </div>
+      `,
+      solucion: `
+        <p>Como para el bloque $A$ no hay movimiento vertical, la fuerza normal es</p>
+        $$ F_N = m_A g = (25\\text{ kg})(9.81\\text{ m/s}^2) = 245\\text{ N} $$
+        <p>y</p>
+        $$ F_f = \\mu_c F_N = (0.20)(245\\text{ N}) = 49\\text{ N} $$
+        <p>En primer término se debe encontrar la aceleración del sistema para poder describir su movimiento. Aplique $F = ma$ a cada bloque. Al tomar la dirección del movimiento como positiva, se tiene</p>
+        $$ F_T - F_f = m_A a \\quad \\text{o} \\quad F_T - 49\\text{ N} = (25\\text{ kg})(a) $$
+        <p>y</p>
+        $$ m_B g - F_T = m_B a \\quad \\text{o} \\quad -F_T + (15)(9.81)\\text{ N} = (15\\text{ kg})(a) $$
+        <p>Se puede eliminar $F_T$ sumando las dos ecuaciones. Entonces, al resolver para $a$, se encuentra que $a = 2.45\\text{ m/s}^2$.</p>
+        <p>Ahora ya se puede trabajar el problema de movimiento con $a = 2.45\\text{ m/s}^2$, $v_i = 0$, $t = 3.0\\text{ s}$:</p>
+        $$ y = v_{iy}t + \\frac{1}{2}at^2 \\quad \\text{produce} \\quad y = 0 + \\frac{1}{2}(2.45\\text{ m/s}^2)(3.0\\text{ s})^2 = 11\\text{ m} $$
+        <p>como la distancia que $B$ baja en los primeros $3.0\\text{ s}$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>En la figura 3-21, ¿qué tan grande debe ser la fuerza horizontal que tira del bloque $A$, además de $F_T$, para darle una aceleración de $0.75\\text{ m/s}^2$ <em>hacia la izquierda</em>? Suponga, como en el problema 3.31, que $\\mu_c = 0.20$, $m_A = 25\\text{ kg}$ y $m_B = 15\\text{ kg}$.</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura3-21.png" alt="Figura 3-21" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 3-21</p>
+        </div>
+      `,
+      solucion: `
+        <p>Si se dibujara nuevamente la figura 3-21 para este caso, se debe incluir una fuerza $F$ que tira de $A$ hacia la izquierda. Además, en el nuevo dibujo, la fuerza de fricción retardadora $F_f$ debe estar en dirección contraria a la de la figura. Igual que en el problema 3.31, $F_f = 49\\text{ N}$.</p>
+        <p>Al escribir $F = ma$ para cada bloque, y tomar la dirección de movimiento como positiva, se tiene</p>
+        $$ F - F_T - 49\\text{ N} = (25\\text{ kg})(0.75\\text{ m/s}^2) \\quad \\text{y} \\quad F_T - (15)(9.81)\\text{ N} = (15\\text{ kg})(0.75\\text{ m/s}^2) $$
+        <p>Resolviendo la última ecuación para $F_T$ y sustituyendo en la ecuación anterior, se puede calcular el valor de $F$ encontrando que éste es de $226\\text{ N}$ o $0.23\\text{ kN}$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>El coeficiente de fricción estático entre una caja y la plataforma de un camión es de $0.60$. ¿Cuál es la máxima aceleración que puede tener el camión sobre un terreno nivelado si la caja no debe resbalar?</p>
+      `,
+      solucion: `
+        <h3>Explicación detallada paso a paso</h3>
+
+        <h4>1. Idea física clave del problema</h4>
+        <p>La caja <strong>solo se mueve porque la fricción la “arrastra”</strong> junto con el camión.</p>
+        <ul>
+            <li>Si el camión acelera poco &rarr; la fricción alcanza.</li>
+            <li>Si el camión acelera demasiado &rarr; la fricción <strong>no es suficiente</strong> &rarr; la caja <strong>resbala</strong>.</li>
+        </ul>
+        <p>Por lo tanto:</p>
+        <blockquote>La <strong>máxima aceleración</strong> ocurre cuando la fricción estática llega a su <strong>valor máximo</strong>.</blockquote>
+
+        <h4>2. Fuerzas que actúan sobre la caja</h4>
+        <p>Consideramos <strong>solo la caja</strong>, no el camión.</p>
+
+        <h5>Fuerzas verticales</h5>
+        <p>Actúan el Peso ($P = mg$) hacia abajo y la Normal ($N$) hacia arriba. Como no hay aceleración vertical:</p>
+        $$ N = mg $$
+
+        <h5>Fuerzas horizontales</h5>
+        <p>La <strong>única fuerza horizontal</strong> es la fricción estática ($f_s$). Esta fricción es la que produce la aceleración de la caja. Por segunda ley de Newton:</p>
+        $$ f_s = ma $$
+
+        <h4>3. Fricción estática máxima</h4>
+        <p>La fricción estática <strong>no tiene un valor fijo</strong>, solo tiene un máximo:</p>
+        $$ f_s^{\\text{máx}} = \\mu_s N $$
+        <p>Reemplazamos $N = mg$:</p>
+        $$ f_s^{\\text{máx}} = \\mu_s mg $$
+
+        <h4>4. Condición para que NO resbale</h4>
+        <p>Para que la caja <strong>no se deslice</strong>, la fuerza necesaria para acelerarla <strong>no debe superar</strong> la fricción máxima:</p>
+        $$ ma \\le \\mu_s mg $$
+        <p>Cancelamos la masa ($m$):</p>
+        $$ a \\le \\mu_s g $$
+        <p>⚠️ <strong>Resultado muy importante</strong>: La aceleración máxima <strong>no depende de la masa</strong> de la caja.</p>
+
+        <h4>5. Cálculo numérico</h4>
+        <p>Usamos $\\mu_s = 0.60$ y $g = 9.81\\text{ m/s}^2$:</p>
+        $$ a_{\\text{máx}} = (0.60)(9.81\\text{ m/s}^2) $$
+        $$ a_{\\text{máx}} = 5.89\\text{ m/s}^2 $$
+
+        <h4>Resultado final</h4>
+        $$ \\boxed{a_{\\text{máx}} = 5.89\\text{ m/s}^2} $$
+
+        <h4>Interpretación física</h4>
+        <ul>
+            <li>Si el camión acelera <strong>menos de $5.89\\text{ m/s}^2$</strong>, la caja <strong>se mueve con él</strong>.</li>
+            <li>Si acelera <strong>más</strong>, la fricción no alcanza &rarr; la caja <strong>resbala hacia atrás</strong>.</li>
+            <li>La fricción <strong>no empuja</strong>, solo <strong>se adapta hasta un límite</strong>.</li>
+        </ul>
+
+        <h4>Resumen rápido</h4>
+        <ol>
+            <li>Identifico que la fuerza que acelera la caja es la <strong>fricción</strong>.</li>
+            <li>Uso fricción estática máxima: $f_s = \\mu_s N$.</li>
+            <li>Aplico Newton: $ma = \\mu_s mg$.</li>
+            <li>Cancelo $m$.</li>
+            <li>Resultado: $a = \\mu_s g$.</li>
+        </ol>
+      `,
+    },
+    {
+      enunciado: `
+        <p>En la figura 3-22, las dos cajas tienen masas idénticas de $40\\text{ kg}$. Ambas experimentan una fuerza de fricción cinética con $\\mu_c = 0.15$. Encuentre la aceleración de las cajas y la tensión en la cuerda que las une.</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura3-22.png" alt="Figura 3-22" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 3-22</p>
+        </div>
+      `,
+      solucion: `
+        <p>Usando $F_f = \\mu_c F_N$, se encuentra que las fuerzas de fricción sobre las dos cajas son</p>
+        $$ F_{fA} = (0.15)(mg) \\quad \\text{y} \\quad F_{fB} = (0.15)(0.87mg) $$
+        <p>Pero $m = 40\\text{ kg}$, de modo que $F_{fA} = 59\\text{ N}$ y $F_{fB} = 51\\text{ N}$.</p>
+        <p>Ahora se aplica $\\sum F_x = ma_x$ a cada bloque, tomando como positiva la dirección de movimiento. Esto da</p>
+        $$ F_T - 59\\text{ N} = (40\\text{ kg})(a) \\quad \\text{y} \\quad 0.5mg - F_T - 51\\text{ N} = (40\\text{ kg})(a) $$
+        <p>Al resolver estas dos ecuaciones para $a$ y $F_T$ se obtiene $a = 1.1\\text{ m/s}^2$ y $F_T = 0.10\\text{ kN}$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>En el sistema mostrado en la figura 3-23a, la fuerza $F$ acelera al bloque $m_1$ hacia la derecha. Encuentre su aceleración en términos de $F$ y del coeficiente de fricción $\\mu_c$ entre las superficies de contacto.</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura3-23.png" alt="Figura 3-23" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 3-23</p>
+        </div>
+      `,
+      solucion: `
+        <p>Las fuerzas horizontales sobre el bloque se muestran en la figuras 3-23b y c. El bloque $m_2$ presiona al $m_1$ con su peso, $m_2g$. Ésta es la fuerza normal donde $m_1$ y $m_2$ están en contacto, entonces la fuerza de fricción es $F_{f2} = \\mu_c m_2 g$. Sin embargo, en la superficie inferior de $m_1$, la fuerza normal es $(m_1 + m_2)g$. Por tanto, $F'_f = \\mu_c (m_1 + m_2)g$. Ahora se escribe $\\Sigma F_x = ma_x$ para cada bloque, tomando como positiva la dirección del movimiento:</p>
+        $$ F_T - \\mu_c m_2 g = m_2 a \\quad \\text{y} \\quad F - F_T - \\mu_c m_2 g - \\mu_c (m_1 + m_2)g = m_1 a $$
+        <p>Se puede eliminar $F_T$ sumando las dos ecuaciones para obtener</p>
+        $$ F - 2\\mu_c m_2 g - \\mu_c (m_1 + m_2)(g) = (m_1 + m_2)(a) $$
+        <p>de donde</p>
+        $$ a = \\frac{F - 2\\mu_c m_2 g}{m_1 + m_2} - \\mu_c g $$
+      `,
+    },
+    {
+      enunciado: `
+        <p>En el sistema de la figura 3-24, la fricción y la masa de la polea son despreciables. Encuentre la aceleración de $m_2$ si $m_1 = 300\\text{ g}$, $m_2 = 500\\text{ g}$ y $F = 1.50\\text{ N}$.</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura3-24.png" alt="Figura 3-24" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 3-24</p>
+        </div>
+      `,
+      solucion: `
+        <h3>1. Idea clave del sistema</h3>
+        <p>Este <strong>NO es</strong> un sistema simple: la <strong>polea se mueve</strong>, y eso tiene <strong>dos consecuencias fundamentales</strong>:</p>
+
+        <h4>(1) Relación entre desplazamientos y aceleraciones</h4>
+        <p>Cuando la polea se mueve una distancia $d$, el bloque $m_1$ se mueve <strong>el doble</strong> ($x_{m_1} = 2d$). Por lo tanto:</p>
+        $$ a_1 = 2a $$
+        <p>donde $a$ es la aceleración de la polea (y de $m_2$) y $a_1$ es la aceleración de $m_1$. 👉 <strong>Este punto es clave</strong>.</p>
+
+        <h4>(2) Relación entre las tensiones</h4>
+        <p>La polea es sin masa y sin fricción. Está tirada hacia un lado por <strong>dos tramos de cuerda</strong> con tensión $F_{T1}$ y hacia el otro por una cuerda con tensión $F_{T2}$. El equilibrio de fuerzas implica:</p>
+        $$ F_{T2} = 2F_{T1} $$
+
+        <h3>2. Segunda ley de Newton para cada masa</h3>
+        <p><strong>Para $m_1$:</strong> Fuerza horizontal $F_{T1}$, aceleración $a_1 = 2a$.</p>
+        $$ F_{T1} = m_1 (2a) = 2m_1 a $$
+
+        <p><strong>Para $m_2$:</strong> Fuerzas: $F$ (derecha) y $F_{T2}$ (izquierda).</p>
+        $$ F - F_{T2} = m_2 a $$
+
+        <h3>3. Resolución</h3>
+        <p>Sustituyendo $F_{T2} = 2F_{T1}$ y luego $F_{T1} = 2m_1 a$ en la ecuación de $m_2$:</p>
+        $$ F - 2(2m_1 a) = m_2 a \\implies F - 4m_1 a = m_2 a $$
+        $$ F = (4m_1 + m_2)a $$
+        $$ a = \\frac{F}{4m_1 + m_2} $$
+
+        <h3>4. Sustitución numérica</h3>
+        <p>Datos: $F = 1.50\\text{ N}$, $m_1 = 0.30\\text{ kg}$, $m_2 = 0.50\\text{ kg}$.</p>
+        $$ a = \\frac{1.50}{4(0.30) + 0.50} = \\frac{1.50}{1.20 + 0.50} = \\frac{1.50}{1.70} $$
+        $$ a = 0.882\\text{ m/s}^2 $$
+        <p><strong>Resumen:</strong> En poleas móviles, un bloque puede tener aceleración doble que otro, y la tensión que tira de la polea es el doble de la tensión en cada tramo.</p>
+
+        <hr />
+
+        <h3>Buena pregunta: ¿Por qué $a_1 = 2a_2$?</h3>
+        <p>Ese es el punto conceptual clave del ejercicio. Vamos paso a paso.</p>
+
+        <h4>1. Idea central</h4>
+        <p><strong>$m_1$ tiene el doble de aceleración que $m_2$</strong> porque <strong>la cuerda pasa dos veces por la polea móvil</strong>, lo que impone una <strong>restricción geométrica</strong>. No es una cuestión de fuerzas, sino de cinemática (movimiento de la cuerda).</p>
+
+        <h4>2. Observemos el sistema</h4>
+        <p>En la figura, la polea está unida a $m_2$, por lo que se mueve junto con ella. La cuerda es inextensible y la polea ideal (sin masa ni fricción).</p>
+
+        <h4>3. La clave: longitud constante de la cuerda</h4>
+        <p>Supongamos que $m_2$ se mueve una distancia $d$ hacia la derecha. Como la polea está unida a $m_2$, <strong>ambos tramos de cuerda que sostienen la polea deben alargarse una distancia $d$</strong>. <br> 👉 Aumento total de cuerda requerida en la zona de la polea: $d + d = 2d$.</p>
+
+        <h4>4. ¿Quién compensa esos $2d$?</h4>
+        <p>La cuerda tiene longitud constante. La única parte que puede "ceder" o moverse para compensar es el extremo que tira de $m_1$. Para que la polea avance $d$, la cuerda debe correr $2d$ hacia ella. <br> 👉 Por tanto, $m_1$ debe moverse una distancia $2d$.</p>
+
+        <h4>5. Conclusión geométrica</h4>
+        <p>Si $m_2$ avanza $d$ y $m_1$ avanza $2d$, entonces:</p>
+        $$ v_1 = 2v_2 \\quad \\text{y} \\quad a_1 = 2a_2 $$
+        <p>Esta relación es puramente geométrica.</p>
+
+        <h4>6. Intuición física</h4>
+        <p>Piensa que para que la polea avance un poco, debes "recoger" cuerda de <strong>dos lados</strong>. Toda esa cuerda extra tiene que venir del movimiento de $m_1$. Por eso $m_1$ recorre el doble de distancia en el mismo tiempo.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>En la figura 3-25, los pesos de los objetos son $200\\text{ N}$ y $300\\text{ N}$. Se considera que las poleas no tienen fricción y que sus masas son despreciables. La polea $P_1$ tiene un eje estacionario, la polea $P_2$ puede subir o bajar libremente. Calcule las tensiones $F_{T1}$ y $F_{T2}$, así como la aceleración de cada cuerpo.</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura3-25.png" alt="Figura 3-25" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 3-25</p>
+        </div>
+      `,
+      solucion: `
+        <p>La masa $B$ sube y la masa $A$ baja. Esto se puede ver si se observa que las fuerzas que actúan sobre la polea $P_2$ son $2F_{T2}$ hacia arriba y $F_{T1}$ hacia abajo. Como la polea no tiene masa, no puede tener aceleración, y por tanto $F_{T1} = 2F_{T2}$ (como la inercia de las poleas es despreciable, ésta únicamente transmite la tensión). La fuerza que tira hacia arriba al objeto $B$ es dos veces la fuerza que actúa sobre $A$.</p>
+        <p>Sea $a$ la aceleración descendente de $A$; entonces $a/2$ es la aceleración ascendente de $B$. (¿Por qué?) Ahora se escribe $\\Sigma F_y = ma_y$ para cada masa, tomando como positiva la dirección del movimiento. Se tiene</p>
+        $$ F_{T1} - 300\\text{ N} = (m_B)(\\tfrac{1}{2}a) \\quad \\text{y} \\quad 200\\text{ N} - F_{T2} = m_A a $$
+        <p>Pero $m = F_W/g$ entonces $m_A = (200/9.81)\\text{ kg}$ y $m_B = (300/9.81)\\text{ kg}$. Además $F_{T1} = 2F_{T2}$. La sustitución de estos valores en las dos ecuaciones permite calcular $F_{T2}$, $F_{T1}$ y $a$. Los resultados son</p>
+        $$ F_{T1} = 327.27\\text{ N} \\text{ o } 327\\text{ N} \\quad F_{T2} = 163.64\\text{ N} \\text{ o } 164\\text{ N} \\quad a = 1.78\\text{ m/s}^2 $$
+      `,
+    },
+    {
+      enunciado: `
+        <p>Calcule la masa de la Tierra, suponiendo que es una esfera de radio $6\\,370\\text{ km}$. Dé su respuesta con tres cifras significativas.</p>
+      `,
+      solucion: `
+        <p>Sea $M$ la masa de la Tierra, y $m$ la masa de un cierto objeto próximo a la superficie terrestre. El peso del objeto es igual a $mg$, el cual es igual a la fuerza gravitacional $G(Mm)/r^2$, donde $r$ es el radio de la Tierra. Entonces,</p>
+        $$ mg = G\\frac{Mm}{r^2} $$
+        <p>de donde</p>
+        $$ M = \\frac{gr^2}{G} = \\frac{(9.81\\text{ m/s}^2)(6.37 \\times 10^6\\text{ m})^2}{6.67 \\times 10^{-11}\\text{ N}\\cdot\\text{m}^2/\\text{kg}^2} = 5.97 \\times 10^{24}\\text{ kg} $$
+      `,
+    },
   ],
 }
 
