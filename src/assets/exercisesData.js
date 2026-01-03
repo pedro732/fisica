@@ -2486,6 +2486,125 @@ export const exercisesData = {
         <p><em>Nota:</em> Dado que las fuerzas tienen igual magnitud y el ángulo entre ellas es $120^\\circ$ ($170 - 50 = 120$), la resultante biseca el ángulo y tiene la misma magnitud que ellas.</p>
       `,
     },
+    {
+      enunciado: `
+        <p>Calcule de manera algebraica la resultante de las siguientes fuerzas coplanares: $100\\text{ N}$ en $30^\\circ$, $141.4\\text{ N}$ en $45^\\circ$ y $100\\text{ N}$ en $240^\\circ$. Compruebe el resultado de manera gráfica.</p>
+      `,
+      solucion: `
+        <h3>Paso 1: Descomponer cada fuerza</h3>
+        <p>Se usan las relaciones $F_x = F\\cos\\theta$ y $F_y = F\\sin\\theta$, con $\\theta$ medido desde el eje $x$ positivo.</p>
+
+        <p><strong>1. Fuerza $F_1$ ($100\\text{ N}$ a $30^\\circ$):</strong></p>
+        $$ F_{1x} = 100\\cos(30^\\circ) \\approx 86.6\\text{ N} $$
+        $$ F_{1y} = 100\\sin(30^\\circ) = 50.0\\text{ N} $$
+
+        <p><strong>2. Fuerza $F_2$ ($141.4\\text{ N}$ a $45^\\circ$):</strong></p>
+        $$ F_{2x} = 141.4\\cos(45^\\circ) \\approx 100.0\\text{ N} $$
+        $$ F_{2y} = 141.4\\sin(45^\\circ) \\approx 100.0\\text{ N} $$
+
+        <p><strong>3. Fuerza $F_3$ ($100\\text{ N}$ a $240^\\circ$):</strong></p>
+        $$ F_{3x} = 100\\cos(240^\\circ) = -50.0\\text{ N} $$
+        $$ F_{3y} = 100\\sin(240^\\circ) \\approx -86.6\\text{ N} $$
+
+        <h3>Paso 2: Sumar componentes para obtener $R$</h3>
+        $$ R_x = F_{1x} + F_{2x} + F_{3x} = 86.6 + 100.0 - 50.0 = 136.6\\text{ N} $$
+        $$ R_y = F_{1y} + F_{2y} + F_{3y} = 50.0 + 100.0 - 86.6 = 63.4\\text{ N} $$
+        <p>El vector resultante es $\\vec{R} = (136.6, 63.4)\\text{ N}$.</p>
+
+        <h3>Paso 3: Magnitud y dirección</h3>
+        <p><strong>Magnitud:</strong></p>
+        $$ R = \\sqrt{R_x^2 + R_y^2} = \\sqrt{(136.6)^2 + (63.4)^2} \\approx \\sqrt{18659.56 + 4019.56} \\approx 150.6\\text{ N} $$
+        <p>En kiloNewtons: $R \\approx 0.15\\text{ kN}$.</p>
+
+        <p><strong>Dirección:</strong></p>
+        $$ \\theta = \\tan^{-1}\\left(\\frac{R_y}{R_x}\\right) = \\tan^{-1}\\left(\\frac{63.4}{136.6}\\right) \\approx 24.9^\\circ $$
+        <p>Como ambas componentes son positivas, el vector está en el primer cuadrante. El ángulo es $25^\\circ$ respecto al eje cardinal Este (eje $x$).</p>
+
+        <h3>Paso 4: Interpretación gráfica</h3>
+        <p>Si se dibujan los vectores a escala (ej. 1 cm = 20 N) uno tras otro (método del polígono), el vector que une el origen con el punto final tendrá una longitud correspondiente a 150 N y un ángulo de $25^\\circ$, coincidiendo con el cálculo analítico.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Dos fuerzas, de $80\\text{ N}$ y $100\\text{ N}$, que actúan en un ángulo de $60^\\circ$ entre sí, atraen un objeto. a) ¿Qué fuerza única reemplazaría a las dos fuerzas? b) ¿Qué fuerza única (llamada la equilibrante) equilibraría las dos fuerzas? Resuelva de manera algebraica.</p>
+
+      `,
+      solucion: `
+        <h3>Planteamiento y sistema de ejes</h3>
+        <ul>
+          <li>$\\vec{F}_1 = 80\\text{ N}$ (se toma como referencia sobre el eje $x$).</li>
+          <li>$\\vec{F}_2 = 100\\text{ N}$ formando $60^\\circ$ con $\\vec{F}_1$.</li>
+        </ul>
+
+        <h3>a) Cálculo de la resultante $\\vec{R}$</h3>
+        <p>1. <strong>Componentes de $\\vec{F}_1$:</strong></p>
+        $$ F_{1x} = 80\\text{ N} $$
+        $$ F_{1y} = 0\\text{ N} $$
+
+        <p>2. <strong>Componentes de $\\vec{F}_2$:</strong></p>
+        $$ F_{2x} = 100\\cos(60^\\circ) = 50\\text{ N} $$
+        $$ F_{2y} = 100\\sin(60^\\circ) \\approx 86.6\\text{ N} $$
+
+        <p>3. <strong>Componentes de la resultante:</strong></p>
+        $$ R_x = 80 + 50 = 130\\text{ N} $$
+        $$ R_y = 0 + 86.6 = 86.6\\text{ N} $$
+
+        <p>4. <strong>Módulo de $\\vec{R}$:</strong></p>
+        $$ R = \\sqrt{130^2 + 86.6^2} \\approx 156\\text{ N} \\approx 0.16\\text{ kN} $$
+
+        <p>5. <strong>Dirección de $\\vec{R}$ (ángulo $\\theta$):</strong></p>
+        $$ \\theta = \\tan^{-1}\\left(\\frac{86.6}{130}\\right) \\approx 33.7^\\circ \\approx 34^\\circ $$
+        <p><strong>Resultante:</strong> $0.16\\text{ kN}$ a $34^\\circ$ con la fuerza de $80\\text{ N}$.</p>
+
+        <h3>b) Fuerza equilibrante</h3>
+        <p>La equilibrante $\\vec{E}$ es igual en magnitud y dirección a la resultante pero en sentido opuesto ($\\vec{E} = -\\vec{R}$).</p>
+        <ul>
+          <li><strong>Módulo:</strong> $E = 0.16\\text{ kN}$.</li>
+          <li><strong>Dirección:</strong> $\\theta_E = 34^\\circ + 180^\\circ = 214^\\circ$.</li>
+        </ul>
+        <p><strong>Equilibrante:</strong> $0.16\\text{ kN}$ a $214^\\circ$ con la fuerza de $80\\text{ N}$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Un niño evita que un vagón ruede hacia abajo por unas vías inclinadas a $20^\\circ$ de la horizontal. Si el vagón pesa $150\\text{ N}$, ¿con cuál fuerza debe el niño jalar la manija si ésta se encuentra paralela al plano inclinado?</p>
+        <div class="text-center my-4">
+          <img src="/assets/niño-tren.jpg" alt="Niño deteniendo vagón en plano inclinado" class="img-fluid" style="max-width: 100%; height: auto;">
+        </div>
+      `,
+      solucion: `
+        <h3>Planteamiento</h3>
+        <p>Este es un problema de <strong>equilibrio estático</strong> en un plano inclinado. Las fuerzas que actúan sobre el vagón son:</p>
+        <ul>
+          <li>El peso del vagón ($W = 150\\text{ N}$) apuntando verticalmente hacia abajo.</li>
+          <li>La fuerza normal ($N$) perpendicular al plano inclinado (ejercida por las vías).</li>
+          <li>La fuerza ejercida por el niño ($F$), paralela al plano inclinado y hacia arriba, para evitar que el vagón baje.</li>
+        </ul>
+
+        <h3>Descomposición del peso</h3>
+        <p>Es conveniente usar un sistema de coordenadas alineado con el plano inclinado:</p>
+        <ul>
+          <li>Eje $x$: paralelo al plano (hacia abajo positivo).</li>
+          <li>Eje $y$: perpendicular al plano (hacia arriba positivo).</li>
+        </ul>
+        <p>El peso $W$ tiene componentes:</p>
+        <ul>
+          <li>Componente perpendicular al plano: $W_y = W\\cos(20^\\circ)$.</li>
+          <li>Componente paralela al plano: $W_x = W\\sin(20^\\circ)$.</li>
+        </ul>
+
+        <h3>Condición de equilibrio</h3>
+        <p>Para que el vagón no ruede hacia abajo, la suma de fuerzas en el eje paralelo al plano debe ser cero. La fuerza que hace el niño ($F$, hacia arriba del plano) debe equilibrar la componente del peso que tira hacia abajo del plano ($W_x$).</p>
+        $$ \\sum F_{\\text{paralela}} = 0 \\implies F - W_x = 0 \\implies F = W_x $$
+
+        <h3>Cálculo</h3>
+        $$ F = 150\\text{ N} \\cdot \\sin(20^\\circ) $$
+        $$ F = 150 \\cdot 0.3420 $$
+        $$ F \\approx 51.3\\text{ N} $$
+
+        <p><strong>Respuesta:</strong> El niño debe jalar con una fuerza aproximada de $51\\text{ N}$.</p>
+      `,
+    },
   ],
 }
 
