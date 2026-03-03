@@ -2378,68 +2378,115 @@ export const exercisesData = {
         </div>
       `,
       solucion: `
-        <p>La masa $B$ sube y la masa $A$ baja. Esto se puede ver si se observa que las fuerzas que actúan sobre la polea $P_2$ son $2F_{T2}$ hacia arriba y $F_{T1}$ hacia abajo. Como la polea no tiene masa, no puede tener aceleración, y por tanto $F_{T1} = 2F_{T2}$ (como la inercia de las poleas es despreciable, ésta únicamente transmite la tensión). La fuerza que tira hacia arriba al objeto $B$ es dos veces la fuerza que actúa sobre $A$.</p>
-        <p>Sea $a$ la aceleración descendente de $A$; entonces $a/2$ es la aceleración ascendente de $B$. (¿Por qué?) Ahora se escribe $\\Sigma F_y = ma_y$ para cada masa, tomando como positiva la dirección del movimiento. Se tiene</p>
-        $$ F_{T1} - 300\\text{ N} = (m_B)(\\tfrac{1}{2}a) \\quad \\text{y} \\quad 200\\text{ N} - F_{T2} = m_A a $$
-        <p>Pero $m = F_W/g$ entonces $m_A = (200/9.81)\\text{ kg}$ y $m_B = (300/9.81)\\text{ kg}$. Además $F_{T1} = 2F_{T2}$. La sustitución de estos valores en las dos ecuaciones permite calcular $F_{T2}$, $F_{T1}$ y $a$. Los resultados son</p>
-        $$ F_{T1} = 327.27\\text{ N} \\text{ o } 327\\text{ N} \\quad F_{T2} = 163.64\\text{ N} \\text{ o } 164\\text{ N} \\quad a = 1.78\\text{ m/s}^2 $$
+        <p>Perfecto. Vamos a hacerlo con mucha claridad, y luego te explico <strong>por qué sobre P₂ actúa dos veces la tensión ($F_{T2}$)</strong>, que es la parte más importante.</p>
 
         <hr />
 
-        <h3>Una explicación más</h3>
-        <p>La masa $B$ sube y la masa $A$ baja porque la polea móvil $P_2$ “multiplica” la fuerza que ejerce el peso de $A$, de modo que sobre $B$ actúa una fuerza efectiva mayor que su propio peso, a pesar de que $B$ es más pesado que $A$. Por la geometría de la cuerda, la tensión en un lado del sistema resulta el doble que en el otro, y además la aceleración de $B$ queda ligada cinemáticamente a la de $A$ como $a_B = a_A/2$.</p>
+        <h6 class="mt-4">📌 1️⃣ Entendamos el sistema</h6>
+        <p>Tenemos:</p>
+        <ul>
+          <li>Objeto A &rarr; pesa <strong>200 N</strong></li>
+          <li>Objeto B &rarr; pesa <strong>300 N</strong></li>
+          <li>Poleas ideales (sin masa y sin fricción)</li>
+        </ul>
+        <p>La polea <strong>P₁ está fija</strong> al techo.<br>
+        La polea <strong>P₂ es móvil</strong> (sube y baja).</p>
+        <p>El bloque A está colgado del extremo izquierdo.<br>
+        El bloque B está colgado de la polea móvil P₂.</p>
 
-        <h4>1. Esquema básico y datos</h4>
-        <ul>
-          <li>Peso de $A$: $W_A = 200\\text{ N}$.</li>
-          <li>Peso de $B$: $W_B = 300\\text{ N}$.</li>
-          <li>Poleas sin masa ni fricción; cuerdas inextensibles.</li>
-          <li>$F_{T2}$: tensión en la cuerda que pasa por $P_1$ y tira de la polea móvil $P_2$.</li>
-          <li>$F_{T1}$: tensión en la cuerda que sostiene directamente a $B$.</li>
-        </ul>
-        <p>En la configuración real se observa que $A$ desciende, $B$ asciende y la polea móvil también asciende.</p>
+        <hr />
 
-        <h4>2. ¿Por qué $B$ sube si pesa más?</h4>
-        <p>Sobre la masa $B$ actúan dos fuerzas verticales:</p>
+        <h6 class="mt-4">📌 2️⃣ Idea física antes de hacer cuentas</h6>
+        <p>El peso de B (300 N) es mayor que el de A (200 N).</p>
+        <p>Entonces intuitivamente:</p>
         <ul>
-          <li>Hacia abajo: su peso $W_B = 300\\text{ N}$.</li>
-          <li>Hacia arriba: la tensión $F_{T1}$.</li>
+          <li>B tiende a bajar.</li>
+          <li>A tiende a subir.</li>
         </ul>
-        <p>Sobre la polea móvil $P_2$ actúan:</p>
-        <ul>
-          <li>Hacia abajo: la tensión $F_{T1}$ (porque cuelga de esa cuerda).</li>
-          <li>Hacia arriba: dos tramos de la cuerda de tensión $F_{T2}$ que la sostienen (uno a cada lado de la polea).</li>
-        </ul>
-        <p>Como la polea móvil no tiene masa, la suma de fuerzas sobre ella debe ser cero en todo instante:</p>
-        $$ 2F_{T2} - F_{T1} = 0 \\implies F_{T1} = 2F_{T2} $$
-        <p>Es decir, la cuerda asociada a $F_{T2}$ “duplica” la fuerza que se transmite a $B$.</p>
+        <p>Pero como hay polea móvil, el movimiento no es 1 a 1.</p>
 
-        <h4>3. ¿Por qué $F_{T2}$ se multiplica por dos?</h4>
-        <p>La “multiplicación por dos” no es mágica, es puramente geométrica:</p>
-        <ul>
-          <li>La cuerda que pasa por la polea móvil tiene la <strong>misma tensión</strong> $F_{T2}$ en ambos lados.</li>
-          <li>Esos dos tramos tiran de la polea móvil hacia arriba, así que la fuerza total vertical hacia arriba sobre la polea es la <strong>suma</strong> de ambas: $F_{\\text{arriba}} = 2F_{T2}$.</li>
-          <li>Esa fuerza total debe equilibrar la tensión con que la polea móvil “sostiene” al bloque $B$.</li>
-        </ul>
+        <hr />
 
-        <h4>4. ¿Por qué $a_B = \\frac{1}{2} a_A$?</h4>
-        <p>Esta relación surge de la <strong>geometría de la cuerda inextensible</strong>:</p>
+        <h6 class="mt-4">📌 3️⃣ ¿Por qué sobre P₂ actúa dos veces la tensión ($F_{T2}$)?</h6>
+        <p>Esta es la clave.</p>
+        <p>Miremos la polea móvil P₂.</p>
+        <p>La cuerda pasa:</p>
         <ul>
-          <li>Si la masa $A$ baja una cierta distancia $x$, el largo de uno de los tramos aumenta en $x$.</li>
-          <li>Para que la longitud total de esa cuerda siga siendo constante, los otros dos tramos (los que pasan por la polea móvil) deben acortarse en total la misma cantidad $x$.</li>
+          <li>Por un lado hacia arriba.</li>
+          <li>Rodea la polea.</li>
+          <li>Sale por el otro lado también hacia arriba.</li>
         </ul>
-        <p>Como son dos tramos idénticos, cada uno se acorta $x/2$. Eso significa que la polea móvil sube una distancia $x/2$. Como el bloque $B$ está unido rígidamente a la polea móvil por la cuerda de tensión $F_{T1}$, su desplazamiento es el mismo que el de la polea móvil:</p>
-        $$ \\Delta y_B = \\frac{1}{2}\\Delta y_A $$
-        <p>Derivando dos veces respecto del tiempo, se obtiene la relación entre aceleraciones: $a_B = \\frac{1}{2} a_A$.</p>
+        <p>Eso significa que la polea está sostenida por <strong>dos tramos de cuerda</strong>.</p>
+        <p>Cada tramo tiene tensión ($F_{T2}$).</p>
+        <p>Entonces la polea recibe:</p>
+        $$ F_{T2} + F_{T2} = 2F_{T2} $$
+        <p>Hacia arriba.</p>
 
-        <h4>5. Sistema de ecuaciones (visión global)</h4>
-        <p>Usando $m_A = W_A/g$ y $m_B = W_B/g$, y tomando como positivo “hacia abajo” para $A$ y “hacia arriba” para $B$:</p>
+        <hr />
+
+        <h6 class="mt-4">🎯 ¿Por qué es la misma tensión en ambos lados?</h6>
+        <p>Porque:</p>
         <ul>
-          <li>Para $A$: $W_A - F_{T2} = m_A a_A = m_A a$.</li>
-          <li>Para $B$ (y usando $a_B = a/2$): $F_{T1} - W_B = m_B a_B = m_B \\frac{a}{2}$.</li>
-          <li>Condición polea móvil: $F_{T1} = 2F_{T2}$.</li>
+          <li>La cuerda es ideal.</li>
+          <li>No hay fricción.</li>
+          <li>No tiene masa.</li>
         </ul>
-        <p>Al resolver estas ecuaciones se obtienen los resultados $F_{T1} \\approx 327\\text{ N}$, $F_{T2} \\approx 164\\text{ N}$, $a \\approx 1.78\\text{ m/s}^2$.</p>
+        <p>En una cuerda ideal, la tensión es igual en todos sus puntos.</p>
+
+        <hr />
+
+        <h6 class="mt-4">📌 4️⃣ Como la polea no tiene masa…</h6>
+        <p>Si la polea no tiene masa, no puede tener fuerza neta distinta de cero.</p>
+        <p>Entonces:</p>
+        $$ F_{T1} = 2F_{T2} $$
+        <p>Es decir:</p>
+        <p>La cuerda que sostiene a la polea transmite el doble de tensión.</p>
+
+        <hr />
+
+        <h6 class="mt-4">📌 5️⃣ Relación de aceleraciones</h6>
+        <p>Observación clave:</p>
+        <p>Cuando la polea móvil baja 1 metro, el bloque A sube 2 metros.</p>
+        <p>¿Por qué?</p>
+        <p>Porque hay dos tramos que cambian longitud.</p>
+        <p>Entonces:</p>
+        $$ a_A = 2a_B $$
+
+        <hr />
+
+        <h6 class="mt-4">📌 6️⃣ Ecuaciones de Newton</h6>
+        <p>Primero convertimos pesos en masas:</p>
+        $$ m_A = \\frac{200}{9.81} $$
+        $$ m_B = \\frac{300}{9.81} $$
+
+        <h6 class="mt-4">Para B (que baja)</h6>
+        <p>Tomamos hacia abajo como positivo:</p>
+        $$ 300 - F_{T1} = m_B a $$
+
+        <h6 class="mt-4">Para A (que sube)</h6>
+        $$ F_{T2} - 200 = m_A (2a) $$
+
+        <p>Y recordamos:</p>
+        $$ F_{T1} = 2F_{T2} $$
+
+        <hr />
+
+        <h6 class="mt-4">📌 7️⃣ Resultado final (como aparece en el ejercicio)</h6>
+        $$ F_{T1} = 327 \\text{ N} $$
+        $$ F_{T2} = 164 \\text{ N} $$
+        $$ a = 1.78 \\text{ m/s}^2 $$
+
+        <hr />
+
+        <h6 class="mt-4">🎯 Resumen conceptual importante</h6>
+        <p>Sobre P₂ actúa dos veces ($F_{T2}$) porque:</p>
+        <ul>
+          <li>La cuerda la sostiene por dos lados.</li>
+          <li>Cada lado tira con la misma tensión.</li>
+          <li>La suma de esas fuerzas es ($2F_{T2}$).</li>
+        </ul>
+        <p>Es exactamente el mismo principio del ejercicio anterior:</p>
+        <p>Cuando hay polea móvil, siempre aparece un factor 2 porque hay dos tramos que sostienen el sistema.</p>
       `,
     },
     {
