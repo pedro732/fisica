@@ -2371,6 +2371,11 @@ export const exercisesData = {
     },
     {
       enunciado: `
+        <div id="inicio-fuerzas-ej" class="d-flex justify-content-end mb-4">
+          <a href="#final-fuerzas-ej" class="btn btn-primary rounded-pill shadow-sm" style="padding: 0.5rem 1.5rem; font-weight: 500; transition: all 0.3s ease; text-decoration: none;">
+            Ir al final &#8595;
+          </a>
+        </div>
         <p>En la figura 3-25, los pesos de los objetos son $200\\text{ N}$ y $300\\text{ N}$. Se considera que las poleas no tienen fricción y que sus masas son despreciables. La polea $P_1$ tiene un eje estacionario, la polea $P_2$ puede subir o bajar libremente. Calcule las tensiones $F_{T1}$ y $F_{T2}$, así como la aceleración de cada cuerpo.</p>
         <div class="text-center my-4">
           <img src="/assets/figura3-25.png" alt="Figura 3-25" class="img-fluid" style="max-width: 100%; height: auto;">
@@ -3377,6 +3382,11 @@ export const exercisesData = {
         $$ W_{\\text{Marte}} = 200\\text{ N} \\cdot 0.377 = 75.4\\text{ N} \\approx 75\\text{ N} $$
 
         <p><strong>Respuestas:</strong> $75\\text{ N}$, $3.7\\text{ m/s}^2$.</p>
+        <div id="final-fuerzas-ej" class="d-flex justify-content-center mt-5 mb-3">
+          <a href="#inicio-fuerzas-ej" class="btn btn-outline-primary rounded-pill shadow-sm" style="padding: 0.5rem 1.5rem; font-weight: 500; border-width: 2px; transition: all 0.3s ease; text-decoration: none;">
+            &#8593; Ir al inicio
+          </a>
+        </div>
       `,
     },
   ],
