@@ -2831,6 +2831,554 @@ export const exercisesData = {
         <p><strong>Respuestas:</strong> a) $2.7\\text{ m/s}^2$ hacia arriba; b) $2.3\\text{ m/s}^2$ hacia abajo; c) $9.8\\text{ m/s}^2$ hacia abajo; d) cero.</p>
       `,
     },
+    {
+      enunciado: `
+        <p><strong>3.53 [II]</strong> Una masa de $5.0\\text{ kg}$ cuelga en el extremo de una cuerda. Encuentre la tensión en la cuerda si la aceleración de la masa es <em>a)</em> $1.5\\text{ m/s}^2$ hacia arriba, <em>b)</em> $1.5\\text{ m/s}^2$ hacia abajo, <em>c)</em> $9.8\\text{ m/s}^2$ hacia abajo. (Considere el valor de la aceleración de la gravedad igual a $9.8\\text{ m/s}^2$).</p>
+      `,
+      solucion: `
+        <p>El peso de la masa es $W = m \\cdot g = 5.0\\text{ kg} \\cdot 9.8\\text{ m/s}^2 = 49\\text{ N}$.</p>
+        <p>Las fuerzas que actúan son la tensión $T$ (hacia arriba) y el peso $W$ (hacia abajo). Aplicando la segunda ley de Newton y tomando como positivo el sentido hacia arriba ($a$ positiva hacia arriba):</p>
+        $$ \\sum F_y = T - W = m \\cdot a \\implies T = W + m \\cdot a = m(g + a) $$
+
+        <h3>a) Aceleración de $1.5\\text{ m/s}^2$ hacia arriba</h3>
+        $$ T = 5.0\\text{ kg} \\cdot (9.8 + 1.5)\\text{ m/s}^2 = 5.0 \\cdot 11.3 = 56.5\\text{ N} \\approx 57\\text{ N} $$
+
+        <h3>b) Aceleración de $1.5\\text{ m/s}^2$ hacia abajo</h3>
+        <p>Aquí la aceleración es negativa ($a = -1.5\\text{ m/s}^2$):</p>
+        $$ T = 5.0\\text{ kg} \\cdot (9.8 - 1.5)\\text{ m/s}^2 = 5.0 \\cdot 8.3 = 41.5\\text{ N} \\approx 42\\text{ N} $$
+
+        <h3>c) Aceleración de $9.8\\text{ m/s}^2$ hacia abajo</h3>
+        <p>La masa está en caída libre ($a = -9.8\\text{ m/s}^2$):</p>
+        $$ T = 5.0\\text{ kg} \\cdot (9.8 - 9.8)\\text{ m/s}^2 = 0\\text{ N} $$
+
+        <p><strong>Respuestas:</strong> a) $57\\text{ N}$; b) $42\\text{ N}$; c) cero.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>3.54 [II]</strong> Un hombre de $700\\text{ N}$ está de pie sobre una báscula en el piso de un elevador. La báscula registra la fuerza que ejerce sobre cualquier cosa que esté en ella. ¿Cuánto lee la báscula si el elevador tiene una aceleración de <em>a)</em> $1.8\\text{ m/s}^2$ hacia arriba? <em>b)</em> $1.8\\text{ m/s}^2$ hacia abajo? <em>c)</em> $9.8\\text{ m/s}^2$ hacia abajo? (Considere el valor de la aceleración de la gravedad igual a $9.8\\text{ m/s}^2$.)</p>
+      `,
+      solucion: `
+        <p>Primero, calculamos la masa del hombre usando $W = m \\cdot g$:</p>
+        $$ m = \\frac{700\\text{ N}}{9.8\\text{ m/s}^2} \\approx 71.4\\text{ kg} $$
+        <p>La lectura de la báscula corresponde a la fuerza normal ($N$) que ejerce sobre el hombre hacia arriba. Tomando hacia arriba como positivo, la segunda ley de Newton da:</p>
+        $$ \\sum F_y = N - W = m \\cdot a \\implies N = W + m \\cdot a $$
+
+        <h3>a) Aceleración de $1.8\\text{ m/s}^2$ hacia arriba</h3>
+        $$ N = 700\\text{ N} + (71.4\\text{ kg})(1.8\\text{ m/s}^2) = 700 + 128.5 = 828.5\\text{ N} \\approx 0.83\\text{ kN} $$
+
+        <h3>b) Aceleración de $1.8\\text{ m/s}^2$ hacia abajo</h3>
+        <p>La aceleración es negativa ($a = -1.8\\text{ m/s}^2$):</p>
+        $$ N = 700\\text{ N} + (71.4\\text{ kg})(-1.8\\text{ m/s}^2) = 700 - 128.5 = 571.5\\text{ N} \\approx 0.57\\text{ kN} $$
+
+        <h3>c) Aceleración de $9.8\\text{ m/s}^2$ hacia abajo</h3>
+        <p>El elevador está en caída libre ($a = -9.8\\text{ m/s}^2$):</p>
+        $$ N = 700\\text{ N} + (71.4\\text{ kg})(-9.8\\text{ m/s}^2) = 700 - 700 = 0\\text{ N} $$
+        <p>El hombre experimenta aparente ingravidez y la báscula lee cero.</p>
+
+        <p><strong>Respuestas:</strong> a) $0.83\\text{ kN}$; b) $0.57\\text{ kN}$; c) cero.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>3.55 [II]</strong> Con la báscula descrita en el problema 3.54, un astronauta de $65\\text{ kg}$ se pesa en la Luna, en donde $g = 1.60\\text{ m/s}^2$. ¿Cuánto lee la báscula?</p>
+      `,
+      solucion: `
+        <p>Si el sistema está en reposo (la aceleración es $a = 0$), la lectura de la báscula equivale simplemente al peso del astronauta en ese lugar.</p>
+        <p>El peso en la Luna ($W_{\\text{Luna}}$) se calcula con la masa del astronauta y la gravedad lunar:</p>
+        $$ W_{\\text{Luna}} = m \\cdot g_{\\text{Luna}} = 65\\text{ kg} \\cdot 1.60\\text{ m/s}^2 = 104\\text{ N} $$
+        <p>La báscula, que mide la fuerza normal de soporte, registrará este valor exacto puesto que no hay aceleración externa en el sistema de referencia.</p>
+        <p><strong>Respuesta:</strong> $104\\text{ N}$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>3.56 [II]</strong> Una cuerda que pasa sobre una polea sin fricción ni masa tiene atado un objeto de $4.0\\text{ kg}$ en un extremo y un objeto de $12\\text{ kg}$ en el otro extremo. Calcule la aceleración y la tensión en la cuerda. (Considere el valor de la aceleración de la gravedad igual a $9.8\\text{ m/s}^2$.)</p>
+      `,
+      solucion: `
+        <p>Este sistema se conoce como <em>máquina de Atwood</em>. Sea $m_1 = 12\\text{ kg}$ y $m_2 = 4.0\\text{ kg}$. Al liberarse, la masa mayor ($m_1$) se acelerará hacia abajo y la menor ($m_2$) hacia arriba, ambas con la misma magnitud de aceleración $a$.</p>
+
+        <h3>Aceleración</h3>
+        <p>Ecuaciones de movimiento para cada masa (considerando en cada una la dirección del movimiento que le corresponde como positiva):</p>
+        <ul>
+          <li>Para $m_1$ (baja): $W_1 - T = m_1 \\cdot a$</li>
+          <li>Para $m_2$ (sube): $T - W_2 = m_2 \\cdot a$</li>
+        </ul>
+        <p>Sumando ambas ecuaciones se cancela la tensión $T$:</p>
+        $$ (m_1 \\cdot g - T) + (T - m_2 \\cdot g) = m_1 \\cdot a + m_2 \\cdot a $$
+        $$ (m_1 - m_2)g = (m_1 + m_2)a $$
+        $$ a = \\frac{m_1 - m_2}{m_1 + m_2} g = \\frac{12 - 4.0}{12 + 4.0} (9.8\\text{ m/s}^2) = \\frac{8.0}{16.0} (9.8) = (0.5)(9.8) = 4.9\\text{ m/s}^2 $$
+
+        <h3>Tensión</h3>
+        <p>Se puede reemplazar $a$ en cualquiera de las ecuaciones originales. Usando la de $m_2$:</p>
+        $$ T = W_2 + m_2 \\cdot a = m_2(g + a) = 4.0\\text{ kg} \\cdot (9.8 + 4.9)\\text{ m/s}^2 = 4.0 \\cdot 14.7 = 58.8\\text{ N} $$
+        <p>Redondeando a dos cifras significativas como en los datos, la tensión es $59\\text{ N}$.</p>
+        <p><strong>Respuestas:</strong> $4.9\\text{ m/s}^2$, $59\\text{ N}$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>3.57 [II]</strong> Un elevador parte del reposo con una aceleración constante hacia arriba. Avanza $2.0\\text{ m}$ en los primeros $0.60\\text{ s}$. Un usuario del elevador sostiene un paquete de $3.0\\text{ kg}$ con una cuerda vertical. ¿Cuánta tensión tiene la cuerda durante el proceso de aceleración?</p>
+      `,
+      solucion: `
+        <h3>Aceleración del elevador</h3>
+        <p>Al partir del reposo ($v_i = 0$), podemos hallar la aceleración ($a$) con la ecuación de cinemática:</p>
+        $$ d = v_i \\cdot t + \\frac{1}{2} a \\cdot t^2 \\implies d = \\frac{1}{2} a \\cdot t^2 $$
+        <p>Despejando $a$:</p>
+        $$ a = \\frac{2d}{t^2} = \\frac{2(2.0\\text{ m})}{(0.60\\text{ s})^2} = \\frac{4.0}{0.36} \\approx 11.11\\text{ m/s}^2 $$
+
+        <h3>Tensión de la cuerda</h3>
+        <p>El paquete de masa $m = 3.0\\text{ kg}$ también está sujeto a esta aceleración hacia arriba. Aplicando segunda ley de Newton sobre el paquete:</p>
+        $$ \\sum F_y = T - mg = m \\cdot a $$
+        $$ T = m(g + a) = 3.0\\text{ kg} \\cdot (9.8\\text{ m/s}^2 + 11.11\\text{ m/s}^2) $$
+        $$ T = 3.0 \\cdot 20.91 = 62.7\\text{ N} \\approx 63\\text{ N} $$
+        <p><strong>Respuesta:</strong> $63\\text{ N}$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>3.58 [II]</strong> Justo cuando se abre su paracaídas, una paracaidista de $60\\text{ kg}$ cae con una rapidez de $50\\text{ m/s}$. Después de transcurridos $0.80\\text{ s}$, el paracaídas está completamente abierto y su rapidez disminuye a $12.0\\text{ m/s}$. Encuentre la fuerza retardadora promedio ejercida en la paracaidista durante este tiempo si la desaceleración es uniforme. El peso del paracaídas es de $12.379\\text{ kg}$.</p>
+      `,
+      solucion: `
+        <h3>Aceleración</h3>
+        <p>Considerando la dirección "hacia abajo" como positiva, sus velocidades son $v_i = 50\\text{ m/s}$ y $v_f = 12.0\\text{ m/s}$. La aceleración de la paracaidista es:</p>
+        $$ a = \\frac{v_f - v_i}{t} = \\frac{12.0 - 50}{0.80} = \\frac{-38.0\\text{ m/s}}{0.80\\text{ s}} = -47.5\\text{ m/s}^2 $$
+        <p>El signo negativo indica que la aceleración tiene sentido hacia arriba, opuesto a la caída.</p>
+
+        <h3>Fuerza retardadora sobre la paracaidista</h3>
+        <p>El problema pide la fuerza retardadora que experimenta la persona, por lo que tomaremos únicamente la masa de la paracaidista ($m_p = 60\\text{ kg}$). (La masa del paracaídas se brinda como información extra que sería relevante sólo si se pidiera la fuerza retardadora del aire sobre el sistema entero).</p>
+        <p>Por segunda ley de Newton sobre la persona ($W_p = m_p \\cdot g$ hacia abajo, $F_{\\text{ret}}$ hacia arriba ejercida por el arnés):</p>
+        $$ m_p \\cdot g - F_{\\text{ret}} = m_p \\cdot a \\implies F_{\\text{ret}} = m_p(g - a) $$
+        <p>Evaluamos con el verdadero signo de $a = -47.5\\text{ m/s}^2$:</p>
+        $$ F_{\\text{ret}} = 60 \\cdot (9.8 - (-47.5)) = 60(9.8 + 47.5) = 60(57.3) = 3438\\text{ N} $$
+        <p>Este valor se puede desglosar conceptualmente en la fuerza necesaria para simplemente sujetarla o anular su peso ($60 \\cdot 9.8 = 588\\text{ N}$) más la fuerza extra requerida para frenarla de forma tan brusca ($60 \\cdot 47.5 = 2850\\text{ N}$). Total:</p>
+        $$ 2850\\text{ N} + 588\\text{ N} = 3438\\text{ N} \\approx 3.4\\text{ kN} $$
+
+        <p><strong>Respuesta:</strong> $3438\\text{ N}$ o $3.4\\text{ kN}$. (<em>$2850\\text{ N}$ para desacelerar y $588\\text{ N}$ para compensar la gravedad.</em>)</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>3.59 [II]</strong> Una masa de $300\\text{ g}$ cuelga en el extremo de una cuerda. Una segunda cuerda cuelga desde la parte inferior de esa masa y sostiene una masa de $900\\text{ g}$. <em>a)</em> Encuentre la tensión en cada cuerda cuando las masas aceleran hacia arriba a $0.700\\text{ m/s}^2$. <em>b)</em> Encuentre la tensión en cada cuerda cuando la aceleración es de $0.700\\text{ m/s}^2$ hacia abajo.</p>
+      `,
+      solucion: `
+        <p>Sean $m_1 = 300\\text{ g} = 0.300\\text{ kg}$ (masa superior) y $m_2 = 900\\text{ g} = 0.900\\text{ kg}$ (masa inferior).</p>
+        <p>La tensión de la cuerda inferior ($T_2$) soporta solo a $m_2$. La tensión de la cuerda superior ($T_1$) soporta tanto a $m_1$ como a $m_2$ (masa total $m_{\\text{tot}} = 1.200\\text{ kg}$).</p>
+
+        <h3>a) Aceleración hacia arriba ($a = +0.700\\text{ m/s}^2$)</h3>
+        <p>Aplicando la ecuación de movimiento $\\sum F_y = m \\cdot a$:</p>
+        <ul>
+          <li>Para la cuerda inferior: $T_2 - m_2 g = m_2 a \\implies T_2 = m_2(g + a)$
+          <br>$$ T_2 = 0.900\\text{ kg} \\cdot (9.8 + 0.700)\\text{ m/s}^2 = 0.900 \\cdot 10.5 = 9.45\\text{ N} $$</li>
+          <li>Para la cuerda superior: $T_1 - m_{\\text{tot}} g = m_{\\text{tot}} a \\implies T_1 = m_{\\text{tot}}(g + a)$
+          <br>$$ T_1 = 1.200\\text{ kg} \\cdot (9.8 + 0.700)\\text{ m/s}^2 = 1.200 \\cdot 10.5 = 12.6\\text{ N} $$</li>
+        </ul>
+
+        <h3>b) Aceleración hacia abajo ($a = -0.700\\text{ m/s}^2$)</h3>
+        <p>La aceleración tiene signo negativo:</p>
+        <ul>
+          <li>Cuerda inferior: $T_2 = m_2(g + a) = 0.900 \\cdot (9.8 - 0.700) = 0.900 \\cdot 9.1 = 8.19\\text{ N}$</li>
+          <li>Cuerda superior: $T_1 = m_{\\text{tot}}(g + a) = 1.200 \\cdot (9.8 - 0.700) = 1.200 \\cdot 9.1 = 10.92\\text{ N} \\approx 10.9\\text{ N}$</li>
+        </ul>
+        <p><strong>Respuestas:</strong> a) $12.6\\text{ N}$ y $9.45\\text{ N}$; b) $10.9\\text{ N}$ y $8.19\\text{ N}$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>3.60 [II]</strong> Un vagón de $20\\text{ kg}$ es jalado a nivel del suelo por una cuerda inclinada $30^\\circ$ sobre la horizontal. Una fuerza de fricción de $30\\text{ N}$ se opone al movimiento. ¿Cuánto mide la fuerza de atracción si el vagón se mueve con <em>a)</em> una rapidez constante y <em>b)</em> una aceleración de $0.40\\text{ m/s}^2$?</p>
+      `,
+      solucion: `
+        <p>La cuerda ejerce una fuerza $F$ con un ángulo de $30^\\circ$. La componente horizontal de esta fuerza de atracción es $F_x = F\\cos(30^\\circ)$.</p>
+        <p>La ecuación de movimiento horizontal es: $\\sum F_x = F\\cos(30^\\circ) - f_k = m \\cdot a$, donde $f_k = 30\\text{ N}$.</p>
+        <p>Despejando $F$:</p>
+        $$ F = \\frac{m \\cdot a + f_k}{\\cos(30^\\circ)} = \\frac{m \\cdot a + 30}{0.8660} $$
+
+        <h3>a) Rapidez constante ($a = 0$)</h3>
+        $$ F = \\frac{0 + 30\\text{ N}}{0.8660} = 34.64\\text{ N} \\approx 35\\text{ N} $$
+
+        <h3>b) Aceleración de $0.40\\text{ m/s}^2$</h3>
+        $$ F = \\frac{(20\\text{ kg})(0.40\\text{ m/s}^2) + 30\\text{ N}}{0.8660} = \\frac{8 + 30}{0.8660} = \\frac{38}{0.8660} = 43.88\\text{ N} \\approx 44\\text{ N} $$
+
+        <p><strong>Respuestas:</strong> a) $35\\text{ N}$; b) $44\\text{ N}$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>3.61 [II]</strong> Una caja de $12\\text{ kg}$ es liberada desde la parte superior de un plano inclinado que mide $5.0\\text{ m}$ y hace un ángulo de $40^\\circ$ con la horizontal. Una fuerza de fricción de $60\\text{ N}$ impide el movimiento de la caja. <em>a)</em> ¿Cuál será la aceleración de la caja? <em>b)</em> ¿Cuánto tardará en llegar a la parte inferior del plano inclinado?</p>
+      `,
+      solucion: `
+        <h3>a) Aceleración de la caja</h3>
+        <p>Las fuerzas que actúan en paralelo al plano (eje $x$) son la componente del peso a favor del movimiento ($W_x = mg\\sin(40^\\circ)$) y la fricción en contra ($f_k = 60\\text{ N}$).</p>
+        $$ W_x = (12\\text{ kg})(9.8\\text{ m/s}^2)\\sin(40^\\circ) = 117.6 \\cdot 0.6428 = 75.6\\text{ N} $$
+        <p>Por segunda ley de Newton:</p>
+        $$ \\sum F_x = W_x - f_k = m \\cdot a $$
+        $$ 75.6\\text{ N} - 60\\text{ N} = 12\\text{ kg} \\cdot a \\implies 15.6\\text{ N} = 12 \\cdot a $$
+        $$ a = \\frac{15.6}{12} = 1.3\\text{ m/s}^2 $$
+
+        <h3>b) Tiempo en descender</h3>
+        <p>Con aceleración constante $a = 1.3\\text{ m/s}^2$, velocidad inicial $v_i = 0$ y distancia $d = 5.0\\text{ m}$:</p>
+        $$ d = v_i t + \\frac{1}{2} a t^2 \\implies 5.0 = \\frac{1}{2} (1.3) t^2 $$
+        $$ t^2 = \\frac{10.0}{1.3} \\approx 7.69 \\implies t = \\sqrt{7.69} \\approx 2.77\\text{ s} \\approx 2.8\\text{ s} $$
+
+        <p><strong>Respuestas:</strong> a) $1.3\\text{ m/s}^2$; b) $2.8\\text{ s}$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>3.62 [II]</strong> Para la situación resumida en el problema 3.61, ¿cuál es el coeficiente de fricción entre la caja y el plano inclinado?</p>
+      `,
+      solucion: `
+        <p>El coeficiente de fricción cinética $\\mu_k$ se define como $\\mu_k = \\frac{f_k}{N}$, donde $N$ es la fuerza normal.</p>
+        <p>Para un objeto sobre un plano inclinado donde no hay fuerzas externas perpendiculares, la normal equilibra la componente perpendicular del peso ($W_y$):</p>
+        $$ N = mg\\cos(40^\\circ) = (12\\text{ kg})(9.8\\text{ m/s}^2)\\cos(40^\\circ) = 117.6 \\cdot 0.7660 \\approx 90.1\\text{ N} $$
+        <p>Sustituyendo el valor dado de fricción ($f_k = 60\\text{ N}$):</p>
+        $$ \\mu_k = \\frac{60\\text{ N}}{90.1\\text{ N}} \\approx 0.666 $$
+        <p>Redondeando a dos cifras significativas, igual que los datos del problema.</p>
+        <p><strong>Respuesta:</strong> $0.67$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>3.63 [II]</strong> Un plano inclinado hace un ángulo de $30^\\circ$ con la horizontal. Encuentre la fuerza constante, aplicada paralela al plano, requerida para hacer que una caja de $15\\text{ kg}$ se deslice <em>a)</em> hacia arriba en el plano con una aceleración de $1.2\\text{ m/s}^2$ y <em>b)</em> hacia abajo en el plano inclinado con una aceleración de $1.2\\text{ m/s}^2$. No considere las fuerzas de fricción.</p>
+      `,
+      solucion: `
+        <p>Masa $m = 15\\text{ kg}$. La componente del peso paralela al plano siempre apunta hacia abajo del plano:</p>
+        $$ W_x = mg\\sin(30^\\circ) = 15(9.8)(0.50) = 73.5\\text{ N} $$
+
+        <h3>a) Aceleración hacia arriba</h3>
+        <p>La fuerza aplicada $F$ debe vencer al peso y además proporcionar la aceleración hacia arriba. Tomando hacia arriba como positivo:</p>
+        $$ \\sum F_x = F - W_x = m \\cdot a $$
+        $$ F = W_x + m \\cdot a = 73.5\\text{ N} + (15\\text{ kg})(1.2\\text{ m/s}^2) = 73.5 + 18.0 = 91.5\\text{ N} \\approx 92\\text{ N} $$
+
+        <h3>b) Aceleración hacia abajo</h3>
+        <p>Si la caja simplemente se dejara caer, su aceleración sería $g\\sin(30^\\circ) = 4.9\\text{ m/s}^2$. Para que baje más lento ($a = 1.2\\text{ m/s}^2$), la fuerza constante $F$ debe estar sosteniéndola parcialmente hacia arriba. Tomando en la dirección del movimiento (hacia abajo) como positivo:</p>
+        $$ \\sum F_x = W_x - F = m \\cdot a $$
+        $$ F = W_x - m \\cdot a = 73.5\\text{ N} - (15\\text{ kg})(1.2\\text{ m/s}^2) = 73.5 - 18.0 = 55.5\\text{ N} \\approx 56\\text{ N} $$
+
+        <p><strong>Respuestas:</strong> a) $92\\text{ N}$; b) $56\\text{ N}$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>3.64 [II]</strong> Se ejerce una fuerza horizontal $F$ sobre una caja de $20\\text{ kg}$ para deslizarla hacia arriba por un plano inclinado de $30^\\circ$. La fuerza de fricción que retarda el movimiento es de $80\\text{ N}$. ¿Cuánto debe medir $F$ si la aceleración de la caja al moverse será <em>a)</em> cero y <em>b)</em> $0.75\\text{ m/s}^2$?</p>
+      `,
+      solucion: `
+        <p><strong>Cuidado con los ejes:</strong> La fuerza $F$ es <strong>horizontal</strong>, por lo tanto no es paralela al plano oblicuo. Hay que descomponer tanto a $F$ como al peso $W$ paralelos al plano ($x$) y perpendiculares ($y$).</p>
+        <ul>
+          <li>Peso: $W = 20(9.8) = 196\\text{ N}$. Su componente hacia abajo en el plano es $W_x = W\\sin(30^\\circ) = 196(0.5) = 98\\text{ N}$.</li>
+          <li>Fuerza $F$ horizontal: Su componente a favor del movimiento (hacia arriba del plano) es $F\\cos(30^\\circ)$.</li>
+          <li>Fricción: $f_k = 80\\text{ N}$ impide el movimiento (hacia abajo).</li>
+        </ul>
+
+        <p>La ecuación de movimiento en $x$ (con hacia arriba positivo) es:</p>
+        $$ \\sum F_x = F\\cos(30^\\circ) - W_x - f_k = m \\cdot a $$
+        $$ F\\cos(30^\\circ) - 98 - 80 = m \\cdot a \\implies F\\cos(30^\\circ) - 178 = 20 \\cdot a $$
+
+        <h3>a) Aceleración cero ($a = 0$)</h3>
+        $$ F\\cos(30^\\circ) - 178 = 0 \\implies F = \\frac{178}{\\cos(30^\\circ)} = \\frac{178}{0.8660} = 205.5\\text{ N} \\approx 0.21\\text{ kN} $$
+
+        <h3>b) Aceleración de $0.75\\text{ m/s}^2$</h3>
+        $$ F\\cos(30^\\circ) - 178 = 20(0.75) = 15 \\implies F\\cos(30^\\circ) = 193 $$
+        $$ F = \\frac{193}{\\cos(30^\\circ)} = \\frac{193}{0.8660} = 222.8\\text{ N} \\approx 0.22\\text{ kN} $$
+
+        <p><strong>Respuestas:</strong> a) $0.21\\text{ kN}$; b) $0.22\\text{ kN}$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>3.65 [II]</strong> Un plano inclinado que hace un ángulo de $25^\\circ$ con la horizontal tiene una polea en su parte superior. Un bloque de $30\\text{ kg}$ sobre el plano está conectado a un bloque de $20\\text{ kg}$ que cuelga libre mediante una cuerda que pasa sobre la polea. Calcule la distancia que caerá el bloque de $20\\text{ kg}$ en $2.0\\text{ s}$ si parte del reposo. No tome en cuenta la fricción.</p>
+      `,
+      solucion: `
+        <p>Llamemos $m_1 = 30\\text{ kg}$ al bloque sobre el plano y $m_2 = 20\\text{ kg}$ al bloque colgante.</p>
+        <p>Determinamos hacia dónde se mueve el sistema comparando la fuerza motriz de cada lado:</p>
+        <ul>
+          <li>Lado colgante: El peso integro es la fuerza que tira, $W_2 = 20(9.8) = 196\\text{ N}$.</li>
+          <li>Lado del plano inclinado: La fuerza es la componente del peso a lo largo del plano, $W_{1x} = 30(9.8)\\sin(25^\\circ) = 294(0.4226) \\approx 124.2\\text{ N}$.</li>
+        </ul>
+        <p>Como $196\\text{ N} > 124.2\\text{ N}$, el bloque colgante es más pesado en relación al sistema y dictamina el movimiento. Por lo tanto, el sistema acelera con $m_2$ bajando y $m_1$ subiendo por la rampa.</p>
+
+        <h3>Fuerza neta y masa total</h3>
+        <p>La fuerza neta del sistema es la fuerza propulsora ($W_2$) menos la que resiste el avance ($W_{1x}$):</p>
+        $$ F_{\\text{neta}} = 196 - 124.2 = 71.8\\text{ N} $$
+        <p>Esa fuerza debe acelerar de manera conjunta a ambas masas ($m_{\\text{tot}} = 30 + 20 = 50\\text{ kg}$):</p>
+        $$ a = \\frac{F_{\\text{neta}}}{m_{\\text{tot}}} = \\frac{71.8\\text{ N}}{50\\text{ kg}} = 1.436\\text{ m/s}^2 $$
+
+        <h3>Desplazamiento cinemático</h3>
+        <p>Sabiendo que parte del reposo y se acelera por $2.0\\text{ s}$:</p>
+        $$ d = v_i t + \\frac{1}{2} a t^2 = 0 + \\frac{1}{2} (1.436\\text{ m/s}^2)(2.0\\text{ s})^2 = \\frac{1}{2}(1.436)(4.0) = 2.872\\text{ m} $$
+        <p>Redondeando a dos cifras significativas, el bloque de $20\\text{ kg}$ caerá $2.9\\text{ m}$.</p>
+        <p><strong>Respuesta:</strong> $2.9\\text{ m}$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>3.66 [III]</strong> Repita el problema 3.65 con un coeficiente de fricción de $0.20$ entre el bloque y el plano.</p>
+      `,
+      solucion: `
+        <p>Como ya sabemos que la tendencia por pesos hará que el bloque $m_1$ intente subir, la fuerza de fricción cinética ($f_k$) actuará hacia abajo por el plano, oponiéndose al movimiento junto al peso $W_{1x}$.</p>
+
+        <h3>La fuerza de fricción</h3>
+        <p>La fuerza normal del plano es la componente perpendicular del peso $N = W_{1y} = m_1g\\cos(25^\\circ)$.</p>
+        $$ f_k = \\mu_k N = (0.20)(30 \\cdot 9.8 \\cdot \\cos 25^\\circ) = (0.20)(294)(0.9063) = 53.3\\text{ N} $$
+
+        <h3>Nueva aceleración</h3>
+        <p>La fuerza neta que impulsa el sistema será el peso de $m_2$ menos la componente del peso de $m_1$ y además menos esta resistencia extra impuesta por fricción:</p>
+        $$ F_{\\text{neta}} = W_2 - W_{1x} - f_k = 196 - 124.2 - 53.3 = 18.5\\text{ N} $$
+        <p>Esta fuerza menor ahora mueve a los mismos $50\\text{ kg}$ de masa del sistema:</p>
+        $$ a = \\frac{18.5\\text{ N}}{50\\text{ kg}} = 0.370\\text{ m/s}^2 $$
+
+        <h3>Distancia recorrida</h3>
+        <p>Con la nueva aceleración después de $2.0\\text{ s}$:</p>
+        $$ d = \\frac{1}{2} a t^2 = \\frac{1}{2} (0.370\\text{ m/s}^2)(2.0\\text{ s})^2 = 0.370 \\cdot 2.0 = 0.74\\text{ m} $$
+
+        <p><strong>Respuesta:</strong> $0.74\\text{ m}$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>3.67 [III]</strong> Se requiere una fuerza horizontal de $200\\text{ N}$ para hacer que un bloque de $15\\text{ kg}$ se deslice hacia arriba en un plano inclinado a $20^\\circ$ con una aceleración de $25\\text{ cm/s}^2$. Encuentre <em>a)</em> la fuerza de fricción sobre el bloque y <em>b)</em> el coeficiente de fricción.</p>
+      `,
+      solucion: `
+        <p>Convertimos la aceleración a unidades estándar: $a = 25\\text{ cm/s}^2 = 0.25\\text{ m/s}^2$.</p>
+        <p>La fuerza $F = 200\\text{ N}$ es <strong>horizontal</strong>. El peso del bloque es $W = 15(9.8) = 147\\text{ N}$.</p>
+        <p>Considerando los ejes $x$ (paralelo al plano) e $y$ (perpendicular al plano):</p>
+        <ul>
+          <li>Fuerzas hacia arriba por el plano ($+x$): componente de $F$, $F_x = F\\cos(20^\\circ) = 200(0.9397) = 187.9\\text{ N}$.</li>
+          <li>Fuerzas hacia abajo por el plano ($-x$): componente del peso $W_x = W\\sin(20^\\circ) = 147(0.3420) = 50.3\\text{ N}$ y la fricción $f_k$.</li>
+        </ul>
+
+        <h3>a) Fuerza de fricción</h3>
+        <p>Aplicando la segunda ley de Newton en $x$:</p>
+        $$ \\sum F_x = F_x - W_x - f_k = m \\cdot a $$
+        $$ 187.9 - 50.3 - f_k = 15(0.25) \\implies 137.6 - f_k = 3.75 \\implies f_k = 137.6 - 3.75 = 133.85\\text{ N} \\approx 134\\text{ N} $$
+        <p>En kilonewtons, $f_k \\approx 0.13\\text{ kN}$.</p>
+
+        <h3>b) Coeficiente de fricción</h3>
+        <p>La fuerza normal $N$ contrarresta las fuerzas perpendiculares al plano hacia "adentro" ($-y$). El peso aporta $W_y = W\\cos(20^\\circ)$ y la fuerza horizontal aporta $F_y = F\\sin(20^\\circ)$:</p>
+        $$ N = W_y + F_y = 147(0.9397) + 200(0.3420) = 138.1 + 68.4 = 206.5\\text{ N} $$
+        <p>El coeficiente de fricción cinética es:</p>
+        $$ \\mu_k = \\frac{f_k}{N} = \\frac{133.85}{206.5} \\approx 0.648 $$
+        <p>Redondeando a dos cifras significativas da $0.65$.</p>
+
+        <p><strong>Respuestas:</strong> a) $0.13\\text{ kN}$; b) $0.65$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>3.68 [II]</strong> Calcule la aceleración de los bloques de la figura 3-26 si las fuerzas de fricción son despreciables. ¿Cuál es la tensión en la cuerda que los une?</p>
+      `,
+      solucion: `
+        <p>Según la figura, hay dos masas en un plano horizontal: $m_1 = 4.0\\text{ kg}$ (izquierda) y $m_2 = 5.0\\text{ kg}$ (derecha), unidas por una cuerda. Se ejerce una fuerza $F = 30\\text{ N}$ hacia la derecha sobre $m_2$.</p>
+
+        <h3>Aceleración del sistema</h3>
+        <p>Al no haber fricción, todo el sistema de masa $m_{\\text{tot}} = 4.0 + 5.0 = 9.0\\text{ kg}$ es impulsado por la fuerza $F$:</p>
+        $$ a = \\frac{F}{m_{\\text{tot}}} = \\frac{30\\text{ N}}{9.0\\text{ kg}} = 3.33\\text{ m/s}^2 \\approx 3.3\\text{ m/s}^2 $$
+
+        <h3>Tensión de la cuerda que los une</h3>
+        <p>La tensión $T$ es la fuerza que tira del bloque de atrás ($m_1$). Aplicando la segunda ley sólo a $m_1$:</p>
+        $$ T = m_1 \\cdot a = (4.0\\text{ kg})(3.33\\text{ m/s}^2) = 13.3\\text{ N} \\approx 13\\text{ N} $$
+
+        <p><strong>Respuestas:</strong> $3.3\\text{ m/s}^2$, $13\\text{ N}$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>3.69 [III]</strong> Repita el problema 3.68 si el coeficiente de fricción cinética entre los bloques y la mesa es de $0.30$.</p>
+      `,
+      solucion: `
+        <h3>Aceleración del sistema</h3>
+        <p>La fricción actúa sobre todo el sistema oponiéndose al movimiento. La fuerza normal es el peso total $N_{\\text{tot}} = (9.0\\text{ kg})(9.8\\text{ m/s}^2) = 88.2\\text{ N}$.</p>
+        <p>La fricción total es $f_{\\text{tot}} = \\mu_k N_{\\text{tot}} = (0.30)(88.2) = 26.46\\text{ N}$.</p>
+        <p>La fuerza neta y la aceleración son:</p>
+        $$ F_{\\text{neta}} = 30\\text{ N} - 26.46\\text{ N} = 3.54\\text{ N} $$
+        $$ a = \\frac{F_{\\text{neta}}}{9.0\\text{ kg}} = \\frac{3.54}{9.0} = 0.393\\text{ m/s}^2 \\approx 0.39\\text{ m/s}^2 $$
+
+        <h3>Tensión en la cuerda</h3>
+        <p>Aislamos el bloque $m_1 = 4.0\\text{ kg}$. Sobre él actúan la tensión $T$ (hacia adelante) y su propia fricción individual $f_1$ (hacia atrás).</p>
+        $$ f_1 = \\mu_k m_1 g = (0.30)(4.0)(9.8) = 11.76\\text{ N} $$
+        <p>Ecuación de movimiento para $m_1$:</p>
+        $$ T - f_1 = m_1 \\cdot a \\implies T = f_1 + m_1 \\cdot a = 11.76 + (4.0)(0.393) = 11.76 + 1.57 = 13.33\\text{ N} \\approx 13\\text{ N} $$
+
+        <p><strong>Respuestas:</strong> $0.39\\text{ m/s}^2$, $13\\text{ N}$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>3.70 [III]</strong> ¿Qué fuerza $F$ se necesita en la figura 3-27 para tirar del bloque de $6.0\\text{ kg}$ con una aceleración de $1.50\\text{ m/s}^2$ si el coeficiente de fricción en sus superficies es de $0.40$?</p>
+      `,
+      solucion: `
+        <p>Según la descripción de la figura, un bloque de $m_1 = 2.0\\text{ kg}$ descansa sobre uno de $m_2 = 6.0\\text{ kg}$. El bloque superior ($m_1$) está atado a una pared (no se mueve), y se aplica una fuerza $F$ sobre el bloque inferior ($m_2$) para moverlo.</p>
+        <p>El bloque de $6.0\\text{ kg}$ se enfrenta a dos superficies con fricción:</p>
+        <ul>
+          <li>Fricción con el bloque de $2.0\\text{ kg}$ (arriba): $N_1 = m_1 g = 2.0(9.8) = 19.6\\text{ N}$.
+          <br>$$ f_1 = \\mu_k N_1 = 0.40(19.6) = 7.84\\text{ N} $$</li>
+          <li>Fricción con el suelo (abajo): Soporta el peso de ambos bloques, $N_2 = (m_1 + m_2)g = (8.0)(9.8) = 78.4\\text{ N}$.
+          <br>$$ f_2 = \\mu_k N_2 = 0.40(78.4) = 31.36\\text{ N} $$</li>
+        </ul>
+        <p>La fuerza total de retardo por fricción es $f_{\\text{tot}} = 7.84 + 31.36 = 39.2\\text{ N}$.</p>
+        <p>Para lograr una aceleración de $a = 1.50\\text{ m/s}^2$ en la masa $m_2 = 6.0\\text{ kg}$:</p>
+        $$ \\sum F = F - f_{\\text{tot}} = m_2 \\cdot a $$
+        $$ F = f_{\\text{tot}} + m_2 \\cdot a = 39.2 + (6.0)(1.50) = 39.2 + 9.0 = 48.2\\text{ N} \\approx 48\\text{ N} $$
+
+        <p><strong>Respuesta:</strong> $48\\text{ N}$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>3.71 [III]</strong> En la figura 3-28, ¿qué fuerza se necesita para dar a los bloques una aceleración de $3.0\\text{ m/s}^2$ si el coeficiente de fricción cinética entre los bloques y la mesa es de $0.20$? ¿Qué fuerza ejerce el bloque de $1.50\\text{ kg}$ sobre el bloque de $2.0\\text{ kg}$?</p>
+      `,
+      solucion: `
+        <p>En la figura, los bloques $1.5\\text{ kg}$, $2.0\\text{ kg}$ y $1.0\\text{ kg}$ están contiguos y se empujan mutuamente por una fuerza exterior $F$ que actúa sobre el de $1.5\\text{ kg}$. La masa total es $m_{\\text{tot}} = 1.5 + 2.0 + 1.0 = 4.5\\text{ kg}$.</p>
+
+        <h3>Cálculo de la fuerza exterior $F$</h3>
+        <p>La fricción total es $f_{\\text{tot}} = \\mu_k m_{\\text{tot}} g = 0.20(4.5)(9.8) = 8.82\\text{ N}$.</p>
+        <p>La ecuación para el sistema en conjunto es:</p>
+        $$ F - f_{\\text{tot}} = m_{\\text{tot}} \\cdot a $$
+        $$ F = 8.82 + (4.5)(3.0) = 8.82 + 13.5 = 22.32\\text{ N} \\approx 22\\text{ N} $$
+
+        <h3>Fuerza ejercida entre los bloques</h3>
+        <p>Llamemos $F_{12}$ a la fuerza con que el bloque de $1.5\\text{ kg}$ empuja al resto. Para ello, analizamos el sub-sistema de los dos bloques de adelante (el de $2.0\\text{ kg}$ y el de $1.0\\text{ kg}$, que suman $3.0\\text{ kg}$).</p>
+        <p>La fricción para esos dos bloques es $f' = 0.20(3.0)(9.8) = 5.88\\text{ N}$.</p>
+        <p>La fuerza responsable de acelerar a ese subsistema es $F_{12}$:</p>
+        $$ F_{12} - f' = (3.0\\text{ kg})(3.0\\text{ m/s}^2) $$
+        $$ F_{12} = 5.88 + 9.0 = 14.88\\text{ N} \\approx 15\\text{ N} $$
+
+        <p><strong>Respuestas:</strong> $22\\text{ N}$, $15\\text{ N}$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>3.72 [III]</strong> <em>a)</em> ¿Cuál es la fuerza más pequeña paralela a un plano inclinado de $37^\\circ$ necesaria para impedir que un peso de $100\\text{ N}$ resbale hacia abajo si los coeficientes de fricción estática y cinética son ambos de $0.30$? <em>b)</em> ¿Qué fuerza paralela se requiere para hacer que el peso se mueva hacia arriba del plano con rapidez constante? <em>c)</em> Si la fuerza paralela de empuje es de $94\\text{ N}$, ¿cuál será la aceleración del objeto? <em>d)</em> Si el objeto en c) parte del reposo, ¿cuánto se moverá en $10\\text{ s}$?</p>
+      `,
+      solucion: `
+        <p>El peso $W = 100\\text{ N}$. Para efectos de trigonometría clásica (con $\\sin 37^\\circ \\approx 0.60$ y $\\cos 37^\\circ \\approx 0.80$):</p>
+        <ul>
+          <li>Hacia abajo del plano: $W_x = W\\sin(37^\\circ) = 100(0.60) = 60\\text{ N}$.</li>
+          <li>Normal: $N = W\\cos(37^\\circ) = 100(0.80) = 80\\text{ N}$.</li>
+          <li>Fricción máxima/cinética: $f = \\mu N = 0.30(80) = 24\\text{ N}$.</li>
+        </ul>
+
+        <h3>a) Fuerza mínima para evitar que resbale hacia abajo</h3>
+        <p>El bloque tiende a caer, así que la fricción ($24\\text{ N}$) apunta hacia **arriba** del plano ayudando a la fuerza que se aplique ($F$).</p>
+        $$ F + f_s = W_x \\implies F = 60 - 24 = 36\\text{ N} $$
+
+        <h3>b) Fuerza para subir con velocidad constante ($a = 0$)</h3>
+        <p>El bloque se mueve hacia arriba, así que la fricción ahora apunta hacia **abajo** del plano y se suma a la resistencia del peso.</p>
+        $$ F = W_x + f_k = 60 + 24 = 84\\text{ N} $$
+
+        <h3>c) Fuerza de empuje de $94\\text{ N}$</h3>
+        <p>Como aplicamos $94\\text{ N}$ (más de lo necesario para vencer los $84\\text{ N}$ de resistencia), se moverá hacia arriba acelerando.</p>
+        $$ F_{\\text{neta}} = F - (W_x + f_k) = 94 - 84 = 10\\text{ N} $$
+        <p>Masa $m = W/g = 100/9.8 = 10.2\\text{ kg}$. Calculamos la aceleración:</p>
+        $$ a = \\frac{10\\text{ N}}{10.2\\text{ kg}} = 0.98\\text{ m/s}^2 \\text{ (hacia arriba por el plano)} $$
+
+        <h3>d) Desplazamiento en $10\\text{ s}$</h3>
+        <p>Aplicando cinemática partiendo del reposo ($v_i = 0$):</p>
+        $$ d = \\frac{1}{2} a t^2 = \\frac{1}{2} (0.98)(10)^2 = 0.49 \\cdot 100 = 49\\text{ m} $$
+
+        <p><strong>Respuestas:</strong> a) $36\\text{ N}$; b) $84\\text{ N}$; c) $0.98\\text{ m/s}^2$ hacia arriba; d) $49\\text{ m}$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>3.73 [III]</strong> Un bloque de $5.0\\text{ kg}$ descansa sobre un plano inclinado de $30^\\circ$. El coeficiente de fricción estática entre el bloque y el plano inclinado es de $0.20$. ¿Qué fuerza horizontal se necesita para empujar al bloque si éste debe estar a punto de resbalar <em>a)</em> hacia arriba sobre el plano y <em>b)</em> hacia abajo sobre el plano?</p>
+      `,
+      solucion: `
+        <p>La fuerza $F$ aplicada es <strong>horizontal</strong>. Masa $m = 5.0\\text{ kg}$, $W = m\\cdot g = 5.0(9.8) = 49\\text{ N}$. $\\mu_s = 0.20$.</p>
+        <p>La fuerza normal ya no es sólo el peso, porque la componente perpendicular de $F$ la incrementa.</p>
+        $$ N = W\\cos(30^\\circ) + F\\sin(30^\\circ) = 49(0.866) + F(0.5) = 42.4 + 0.5\\cdot F $$
+        <p>Fuerza de fricción estática máxima: $f_s = \\mu_s N = 0.20(42.4 + 0.5\\cdot F) = 8.48 + 0.1\\cdot F$.</p>
+        <p>Componente impulsora de la fuerza aplicada: $F_x = F\\cos(30^\\circ) = 0.866\\cdot F$.</p>
+        <p>Componente del peso: $W_x = W\\sin(30^\\circ) = 49(0.5) = 24.5\\text{ N}$.</p>
+
+        <h3>a) A punto de resbalar hacia arriba</h3>
+        <p>La fuerza de empuje $F_x$ debe equipararse al peso $W_x$ y a la máxima fricción (que ahora se resiste y apunta hacia abajo).</p>
+        $$ F_x = W_x + f_s \\implies 0.866\\cdot F = 24.5 + (8.48 + 0.1\\cdot F) $$
+        $$ 0.766\\cdot F = 32.98 \\implies F = \\frac{32.98}{0.766} = 43.05\\text{ N} \\approx 43\\text{ N} $$
+
+        <h3>b) A punto de resbalar hacia abajo</h3>
+        <p>El peso $W_x$ intenta que resbale. La fuerza $F_x$ y la fricción máxima (ahora hacia arriba) se oponen al deslizamiento justo antes de fallar.</p>
+        $$ F_x + f_s = W_x \\implies 0.866\\cdot F + (8.48 + 0.1\\cdot F) = 24.5 $$
+        $$ 0.966\\cdot F = 24.5 - 8.48 = 16.02 \\implies F = \\frac{16.02}{0.966} = 16.58\\text{ N} \\approx 16.6\\text{ N} $$
+
+        <p><strong>Respuestas:</strong> a) $43\\text{ N}$; b) $16.6\\text{ N}$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>3.74 [III]</strong> Tres bloques de masas $6.0\\text{ kg}$, $9.0\\text{ kg}$ y $10\\text{ kg}$ están unidos como se muestra en la figura 3-29. El coeficiente de fricción entre la mesa y el bloque de $10\\text{ kg}$ es de $0.20$. Calcule <em>a)</em> la aceleración del sistema y <em>b)</em> la tensión en la cuerda de la izquierda y la tensión en la cuerda de la derecha.</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura3-29.png" alt="Sistema de tres bloques unidos por cuerdas y poleas" class="img-fluid" style="max-width: 100%; height: auto;">
+        </div>
+      `,
+      solucion: `
+        <p>Desglosamos los bloques de izquierda a derecha:</p>
+        <ul>
+          <li>Masa izquierda: $m_L = 6.0\\text{ kg}$, peso $W_L = 58.8\\text{ N}$.</li>
+          <li>Masa central (en mesa): $m_C = 10\\text{ kg}$, peso $W_C = 98\\text{ N}$.</li>
+          <li>Masa derecha: $m_R = 9.0\\text{ kg}$, peso $W_R = 88.2\\text{ N}$.</li>
+        </ul>
+        <p>Como $W_R > W_L$, el sistema tenderá a moverse hacia la <strong>derecha</strong> (el bloque de $9.0\\text{ kg}$ baja y el de $6.0\\text{ kg}$ sube).</p>
+
+        <h3>a) Aceleración del sistema</h3>
+        <p>La fricción sobre el bloque central se opone al movimiento, es decir, actúa hacia la izquierda.</p>
+        $$ f_k = \\mu_k N_C = \\mu_k (m_C g) = 0.20(98\\text{ N}) = 19.6\\text{ N} $$
+        <p>La fuerza neta a favor del movimiento (hacia la derecha) es el peso del bloque derecho menos el peso del bloque izquierdo y la fricción:</p>
+        $$ F_{\\text{neta}} = W_R - W_L - f_k = 88.2 - 58.8 - 19.6 = 9.8\\text{ N} $$
+        <p>La masa total que debe acelerarse es $m_{\\text{tot}} = 6.0 + 10 + 9.0 = 25\\text{ kg}$. Por segunda ley de Newton:</p>
+        $$ a = \\frac{F_{\\text{neta}}}{m_{\\text{tot}}} = \\frac{9.8\\text{ N}}{25\\text{ kg}} = 0.392\\text{ m/s}^2 \\approx 0.39\\text{ m/s}^2 $$
+
+        <h3>b) Tensiones en las cuerdas</h3>
+        <p><strong>Cuerda izquierda ($T_L$):</strong> Tira hacia arriba del bloque de $6.0\\text{ kg}$, que acelera hacia arriba.</p>
+        $$ T_L - W_L = m_L \\cdot a \\implies T_L = 58.8 + 6.0(0.392) = 58.8 + 2.35 = 61.15\\text{ N} \\approx 61\\text{ N} $$
+
+        <p><strong>Cuerda derecha ($T_R$):</strong> Tira hacia arriba del bloque de $9.0\\text{ kg}$, pero éste acelera hacia abajo.</p>
+        $$ W_R - T_R = m_R \\cdot a \\implies T_R = W_R - m_R \\cdot a = 88.2 - 9.0(0.392) = 88.2 - 3.53 = 84.67\\text{ N} \\approx 85\\text{ N} $$
+
+        <p><strong>Respuestas:</strong> a) $0.39\\text{ m/s}^2$; b) $61\\text{ N}$, $85\\text{ N}$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>3.75 [II]</strong> El radio de la Tierra es de aproximadamente $6370\\text{ km}$. Un objeto que tiene una masa de $20\\text{ kg}$ se lleva a una altura de $160\\text{ km}$ sobre la superficie de la Tierra. <em>a)</em> ¿Cuál es la masa del objeto a esta altura? <em>b)</em> ¿Cuánto pesa el objeto (es decir, cuánta fuerza gravitacional experimenta) a esta altura?</p>
+      `,
+      solucion: `
+        <h3>a) Masa a esta altura</h3>
+        <p>La masa de un objeto es la cantidad de materia que posee, una magnitud fundamental independiente de la ubicación en el espacio. Por lo tanto, en la alta atmósfera o en tierra, la masa sigue siendo:</p>
+        $$ m = 20\\text{ kg} $$
+
+        <h3>b) Peso a esa altura</h3>
+        <p>La aceleración de la gravedad $g'$ a una altura $h$ se relaciona con la gravedad en la superficie $g_0$ y el radio de la Tierra $R_E$ mediante la ley de gravitación universal:</p>
+        $$ g' = g_0 \\left(\\frac{R_E}{R_E + h}\\right)^2 $$
+        <p>Evaluamos para $R_E = 6370\\text{ km}$ y $h = 160\\text{ km}$:</p>
+        $$ g' = 9.8 \\left(\\frac{6370}{6370 + 160}\\right)^2 = 9.8 \\left(\\frac{6370}{6530}\\right)^2 = 9.8 (0.9755)^2 = 9.8 (0.9516) \\approx 9.325\\text{ m/s}^2 $$
+        <p>El peso es $W = m \\cdot g'$:</p>
+        $$ W = 20\\text{ kg} \\cdot 9.325\\text{ m/s}^2 = 186.5\\text{ N} $$
+        <p>Expresado en kilonewtons: $186.5\\text{ N} = 0.1865\\text{ kN} \\approx 0.19\\text{ kN}$. (Redondeamos con dos decimales como las cifras de la base).</p>
+
+        <p><strong>Respuestas:</strong> a) $20\\text{ kg}$; b) $0.19\\text{ kN}$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>3.76 [II]</strong> El radio de la Tierra es de aproximadamente $6370\\text{ km}$, mientras que el de Marte es más o menos de $3440\\text{ km}$. Si un objeto pesa $200\\text{ N}$ en la Tierra, ¿cuál será su peso y cuál la aceleración debida a la gravedad en Marte? La masa de Marte es $0.11$ veces la de la Tierra.</p>
+      `,
+      solucion: `
+        <h3>Gravedad en Marte</h3>
+        <p>La gravedad $g$ en un planeta se define como $g = \\frac{GM}{R^2}$. Si dividimos la gravedad de Marte $g_M$ entre la de la Tierra $g_E$, las constantes de gravitación $G$ se cancelan:</p>
+        $$ \\frac{g_M}{g_E} = \\left(\\frac{M_M}{M_E}\\right) \\left(\\frac{R_E}{R_M}\\right)^2 $$
+        <p>Sustituyendo los datos ($M_M = 0.11 M_E$):</p>
+        $$ \\frac{g_M}{g_E} = 0.11 \\cdot \\left(\\frac{6370}{3440}\\right)^2 = 0.11 \\cdot (1.8517)^2 = 0.11 \\cdot 3.429 \\approx 0.377 $$
+        $$ g_M = 0.377 \\cdot g_E = 0.377 \\cdot 9.8\\text{ m/s}^2 \\approx 3.696\\text{ m/s}^2 \\approx 3.7\\text{ m/s}^2 $$
+        <p>La aceleración debida a la gravedad en Marte es aproximadamente $3.7\\text{ m/s}^2$.</p>
+
+        <h3>Peso en Marte</h3>
+        <p>Como el peso es directamente proporcional a la gravedad ($W = m \\cdot g$), el peso en Marte es $0.377$ veces el peso en la Tierra:</p>
+        $$ W_{\\text{Marte}} = 200\\text{ N} \\cdot 0.377 = 75.4\\text{ N} \\approx 75\\text{ N} $$
+
+        <p><strong>Respuestas:</strong> $75\\text{ N}$, $3.7\\text{ m/s}^2$.</p>
+      `,
+    },
   ],
 }
 
