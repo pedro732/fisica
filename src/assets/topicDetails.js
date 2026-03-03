@@ -472,7 +472,13 @@ export const topicDetails = {
   'Fuerzas y principios de Newton': {
     title: 'Fuerzas y principios de Newton',
     image: '/assets/fuerza-caballo.png',
-    content: ` <p><strong>LA MASA</strong> de un objeto es una medida de su inercia. Se llama <strong>inercia</strong> a la tendencia de un objeto en reposo a permanecer en este estado, y de un objeto en movimiento a continuarlo sin cambiar su velocidad. Durante varios siglos, los físicos habían encontrado útil concebir la masa como una representación de la cantidad de materia, pero esa idea ya no es sostenible (como se aprendió a partir de la Relatividad Especial).</p>
+    content: `
+<div id="inicio-fuerzas" class="d-flex justify-content-end mb-4">
+  <a href="#final-fuerzas" class="btn btn-primary rounded-pill shadow-sm" style="padding: 0.5rem 1.5rem; font-weight: 500; transition: all 0.3s ease; text-decoration: none;">
+    Ir al final &#8595;
+  </a>
+</div>
+<p><strong>LA MASA</strong> de un objeto es una medida de su inercia. Se llama <strong>inercia</strong> a la tendencia de un objeto en reposo a permanecer en este estado, y de un objeto en movimiento a continuarlo sin cambiar su velocidad. Durante varios siglos, los físicos habían encontrado útil concebir la masa como una representación de la cantidad de materia, pero esa idea ya no es sostenible (como se aprendió a partir de la Relatividad Especial).</p>
 
 <p><strong>EL KILOGRAMO PATRÓN</strong> es un objeto cuya masa se define como un kilogramo. Las masas de otros objetos se encuentran por comparación con esta masa. Un gramo masa equivale exactamente a $0.001 \\, \\text{kg}$.</p>
 
@@ -612,6 +618,12 @@ $$
 <div class="text-center my-4">
   <img src="/assets/multiples-fuerzas.png" alt="Análisis vectorial de múltiples fuerzas" class="img-fluid" style="max-width: 100%; height: auto;">
   <p class="text-muted">Efecto combinado de múltiples fuerzas (Fuerza Resultante)</p>
+</div>
+
+<div id="final-fuerzas" class="d-flex justify-content-center mt-5 mb-3">
+  <a href="#inicio-fuerzas" class="btn btn-outline-primary rounded-pill shadow-sm" style="padding: 0.5rem 1.5rem; font-weight: 500; border-width: 2px; transition: all 0.3s ease; text-decoration: none;">
+    &#8593; Ir al inicio
+  </a>
 </div>
    `,
   },
