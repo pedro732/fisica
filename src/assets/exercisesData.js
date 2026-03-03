@@ -2652,6 +2652,185 @@ export const exercisesData = {
         <p><strong>Respuesta:</strong> El niño debe jalar con una fuerza aproximada de $51\\text{ N}$.</p>
       `,
     },
+    {
+      enunciado: `
+        <p><strong>3.45 [I]</strong> Una vez encendido, el motor de un cohete pequeño en una nave espacial ejerce una fuerza constante de $10\\text{ N}$ durante $7.80\\text{ s}$. Durante el encendido, el cohete hace que la nave de $100\\text{ kg}$ acelere de manera uniforme. Determine esa aceleración.</p>
+      `,
+      solucion: `
+        <p>Para determinar la aceleración, utilizamos la segunda ley de Newton, que establece que la fuerza neta aplicada a un objeto es igual a su masa multiplicada por su aceleración:</p>
+        $$ F = m \\cdot a $$
+        <p>Despejando la aceleración ($a$):</p>
+        $$ a = \\frac{F}{m} $$
+        <p>Sustituyendo los valores dados:</p>
+        <ul>
+          <li>$F = 10\\text{ N}$</li>
+          <li>$m = 100\\text{ kg}$</li>
+        </ul>
+        $$ a = \\frac{10\\text{ N}}{100\\text{ kg}} = 0.10\\text{ m/s}^2 $$
+        <p><strong>Respuesta:</strong> $0.10\\text{ m/s}^2$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>3.46 [II]</strong> Una bala suele salir de una pistola normal calibre 45 (cañón de $5.0\\text{ in}$) con una rapidez de $262\\text{ m/s}$. Si tarda $1\\text{ ms}$ en atravesar el cañón, determine la aceleración promedio experimentada por la bala de $16.2\\text{ g}$ dentro del arma y luego calcule la fuerza promedio ejercida sobre ella.</p>
+      `,
+      solucion: `
+        <h3>Aceleración promedio</h3>
+        <p>Suponiendo que la bala parte del reposo ($v_i = 0\\text{ m/s}$) y alcanza una rapidez final $v_f = 262\\text{ m/s}$ en un tiempo $t = 1\\text{ ms} = 1 \\times 10^{-3}\\text{ s}$, la aceleración promedio es:</p>
+        $$ a = \\frac{\\Delta v}{\\Delta t} = \\frac{v_f - v_i}{t} $$
+        $$ a = \\frac{262\\text{ m/s} - 0\\text{ m/s}}{1 \\times 10^{-3}\\text{ s}} = 262 \\times 10^3\\text{ m/s}^2 = 2.62 \\times 10^5\\text{ m/s}^2 $$
+        <p>Lo cual se puede aproximar a $3 \\times 10^5\\text{ m/s}^2$ (con una cifra significativa correspondiente al dato del tiempo).</p>
+
+        <h3>Fuerza promedio</h3>
+        <p>La masa de la bala es $m = 16.2\\text{ g} = 0.0162\\text{ kg}$. Usando la segunda ley de Newton ($F = m \\cdot a$):</p>
+        $$ F = (0.0162\\text{ kg}) \\cdot (2.62 \\times 10^5\\text{ m/s}^2) \\approx 4244\\text{ N} $$
+        <p>Aproximando según el número de cifras significativas del tiempo (una cifra), la fuerza es del orden de $4 \\times 10^3\\text{ N}$ o $0.4 \\times 10^4\\text{ N}$.</p>
+
+        <p><strong>Respuesta:</strong> $3 \\times 10^5\\text{ m/s}^2$; $0.4 \\times 10^4\\text{ N}$ (dependiendo del redondeo).</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>3.47 [I]</strong> Una fuerza actúa sobre una masa de $2\\text{ kg}$ y le provoca una aceleración de $3\\text{ m/s}^2$. ¿Qué aceleración produce la misma fuerza al actuar sobre una masa de <em>a)</em> $1\\text{ kg}$? <em>b)</em> $4\\text{ kg}$? <em>c)</em> ¿Cuánto mide la fuerza?</p>
+      `,
+      solucion: `
+        <h3>c) Valor de la fuerza</h3>
+        <p>Por la segunda ley de Newton ($F = m \\cdot a$), la fuerza es constante en todos los casos. Con los datos iniciales ($m_0 = 2\\text{ kg}$, $a_0 = 3\\text{ m/s}^2$):</p>
+        $$ F = 2\\text{ kg} \\cdot 3\\text{ m/s}^2 = 6\\text{ N} $$
+
+        <h3>a) Aceleración para $m_1 = 1\\text{ kg}$</h3>
+        <p>Con la misma fuerza $F = 6\\text{ N}$:</p>
+        $$ a_1 = \\frac{F}{m_1} = \\frac{6\\text{ N}}{1\\text{ kg}} = 6\\text{ m/s}^2 $$
+
+        <h3>b) Aceleración para $m_2 = 4\\text{ kg}$</h3>
+        <p>Con la misma fuerza $F = 6\\text{ N}$:</p>
+        $$ a_2 = \\frac{F}{m_2} = \\frac{6\\text{ N}}{4\\text{ kg}} = 1.5\\text{ m/s}^2 \\text{ (aprox. } 2\\text{ m/s}^2 \\text{ a una cifra significativa)} $$
+        <p><em>Nota:</em> La respuesta de $2\\text{ m/s}^2$ es un clásico redondeo conservativo cuando se usa solo 1 cifra significativa como en el problema ($4\\text{ kg}$ y $1\\text{ kg}$). El valor matemático exacto es $1.5\\text{ m/s}^2$.</p>
+
+        <p><strong>Respuesta:</strong> a) $6\\text{ m/s}^2$; b) $1.5\\text{ m/s}^2$ (o $2\\text{ m/s}^2$ redondeado); c) $6\\text{ N}$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>3.48 [I]</strong> Un objeto tiene una masa de $300\\text{ g}$. <em>a)</em> ¿Cuánto pesa en la Tierra? <em>b)</em> ¿Cuál es su masa en la Luna? <em>c)</em> ¿Cuál será su aceleración en la Luna cuando una fuerza resultante de $0.500\\text{ N}$ actúe sobre él?</p>
+      `,
+      solucion: `
+        <p>Primero, convertimos la masa a kilogramos: $m = 300\\text{ g} = 0.300\\text{ kg}$.</p>
+
+        <h3>a) Peso en la Tierra</h3>
+        <p>El peso es la fuerza de gravedad que actúa sobre la masa ($W = m \\cdot g$), usando $g \\approx 9.80\\text{ m/s}^2$ en la Tierra:</p>
+        $$ W = 0.300\\text{ kg} \\cdot 9.80\\text{ m/s}^2 = 2.94\\text{ N} $$
+
+        <h3>b) Masa en la Luna</h3>
+        <p>La <strong>masa es una propiedad intrínseca del objeto</strong> y no depende del lugar del universo donde se encuentre. Por lo tanto, la masa en la Luna es la misma que en la Tierra:</p>
+        $$ m_{\\text{Luna}} = 0.300\\text{ kg} $$
+
+        <h3>c) Aceleración en la Luna</h3>
+        <p>Si sobre esa masa se aplica una fuerza neta de $F = 0.500\\text{ N}$, su aceleración estará dada por la segunda ley de Newton ($a = F/m$):</p>
+        $$ a = \\frac{0.500\\text{ N}}{0.300\\text{ kg}} \\approx 1.67\\text{ m/s}^2 $$
+
+        <p><strong>Respuesta:</strong> a) $2.94\\text{ N}$; b) $0.300\\text{ kg}$; c) $1.67\\text{ m/s}^2$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>3.49 [I]</strong> Un cable horizontal jala un carro de $200\\text{ kg}$ por una pista horizontal. La tensión en el cable es de $500\\text{ N}$. Si al principio está en reposo, <em>a)</em> ¿Cuánto tardará el carro en alcanzar una rapidez de $8.0\\text{ m/s}$? <em>b)</em> ¿Cuánta distancia habrá recorrido?</p>
+      `,
+      solucion: `
+        <h3>Aceleración del carro</h3>
+        <p>Suponiendo una pista sin fricción, la única fuerza horizontal es la tensión del cable $T = 500\\text{ N}$. Por la segunda ley de Newton:</p>
+        $$ a = \\frac{\\sum F}{m} = \\frac{500\\text{ N}}{200\\text{ kg}} = 2.5\\text{ m/s}^2 $$
+
+        <h3>a) Tiempo para alcanzar $8.0\\text{ m/s}$</h3>
+        <p>Utilizando la ecuación de cinemática $v_f = v_i + a \\cdot t$, con $v_i = 0$:</p>
+        $$ t = \\frac{v_f}{a} = \\frac{8.0\\text{ m/s}}{2.5\\text{ m/s}^2} = 3.2\\text{ s} $$
+
+        <h3>b) Distancia recorrida</h3>
+        <p>Utilizando la ecuación $d = v_i \\cdot t + \\frac{1}{2} a \\cdot t^2$:</p>
+        $$ d = 0 + \\frac{1}{2} (2.5\\text{ m/s}^2) (3.2\\text{ s})^2 = 1.25 \\cdot 10.24 = 12.8\\text{ m} \\approx 13\\text{ m} $$
+
+        <p><strong>Respuesta:</strong> a) $3.2\\text{ s}$; b) $13\\text{ m}$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>3.50 [II]</strong> Un automóvil de $900\\text{ kg}$ recorre $20\\text{ m/s}$ en un camino nivelado. ¿Cuánta fuerza retardadora constante se requiere para detenerlo en una distancia de $30\\text{ m}$? <em>(Sugerencia: Determine primero su desaceleración.)</em></p>
+      `,
+      solucion: `
+        <h3>Desaceleración (aceleración negativa)</h3>
+        <p>Los datos del movimiento rectilíneo uniformemente acelerado (MRUA) son:</p>
+        <ul>
+          <li>Velocidad inicial: $v_i = 20\\text{ m/s}$</li>
+          <li>Velocidad final: $v_f = 0\\text{ m/s}$ (hasta detenerse)</li>
+          <li>Distancia de frenado: $d = 30\\text{ m}$</li>
+        </ul>
+        <p>Utilizando la ecuación independiente del tiempo, $v_f^2 = v_i^2 + 2 \\cdot a \\cdot d$:</p>
+        $$ 0^2 = (20\\text{ m/s})^2 + 2 \\cdot a \\cdot 30\\text{ m} $$
+        $$ 0 = 400 + 60a \\implies 60a = -400 $$
+        $$ a = -\\frac{400}{60} = -\\frac{20}{3}\\text{ m/s}^2 \\approx -6.67\\text{ m/s}^2 $$
+
+        <h3>Fuerza retardadora</h3>
+        <p>Por la segunda ley de Newton ($F = m \\cdot a$):</p>
+        $$ F = 900\\text{ kg} \\cdot \\left(-\\frac{20}{3}\\text{ m/s}^2\\right) = -300 \\cdot 20 = -6000\\text{ N} = -6.0\\text{ kN} $$
+        <p>La magnitud de la fuerza retardadora requerida es $6.0\\text{ kN}$.</p>
+
+        <p><strong>Respuesta:</strong> $6.0\\text{ kN}$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>3.51 [II]</strong> Después de estar en reposo, una bala de $12.0\\text{ g}$ acelera con una rapidez de $700\\text{ m/s}$ mientras viaja $20.0\\text{ cm}$ en el cañón de un arma. Si supone que la aceleración es constante, ¿cuánto mide la fuerza de la aceleración? (Tenga cuidado con las unidades.)</p>
+      `,
+      solucion: `
+        <h3>Aceleración</h3>
+        <p>Los datos deben convertirse a unidades del Sistema Internacional (SI):</p>
+        <ul>
+          <li>Velocidad inicial: $v_i = 0\\text{ m/s}$</li>
+          <li>Velocidad final: $v_f = 700\\text{ m/s}$</li>
+          <li>Distancia: $d = 20.0\\text{ cm} = 0.200\\text{ m}$</li>
+          <li>Masa: $m = 12.0\\text{ g} = 0.0120\\text{ kg}$</li>
+        </ul>
+        <p>Utilizando la ecuación independiente del tiempo, $v_f^2 = v_i^2 + 2 \\cdot a \\cdot d$:</p>
+        $$ (700\\text{ m/s})^2 = 0^2 + 2 \\cdot a \\cdot 0.200\\text{ m} $$
+        $$ 490000 = 0.400 \\cdot a $$
+        $$ a = \\frac{490000}{0.400} = 1225000\\text{ m/s}^2 = 1.225 \\times 10^6\\text{ m/s}^2 $$
+
+        <h3>Fuerza de aceleración</h3>
+        <p>Por la segunda ley de Newton ($F = m \\cdot a$):</p>
+        $$ F = 0.0120\\text{ kg} \\cdot 1225000\\text{ m/s}^2 = 14700\\text{ N} = 14.7\\text{ kN} $$
+
+        <p><strong>Respuesta:</strong> $14.7\\text{ kN}$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>3.52 [II]</strong> Una caja de madera de $20\\text{ kg}$ cuelga en el extremo de una cuerda larga. Encuentre su aceleración (magnitud y dirección) cuando la tensión en la cuerda es de <em>a)</em> $250\\text{ N}$, <em>b)</em> $150\\text{ N}$, <em>c)</em> cero, <em>d)</em> $196\\text{ N}$. (Considere el valor de la aceleración de la gravedad igual a $9.8\\text{ m/s}^2$.)</p>
+      `,
+      solucion: `
+        <p>Las fuerzas verticales que actúan sobre la caja son la tensión de la cuerda ($T$) hacia arriba y su propio peso ($W$) hacia abajo. Adoptamos el sentido hacia arriba como positivo.</p>
+        <p>El peso de la caja es: $W = m \\cdot g = 20\\text{ kg} \\cdot 9.8\\text{ m/s}^2 = 196\\text{ N}$.</p>
+        <p>La ecuación de movimiento por la segunda ley de Newton es:</p>
+        $$ \\sum F_y = T - W = m \\cdot a \\implies a = \\frac{T - W}{m} $$
+
+        <h3>a) Tensión $T = 250\\text{ N}$</h3>
+        $$ a = \\frac{250\\text{ N} - 196\\text{ N}}{20\\text{ kg}} = \\frac{54\\text{ N}}{20\\text{ kg}} = 2.7\\text{ m/s}^2 $$
+        <p>Como el signo es positivo, la aceleración es <strong>hacia arriba</strong>.</p>
+
+        <h3>b) Tensión $T = 150\\text{ N}$</h3>
+        $$ a = \\frac{150\\text{ N} - 196\\text{ N}}{20\\text{ kg}} = \\frac{-46\\text{ N}}{20\\text{ kg}} = -2.3\\text{ m/s}^2 $$
+        <p>Como el signo es negativo, la aceleración es de $2.3\\text{ m/s}^2$ <strong>hacia abajo</strong>.</p>
+
+        <h3>c) Tensión $T = 0$ (corte libre)</h3>
+        $$ a = \\frac{0 - 196\\text{ N}}{20\\text{ kg}} = \\frac{-196\\text{ N}}{20\\text{ kg}} = -9.8\\text{ m/s}^2 $$
+        <p>Como el signo es negativo, la aceleración es la de la gravedad, $9.8\\text{ m/s}^2$ <strong>hacia abajo</strong> (caída libre).</p>
+
+        <h3>d) Tensión $T = 196\\text{ N}$</h3>
+        $$ a = \\frac{196\\text{ N} - 196\\text{ N}}{20\\text{ kg}} = \\frac{0\\text{ N}}{20\\text{ kg}} = 0\\text{ m/s}^2 $$
+        <p>La tensión equilibra exactamente el peso, por lo que la aceleración es <strong>cero</strong>.</p>
+
+        <p><strong>Respuestas:</strong> a) $2.7\\text{ m/s}^2$ hacia arriba; b) $2.3\\text{ m/s}^2$ hacia abajo; c) $9.8\\text{ m/s}^2$ hacia abajo; d) cero.</p>
+      `,
+    },
   ],
 }
 
