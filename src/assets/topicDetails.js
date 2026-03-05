@@ -627,6 +627,50 @@ $$
 </div>
    `,
   },
+  'Equilibrio bajo la acción de fuerzas concurrentes': {
+    title: 'Equilibrio bajo la acción de fuerzas concurrentes',
+    image: './concurrentes.png',
+    content: `
+<div id="inicio-equilibrio" class="d-flex justify-content-end mb-4">
+  <a href="#final-equilibrio" class="btn btn-primary rounded-pill shadow-sm" style="padding: 0.5rem 1.5rem; font-weight: 500; transition: all 0.3s ease; text-decoration: none;">
+    Ir al final &#8595;
+  </a>
+</div>
+
+<p><strong>LAS FUERZAS CONCURRENTES</strong> son todas las fuerzas cuyas líneas de acción pasan a través de un punto común. Las fuerzas que actúan sobre un objeto puntual son concurrentes porque todas ellas pasan a través del mismo punto, que es el objeto puntual.</p>
+
+<p><strong>UN OBJETO ESTÁ EN EQUILIBRIO</strong> bajo la acción de fuerzas concurrentes, siempre que no se esté acelerando.</p>
+
+<p><strong>LA PRIMERA CONDICIÓN DE EQUILIBRIO</strong> requiere que $\\Sigma \\vec{F} = 0$, o bien, en forma de componentes, que</p>
+$$ \\Sigma F_x = \\Sigma F_y = \\Sigma F_z = 0 $$
+<p>Es decir, la resultante de todas las fuerzas externas que actúan sobre el objeto debe ser cero. Esta condición es suficiente para el equilibrio cuando las fuerzas externas son concurrentes. Una segunda condición debe satisfacerse si el objeto permanece en equilibrio bajo la acción de fuerzas no concurrentes; esto se estudiará en el capítulo 5.</p>
+
+<p><strong>MÉTODO DE RESOLUCIÓN DE PROBLEMAS (FUERZAS CONCURRENTES):</strong></p>
+<ol>
+  <li>Aísle el objeto por estudiar.</li>
+  <li>Muestre, en un diagrama, las fuerzas que actúan sobre el cuerpo aislado (<em>diagrama de cuerpo libre</em>).</li>
+  <li>Encuentre las componentes rectangulares de cada fuerza.</li>
+  <li>Escriba la primera condición de equilibrio en forma de ecuación.</li>
+  <li>Resuelva para determinar las cantidades requeridas.</li>
+</ol>
+
+<p><strong>EL PESO DE UN OBJETO</strong> ($\\vec{F}_W$) es la fuerza con que la gravedad tira al cuerpo hacia abajo.</p>
+
+<p><strong>LA FUERZA DE TENSIÓN</strong> ($\\vec{F}_T$) es la fuerza que actúa sobre una cuerda, un cable o una cadena (o, de hecho, sobre cualquier miembro estructural) y que tiende a alargarlo. La magnitud escalar de la fuerza de tensión es la <em>tensión</em> ($F_T$).</p>
+
+<p><strong>FUERZA DE FRICCIÓN</strong> ($\\vec{F}_f$) es una fuerza tangencial que actúa sobre un objeto que se opone al deslizamiento del objeto a través de una superficie adyacente con la que está en contacto. La fuerza de fricción es paralela a la superficie y opuesta, en sentido, a su movimiento o del movimiento inminente.</p>
+
+<p><strong>LA FUERZA NORMAL</strong> ($\\vec{F}_N$) sobre un objeto que descansa por una superficie es la componente de la fuerza de soporte que es perpendicular a la superficie.</p>
+
+<p><strong>POLEAS:</strong> Cuando un sistema de varias poleas ligeras sin fricción tiene una cuerda simple continua alrededor de él, la tensión en <em>cada trozo de la cuerda</em> es igual a la fuerza aplicada al extremo de la cuerda ($F$) por algún agente externo. Así, cuando la carga es soportada por $N$ trozos de esta cuerda, la fuerza neta entregada a la cuerda, la fuerza suministrada, es $NF$. Con frecuencia, la polea adjunta a la carga se mueve con la carga y sólo es necesario contar el número de trozos de la cuerda ($N$) que actúan sobre dicha polea para determinar la fuerza suministrada.</p>
+
+<div id="final-equilibrio" class="d-flex justify-content-center mt-5 mb-3">
+  <a href="#inicio-equilibrio" class="btn btn-outline-primary rounded-pill shadow-sm" style="padding: 0.5rem 1.5rem; font-weight: 500; border-width: 2px; transition: all 0.3s ease; text-decoration: none;">
+    &#8593; Ir al inicio
+  </a>
+</div>
+    `,
+  },
 }
 
 export function getTopicDetails(title) {

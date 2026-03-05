@@ -26,7 +26,7 @@
   },
   {
     "title": "Equilibrio bajo la acción de fuerzas concurrentes",
-    "image": "./concurrentes.png",
+    "image": "/assets/concurrentes.png",
     "description": " Las fuerzas concurrentes son aquellas cuyas rectas de acción se cruzan en un mismo punto, ya sea que actúen sobre él o se prolonguen hasta intersecarse. En un sistema así, la resultante se calcula sumando los vectores de fuerza (método del paralelogramo o polígono) y la condición de equilibrio es que la suma sea cero."
   }
 ]
