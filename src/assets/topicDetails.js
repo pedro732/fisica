@@ -629,7 +629,7 @@ $$
   },
   'Equilibrio bajo la acción de fuerzas concurrentes': {
     title: 'Equilibrio bajo la acción de fuerzas concurrentes',
-    image: './concurrentes.png',
+    image: 'https://revista.correodelmaestro.com/publico/html5062014/capitulo1/recursos/imart1.jpg',
     content: `
 <div id="inicio-equilibrio" class="d-flex justify-content-end mb-4">
   <a href="#final-equilibrio" class="btn btn-primary rounded-pill shadow-sm" style="padding: 0.5rem 1.5rem; font-weight: 500; transition: all 0.3s ease; text-decoration: none;">
