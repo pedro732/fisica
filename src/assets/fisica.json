@@ -23,5 +23,10 @@
     "title": "Fuerzas y principios de Newton",
     "image": "/assets/fuerza-caballo.png",
     "description": "La fuerza es una magnitud fundamental en la física, que se define como cualquier interacción que, al aplicarse a un objeto, puede cambiar su estado de movimiento o restablecer su posición. Las fuerzas son responsables de acelerar objetos, alterar trayectorias e incluso provocar deformaciones. Isaac Newton, uno de los científicos más influyentes de la historia, formuló tres leyes fundamentales del movimiento que describen cómo interactúan los objetos bajo la influencia de fuerzas. 1. Primera ley de Newton (Ley de inercia): Establece que un objeto en reposo permanecerá en reposo y un objeto en movimiento continuará moviéndose a una velocidad constante en línea recta, a menos que actúe sobre él una fuerza externa. 2. Segunda ley de Newton (Ley de fuerza y aceleración): Esta ley cuantifica la relación entre la fuerza aplicada a un objeto, su masa y la aceleración que experimenta, expresándose en la ecuación F = ma, donde F es la fuerza, m la masa y a la aceleración. 3. Tercera ley de Newton (Ley de acción y reacción): Afirma que para cada acción hay una reacción igual y opuesta. Esto significa que si un objeto A ejerce una fuerza sobre un objeto B, objeto B ejercerá una fuerza de igual magnitud y en sentido opuesto sobre el objeto A. Estas leyes no solo revolucionaron el entendimiento del movimiento en su época, sino que también sentaron las bases para el desarrollo de la física moderna y continúan siendo fundamentales en la enseñanza y aplicación de la ciencia hasta hoy."
+  },
+  {
+    "title": "Equilibrio bajo la acción de fuerzas concurrentes",
+    "image": "./concurrentes.png",
+    "description": " Las fuerzas concurrentes son aquellas cuyas rectas de acción se cruzan en un mismo punto, ya sea que actúen sobre él o se prolonguen hasta intersecarse. En un sistema así, la resultante se calcula sumando los vectores de fuerza (método del paralelogramo o polígono) y la condición de equilibrio es que la suma sea cero."
   }
 ]
