@@ -33,7 +33,8 @@
                     topic.title === 'Velocidad Instantánea' ||
                     topic.title === 'Vectores' ||
                     topic.title === 'aceleracion' ||
-                    topic.title === 'Fuerzas y principios de Newton'
+                    topic.title === 'Fuerzas y principios de Newton' ||
+                    topic.title === 'Equilibrio bajo la acción de fuerzas concurrentes'
                   "
                   class="btn btn-success me-2"
                   @click="goToExercises"

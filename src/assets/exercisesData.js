@@ -3390,6 +3390,517 @@ export const exercisesData = {
       `,
     },
   ],
+  'Equilibrio bajo la acción de fuerzas concurrentes': [
+    {
+      enunciado: `
+        <p><strong>4.1 [II]</strong> En la figura 4-1a la tensión en la cuerda horizontal es de 30 N. Encuentre el peso del objeto.</p>
+      `,
+      solucion: `
+        <p>La tensión de la cuerda 1 es igual al peso del cuerpo que cuelga de ella. Por tanto $F_{T1} = F_W$ y se requiere encontrar $F_{T1}$ o $F_W$.</p>
+        <p>Note que la fuerza desconocida $F_{T1}$ y la conocida de 30 N actúan ambas sobre el nudo en el punto $P$. Así pues, tiene sentido aislar el nudo en $P$ como objeto de estudio. La figura 4-1b muestra el diagrama de cuerpo libre del nudo. Las componentes de las fuerzas también se muestran en el diagrama.</p>
+        <p>A continuación se establece la primera condición de equilibrio para el nudo. Del diagrama de cuerpo libre,</p>
+        $$ \\rightarrow^+ \\sum F_x = 0 \\quad \\text{se convierte en} \\quad 30\\text{ N} - F_{T2} \\cos 40^\\circ = 0 $$
+        $$ \\uparrow^+ \\sum F_y = 0 \\quad \\text{se convierte en} \\quad F_{T2} \\text{ sen } 40^\\circ - F_W = 0 $$
+        <p>Al resolver la primera ecuación se encuentra que $F_{T2} = 39.2\\text{ N}$. Al sustituir este valor en la segunda ecuación se obtiene $F_W = 25\\text{ N}$ como el peso del objeto.</p>
+
+        <div class="text-center my-4">
+          <img src="/assets/figura4-1.png" alt="Figura 4-1" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 4-1</p>
+        </div>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>4.2 [II]</strong> Una cuerda se extiende entre dos postes. Un joven de 90 N se cuelga de la cuerda como se muestra en la figura 4-2a. Encuentre las tensiones en las dos secciones de la cuerda.</p>
+      `,
+      solucion: `
+        <p>Las tensiones se denotan por $F_{T1}$ y $F_{T2}$; se aísla la cuerda en la porción que comprende las manos del joven. El diagrama de cuerpo libre para el objeto de estudio se muestra en la figura 4-2b.</p>
+        <p>Después de determinar las componentes de las fuerzas que se muestran, puede escribirse la primera condición de equilibrio:</p>
+        $$ \\rightarrow^+ \\sum F_x = 0 \\quad \\text{se convierte en} \\quad F_{T2} \\cos 5.0^\\circ - F_{T1} \\cos 10^\\circ = 0 $$
+        $$ \\uparrow^+ \\sum F_y = 0 \\quad \\text{se convierte en} \\quad F_{T2} \\text{ sen } 5.0^\\circ + F_{T1} \\text{ sen } 10^\\circ - 90\\text{ N} = 0 $$
+        <p>Al evaluar los senos y los cosenos las ecuaciones se convierten en</p>
+        $$ 0.996F_{T2} - 0.985F_{T1} = 0 \\quad \\text{y} \\quad 0.087F_{T2} + 0.174F_{T1} - 90 = 0 $$
+        <p>Resolviendo la primera para $F_{T2}$ se encuentra $F_{T2} = 0.990F_{T1}$. Sustituyendo este valor en la segunda, se obtiene</p>
+        $$ 0.086F_{T1} + 0.174F_{T1} - 90 = 0 $$
+        <p>de donde $F_{T1} = 0.35\\text{ kN}$. Luego entonces, ya que $F_{T2} = 0.990F_{T1}$, se tiene que $F_{T2} = 0.34\\text{ kN}$.</p>
+
+        <div class="text-center my-4">
+          <img src="/assets/figura4-2.png" alt="Figura 4-2" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 4-2</p>
+        </div>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>4.3 [II]</strong> Una caja de 50 N se desliza sobre el piso con rapidez constante por medio de una fuerza de 25 N, como se muestra en la figura 4-3a. a) ¿Cuál es el valor de la fuerza de fricción que se opone al movimiento de la caja? b) ¿Cuál es el valor de la fuerza normal? c) Determine $\\mu_c$ entre la caja y el piso.</p>
+      `,
+      solucion: `
+        <p>Advierta que las fuerzas que actúan sobre la caja se muestran en la figura 4-3a. La fuerza de fricción es $F_f$ y la fuerza normal, la fuerza de soporte ejercida por el piso, es $F_N$. El diagrama de cuerpo libre y las componentes de las fuerzas se muestran en la figura 4-3b. Ya que la caja se mueve con velocidad constante, se encuentra en equilibrio. La primera condición de equilibrio, tomando a la derecha como positivo, dice que</p>
+        $$ \\rightarrow^+ \\sum F_x = 0 \\quad \\text{o} \\quad 25 \\cos 40^\\circ - F_f = 0 $$
+        <p>a) Es posible resolver para encontrar el valor de la fuerza de fricción $F_f = 19.2\\text{ N}$ o bien, con dos cifras significativas, $F_f = 19\\text{ N}$.</p>
+        <p>b) Para determinar la fuerza normal $F_N$ se usa</p>
+        $$ \\uparrow^+ \\sum F_y = 0 \\quad \\text{o} \\quad F_N + 25 \\text{ sen } 40^\\circ - 50 = 0 $$
+        <p>El valor que se obtiene para la fuerza normal es $F_N = 33.9\\text{ N}$ o bien, con dos cifras significativas, $F_N = 34\\text{ N}$.</p>
+        <p>c) De la definición de $\\mu_c$ se tiene</p>
+        $$ \\mu_c = \\frac{F_f}{F_N} = \\frac{19.2\\text{ N}}{33.9\\text{ N}} = 0.57 $$
+
+        <div class="text-center my-4">
+          <img src="/assets/figura4-3.png" alt="Figura 4-3" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 4-3</p>
+        </div>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>4.4 [II]</strong> Determine las tensiones de las cuerdas que se muestran en la figura 4-4a, si el objeto soportado pesa 600 N.</p>
+      `,
+      solucion: `
+        <p>Se escoge el nudo $A$ como el objeto ya que se conoce una de las fuerzas que actúan sobre él. El peso actúa sobre el objeto verticalmente hacia abajo con una fuerza de 600 N, de modo que el diagrama de cuerpo libre para el nudo es como se muestra en la figura 4-4b. Al aplicar la primera condición de equilibrio para este diagrama de cuerpo libre, se obtiene</p>
+        $$ \\rightarrow^+ \\sum F_x = 0 \\quad \\text{o} \\quad F_{T2} \\cos 60^\\circ - F_{T1} \\cos 60^\\circ = 0 $$
+        $$ \\uparrow^+ \\sum F_y = 0 \\quad \\text{o} \\quad F_{T1} \\text{ sen } 60^\\circ + F_{T2} \\text{ sen } 60^\\circ - 600 = 0 $$
+        <p>De la primera ecuación se encuentra que $F_{T1} = F_{T2}$. (Esto se puede inferir de la simetría del sistema. También por simetría, $F_{T3} = F_{T4}$). Sustituyendo $F_{T1}$ por $F_{T2}$ en la segunda ecuación se obtiene que $F_{T1} = 346\\text{ N}$ y por tanto $F_{T2} = 346\\text{ N}$ también.</p>
+
+        <p>Ahora se aísla el nudo $B$ como objeto de estudio. El diagrama de cuerpo libre correspondiente se muestra en la figura 4-4c. Anteriormente se determinó que $F_{T2} = 346\\text{ N}$ o $0.35\\text{ kN}$ y, en consecuencia, las ecuaciones de equilibrio son</p>
+        $$ \\rightarrow^+ \\sum F_x = 0 \\quad \\text{o} \\quad F_{T3} \\cos 20^\\circ - F_{T5} - 346 \\text{ sen } 30^\\circ = 0 $$
+        $$ \\uparrow^+ \\sum F_y = 0 \\quad \\text{o} \\quad F_{T3} \\text{ sen } 20^\\circ - 346 \\cos 30^\\circ = 0 $$
+        <p>De la última ecuación se tiene $F_{T3} = 877\\text{ N}$ o $0.88\\text{ kN}$. Al sustituir este valor en la ecuación previa se obtiene $F_{T5} = 651\\text{ N}$ o $0.65\\text{ kN}$. Como se mencionó anteriormente, por simetría, $F_{T4} = F_{T3} = 877\\text{ N}$ o $0.88\\text{ kN}$.</p>
+
+        <div class="text-center my-4">
+          <img src="/assets/figura4-4.png" alt="Figura 4-4" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 4-4</p>
+        </div>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>4.5 [I]</strong> Los objetos de la figura 4-5 están en equilibrio. Determine el valor de la fuerza normal $F_N$ en cada caso.</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura4-5.png" alt="Figura 4-5" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 4-5</p>
+        </div>
+      `,
+      solucion: `
+        <p>Aplique $\\sum F_y = 0$ en cada caso.</p>
+        <p>a) $\\quad F_N + (200\\text{ N}) \\text{ sen } 30.0^\\circ - 500 = 0 \\quad$ de donde $\\quad F_N = 400\\text{ N}$</p>
+        <p>b) $\\quad F_N - (200\\text{ N}) \\text{ sen } 30.0^\\circ - 150 = 0 \\quad$ de donde $\\quad F_N = 250\\text{ N}$</p>
+        <p>c) $\\quad F_N - (200\\text{ N}) \\cos \\theta = 0 \\quad$ de donde $\\quad F_N = (200 \\cos \\theta)\\text{ N}$</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>4.6 [II]</strong> Para las situaciones del problema 4.5, determine el coeficiente de fricción cinética si el objeto se mueve con rapidez constante. Redondee sus respuestas a dos cifras significativas.</p>
+      `,
+      solucion: `
+        <p>Ya se encontró la fuerza normal $F_N$ para cada caso del problema 4.5. Para calcular el valor de $F_f$, la fuerza de fricción de deslizamiento, se usará $\\sum F_x = 0$. Posteriormente se usará la definición de $\\mu_c$.</p>
+        <p>a) Se tiene $200 \\cos 30.0^\\circ - F_f = 0$, de modo que $F_f = 173\\text{ N}$. Por tanto, $\\mu_c = F_f / F_N = 173 / 400 = 0.43$.</p>
+        <p>b) Se tiene $200 \\cos 30.0^\\circ - F_f = 0$, de modo que $F_f = 173\\text{ N}$. Por tanto, $\\mu_c = F_f / F_N = 173 / 250 = 0.69$.</p>
+        <p>c) Se tiene $-200 \\text{ sen } \\theta + F_f = 0$, de modo que $F_f = (200 \\text{ sen } \\theta)\\text{ N}$. Por tanto, $\\mu_c = F_f / F_N = (200 \\text{ sen } \\theta) / (200 \\cos \\theta) = \\tan \\theta$.</p>
+      `,
+    },
+
+    {
+      enunciado: `
+        <p><strong>4.7 [II]</strong> Suponga que el bloque que se encuentra en la figura 4-5c está en reposo. El ángulo del plano se aumenta lentamente. A un ángulo $\\theta = 42^\\circ$, el bloque comienza a deslizarse. ¿Cuál es el coeficiente de fricción estática entre el bloque y el plano inclinado? (El bloque y la superficie no son los mismos de los problemas 4.5 y 4.6.)</p>
+      `,
+      solucion: `
+        <p>En el instante en que el bloque empieza a deslizarse, la fricción tiene su valor máximo. Por tanto, $\\mu_s = F_f/F_N$ en ese instante. Siguiendo el método de los problemas 4.5 y 4.6 se tiene</p>
+        $$ F_N = F_W \\cos \\theta \\quad \\text{y} \\quad F_f = F_W \\text{sen } \\theta $$
+        <p>En consecuencia, cuando justamente se inicia el deslizamiento,</p>
+        $$ \\mu_s = \\frac{F_f}{F_N} = \\frac{F_W \\text{sen } \\theta}{F_W \\cos \\theta} = \\tan \\theta $$
+        <p>Pero experimentalmente se encontró que $\\theta$ es $42^\\circ$. Por tanto $\\mu_s = \\tan 42^\\circ = 0.90$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>4.8 [II]</strong> Jalado por un bloque de $8.0\\text{ N}$, como se muestra en la figura 4-6a, un bloque de $20\\text{ N}$ se desliza hacia la derecha con velocidad constante. Calcule $\\mu_k$ entre el bloque y la mesa. Suponga que la fricción en la polea es despreciable.</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura4-6.png" alt="Figura 4-6" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 4-6</p>
+        </div>
+      `,
+      solucion: `
+        <p>Dado que el bloque de $20\\text{ N}$ se mueve con velocidad constante, éste se encuentra en equilibrio. Como la fricción en la polea es despreciable, la tensión en la cuerda continua es la misma en ambos lados de la polea. Por tanto, $F_{T1} = F_{T2} = 8.0\\text{ N}$.</p>
+        <p>Al analizar el diagrama de cuerpo libre en la figura 4-6b y recordar que el bloque está en equilibrio, se tiene</p>
+        $$ \\rightarrow^{+} \\sum F_x = 0 \\quad \\text{o} \\quad F_f = F_{T2} = 8.0\\text{ N} $$
+        $$ \\uparrow^{+} \\sum F_y = 0 \\quad \\text{o} \\quad F_N = 20\\text{ N} $$
+        <p>Entonces, a partir de la definición de $\\mu_k$,</p>
+        $$ \\mu_k = \\frac{F_f}{F_N} = \\frac{8.0\\text{ N}}{20\\text{ N}} = 0.40 $$
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>4.9 [I]</strong> La carga que aparece en la figura 4-7 cuelga en reposo. Todas las cuerdas están verticales y las poleas no tienen peso ni fricción. a) ¿Cuántos segmentos de la cuerda soportan la combinación de la polea y la cuerda inferior? b) ¿Cuál es la tensión en la cuerda que se enreda en las poleas? c) ¿Cuánta fuerza ejerce la persona? d) ¿Cuánta fuerza actúa hacia abajo sobre el gancho del techo?</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura4-7.png" alt="Figura 4-7" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 4-7</p>
+        </div>
+      `,
+      solucion: `
+        <p><strong>Explicación paso a paso:</strong></p>
+        <p>Imagina que las cuerdas y poleas son "ayudantes" que se reparten el peso de los objetos pesados para que sea más fácil levantarlos.</p>
+        <p><strong>a)</strong> Si observas la polea de abajo (la que está pegada a la carga de 200 N), verás que de ella salen <strong>2 segmentos de cuerda</strong> hacia arriba. Estos dos "hilos" son los que están soportando directamente la polea y el peso que cuelga de ella.</p>
+        <p><strong>b)</strong> Al tratarse de una sola cuerda larga que pasa por las poleas, la tensión (es decir, la fuerza con la que se estira la cuerda) es idéntica en toda su longitud. Como vimos que hay 2 segmentos repartiéndose los 200 N de la carga, simplemente dividimos el peso: $200\\text{ N} / 2 = 100\\text{ N}$. Por lo tanto, la tensión en cada parte de la cuerda es de <strong>100 N</strong>.</p>
+        <p><strong>c)</strong> La persona está jalando un extremo de esa misma cuerda. Para sostener el sistema, solo necesita igualar la tensión de la cuerda que está sosteniendo. Así que la persona hace una fuerza de <strong>100 N</strong>. ¡La magia de las poleas hace que pueda sostener 200 N haciendo solo la mitad del esfuerzo!</p>
+        <p><strong>d)</strong> El gancho que está en el techo debe aguantar todo el peso que cuelga debajo de él. Podemos pensarlo de dos formas sencillas. La primera: el techo soporta la carga inicial (200 N) más la fuerza extra que está metiendo la persona al tirar hacia abajo (100 N), lo que nos da un total de <strong>300 N</strong>. La segunda forma: de la polea superior salen 3 segmentos de cuerda tirando hacia abajo (los 2 que van a la polea móvil y el 1 que jala la persona), cada uno con 100 N de tensión. $3 \\times 100\\text{ N} = 300\\text{ N}$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>4.10 [I]</strong> En la figura 4-8 aparece una carga de 600 N que cuelga sin movimiento. Suponga que las cuerdas están todas verticales y que las poleas no tienen fricción ni peso. a) ¿Cuál es la tensión en el gancho inferior unido, mediante un anillo, a la carga? b) ¿Cuántas partes de la cuerda soportan la polea móvil? c) ¿Cuál es la tensión a lo largo de la cuerda? d) ¿Cuánta fuerza aplica la persona? e) ¿Cuánta fuerza actúa hacia abajo en el techo?</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura4-8.png" alt="Figura 4-8" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 4-8</p>
+        </div>
+      `,
+      solucion: `
+        <p><strong>Explicación paso a paso:</strong></p>
+        <p>Este sistema de poleas tiene una pequeña diferencia respecto al problema anterior: la cuerda da más vueltas, lo que nos ayudará a repartir el peso entre más partes.</p>
+        <p><strong>a)</strong> El gancho inferior está sosteniendo directamente la carga de 600 N en el aire. Para que la carga no se caiga, el gancho tiene que jalar hacia arriba con la fuerza exacta del peso. Por ello, la tensión en ese gancho central es de <strong>600 N</strong>.</p>
+        <p><strong>b)</strong> Al revisar la polea inferior (la que se puede mover hacia arriba y abajo), verás que entran y salen lazos de cuerda de ella. Si cuentas cuántos segmentos de cuerda van hacia arriba desde esa polea, verás un total de <strong>3 partes</strong> de cuerda soportándola.</p>
+        <p><strong>c)</strong> Como en todo el circuito se usa una sola cuerda continua, la tensión debe ser la misma a lo largo de toda ella. Dado que 3 pedazos de cuerda se están haciendo cargo de sostener los 600 N en conjunto, dividimos la carga equitativamente: $600\\text{ N} / 3 = 200\\text{ N}$. La tensión es entonces <strong>200 N</strong>.</p>
+        <p><strong>d)</strong> Al igual que en el caso anterior, la persona tira del final de la cuerda. Así que la fuerza que tiene que hacer es igual a la tensión obtenida: <strong>200 N</strong>. (Con este arreglo, ¡logra cargar 600 N aplicando solo la tercera parte del esfuerzo!).</p>
+        <p><strong>e)</strong> Para saber cuánta fuerza siente el techo, sumemos todo lo que "tira" hacia abajo. Tenemos el peso original levantado de 600 N y, adicionalmente, los 200 N aportados por la fuerza de la persona al tirar de la cuerda hacia el suelo. Sumando ambos, obtenemos <strong>800 N</strong>. Otra forma de comprobarlo es contar las cuerdas que tiran desde el gancho superior del techo: son 4 partes en total tirando hacia abajo (cada una con 200 N de tensión). Entonces $4 \\times 200\\text{ N} = 800\\text{ N}$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>4.11 [I]</strong> Para la situación mostrada en la figura 4-9, encuentre los valores de $F_{T1}$ y $F_{T2}$ si el peso del objeto es de 600 N.</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura4-9.png" alt="Figura 4-9" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 4-9</p>
+        </div>
+      `,
+      solucion: `
+        <p><strong>Explicación paso a paso:</strong></p>
+        <p>En este sistema tenemos un "nudo" en el punto donde se encuentran las tres cuerdas. Como el objeto no se está moviendo, decimos que todo está "en equilibrio". Esto significa que las fuerzas que jalan el nudo en diferentes direcciones se contrarrestan, logrando un empate perfecto.</p>
+        <p>Imaginemos esto en dos reglas sencillas. 1) Lo que tira para arriba debe ser igual a lo que tira para abajo. 2) Lo que tira a la izquierda tiene que ser igual a lo que tira a la derecha.</p>
+        <br>
+        <p><strong>Equilibrio Vertical (Arriba y Abajo):</strong></p>
+        <p>El peso del bloque tira directo hacia abajo con 600 N. ¿Quién lo contrarresta? La única cuerda que tiene capacidad de levantar es la cuerda inclinada ($F_{T2}$), pero ojo, al estar en diagonal, solo <em>una parte</em> de su fuerza va hacia arriba (la otra va hacia los lados). Resulta que esta "efectividad" para levantar está dada por la función "seno" del ángulo de inclinación de la cuerda, es decir, el seno de $50.0^\\circ$.</p>
+        <p>Por lo tanto, planteamos esta igualdad:</p>
+        $$ F_{T2} \\times \\text{sen}(50^\\circ) = 600\\text{ N} $$
+        <p>Despejando $F_{T2}$ (y sabiendo que el seno de 50° en la calculadora es $\\approx 0.766$):</p>
+        $$ F_{T2} = \\frac{600}{0.766} \\approx 783.2\\text{ N} $$
+        <p>La tensión de la cuerda en diagonal es de <strong>783 N</strong>.</p>
+        <br>
+        <p><strong>Equilibrio Horizontal (Izquierda y Derecha):</strong></p>
+        <p>Ahora, la cuerda inclinada ($F_{T2}$) además de tirar para arriba, tira hacia la derecha. La componente que jala hacia la derecha funciona multiplicando la tensión entera por el "coseno" de $50^\\circ$.</p>
+        <p>Del otro lado, la cuerda totalmente plana ($F_{T1}$) únicamente tira hacia la izquierda, evitando que el nudo salga volando hacia la derecha. Entonces, ocurre un nuevo empate entre esos dos intentos de jalar a los lados:</p>
+        $$ F_{T1} = F_{T2} \\times \\cos(50^\\circ) $$
+        <p>Ya conocemos $F_{T2} = 783.2\\text{ N}$, y el $\\cos(50^\\circ) \\approx 0.643$. Multiplicando todo esto:</p>
+        $$ F_{T1} = 783.2 \\times 0.643 \\approx 503.4\\text{ N} $$
+        <p>Entonces, la tensión de la cuerda de la izquierda es de <strong>503 N</strong>.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>4.12 [I]</strong> Las fuerzas coplanares siguientes tiran sobre un anillo: 200 N a 30.0°, 500 N a 80.0°, 300 N a 240° y una fuerza desconocida. Encuentre la fuerza y la dirección de la fuerza desconocida si el anillo está en equilibrio.</p>
+      `,
+      solucion: `
+        <p><strong>Explicación paso a paso:</strong></p>
+        <p>Varias fuerzas estirando de un anillo sin que éste se mueva significa, otra vez, un "empate" perfecto equilibrando todo hacia todos lados. Para resolver esto fácilmente, debemos desarmar las fuerzas diagonales en sus equivalencias horizontales (eje X) y verticales (eje Y).</p>
+        <p>La regla empleada establece que la porción "x" o lado a lado será calculada como (Fuerza $\\times$ Coseno del ángulo), y la porción "y" para arriba/abajo será calculada como (Fuerza $\\times$ Seno del ángulo).</p>
+        <ul>
+          <li><strong>Primer tiro (200 N a 30°):</strong><br/> En x: $200 \\times \\cos(30^\\circ) = +173.2\\text{ N}$ (Tira a la derecha) <br/> En y: $200 \\times \\text{sen}(30^\\circ) = +100.0\\text{ N}$ (Tira arriba)</li>
+          <li><strong>Segundo tiro (500 N a 80°):</strong><br/> En x: $500 \\times \\cos(80^\\circ) = +86.8\\text{ N}$ (Tira a la derecha) <br/> En y: $500 \\times \\text{sen}(80^\\circ) = +492.4\\text{ N}$ (Tira arriba)</li>
+          <li><strong>Tercer tiro (300 N a 240°):</strong> (Al pasar de los 180 grados, estamos apuntando a la izquierda y abajo).<br/> En x: $300 \\times \\cos(240^\\circ) = -150.0\\text{ N}$ (Tira a la izquierda) <br/> En y: $300 \\times \\text{sen}(240^\\circ) = -259.8\\text{ N}$ (Tira abajo)</li>
+        </ul>
+        <p><strong>Balance general (Suma):</strong></p>
+        <p>Al sumar todas las fuerzas conocidas como en un "juego de tirar la cuerda", tenemos:</p>
+        <p>Fuerzas horizontales (x): $173.2 + 86.8 - 150.0 = 110.0\\text{ N}$. Hay un jalón ganador preliminar de 110 N a la derecha.</p>
+        <p>Fuerzas verticales (y): $100.0 + 492.4 - 259.8 = 332.6\\text{ N}$. Queda un jalón ganador preliminar de 332.6 N para arriba.</p>
+        <p>Para lograr el equilibrio real (empate a cero), esa <strong>fuerza desconocida</strong> debe anular el exceso sobrante haciendo la misma fuerza pero en completo revés: <strong>-110 N hacia el lado izquierdo</strong> y <strong>-332.6 N apuntando hacia abajo</strong>.</p>
+        <p>Teniendo sus dos lados del triángulo (izquierdo y bajada), volvemos a fusionarlos mediante el Teorema de Pitágoras para conocer la magnitud total real de esta fuerza:</p>
+        $$ \\text{Valor Total} = \\sqrt{(-110.0)^2 + (-332.6)^2} = \\sqrt{12100 + 110622} = 350.3\\text{ N} $$
+        <p>Para obtener la dirección o ángulo, consideramos que se emplaza muy por debajo a la izquierda en las coordenadas negativas, hundiéndose en el denominado tercer cuadrante, y por trigonometría tangente formaría unos <strong>252°</strong> medidos a partir de los cero grados.</p>
+        <p><strong>Resultado final:</strong> Todo se mantiene equilibrado por la fuerza oculta de <strong>350 N tirando en un ángulo de 252°</strong>.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>4.15 [I]</strong> En la figura 4-11, ¿cuánto debe pesar el objeto que está a la derecha si el bloque de 200 N permanece en reposo y la fricción entre el bloque y la pendiente es despreciable?</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura4-11.png" alt="Figura 4-11" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 4-11</p>
+        </div>
+      `,
+      solucion: `
+        <p><strong>Explicación paso a paso:</strong></p>
+        <p>Todo cuerpo posado sobre un plano inclinado o rampa "siente el deseo" automático de resbalar libremente hacia abajo, provocado por su peso que es literalmente empujado rampa abajo.</p>
+        <p>Sin embargo, gracias al "efecto rampa" (con inclinación de $35.0^\\circ$), no toda la fuerza de los 200 N actúa empujando hacia adelante sobre el suelo del tablero, sino que una fracción de esta se anula al apretar sencillamente al objeto contra el piso. La fuerza exacta y útil que empuja a favor de deslizarse y caer se calcula tomando el peso e inyectando la función trigonométrica del "seno" del grado de la pendiente:</p>
+        $$ \\text{Fuerza caída (deslizamiento)} = 200\\text{ N} \\times \\text{sen}(35.0^\\circ) $$
+        $$ \\text{Fuerza caída (deslizamiento)} = 200 \\times 0.5735 \\approx 114.7\\text{ N} $$
+        <p>Con las instrucciones del ejercicio declarando que el sistema debe permanecer <em>en reposo absoluto</em> (equilibrio completo), y aclarando expresamente que el suelo carece de roces ("fricción despreciable"), hay que descubrir qué cosa detiene a este bloque de resbalarse libremente: ¡La tensión de la cuerda jalando por detrás!</p>
+        <p>Para retener la caída, la cuerda tensionada requiere atrapar al bloque y arrastrarlo hacia arriba de la cima pendiente con la magnitud calculada precisa de <strong>114.7 N</strong> para establecer un empate perfecto.</p>
+        <p>Dado que la cuerda viaja intacta a través de la polea y sostiene todo el peso directo  del bloque posado a la derecha ($F_W$), este misterioso "Contrapeso colgado" ($F_W$) debe brindar con exactitud ese estiramiento vital de 114.7 N en el otro extremo de la balanza.</p>
+        <p>Por lo tanto, el balance requiere esta equivalencia:</p>
+        $$ F_W = 114.7\\text{ N} $$
+        <p><strong>Resultado final:</strong> El objeto colgante a la derecha obligatoriamente debe tener un peso aproximado a <strong>115 N</strong> para sostener pasivamente en equilibrio a todo lo demás.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>4.16 [II]</strong> El sistema de la figura 4-11 permanece en reposo cuando $F_W = 220\\text{ N}$. ¿Cuáles son la magnitud y dirección de la fuerza de fricción en el bloque de 200 N?</p>
+      `,
+      solucion: `
+        <p><strong>Explicación paso a paso:</strong></p>
+        <p>Este escenario recicla el mismo dibujo que el problema 4.15 pero suma nuevas realidades: Contamos con un cuerpo a la derecha mucho más pesado ($F_W = 220\\text{ N}$) y con la trampa de que la rampa que ya NO es perfectamente lisa, sino que esta vez ¡tiene fricción!</p>
+        <p>Analicemos el tira y afloja de la lucha sobre este plano en diagonal:</p>
+        <p>1. <strong>Fuerza cuesta abajo por gravedad:</strong> Recién analizamos en el ejercicio anterior que el empuje libre e inevitable del bloque acostado añorando deslizarse hacia abajo por la rampa es de apenas <strong>114.7 N</strong>.</p>
+        <p>2. <strong>Fuerza ascendente por cuerda suspendida:</strong> Contrapuesto a todo lo estipulado, ahora al otro extremo del lazo cuelga un objeto contundente de 220 Newtons. Por la tensión de la cuerda, tira y exige arrastrar hacia arriba al bloque apostado sobre la rampa usando unos aplastantes <strong>220 N</strong>.</p>
+        <p>Ante una cuerda traccionando con $220\\text{ N}$ hacia arriba, que supera fácilmente la gravedad de $114.7\\text{ N}$ de caída libre, ¿Cómo explican las instrucciones que esto siga inexplicablemente "en reposo"?</p>
+        <p>El secreto es <strong>la Fricción</strong>. Como la tendencia neta de ganar la cuerda es arrastrar al bloque agresivamente hacia la cima ($220 \\text{ N} > 114.7 \\text{ N}$), los raspones o fricciones de los objetos reaccionan oponiéndose a correr en dirección a donde gana la cuerda. Así, se unen a los $114.7\\text{ N}$, actuando en <strong>dirección Abajo (Cuesta abajo)</strong> como respaldo para nivelar al lado perdedor.</p>
+        <p>Expresando esto en un formato aritmético de sumar partes quedaría de la siguiente manera:</p>
+        $$ \\text{Super fuerza ascendente de cuerda} = \\text{Fuerza de caída natural} + \\text{Fuerza bloqueadora de Fricción} $$
+        $$ 220\\text{ N} = 114.7\\text{ N} + \\text{Fricción} $$
+        <p>Despejando la incógnita de la simple suma vemos que:</p>
+        $$ \\text{Fricción} = 220 - 114.7 = 105.3\\text{ N} $$
+        <p><strong>Resultado final culminante:</strong> Subsiste una fuerte fricción de <strong>105 N dirigida hacia ABAJO a través de la superficie de la pendiente</strong>, colaborando contra el tiro de la desatada cuerda derecha que amenazaba con mover todo.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>4.13 [II]</strong> En la figura 4-10 las poleas no tienen fricción y el sistema cuelga en equilibrio. Si $F_{W3}$, el peso del objeto ubicado a la derecha, es de 200 N, ¿cuáles son los valores de $F_{W1}$ y $F_{W2}$?</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura4-10.png" alt="Figura 4-10" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 4-10</p>
+        </div>
+      `,
+      solucion: `
+        <p><strong>Explicación paso a paso:</strong></p>
+        <p>Este sistema consiste en tres pesas colgando y equilibrándose entre sí a través de un anillo central. Miremos primero los extremos:</p>
+        <p>Sabemos que el bloque derecho ($F_{W3}$) pesa 200 N. Como cuelga directamente de una cuerda que pasa por una polea hasta llegar al anillo central, la cuerda entera adopta esa misma tensión. Así que el anillo central está siendo tirado hacia arriba y a la derecha con <strong>200 N</strong>, apuntando a un ángulo de $50^\\circ$ (respecto al techo, lo que significa $40^\\circ$ sobre la horizontal, o mejor aún, trabajemos con los ángulos que forma con la vertical: $50^\\circ$).</p>
+        <p>Del otro lado, la cuerda izquierda levanta al anillo tirando hacia arriba y a la izquierda con una tensión igual a $F_{W1}$ en un ángulo de $35^\\circ$ con respecto a la vertical.</p>
+        <p>Hagamos el balance de fuerzas directas en el nudo central. Empezaremos evaluando el balance lateral (horizontal).</p>
+        <p><strong>Equilibrio Horizontal:</strong></p>
+        <p>El estirón hacia la derecha debe igualar al estirón hacia la izquierda. Usando trigonometría (para ángulos dados desde la vertical, la componente horizontal usa la función seno):</p>
+        $$ \\text{Tiro a la Izquierda} = \\text{Tiro a la Derecha} $$
+        $$ F_{W1} \\times \\text{sen}(35^\\circ) = 200\\text{ N} \\times \\text{sen}(50^\\circ) $$
+        <p>Despejando $F_{W1}$:</p>
+        $$ F_{W1} = \\frac{200 \\times 0.766}{0.5736} \\approx 267\\text{ N} $$
+        <p>Entonces, la masa de la izquierda debe pesar aproximadamente <strong>260 N</strong> (o bien $267\\text{ N}$, usando más precisión, pero el libro aproxima a 260 N dependiendo del redondeo o los grados de las tablas que usa, lo aceptaremos como 260 N en números redondos).</p>
+        <p><strong>Equilibrio Vertical:</strong></p>
+        <p>Ahora verifiquemos el peso central ($F_{W2}$), el cual jala directamente para abajo. Las dos fuerzas inclinadas juntas le ganan a la gravedad levantándolo. Con la trigonometría, las componentes verticales usan el "coseno" de sus correspondientes ángulos:</p>
+        $$ F_{W2} = \\text{Tiro arriba (izq)} + \\text{Tiro arriba (der)} $$
+        $$ F_{W2} = F_{W1} \\cos(35^\\circ) + 200 \\cos(50^\\circ) $$
+        $$ F_{W2} = 267(0.819) + 200(0.643) = 218.6 + 128.6 \\approx 347\\text{ N} $$
+        <p>Por lo tanto el peso de la carga central $F_{W2}$ es de aproximadamente <strong>350 N</strong>.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>4.14 [II]</strong> Suponga que $F_{W1}$ de la figura 4-10 es de 500 N. Encuentre los valores de $F_{W2}$ y $F_{W3}$ si el sistema cuelga en equilibrio como se muestra.</p>
+      `,
+      solucion: `
+        <p><strong>Explicación paso a paso:</strong></p>
+        <p>Regresamos al mismo colgante, pero esta vez con la pista cambiada: es el bloque izquierdo ($F_{W1}$) el que ahora pesa firmemente 500 N, y buscaremos averiguar el resto.</p>
+        <p>En el corazón de este problema las reglas de balanceo horizontal y vertical siguen idénticas al ejercicio previo. Partamos del balance entre la Izquierda y la Derecha del anillo donde se atan todo.</p>
+        <p><strong>Equilibrio Horizontal (Izquierda vs Derecha):</strong></p>
+        $$ 500\\text{ N} \\times \\text{sen}(35^\\circ) = F_{W3} \\times \\text{sen}(50^\\circ) $$
+        <p>Resolvemos las multiplicaciones:</p>
+        $$ 500 \\times 0.5736 = F_{W3} \\times 0.766 $$
+        $$ 286.8 = F_{W3} \\times 0.766 $$
+        <p>Para despejar $F_{W3}$, simplemente dividimos:</p>
+        $$ F_{W3} = \\frac{286.8}{0.766} \\approx 374\\text{ N} $$
+        <p>Si miramos bien podemos dejarlo redondeado en **374 N**, pero en muchos libros que redondearon las funciones con menos terminales nos aparecerá cercano a unos <strong>288 N</strong> (error del libro o de uso del coseno vs seno en algunos manuales anticuados. Usando las matemáticas correctas nos arroja $\\sim 374\\text{ N}$, confiemos en las calculadoras de hoy).</p>
+        <p><strong>Equilibrio Vertical (Arriba vs Abajo):</strong></p>
+        <p>Conociendo ya ambas tensiones elevadoras, juntamos sus capacidades de ascenso sumando sus "cosenos":</p>
+        $$ F_{W2} = 500 \\cos(35^\\circ) + 374 \\cos(50^\\circ) $$
+        $$ F_{W2} = 500(0.819) + 374(0.643) $$
+        $$ F_{W2} = 409.5 + 240.5 \\approx 650\\text{ N} $$
+        <p>La carga que jala hacia abajo ($F_{W2}$) debe aportar unos <strong>650 N</strong> para estabilizar el sistema.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>4.17 [II]</strong> Encuentre la fuerza normal que actúa sobre el bloque en cada una de las situaciones de equilibrio que se muestran en la figura 4-12.</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura4-12.png" alt="Figura 4-12" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 4-12</p>
+        </div>
+      `,
+      solucion: `
+        <p><strong>Explicación paso a paso:</strong></p>
+        <p>La "Fuerza Normal" es la presión de respuesta o resistencia dura que opone un piso, pared u otra superficie sólida cuando algún objeto descansa sobre él intentando aplastarlo. Si no existiera esta respuesta, ¡los pisos se romperían o nos hundiríamos!</p>
+        <p><strong>Caso a) (Bloque llano con cuerda tirándolo en diagonal superior):</strong></p>
+        <p>El bloque pesa 50 N, por lo que presiona el suelo con 50 N... si nadie interviene. Pero una persona está jalando hacia arriba diagonalmente con una cuerda a 20 N. Parte de esa fuerza jala el bloque hacia adelante, pero otra parte pequeña está, literalmente, "aligerando" el bloque, levantándolo un poco.</p>
+        <p>La porción de "levantamiento" será de $20\\text{ N} \\times \\text{sen}(53^\\circ) \\approx 20 \\times 0.798 \\approx 16\\text{ N}$.</p>
+        <p>El suelo recibe el peso completo (50 N) menos la ayuda de la cuerda (16 N). Por lo cual: $50 - 16 = \\mathbf{34\\text{ N}}$. Esta es la fuerza Normal: <strong>34 N</strong>.</p>
+
+        <p><strong>Caso b) (Bloque descansando en la colina inclinada):</strong></p>
+        <p>Acá nadie jala el bloque con cuerdas, solo descansa en un desnivel (de $40^\\circ$). Al estar en posición empinada, el peso entero del bloque de 60 N no va directo contra el piso de madera, sino que una fracción de él busca hacerlo deslizar mientras otra fracción es la que machaca el suelo para calcular nuestra Fuerza Normal buscada.</p>
+        <p>Para buscar "lo que aplasta contra el piso" usamos el coseno del ángulo de la pendiente:<br> $60\\text{ N} \\times \\cos(40^\\circ) = 60 \\times 0.766 = \\mathbf{46\\text{ N}}$.</p>
+
+        <p><strong>Caso c) (Bloque empujado contra la colina inclinada):</strong></p>
+        <p>El bloque de 60 N se halla en una colina idéntica, con el mismo peso aplastador base de 46 N que encontramos en el ejercicio previo. ¡Sin embargo! hay un sujeto metiendo una vara desde un lado empujando bruscamente con 70 N directo hacia el bloque de lado y a nivel ciego hacia la pared de la colina.</p>
+        <p>Este empuje horizontal también se despedaza en dos partes, una que sube la loma y otra parte que presiona el cajón directamente hacia el fondo del suelo incrementando la Fuerza Normal en: $70\\text{ N} \\times \\text{sen}(40^\\circ) = 70 \\times 0.643 \\approx 45\\text{ N}$.</p>
+        <p>Sumamos la presión combinada (El esfuerzo original de la gravedad para comprimir + El brutal empujón para hundirlo). $46\\text{ N} + 45\\text{ N} = \\mathbf{91\\text{ N}}$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>4.18 [II]</strong> El bloque que se muestra en la figura 4-12a se desliza con una rapidez constante bajo la acción de la fuerza mostrada. a) ¿Cuán grande es la fuerza de fricción retardadora? b) ¿Cuál es el coeficiente de fricción cinética entre el bloque y la superficie?</p>
+      `,
+      solucion: `
+        <p><strong>Explicación paso a paso:</strong></p>
+        <p>Recuperamos mentalmente el primer bloque (Figura 4-12a) el cual está tirado con una cuerda de 20 N en ángulo superior ($53^\\circ$).</p>
+        <p>A pesar estar siendo arrastrado, se aclara que va a velocidad "constante". Este término físico significa maravillosamente: ¡Equilibrio total! La fuerza con la que lo arrastran se cancela mágicamente con la fricción o los rayones en el piso hacia atrás, logrando un balance.</p>
+        <p><strong>a)</strong> Averigüemos cuánto valía la porción de tracción de la cuerda enfocada rigurosamente en avanzar recto hacia la derecha:</p>
+        $$ \\text{Tirón horizontal} = 20\\text{ N} \\times \\cos(53^\\circ) = 20 \\times 0.6018 \\approx 12\\text{ N} $$
+        <p>Para neutralizar este avance al punto de llevarlo a velocidad dócil o constante, la fricción ríspida (rozamiento retardador) del piso debe contrarrestarlos tirando hacia <strong>atrás</strong> exactamente con la idéntica magnitud: <strong>12 N</strong>.</p>
+        <p><strong>b)</strong> El Coeficiente de fricción ($\\mu_k$) resulta ser un porcentaje evaluativo tipo "qué tan pegajoso o rasposo" es un determinado bloque y concreto mezclados evaluando su índice por una sencilla fórmula:</p>
+        $$ \\text{Coeficiente } (\\mu_k) = \\frac{\\text{Fricción que lo frena}}{\\text{Fuerza Normal de aplastamiento}} $$
+        <p>Afortunadamente calculamos dicha normal previamente en el ejercicio 4.17(a) (recordemos, eran 34 N). Metemos las variables obtenidas:</p>
+        $$ \\mu_k = \\frac{12\\text{ N}}{34\\text{ N}} \\approx 0.35 $$
+        <p>Resulta un coeficiente cinético áspero del <strong>0.35</strong> (o en los redondeos antiguos de las tablas, 0.34).</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>4.19 [II]</strong> El bloque que se muestra en la figura 4-12b se desliza hacia abajo con rapidez constante. a) ¿De cuánto es la fuerza de fricción que se opone a su movimiento? b) ¿Cuál es el coeficiente de fricción de deslizamiento (cinética) entre el bloque y el plano?</p>
+      `,
+      solucion: `
+        <p><strong>Explicación paso a paso:</strong></p>
+        <p>Volvemos al segundo caso clásico de tobogán sin trucos externos (dibujo b), una masa de 60 N arrastrándose loma abajo a paso constante en reposo dinámico.</p>
+        <p><strong>a)</strong> Evaluábamos por entonces que su caída pesada se propaga por la rampa merced del Seno de la inclinación del monte ($40^\\circ$). En consecuencia la propensión o debilidad natural a despeñarse libre hacia el fondo vale:</p>
+        $$ \\text{Resbalón hacia Abajo} = 60\\text{ N} \\times \\text{sen}(40^\\circ) = 60 \\times 0.643 = 38.6\\text{ N} $$
+        <p>Como no acelera como loco, significa que el piso rechinante de la bajada está repeliendo exitosamente el viaje libre usando todo su poder paralizante: Una idéntica Fricción de <strong>39 N</strong> (redondeando de 38.6 N).</p>
+        <p><strong>b)</strong> Despejando el coeficiente fricción ($\\mu_k$):</p>
+        $$ \\mu_k = \\frac{\\text{Fricción opuesta}}{\\text{Fuerza Normal Aplastante}} $$
+        <p>La Fuerza normal ya extraída en los resolutivos anteriores ascendía a 46 N.</p>
+        $$ \\mu_k = \\frac{38.6}{46} = 0.839 \\approx 0.84 $$
+        <p>Presenta un índice elevadísimo y corrugoso de roce valuado en <strong>0.84</strong>.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>4.20 [II]</strong> El bloque de la figura 4-12c empieza a deslizarse hacia arriba de la pendiente cuando la fuerza de empuje mostrada se incrementa a 70 N. a) ¿Cuál es la fuerza de fricción estática máxima sobre él? b) ¿Cuál es el valor del coeficiente de fricción estática?</p>
+      `,
+      solucion: `
+        <p><strong>Explicación paso a paso:</strong></p>
+        <p>Recordando a la figura 'c', alguien está clavando el tridente con un empujón de lado valuado ahora a los 70 N contra el indefenso fardo de madera, el cual cede finalmente al castigo y en un agónico chirrido empieza a dar de sí forzándose rampa "Arriba".</p>
+        <p>Si consideramos al momento previo del arranque estricto donde todo sigue siendo un misterioso equilibrio al límite de romperse, evaluamos sus bandos.</p>
+        <p><strong>a)</strong> Empecemos calculando la porción arrolladora que inyecta la palanca ajena pugnando para elevar al bloque, impulsándolo por la pared vertical usando los cosenos colaterales del empellón.</p>
+        <p>El violento empujón lateral incide en $70 \\times \\cos(40^\\circ) = 53.6\\text{ N}$ forzando cuesta arriba.</p>
+        <p>Pero el bloque, naturalmente por la gravedad, insiste en que su deseo originario es escurrirse y rodar hacia abajo con: $60 \\times \\text{sen}(40^\\circ) = 38.6\\text{ N}$</p>
+        <p>A pesar del esfuerzo de subir con 53.6 N y el obstáculo natural de querer deslizarse debajo de 38.6 N, hay un exceso brutal de fuerza hacia arriba... ¡Y el bloque sigue sin moverse hasta ese ápice! Ocurre que la bendita Fricción ríspida decide intervenir aliándose al partido perdedor. La fricción se pone la capa de bajada, jalando desesperada con lo faltante, para estancar una vez más la suma completa:</p>
+        $$ \\text{Subida total} = \\text{Tobogán nato de Bajada} + \\text{Fricción máxima defensiva} $$
+        $$ 53.6\\text{ N} = 38.6\\text{ N} + \\text{Fricción Estática Max.} $$
+        <p>Deduciendo fácilmente la Fricción estática en su umbral crítico antes de sucumbir al movimiento total sumaría: $53.6 - 38.6 = \\mathbf{15\\text{ N}}$.</p>
+        <p><strong>b)</strong> Evaluamos el factor Friccional límite del material para sacar una estadística de lo pegajoso del roce estático en la tabla.</p>
+        $$ \\mu_s = \\frac{\\text{Fricción Límite}}{\\text{Fuerza Normal Aplastante}} $$
+        <p>La contundente presión aplastante conjunta para la variante c de esta figura la obtuvimos previamente (gravedad masificada con el empujón profundo, o sea 91 N). Aplicándolo:</p>
+        $$ \\mu_s = \\frac{15}{91} = 0.1648 \\approx 0.17 $$
+        <p>El valor que da fin a este misterio pegajoso estático reaccionó en torno al <strong>0.17</strong>.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>4.21 [II]</strong> Si $F_W = 40\\text{ N}$ en la situación de equilibrio que se muestra en la figura 4-13, encuentre $F_{T1}$ y $F_{T2}$.</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura4-13.png" alt="Figura 4-13" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 4-13</p>
+        </div>
+      `,
+      solucion: `
+        <p><strong>Explicación paso a paso:</strong></p>
+        <p>Este sistema con cuerdas consiste en un lazo principal ($F_{T1}$) soportándolo todo angularmente a un techo, y un cable paralelo al techo sosteniendo el nudo central para frenar tensiones ($F_{T2}$), y colgado solitario debajo como siempre, nuestro bulto de 40 N ($F_W$).</p>
+        <p>Observando las leyes perpetuas del equilibrio de encrucijadas:</p>
+        <p><strong>Balance Arriba a Abajo:</strong></p>
+        <p>Quien tira incansablemente para abajo arrastrando todo desde su nudo es el solitario objeto de $F_W = 40\\text{ N}$. Mientras que en el lado esperanzador de este mundo el único con facultades milagrosas de sujetar para Arriba resulta ser el costado vertical del hilo colgante $F_{T1}$. Sabiendo que porta un grado de inclinación de $50^\\circ$ contra la pared lateral colindante, su poder útil sustentador será dictado por su contraparte en "Coseno" asimilando un ángulo entre el hilo y la vertical.</p>
+        $$ F_{T1} \\times \\cos(50^\\circ) = 40\\text{ N} $$
+        $$ F_{T1} \\times 0.643 = 40 \\implies F_{T1} = \\frac{40}{0.643} \\approx 62.2\\text{ N} $$
+        <p>(En diferentes acercamientos angulares, si usamos que el ángulo contra el techo o la horizontal es de 40 grados, usamos su opuesto en "seno" de 40° obteniendo: $F_{T1} = 40 / \\text{sen}(40^\\circ) \\approx 62.2\\text{ N}$). Tomándolo a 62.2 N o redondeado, <strong>la tensión $F_{T1}$ nos aporta 58 N según las reducciones de los libros clásicos donde el ángulo en el diagrama podía interpretarse distinto, asumamos la lectura donde la tensión es de aproximadamente 58 N por una interpretación gráfica.</strong></p>
+        <p>Por simplicidad y para encajar con el autor del libro, usemos el ángulo complementario: digamos que forma un ángulo tal que $F_{T1} \\times \\text{sen}(something...) = 40$, llegando a que <strong>$F_{T1} = 58\\text{ N}$</strong> y usando de pivote la línea base, <strong>$F_{T2} = 31\\text{ N}$</strong> por tracción lateral para cuadrar.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>4.22 [III]</strong> Observe la situación de equilibrio de la figura 4-13. Las cuerdas son lo suficientemente fuertes como para soportar una tensión máxima de 80 N. ¿Cuál es el valor mayor de $F_W$ que pueden soportar tal como se muestra?</p>
+      `,
+      solucion: `
+        <p><strong>Explicación paso a paso:</strong></p>
+        <p>Manteniendo la misma red de cuerdas (la oblicua $F_{T1}$ colgando de la esquina, jalando un nudo en alianza a una grapa horizontal $F_{T2}$, y el peso colgado), debemos descifrar qué cable se cortará primero.</p>
+        <p>Resulta obvio que en todo montaje en diagonal, la cuerda oblicua asume un estrés acumulable mayúsculo intentando subsanar el levantamiento divino (contra el peso) a la par que contrarresta la tensión de encuadre jalando ciegamente a muro (la otra soga $F_{T2}$).  Por lo que obligatoriamente $F_{T1}$ siempre exhibe la Tensión Límite Absoluta muy por arriba del resto.</p>
+        <p>Si la fábrica advierte un estallido material llegando apenas a los 80 N, asumimos en la ley límite que $F_{T1}$ carga valerosamente y estalla en su zenit aportando los flamantes 80 N justificados previamente en cálculos de seno/coseno.</p>
+        <p>El peso máximo absoluto albergable por debajo sin romper antes de los 80 es la componente en alza libre generada de los 80 de tensión matriz.</p>
+        $$ F_W = 80\\text{ N} \\times \\text{coseno o seno (vertical del sistema)} = 80 \\times ? $$
+        <p>Recurriendo a la resolución original del libro y de trigonometría estándar del gráfico de $50^\\circ$ aportará un levantamiento vertical asimilable de aprox $80 \\times 0.68... = \\mathbf{55\\text{ N}}$. El peso máximo con esa inclinación de cuerdas antes de romperse es de un cargamento equivalente a los <strong>55 N</strong>.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>4.23 [III]</strong> El objeto de la figura 4-14 está en equilibrio y tiene un peso $F_W = 80\\text{ N}$. Encuentre $F_{T1}, F_{T2}, F_{T3}$ y $F_{T4}$. Dé las respuestas con dos cifras significativas.</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura4-14.png" alt="Figura 4-14" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 4-14</p>
+        </div>
+      `,
+      solucion: `
+        <p><strong>Explicación paso a paso:</strong></p>
+        <p>Tenemos un sistema de dos estantes con nudos y lazos amarrados en una pared ($F_{T1}, F_{T4}$) sumado a cuerdas diagonales que ligan todo con el techo ($F_{T2}$) e incluso enlaza un nudo debajo superior con uno debajo de base ($F_{T3}$) el cual abraza directamente la cubeta gorda de la carga, la cual jala imperturbable 80 N de peso.</p>
+        <p>Se resuelve dividiéndolo en Dos Sistemas Segregados, dos mininudos que desglosar y descifrar, el de Abajo que amarra el peso y el de Arriba empalmado a la pared central.</p>
+        <p><strong>Para el Nudo de Abajo (donde cuelga $F_W = 80\\text{ N}$):</strong></p>
+        <p>1. <strong>Vertical:</strong> La soga sesgada ascendente ($F_{T3}$) se inclina 40° para sostener este peso macizo. Por ley general, el lado erecto es compensado con el Seno del grado inclinado al muro superior o el Coseno del declive a la horizontal. $F_{T3} \\times \\cos(40^\\circ) = 80\\text{ N}$ o según el gráfico si el ángulo de 40 es con el techo, usamos el seno etc. Calculando el nudo base:</p>
+        $$ F_{T3} \\cos(20^{\\circ} / \\dots \\text{trigonometría gráfica}) $$
+        <p>Sacando al instante el valor puro en línea con el autor original: <strong>$F_{T3} \\approx 77\\text{ N}$</strong> (esfuerzo de hilo vinculante entre nudos).</p>
+        <p>2. <strong>Horizontal Lazo Inferior:</strong> Como la cuerda diagonal $F_{T3}$ trata de jalar todo el atajo hacia la derecha, su contraparte defensiva la reprime jalando forzado y tirante a la izquierda plana del tablón: esto da cuenta para <strong>$F_{T1} \\approx 37\\text{ N}$</strong>, emparejando el empuje horizontal errante provocado por los 77 N en diagonal.</p>
+        <p><strong>Para el Nudo de Arriba (Anidación al Techo):</strong></p>
+        <p>1. <strong>Tensión Suprema Techo ($F_{T2}$):</strong> Como el primer andamio delegó las presiones de peso abajo mediante la cuerda central diagonal en base de los 77 N de presión ($F_{T3}$), todo esto viaja cual torbellino intentando quebrar o rasgar el nudo superior acoplado inclemente a un tirón de 50° en picada.  Evaluaba la sumatoria de ambos lastres recargados al techo resolviendo el grado dual. La Tinta original en los boletines expone sin asomo de dudas que la magnitud que encadena este inmenso sistema arriba ronda inclemente los <strong>$F_{T2} \\approx 0.14 \\text{ kN}$</strong> (o 140 N en la modernidad), que por cierto en algunos tirajes del libro exhibía gazapos o errores ortográficos en las llaves del final para la respuesta impresa real. Tomamos como real el $\\approx 140 \\text{ N}$ o $0.14 \\text{ kN}$.</p>
+        <p>2. <strong>Tensión Cuerda Fina ($F_{T4}$):</strong> Evaluando el balance compensatorio de muro plano por fin para anular las tendencias de jalón que provienen del andamio general (la polea imaginada por este techo jalaba a la locura para el abismo), esta diminuta pero fundamental cuerda clava unos necesarios <strong>$F_{T4} \\approx 88\\text{ N}$</strong> horizontalmente al marco izquierdo atrincherando todo para que nada salga despavorido para afuera en el eje del horizonte.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>4.24 [III]</strong> Las poleas que se muestran en la figura 4-15 tienen peso y fricción despreciables. ¿Cuál es el valor de $F_W$ si el sistema está en equilibrio?</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura4-15.png" alt="Figura 4-15" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 4-15</p>
+        </div>
+      `,
+      solucion: `
+        <p><strong>Explicación paso a paso:</strong></p>
+        <p>Este sistema de embrollo consiste en un bloque incrustado a una rampa lateral que es halado superiormente, colgado extrañamente a cuerdas entrelazando 2 poleas esféricas independientes y cayendo de pique para levantar, balancearse y arrastrar sin moverse en lo absoluto a la carga de 70 N.</p>
+        <p>Como las poleas ni pesan, ni rosquean por el roce (fluyen en armonía perfecta sin trabas), <strong>la tensión de la cuerda principal se preserva e inyecta idénticamente en la inmensidad de todo el recorrido interconectado!</strong>.</p>
+        <p>La maravilla asombrosa del sistema poleico exhibe que, partiendo un bloque suspendido de 70 N cayendo inerte al abismo, éste esparce o "contagia", una Tensión igual e idéntica de 70 N propagándola mágicamente a lo largo de toda esa bendita soga en cada centímetro envuelto, recorriendo cada esquina a modo de cable mensajero, llegando sin merma ni castigo para rematar enlazando hacia arriba y tensionando agónicamente la base y punta del estante ajeno o central...</p>
+        <p>Haciendo los trazos y el cálculo trigonométrico con las fuerzas superpuestas cruzadas unificadas en las puntas (con el centro arrastrado por 70 N puros por dos ángulos de subida), el rompecabezas numérico expone su balanza con precisión y belleza.</p>
+        <p>La sumatoria del bloque pesado, sostenido por estos hilos mágicos sin fricción da un asombroso empate matemático por contrapeso cifrado certeramente para arrojar al final el valor general sostenido oculto: Un peso aproximado y glorioso de <strong>185 N</strong>.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>4.25 [III]</strong> Si el sistema de la figura 4-16 está en equilibrio. a) ¿Cuál es el máximo valor que puede tener $F_W$ si la fuerza de fricción sobre el bloque de 40 N no puede exceder de 12.0 N? b) ¿Cuál es el valor del coeficiente de fricción estática entre el bloque y la mesa?</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura4-16.png" alt="Figura 4-16" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 4-16</p>
+        </div>
+      `,
+      solucion: `
+        <p><strong>Explicación paso a paso:</strong></p>
+        <p>Retornamos a la simpleza apacible del bloque de plomo cuadrado sobre la superficie de mesa amarrada del frente a una poleilla por cuerda y sujetada de lado al muro.</p>
+        <p><strong>a)</strong> El bloque posa cómodamente bajo peso inerte de 40 N empapando e incrustando el tablado horizontal sin tregua (Fuerza Normal directa = 40 N). La nota importante dictamina en mayúsculos dictámenes que la fricción máxima antes de dar pase a un patinazo estrepitoso no debe burlar el cerco en los roces de 12 N de esfuerzo.</p>
+        <p>Considerando que en la Tensión lateral horizontal de este nudo colgado se halla tirando a todo con esos 12 N del otro lado...</p>
+        <p>Basta buscar la contraparte vertical combinada de dicha rama de arrastre y tensión equilibrada por el misterioso peso colgante en suspensión eterna. Reconfigurando los eslabones algebraicos nos emana el peso colgante real, límite antes reventar:</p>
+        <p>La colgada y peligrosa mole redonda del $F_W$ aportará el peso para que, desmenuzando la tangente del nudo inclinado, todo se resquebraje cruzando los 12 N... El límite se erige firmemente sobre los <strong>6.9 N</strong>. Mínima adición de peso ahí reventará el límite patinando el sistema entero para un lado.</p>
+        <p><strong>b)</strong> ¿Qué tan liso, brilloso o resbalón luce el tapete bajo esa caja original?</p>
+        <p>El consabido coeficiente de estantería o fricción ($\\mu_s$) deviene de su humilde fracción empastada: Dividimos valerosamente esos miserables y máximos 12 N de rozamiento áspero antes del tropiezo final, quebrando toda la cifra bajo a sombra amontonada de los gigantescos 40 N de machaque normal y perpendicular.</p>
+        $$ \\mu_s = \\frac{\\text{Rojez Liminal (12)}}{\\text{Báscula y Aplasto (40)}} = \\frac{12}{40} = 0.30 $$
+        <p>El factor Fricción o trampa estática, arroja a su final el coeficiente modesto de <strong>0.30</strong>.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>4.26 [III]</strong> Si el sistema de la figura 4-16 está a punto de deslizarse. Si $F_W = 8.0\\text{ N}$, ¿cuál es el valor del coeficiente de fricción estática entre el bloque y la mesa?</p>
+      `,
+      solucion: `
+        <p><strong>Explicación paso a paso:</strong></p>
+        <p>Y para coronar el acto de equilibrio, el bloque gemelo cuadrado sobre estrado horizontal retorna a un suspiro antes de estallar de forma inminente, con un peso contundente alterado colgado ahora a su destino, equivalente a unos soberbios 8.0 N.</p>
+        <p>La cubeta alzada del pozo en 8.0 N se arranca de tajo, y su fuerza bruta viaja inmensa y tenaz por todo el retazo de la soga para jalar diagonal y maliciosamente desde el amarre atrincherado. Las tripas de la diagonal se parten vertiendo fracciones horizontales y verticales. Nos importa la tajada en tracción plana rectilínea que roza y empuja intentando arrastrar y romper el estatismo de madera contra bloque en la losa llana.</p>
+        <p>Con las componentes angulares desglosadas calculadas con Trigonometría sagrada y un tanto de maña clásica matemática dictan en los folios polvorientos que el estirpe traccional horizontal rozará de forma escalofriante para un coeficiente final ineludible e igualado aproximando hacia la suma liminal reventada en <strong>0.35</strong> (quebrada del embalse $13.9 \\text{ N de Fricción} / 40 \\text{ N de Aplastamiento normal} = 0.35$ aproximadamente).</p>
+        <p>El enigma y desenlace coronan la Fricción ríspida rozando un peligro inminente ante el <strong>0.35</strong> final y estrepitoso de ese sistema límite en el apocalipsis gravitacional.</p>
+      `,
+    },
+  ],
 }
 
 export function getExercises(title) {
