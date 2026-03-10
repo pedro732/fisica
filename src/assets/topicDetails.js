@@ -671,6 +671,34 @@ $$ \\Sigma F_x = \\Sigma F_y = \\Sigma F_z = 0 $$
 </div>
     `,
   },
+  'Fuerzas coplanares': {
+    title: 'Fuerzas coplanares',
+    image: '/assets/figura5-1.png',
+    content: `
+<p><strong>LA TORCA (O MOMENTO DE TORSIÓN)</strong> ($\\tau$) alrededor de un eje, debida a una fuerza, es una medida de la efectividad de la fuerza para que ésta produzca una rotación alrededor de un eje. La torca se define de la siguiente forma:</p>
+
+$$ \\text{Torca} = \\tau = r F \\text{sen } \\theta $$
+
+<p>donde $r$ es la distancia radial desde el eje al punto de aplicación de la fuerza y $\\theta$ es el ángulo agudo entre las direcciones de $\\vec{r}$ y de $\\vec{F}$, como se muestra en la figura 5-1<em>a</em>. Con frecuencia, esta definición se escribe en términos del <em>brazo de palanca</em> de la fuerza, que es la distancia perpendicular desde el eje a la línea de acción de la fuerza, como se muestra en la figura 5-1<em>b</em>. Como el brazo de palanca es igual a $r \\text{sen } \\theta$, la ecuación de la torca se reescribe como</p>
+
+$$ \\tau = (F) (\\text{brazo de palanca}) $$
+
+<p>Las unidades de la torca son newton-metro (N $\\cdot$ m). La torca puede ser positiva o negativa; es positiva cuando la rotación alrededor del eje es en sentido opuesto al movimiento de las manecillas del reloj y negativa cuando la rotación es en el mismo sentido en que se mueven las manecillas del reloj.</p>
+
+<p><strong>LAS DOS CONDICIONES PARA EL EQUILIBRIO</strong> de un cuerpo rígido bajo la acción de <em>fuerzas coplanares</em> son:</p>
+<ol>
+  <li><em>La primera o condición de la fuerza:</em> La suma vectorial de todas las fuerzas que actúan sobre el cuerpo debe ser cero:
+  $$ \\Sigma F_x = 0 \\quad \\Sigma F_y = 0 $$
+  donde se ha tomado al plano $xy$ como el plano de las fuerzas coplanares.</li>
+  <li><em>La segunda o condición de la torca:</em> Tome un eje perpendicular al plano de las fuerzas coplanares. Todas las torcas que tienden a producir una rotación en el sentido del reloj considérelas como negativas, y las que producen una rotación contra el sentido del reloj, como positivas; la suma de todas las torcas que actúan sobre el objeto debe ser cero:
+  $$ ^+\\circlearrowleft \\Sigma \\tau = 0 $$</li>
+</ol>
+
+<p><strong>EL CENTRO DE GRAVEDAD</strong> de un objeto es el punto en el cual se puede considerar que está concentrado todo su peso; esto es, la línea de acción del peso pasa por el centro de gravedad. Una sola fuerza vertical y dirigida hacia arriba, igual en magnitud al peso del objeto y aplicada en el centro de gravedad, mantendrá al cuerpo en equilibrio.</p>
+
+<p><strong>LA POSICIÓN DE LOS EJES ES ARBITRARIA:</strong> Si la suma de las torcas es cero en torno a un eje determinado para un cuerpo que cumple la condición de fuerza, será cero para todo eje paralelo al primero. Generalmente se escoge el eje de tal forma que la línea de acción de la fuerza desconocida pase por la intersección del eje de rotación y el plano de las fuerzas. Entonces el ángulo $\\theta$ entre $\\vec{r}$ y $\\vec{F}$ es cero; en consecuencia, dicha fuerza desconocida particular ejerce una torca cero y por tanto no aparece en la ecuación de la torca.</p>
+    `,
+  },
 }
 
 export function getTopicDetails(title) {
