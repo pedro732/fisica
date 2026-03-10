@@ -3901,6 +3901,207 @@ export const exercisesData = {
       `,
     },
   ],
+  'Fuerzas coplanares': [
+    {
+      enunciado: `
+        <p><strong>5.1 [I]</strong> Calcule la torca alrededor del eje $A$ (que es perpendicular a la página) en la figura 5-2 debida a cada una de las fuerzas indicadas.</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura5-2.png" alt="Figura 5-2" class="img-fluid" style="max-width: 80%; height: auto;">
+          <p class="text-muted">Figura 5-2</p>
+        </div>
+      `,
+      solucion: `
+        <p>Al utilizar la ecuación $\\tau = r F \\text{sen } \\theta$, recuerde que una torca en el sentido del reloj es negativa y las torcas contrarreloj son positivas. La torca de cada una de las tres fuerzas es:</p>
+        <ul>
+          <li>Para 10 N: $\\tau = -(0.80 \\text{ m})(10 \\text{ N})(\\text{sen } 90^\\circ) = -8.0 \\text{ N} \\cdot \\text{m}$</li>
+          <li>Para 25 N: $\\tau = +(0.80 \\text{ m})(25 \\text{ N})(\\text{sen } 25^\\circ) = +8.5 \\text{ N} \\cdot \\text{m}$</li>
+          <li>Para 20 N: $\\tau = \\pm(0.80 \\text{ m})(20 \\text{ N})(\\text{sen } 0^\\circ) = 0$</li>
+        </ul>
+        <p>La línea de acción de la fuerza de 20 N pasa por el eje y por tanto $\\theta = 0^\\circ$. Expresándolo de otra forma, si la línea de acción de la fuerza pasa por el eje, entonces su brazo de palanca es cero. De cualquier forma, la torca es cero para esta (y cualquier otra) fuerza cuya línea de acción pase por el eje.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>5.2 [II]</strong> Una viga metálica uniforme de longitud $L$ pesa $200 \\text{ N}$ y sostiene un objeto de $450 \\text{ N}$ como se muestra en la figura 5-3. Calcule la magnitud de las fuerzas que ejercen sobre la viga las columnas de apoyo colocadas en los extremos. Suponga que las longitudes son exactas.</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura5-3.png" alt="Figura 5-3" class="img-fluid" style="max-width: 80%; height: auto;">
+          <p class="text-muted">Figura 5-3</p>
+        </div>
+      `,
+      solucion: `
+        <p>En lugar de dibujar por separado los diagramas de cuerpo libre, se muestran en la figura 5-3 las fuerzas que actúan sobre la viga. Como la viga es uniforme, su centro de gravedad se localiza en su centro geométrico. Por esta razón se muestra el peso de la viga ($200 \\text{ N}$) actuando sobre su centro. Las fuerzas $F_1$ y $F_2$ son las reacciones de las columnas de apoyo sobre la viga. Como no existen fuerzas en la dirección $x$ que actúen sobre la viga, solamente hay que escribir dos ecuaciones para esta condición de equilibrio: $\\sum F_y = 0$ y $\\sum \\tau = 0$.</p>
+        $$ +\\uparrow \\sum F_y = 0 \\quad \\text{se convierte en} \\quad F_1 + F_2 - 200 \\text{ N} - 450 \\text{ N} = 0 $$
+        <p>Antes de escribir la ecuación de la torca, se debe escoger un eje. Se escoge en el punto $A$, de tal forma que la fuerza desconocida $F_1$ pase por éste y no ejerza torca alguna. Entonces la ecuación de la torca es:</p>
+        $$ \\circlearrowleft \\sum \\tau = -(L/2)(200 \\text{ N})(\\text{sen } 90^\\circ) - (3L/4)(450 \\text{ N})(\\text{sen } 90^\\circ) + L F_2 \\text{ sen } 90^\\circ = 0 $$
+        <p>Al dividir la ecuación entre $L$ y resolver para $F_2$, se encuentra que $F_2 = 438 \\text{ N}$.</p>
+        <p>Para calcular el valor de $F_1$, se sustituye el valor de $F_2$ en la ecuación de las fuerzas y se obtiene $F_1 = 212 \\text{ N}$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>5.3 [II]</strong> Un tubo uniforme de $100 \\text{ N}$ se utiliza como palanca, como se muestra en la figura 5-4. ¿Dónde se debe colocar el fulcro (punto de apoyo) si un peso de $500 \\text{ N}$ colocado en un extremo se debe balancear con uno de $200 \\text{ N}$ colocado en el otro extremo? ¿Cuál es la fuerza de reacción que ejerce el punto de apoyo en el tubo?</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura5-4.png" alt="Figura 5-4" class="img-fluid" style="max-width: 80%; height: auto;">
+          <p class="text-muted">Figura 5-4</p>
+        </div>
+      `,
+      solucion: `
+        <p>En la figura 5-4 se muestran las fuerzas, donde $F_R$ es la fuerza de reacción que ejerce el apoyo sobre el tubo. Suponga que el punto de apoyo se encuentra a una distancia $x$ de uno de los extremos. Considere que el eje se encuentra en el punto de apoyo. Entonces la ecuación de la torca, $\\circlearrowleft \\sum \\tau = 0$, se escribe como</p>
+        $$ +(x)(200 \\text{ N})(\\text{sen } 90^\\circ) + (x - L/2)(100 \\text{ N})(\\text{sen } 90^\\circ) - (L - x)(500 \\text{ N})(\\text{sen } 90^\\circ) = 0 $$
+        <p>Al simplificar</p>
+        $$ (800 \\text{ N})(x) = (550 \\text{ N})(L) $$
+        <p>de donde $x = 0.69L$. El punto de apoyo se debe colocar a $0.69$ del extremo donde se encuentra la carga más ligera.</p>
+        <p>La carga $F_R$ que soporta el apoyo se encuentra con la ecuación $+\\uparrow \\sum F_y = 0$ y se obtiene</p>
+        $$ -200 \\text{ N} - 100 \\text{ N} - 500 \\text{ N} + F_R = 0 $$
+        <p>de donde $F_{R} = 800 \\text{ N}$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>5.4 [II]</strong> ¿En qué punto de una pértiga rígida, uniforme y horizontal de $100 \\text{ N}$ se debe colgar un objeto de $0.80 \\text{ kN}$, de tal forma que una niña, colocada en uno de los extremos, sostenga un tercio de lo que soporta una mujer colocada en el otro extremo?</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura5-5.png" alt="Figura 5-5" class="img-fluid" style="max-width: 80%; height: auto;">
+          <p class="text-muted">Figura 5-5</p>
+        </div>
+      `,
+      solucion: `
+        <p>En la figura 5-5 se muestra un esquema de las fuerzas. La fuerza que ejerce la niña se denota por $F$, y la de la mujer por $3F$. Tome el eje de giro en el extremo izquierdo. Con esta suposición, la ecuación de la torca es</p>
+        $$ -(x)(800 \\text{ N})(\\text{sen } 90^\\circ) - (L/2)(100 \\text{ N})(\\text{sen } 90^\\circ) + (L)(F)(\\text{sen } 90^\\circ) = 0 $$
+        <p>La segunda ecuación que se puede escribir es $\\sum F_y = 0$, o bien</p>
+        $$ 3F - 800 \\text{ N} - 100 \\text{ N} + F = 0 $$
+        <p>de donde $F = 225 \\text{ N}$. Sustituyendo este valor en la ecuación de la torca se obtiene</p>
+        $$ (800 \\text{ N})(x) = (225 \\text{ N})(L) - (100 \\text{ N})(L/2) $$
+        <p>de donde $x = 0.22L$. La carga se debe colgar a $0.22$ medido desde el extremo donde se encuentra parada la mujer.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>5.5 [II]</strong> En un tablón uniforme de $0.20 \\text{ kN}$ y longitud $L$ se cuelgan dos objetos: $300 \\text{ N}$ a $L/3$ de un extremo, y $400 \\text{ N}$ a $3L/4$ a partir del mismo extremo. ¿Qué otra fuerza debe aplicarse para que el tablón se mantenga en equilibrio?</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura5-6.png" alt="Figura 5-6" class="img-fluid" style="max-width: 80%; height: auto;">
+          <p class="text-muted">Figura 5-6</p>
+        </div>
+      `,
+      solucion: `
+        <p>En la figura 5-6 se muestran las fuerzas que actúan sobre el tablón, donde $F$ es la fuerza que se desea encontrar. $\\sum F_y = 0$ es la condición de equilibrio; por tanto,</p>
+        $$ F = 400 \\text{ N} + 200 \\text{ N} + 300 \\text{ N} = 900 \\text{ N} $$
+        <p>Como el tablón debe estar en equilibrio, se tiene libertad de escoger el eje de rotación en cualquier punto. Sea éste el punto $A$. Entonces $\\sum \\tau = 0$ da:</p>
+        $$ +(x)(F)(\\text{sen } 90^\\circ) - (3L/4)(400 \\text{ N})(\\text{sen } 90^\\circ) - (L/2)(200 \\text{ N})(\\text{sen } 90^\\circ) - (L/3)(300 \\text{ N})(\\text{sen } 90^\\circ) = 0 $$
+        <p>Utilizando $F = 900 \\text{ N}$, se determina que $x = 0.56L$. La fuerza requerida es de $0.90 \\text{ kN}$ hacia arriba a $0.56L$ del extremo izquierdo.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>5.6 [II]</strong> La escuadra (regla de ángulo recto) que se muestra en la figura 5-7 cuelga en reposo de una clavija. Está fabricada con una hoja de metal uniforme. Uno de los brazos tiene una longitud de $L \\text{ cm}$ y el otro tiene $2L \\text{ cm}$ de longitud. Calcule (a dos cifras significativas) el ángulo $\\theta$ que forma cuando está colgada.</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura5-7.png" alt="Figura 5-7" class="img-fluid" style="max-width: 80%; height: auto;">
+          <p class="text-muted">Figura 5-7</p>
+        </div>
+      `,
+      solucion: `
+        <p>Si la escuadra no es muy ancha, se puede considerar que está formada por dos barras delgadas de longitudes $L$ y $2L$, unidas perpendicularmente en el punto $A$. Sea $\\gamma$ el peso de cada centímetro de la escuadra. En la figura 5-7 se indican las fuerzas que actúan sobre la escuadra, donde $F_R$ es la fuerza de reacción hacia arriba de la clavija.</p>
+        <p>Considere el punto $A$ como eje para escribir la ecuación de la torca. Ya que $\\tau = r F \\text{ sen } \\theta$ y como la torca en $A$ debida a $F_R$ es cero, la ecuación de la torca queda como sigue</p>
+        $$ +(L/2)(\\gamma L)[\\text{sen } (90^\\circ - \\theta)] - (L)(\\gamma 2L)(\\text{sen } \\theta) = 0 $$
+        <p>Recuerde que $\\text{sen } (90^\\circ - \\theta) = \\cos \\theta$. Después de sustituir y dividir entre $2\\gamma L^2 \\cos \\theta$, se obtiene</p>
+        $$ \\frac{\\text{sen } \\theta}{\\cos \\theta} = \\tan \\theta = \\frac{1}{4} $$
+        <p>y da como resultado $\\theta = 14^\\circ$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>5.7 [II]</strong> Examine el diagrama que se muestra en la figura 5-8a. La viga uniforme de $0.60 \\text{ kN}$ está sujeta a un gozne en el punto $P$. Calcule la tensión en la cuerda y las componentes de la fuerza de reacción que ejerce el gozne sobre la viga. Dé sus respuestas con dos cifras significativas.</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura5-8.png" alt="Figura 5-8" class="img-fluid" style="max-width: 80%; height: auto;">
+          <p class="text-muted">Figura 5-8</p>
+        </div>
+      `,
+      solucion: `
+        <p>Las fuerzas sobre la viga se indican en la figura 5-8b, donde la fuerza ejercida por el gozne se representa mediante sus componentes, $F_{RH}$ y $F_{RV}$. La ecuación de la torca tomando $P$ como eje es</p>
+        $$ +(3L/4)(F_T)(\\text{sen } 40^\\circ) - (L)(800 \\text{ N})(\\text{sen } 90^\\circ) - (L/2)(600 \\text{ N})(\\text{sen } 90^\\circ) = 0 $$
+        <p>(Se tomó el eje en $P$ porque entonces $F_{RH}$ y $F_{RV}$ no aparecen en la ecuación de la torca.) Al resolver esta ecuación se obtiene $F_T = 2\\,280 \\text{ N}$, o bien, con dos cifras significativas, $F_T = 2.3 \\text{ kN}$.</p>
+        <p>$F_{RH}$ y $F_{RV}$ se calculan con las siguientes ecuaciones:</p>
+        $$ \\sum F_x = 0 \\quad \\rightarrow \\quad -F_T \\cos 40^\\circ + F_{RH} = 0 $$
+        $$ \\sum F_y = 0 \\quad \\rightarrow \\quad F_T \\text{ sen } 40^\\circ + F_{RV} - 600 - 800 = 0 $$
+        <p>Como $F_T$ es conocida, estas ecuaciones dan $F_{RH} = 1\\,750 \\text{ N}$ o $1.8 \\text{ kN}$ y $F_{RV} = 65.6 \\text{ N}$ o $66 \\text{ N}$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>5.8 [II]</strong> Un asta de densidad uniforme y $0.40 \\text{ kN}$ está suspendida como se muestra en la figura 5-9a. Calcule la tensión en la cuerda y la fuerza que ejerce el pivote en $P$ sobre el asta.</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura5-9.png" alt="Figura 5-9" class="img-fluid" style="max-width: 80%; height: auto;">
+          <p class="text-muted">Figura 5-9</p>
+        </div>
+      `,
+      solucion: `
+        <p>Las fuerzas que actúan sobre el asta se muestran en la figura 5-9b. Tome el pivote como eje. La ecuación de la torca es la siguiente</p>
+        $$ +(3L/4)(F_T)(\\text{sen } 50^\\circ) - (L/2)(400 \\text{ N})(\\text{sen } 40^\\circ) - (L)(2\\,000 \\text{ N})(\\text{sen } 40^\\circ) = 0 $$
+        <p>de donde $F_T = 2\\,460 \\text{ N}$ o $2.5 \\text{ kN}$. Ahora se escribe:</p>
+        $$ \\sum F_x = 0 \\quad \\rightarrow \\quad F_{RH} - F_T = 0 $$
+        <p>por tanto, $F_{RH} = 2.5 \\text{ kN}$. Además</p>
+        $$ \\sum F_y = 0 \\quad \\rightarrow \\quad F_{RV} - 2\\,000 \\text{ N} - 400 \\text{ N} = 0 $$
+        <p>entonces $F_{RV} = 2.4 \\text{ kN}$. $F_{RH}$ y $F_{RV}$ son las componentes de la fuerza de reacción en el pivote. La magnitud de esta fuerza es</p>
+        $$ \\sqrt{(2\\,400)^2 + (2\\,460)^2} = 3.4 \\text{ kN} $$
+        <p>La tangente del ángulo que forma con la horizontal es $\\tan \\theta = 2\\,400/2\\,460$, de donde $\\theta = 44^\\circ$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>5.9 [III]</strong> En la figura 5-10, las bisagras $A$ y $B$ mantienen una puerta uniforme de $400 \\text{ N}$ en su lugar. La bisagra superior sostiene todo el peso de la puerta. Calcule las fuerzas ejercidas en las bisagras sobre la puerta. El ancho de la puerta es $h/2$, donde $h$ es la separación entre las bisagras.</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura5-10.png" alt="Figura 5-10" class="img-fluid" style="max-width: 80%; height: auto;">
+          <p class="text-muted">Figura 5-10</p>
+        </div>
+      `,
+      solucion: `
+        <p>Las fuerzas que actúan sobre la puerta se muestran en la figura 5-10. Sólo una fuerza horizontal actúa en $B$, pues se supone que la bisagra superior sostiene todo el peso de la puerta. Tome las torcas considerando el punto $A$ como eje.</p>
+        $$ \\circlearrowleft \\sum \\tau = 0 \\quad \\text{se convierte en} $$
+        $$ +(h)(F)(\\text{sen } 90.0^\\circ) - (h/4)(400 \\text{ N})(\\text{sen } 90.0^\\circ) = 0 $$
+        <p>de donde $F = 100 \\text{ N}$. También</p>
+        $$ \\sum F_x = 0 \\quad \\rightarrow \\quad F - F_{RH} = 0 $$
+        $$ \\sum F_y = 0 \\quad \\rightarrow \\quad F_{RV} - 400 \\text{ N} = 0 $$
+        <p>De estas ecuaciones se calcula $F_{RH} = 100 \\text{ N}$ y $F_{RV} = 400 \\text{ N}$.</p>
+        <p>Para la fuerza de reacción resultante $F_R$ en la bisagra $A$, se tiene</p>
+        $$ F_R = \\sqrt{(400)^2 + (100)^2} = 412 \\text{ N} $$
+        <p>La tangente del ángulo que $F_R$ forma con la dirección negativa del eje $x$ es $F_{RV}/F_{RH}$ y por ende el ángulo es $\\arctan 4.00 = 76.0^\\circ$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>5.10 [II]</strong> Una escalera se recarga contra una pared lisa, como se muestra en la figura 5-11. (Por pared "lisa" se debe entender que la pared sólo ejerce sobre la escalera una fuerza que es perpendicular a la pared. No existe fuerza de fricción.) La escalera pesa $200 \\text{ N}$ y su centro de gravedad está a $0.40L$ desde el pie y a lo largo de la escalera, $L$ es la longitud de la escalera. a) ¿Cuál debe ser la magnitud de la fuerza de fricción al pie de la escalera para que ésta no resbale? b) ¿Cuál es el coeficiente de fricción estática?</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura5-11.png" alt="Figura 5-11" class="img-fluid" style="max-width: 80%; height: auto;">
+          <p class="text-muted">Figura 5-11</p>
+        </div>
+      `,
+      solucion: `
+        <p>a) Se desea encontrar la fuerza de fricción $F_f$. Observe que no existe fuerza de fricción en la parte superior de la escalera. Tomando las torcas alrededor del punto $A$ se obtiene la ecuación de torcas</p>
+        $$ \\circlearrowleft \\sum \\tau_A = -(0.40L)(200 \\text{ N})(\\text{sen } 40^\\circ) + (L)(F_{N2})(\\text{sen } 50^\\circ) = 0 $$
+        <p>Al resolver se obtiene $F_{N2} = 67.1 \\text{ N}$. También se puede escribir</p>
+        $$ \\sum F_x = 0 \\quad \\rightarrow \\quad F_f - F_{N2} = 0 $$
+        $$ \\sum F_y = 0 \\quad \\rightarrow \\quad F_{N1} - 200 = 0 $$
+        <p>Por tanto, $F_f = 67 \\text{ N}$ y $F_{N1} = 0.20 \\text{ kN}$.</p>
+        <p>b) $$\\mu_s = \\frac{F_f}{F_{N1}} = \\frac{67.1}{200} = 0.34 $$</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p><strong>5.11 [III]</strong> Para el diagrama de la figura 5-12a, calcule $F_{T1}$, $F_{T2}$ y $F_{T3}$. El poste es uniforme y pesa $800 \\text{ N}$.</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura5-12.png" alt="Figura 5-12" class="img-fluid" style="max-width: 80%; height: auto;">
+          <p class="text-muted">Figura 5-12</p>
+        </div>
+      `,
+      solucion: `
+        <p>En primer término, aplique la condición de fuerza en equilibrio al punto $A$. En la figura 5-12b se muestra el diagrama de cuerpo libre. Se tiene</p>
+        $$ F_{T2} \\cos 50.0^\\circ - 2\\,000 \\text{ N} = 0 \\quad y \\quad F_{T1} - F_{T2} \\text{ sen } 50.0^\\circ = 0 $$
+        <p>De la primera ecuación se encuentra $F_{T2} = 3.11 \\text{ kN}$; y al sustituir en la segunda ecuación se obtiene $F_{T1} = 2.38 \\text{ kN}$.</p>
+        <p>Aísle el poste y aplique las condiciones de equilibrio. En la figura 5-12c se muestra el diagrama de cuerpo libre. La ecuación de la torca, para las torcas alrededor del punto $C$, es</p>
+        $$ \\circlearrowleft \\sum \\tau_C = +(L)(F_{T3})(\\text{sen } 20.0^\\circ) - (L)(3\\,110 \\text{ N})(\\text{sen } 90.0^\\circ) - (L/2)(800 \\text{ N})(\\text{sen } 40.0^\\circ) = 0 $$
+        <p>Al resolver para $F_{T3}$, se encuentra que tiene una magnitud de $9.84 \\text{ kN}$. Si fuera necesario, se pueden calcular $F_{RH}$ y $F_{RV}$ utilizando las ecuaciones en $x$ y $y$ de la fuerza.</p>
+      `,
+    },
+  ],
 }
 
 export function getExercises(title) {
