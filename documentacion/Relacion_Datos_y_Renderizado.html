@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relación de Datos y Renderizado - Proyecto Física</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #3498db;
+            --bg: #f8f9fa;
+            --text: #333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: var(--bg);
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 { color: var(--primary); border-bottom: 2px solid var(--accent); padding-bottom: 10px; }
+        h2 { color: var(--accent); margin-top: 30px; }
+        h3 { color: var(--primary); }
+        code {
+            background: #eee;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        th { background-color: var(--primary); color: white; }
+        .footer {
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #777;
+            text-align: center;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+        @media print {
+            body { background: white; margin: 0; padding: 0; }
+            .container { box-shadow: none; border: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Arquitectura de Datos y Renderizado: Proyecto de Física</h1>
+        <p>Este documento explica cómo se estructuran los datos del proyecto y cómo se transforman en la interfaz interactiva que ve el usuario.</p>
+
+        <hr>
+
+        <h2>1. El Tridente de Datos (Archivos Assets)</h2>
+        <p>La aplicación utiliza tres archivos principales en <code>src/assets/</code> para gestionar todo el contenido:</p>
+
+        <h3>A. <code>fisica.json</code> (El Índice Maestro)</h3>
+        <ul>
+            <li><strong>Función:</strong> Define qué temas aparecen en la pantalla de inicio (<code>HomeView.vue</code>).</li>
+            <li><strong>Estructura:</strong> Contiene objetos con <code>title</code>, <code>image</code> y <code>description</code>.</li>
+            <li><strong>Relación:</strong> El título es la "llave" química que conecta con los otros archivos.</li>
+        </ul>
+
+        <h3>B. <code>topicDetails.js</code> (El Alma de la Teoría)</h3>
+        <ul>
+            <li><strong>Función:</strong> Almacena los textos de las lecciones teóricas.</li>
+            <li><strong>Relación:</strong> Usa el <code>title</code> de fisica.json para buscar la explicación correspondiente.</li>
+        </ul>
+
+        <h3>C. <code>exercisesData.js</code> (El Banco de Práctica)</h3>
+        <ul>
+            <li><strong>Función:</strong> Contiene listas de problemas, enunciados y soluciones paso a paso.</li>
+            <li><strong>Relación:</strong> Agrupa arrays de ejercicios usando los mismos títulos de los temas.</li>
+        </ul>
+
+        <h2>2. El Flujo de Renderizado (De Código a Pantalla)</h2>
+        
+        <h3>1. Selección del Tema (<code>HomeView.vue</code>)</h3>
+        <p>Extrae los datos de <code>fisica.json</code> y genera las tarjetas. Al hacer clic, pasa el título como parámetro.</p>
+
+        <h3>2. Carga de Teoría (<code>TopicDetail.vue</code>)</h3>
+        <p>Busca en <code>topicDetails.js</code> usando el título y renderiza el contenido usando <code>v-html</code>.</p>
+
+        <h3>3. Carga de Ejercicios (<code>SolvedExercisesView.vue</code>)</h3>
+        <p>Busca en <code>exercisesData.js</code> el array de ejercicios y genera la lista dinámica.</p>
+
+        <h3>4. Transformación Matemática (<code>MathExpression.vue</code>)</h3>
+        <p><strong>Crítico:</strong> Detecta las fórmulas entre símbolos de dólar (<code>$</code>) y usa <strong>KaTeX</strong> para mostrarlas como ecuaciones matemáticas reales.</p>
+
+        <h2>3. Resumen de Conexiones</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Archivo de Origen</th>
+                    <th>Consumido por</th>
+                    <th>Propósito</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>fisica.json</code></td>
+                    <td><code>HomeView.vue</code></td>
+                    <td>Mostrar el menú principal de temas.</td>
+                </tr>
+                <tr>
+                    <td><code>topicDetails.js</code></td>
+                    <td><code>TopicDetail.vue</code></td>
+                    <td>Proveer el texto de la lección teórica.</td>
+                </tr>
+                <tr>
+                    <td><code>exercisesData.js</code></td>
+                    <td><code>SolvedExercisesView.vue</code></td>
+                    <td>Proveer la lista de problemas resueltos.</td>
+                </tr>
+                <tr>
+                    <td><code>MathExpression.vue</code></td>
+                    <td>Todas las Vistas</td>
+                    <td>Convertir LaTeX a fórmulas visuales.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="footer">
+            Documento generado para el Proyecto de Física - 2026
+        </div>
+    </div>
+</body>
+</html>
