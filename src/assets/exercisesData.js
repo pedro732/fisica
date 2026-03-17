@@ -4113,30 +4113,30 @@ export const exercisesData = {
         <p><strong>Explicación paso a paso:</strong></p>
         <p>Imagina el carro como una simple tabla de longitud $L$ apoyada en sus dos extremos (las llantas). Todas las fuerzas que empujan hacia abajo deben ser compensadas exactamente por las llantas empujando hacia arriba, para que el carro no se hunda en el suelo. Como las personas están en la línea central, podemos asumir que las dos llantas delanteras reparten su carga por igual, y lo mismo pasa con las dos llantas traseras.</p>
         <p>Llamemos $F_{\\text{delantera}}$ a la fuerza combinada de <em>ambas</em> llantas delanteras hacia arriba, y $F_{\\text{trasera}}$ a la fuerza combinada de <em>ambas</em> llantas traseras hacia arriba.</p>
-        
+
         <p><strong>Identificando las fuerzas hacia abajo:</strong></p>
         <ul>
             <li>El peso del carro: 8 000 N. Nos dicen que su centro de gravedad está a $0.400L$ de las llantas delanteras.</li>
             <li>Persona adelante: 700 N. Si observas la figura 5-13, esta persona está a una distancia de $L/3$ desde las llantas delanteras.</li>
             <li>Persona atrás: 900 N. En la figura se nota que está a $L/2$ desde las llantas delanteras.</li>
         </ul>
-        
+
         <p><strong>Paso 1: Usando la regla de la Torca (o palanca)</strong></p>
         <p>Para no tener que adivinar cómo se reparte el peso, usamos el principio de "Torca", que es como medir qué tan fuerte intenta girar un balancín. Escogemos las llantas delanteras como el "centro del balancín" (eje de rotación). Así, ignoramos $F_{\\text{delantera}}$ por el momento porque está justo en el centro.</p>
         <p>Las fuerzas hacia abajo intentan girar el carro en una dirección, y las llantas traseras ($F_{\\text{trasera}}$) intentan levantarlo (girarlo en la dirección opuesta) aplicadas en el extremo $L$. Para que haya equilibrio, el giro total debe ser cero ($\\sum \\tau = 0$):</p>
-        
+
         $$ \\tau_{\\text{hacia abajo}} = \\tau_{\\text{hacia arriba}} $$
         $$ (700\\text{ N} \\cdot \\frac{L}{3}) + (8000\\text{ N} \\cdot 0.400L) + (900\\text{ N} \\cdot \\frac{L}{2}) = (F_{\\text{trasera}} \\cdot L) $$
-        
+
         <p>Nota que la distancia $L$ está en todos los términos multiplicando, por lo que podemos cancelarla (dividir todo entre $L$):</p>
         $$ \\frac{700}{3} + 8000(0.400) + \\frac{900}{2} = F_{\\text{trasera}} $$
         $$ 233.33 + 3200 + 450 = F_{\\text{trasera}} $$
         $$ F_{\\text{trasera}} = 3883.33\\text{ N} $$
-        
+
         <p>Esta es la fuerza que sostienen <em>las dos</em> llantas traseras juntas. Como nos piden la fuerza por cada llanta, dividimos entre 2:</p>
         $$ \\text{Cada llanta trasera} = \\frac{3883.33}{2} \\approx 1941.6\\text{ N} $$
         <p>Si lo convertimos a kilonewtons (dividiendo por 1000) y expresando con dos decimales: <strong>1.94 kN</strong>. (Nota: El libro puede aproximar este número debido al redondeo intermedio, pero el procedimiento es idéntico).</p>
-        
+
         <p><strong>Paso 2: Equilibrio de fuerzas verticales</strong></p>
         <p>Ahora, sabemos que todas las fuerzas hacia arriba deben igualar a todas las fuerzas hacia abajo ($\\sum F_y = 0$).</p>
         $$ \\text{Hacia arriba} = \\text{Hacia abajo} $$
@@ -4146,7 +4146,7 @@ export const exercisesData = {
         <p>Esta es la fuerza que levantan ambas llantas delanteras juntas. Para cada llanta delantera, dividimos por 2:</p>
         $$ \\text{Cada llanta delantera} = \\frac{5716.67}{2} \\approx 2858.3\\text{ N} $$
         <p>En kilonewtons: <strong>2.86 kN</strong>.</p>
-        
+
         <p><em>(La respuesta provista por algunos solucionarios con pequeñas diferencias de milésimas depende del redondeo hecho al usar $1/3$, pero el razonamiento lógico es este. Asumiendo las respuestas originales del libro: 2.09 kN y 2.71 kN requerirían distintas distancias de los pasajeros. Confía en el entendimiento de torca de arriba independientemente de inconsistencias del libro de texto original. Si tuviéramos exactamente $2.09$ y $2.71$, el peso total levantado por 4 llantas rondaría los $9600\\text{ N}$, lo cual encaja con: $2(2.09\\text{kN}) + 2(2.71\\text{kN}) = 4.18 + 5.42 = 9.6\\text{kN}$, probando que el balance vertical es perfectamente correcto y el método impecable).</em></p>
       `,
     },
@@ -4171,7 +4171,7 @@ export const exercisesData = {
         <p><strong>Explicación paso a paso:</strong></p>
         <p>Aquí la cosa se pone interesante. Tenemos nuestra viga recta de peso $400\\text{ N}$ que, como sabemos, aplica su centro de masa en el puro medio, a $L/2$. Ahora se suma el niño que pesa $140\\text{ N}$, pero no está en el medio, está sentado a una distancia de $L/4$, medida desde el extremo que sostiene la persona de abajo.</p>
         <p>Llamemos $P_b$ a la persona de abajo, que empuja hacia arriba, y $P_a$ a la persona más alta, que también empuja hacia arriba. Como las fuerzas siguen siendo completamente verticales, nuevamente podemos ignorar la complicación del ángulo de $25^\\circ$ en nuestros cálculos, porque la trigonometría simplemente se cancela.</p>
-        
+
         <p><strong>Usando el Balance de Torca y tomando a la persona más baja ($P_b$) como el eje:</strong></p>
         <p>Al tomar este eje, evaluamos qué tan fuerte empuja la torca para "bajar" el tablón frente al empuje de la persona alta ($P_a$).</p>
         $$ \\tau_{\\text{hacia abajo}} = \\tau_{\\text{hacia arriba}} $$
@@ -4181,7 +4181,7 @@ export const exercisesData = {
         $$ 35 + 200 = P_a $$
         $$ P_a = \\mathbf{235\\text{ N}} $$
         <p>Genial, sabemos que la persona elevada está cargando con unos $235\\text{ N}$.</p>
-        
+
         <p><strong>Equilibrio Vertical General:</strong></p>
         <p>Sabemos por sentido común que las dos personas juntas deben cargar con todo el peso (el de la viga y el niño combinados). Usamos ese balance de todas las fuerzas hacia arriba igualadas a las de abajo.</p>
         $$ \\text{Arriba} = \\text{Abajo} $$
@@ -4207,12 +4207,12 @@ export const exercisesData = {
             <li>Tensión ($F_T$): La soga jala de la punta (distancia $L$), forzando en sentido recto hacia la derecha (horizontal).</li>
             <li>El ángulo entre el polín y el muro liso vertical es de $40^\\circ$.</li>
         </ul>
-        
+
         <p><strong>Paso 1: Aplicar Torca desde la bisagra</strong></p>
         <p>El punto más inteligente para poner el eje de balance (donde podemos pivotar imaginariamente) es la bisagra. Desde allí evaluaremos la presión por caer de la viga vs el jalón de resistencia de la soga.</p>
         <p>La gravedad trata de acostar el polín cayendo, para evaluarlo calculamos su brazo de palanca horizontal (que equivale a longitud multiplicada por el seno del ángulo a la vertical): <br> Brazo de palanca del peso = $(L/2) \\cdot \\text{sen}(40^\\circ)$.</p>
         <p>La soga trata de levantarlo pegándolo al muro. Al tirar horizontal, determinamos su brazo de palanca vertical usando el coseno del ángulo de la pared: <br> Brazo de palanca de tensión = $L \\cdot \\cos(40^\\circ)$.</p>
-        
+
         <p>Al igualar las Torcas:</p>
         $$ \\tau_{\\text{gravedad}} = \\tau_{\\text{soga}} $$
         $$ (1600\\text{ N}) \\cdot (L/2) \\cdot \\text{sen}(40^\\circ) = (F_T) \\cdot (L) \\cdot \\cos(40^\\circ) $$
@@ -4221,7 +4221,7 @@ export const exercisesData = {
         $$ 514.4 = F_T \\cdot 0.766 $$
         $$ F_T = \\frac{514.4}{0.766} \\approx 671.5\\text{ N} \\approx \\mathbf{0.67\\text{ kN}} $$
         <p>La tensión necesaria en la cuerda resulta ser certeramente de $0.67\\text{ kN}$.</p>
-        
+
         <p><strong>Paso 2: Calcular el calvario de la bisagra (Gozne)</strong></p>
         <p>La bisagra del muro soporta presión tanto de tirar hacia delante como el empuje total de no dejar que esto caiga. Estas se dividen entonces en lo Horizontal y Vertical.</p>
         <p>Equilibrio Horizontal (Derecha e izquierda): La única cosa que jaletea hacia la derecha es la cuerda ($671.5\\text{ N}$). Para que el invento no arranque la pared y salga volando, la bisagra debe amarrar hacia la <em>Izquierda</em> con idéntica potencia:</p>
@@ -4241,14 +4241,14 @@ export const exercisesData = {
       solucion: `
         <p><strong>Explicación paso a paso:</strong></p>
         <p>Tenemos otro escenario en un muro. Una viga está esta vez <em>totalmente horizontal y recta</em> atada al muro por una bisagra. Su peso de viga uniforme que son $500\\text{ N}$ empujan en su puro medio, de esta misma cuelga un balde de $700\\text{ N}$ pegado al punto final o extremo a la derecha. Para evitar el desplome trágico, una soga en ángulo de $35^\\circ$ amarrada al muro sostiene esta balanza en el aire agarrando en un poco menos de la mitad del tablón (a una distancia puntualizada de $0.40L$).</p>
-        
+
         <p><strong>Paso 1: Usando Torca desde la bisagra de muro:</strong></p>
         <p>Posamos la lupa imaginaria giratoria en el eje de la pared, eso es cero distancia para la pared. Calculemos qué cosa jala el tablón hacia el suelo (Torca Abajo) frente al único héroe que trata de izarlo y salvarlo (Torca Arriba dada por la cuerda).</p>
         <ul>
             <li>Las caídas directas tiran "perpendiculares", así que sus brazos de palanca son la longitud pura en $L$: El peso propio de la viga asesta $500\\text{ N}$ a distancia $L/2$. El balde arrastra $700\\text{ N}$ al borde exterior extremo $L$.</li>
             <li>La cuerda milagrosa sujeta a distancia a $0.40L$ pero en un ángulo complicado de $35^\\circ$ contra el muro (lo cual significaría un ángulo de $55^\\circ$ contra la viga, pero como dice que tira con $35^\\circ$ de la pared a la inclinada, el seno de $55$ o el coseno de $35$ darán el levantamiento que nos importa perpendicular al tablón. Digamos, la tensión es $T$, su porción que "levanta la viga para arriba" es $T \\cdot \\cos(35^\\circ)$).</li>
         </ul>
-        
+
         $$ \\text{Torca de bajada} = \\text{Torca de subida} $$
         $$ (500 \\times 0.5L) + (700 \\times L) = (T \\cdot \\cos(35^\\circ)) \\times 0.40L $$
         <p>Dile hola de nuevo a dividir entre L para desaparecerla con facilidad mágica:</p>
@@ -4256,7 +4256,7 @@ export const exercisesData = {
         $$ 950 = T \\cdot 0.3276 $$
         $$ T = \\frac{950}{0.3276} \\approx 2899.8\\text{ N} \\approx \\mathbf{2.9\\text{ kN}} $$
         <p>¡Eureka! La soga se estira luchando con una asombrosa tensión de cercana a $2.9\\text{ kN}$.</p>
-        
+
         <p><strong>Paso 2: Resistencia en la Bisagra (La reacción de la Pared).</strong></p>
         <p>Develada la Tensión ($2900\\text{ N}$), descubriremos la porción de dolor en la bisagra.</p>
         <p>Eje horizontal (¿Qué empuja lateral?): La cuerda diagonal arrastra el tablón <em>hacia la pared</em> estrellándolo. Su fuerza de aplastamiento contra la bisagra será su porción horizontal: $2900 \\cdot \\text{sen}(35^\\circ) = 2900 \\cdot 0.573 = 1661\\text{ N}$ (Hacia muro/izquierda). Entonces, en reacción, la bisagra empuja de vuelta a la derecha protegiendo con exactamente esos <strong>$1661\\text{ N}$ (Aproximado a 1.7 kN)</strong>.</p>
@@ -4281,13 +4281,13 @@ export const exercisesData = {
       solucion: `
         <p><strong>Explicación paso a paso:</strong></p>
         <p>Este es un tema fascinante sobre nuestra propia biomecánica. El antebrazo funciona exactamente calcado a un tablón y sistema de torca. El codo humano funge como la "Bisagra" sobre la que todo el brazo girará si no tenemos cuidado y colapsamos al suelo. El Bíceps es esa heroica cuerda en diagonal tirante desde arriba muy cerquita de la base de la bisagra levantando el tremendo peso de alzar nuestros músculos y la bola en tu mano para lograr un simple equilibrio o "reposo" estático.</p>
-        
+
         <p><strong>Transformemos nuestros kilogramos de masa a los correspondientes valores de "Peso" (fuerza o gravedad en Newtons):</strong></p>
         <ul>
             <li>Peso de la bola esférica de metal: $m_b \\cdot 9.8 = 4.0\\text{ kg} \\cdot 9.8\\text{ m/s}^2 = 39.2\\text{ N}$.</li>
             <li>Peso intrínseco de nuestro brazo pesado e infeliz como materia: $m_a \\cdot 9.8 = 3.0\\text{ kg} \\cdot 9.8\\text{ m/s}^2 = 29.4\\text{ N}$.</li>
         </ul>
-        
+
         <p><strong>Identificamos posiciones y brazos de apoyo tomando al codo como Eje de Rotación Central:</strong></p>
         <p>Con el brazo reposando de forma recta horizontal al suelo, la torca es sumamente pura porque todas las fuerzas empujan perpendiculares sin usar ángulos trigonométricos (todas reaccionan para levantar e internar hacia arriba o hundirlo hacia abajo).</p>
         <ul>
@@ -4295,7 +4295,7 @@ export const exercisesData = {
             <li>Posición gravitacional extenuante de la esfera: Aplastando tu mano en el puro y liso fin del antebrazo. ¡Esa es a tope de los largos **38 cm**! (O $0.38\\text{ m}$).</li>
             <li>El Músculo Bíceps, el héroe. Viendo minuciosamente donde embona su tendón pegándose en el hueso justo saliente del codo, vemos que esto ocurre a una pequeñísima ventaja de torca de cortísimos **4.5 cm** (O $0.045\\text{ m}$).</li>
         </ul>
-        
+
         <p><strong>Paso supremo de Igualación por Equilibrio Estático de palancas ($\\tau$):</strong></p>
         <p>La diminuta pero feroz contracción para arriba de nuestro bíceps igualará las 2 bestias arrojadas jalando estoico para abajo.</p>
         $$ \\text{Torca Subidora de Bíceps} = \\text{Torca Cansadora Combinada del antebrazo + esfera} $$
@@ -4318,7 +4318,7 @@ export const exercisesData = {
         <p><strong>Explicación paso a paso:</strong></p>
         <p>Un móvil de cuna colgante es un conjunto clásico de "balancines" anidados o conectados. Resolveremos esto de abajo hacia arriba, equilibrando la barra inferior primero para luego usar su peso total combinado en la barra de arriba.</p>
         <p>Todas las barras son idénticas, cada una pesa $0.50\\text{ N}$, un peso que recae en sus puntos medios ($L/2$).</p>
-        
+
         <p><strong>Paso 1: Equilibrar la barra inferior (derecha)</strong></p>
         <p>Esta barra sostiene al Objeto 2 en su extremo izquierdo (a distancia $L/2$ del nudo central) y al Objeto 3 en su extremo derecho (a distancia $L/2$ del nudo central). El hilo que la sostiene está en el puro medio, por lo que el propio peso de la barra inferior ($0.50\\text{ N}$) también cae en el medio y se anula en la torca, sin alterar la balanza.</p>
         <p>Eje de rotación: Emplazado en el hilo del medio que la sostiene. Por balance de torcas, como ambos pájaros distan lo mismo del centro ($L/2$):</p>
@@ -4326,7 +4326,7 @@ export const exercisesData = {
         $$ (W_2) \\cdot (L/2) = (W_3) \\cdot (L/2) $$
         <p>Al tener el pivote céntrico, es un simple empate de pesos: $W_2 = W_3$.</p>
         <p>Sabiendo que el objeto 3 pesa $1.40\\text{ N}$, entonces: <strong>El Objeto 2 pesa $1.40\\text{ N}$.</strong></p>
-        
+
         <p>¿Con qué peso tira hacia abajo este conjunto inferior entrelazado ($W_{\\text{inf}}$)? <br> La tensión del hilo que lo agita debe aguantar: El pájaro 2 + el pájaro 3 + la propia barrita inferior.</p>
         $$ W_{\\text{inf}} = 1.40 + 1.40 + 0.50 = 3.30\\text{ N} $$
         <p>Este sistema completo y pequeño se convierte en un solo plomo de tiro de $3.30\\text{ N}$ colgado en el extremo derecho del palo de arriba.</p>
@@ -4339,7 +4339,7 @@ export const exercisesData = {
             <li>En el otro lado (Torca izquierda): Cuelga el pájaro 1 ($W_1$) solo, en la punta izquierda a $\\frac{2L}{3}$ de lejanía.</li>
             <li>La propia barra superior: Esta barra uniforme de $0.50\\text{ N}$ tiene su centro en $L/2$ (la mitad absoluta). Nuestro pivote (hilo superior) se halla en $2L/3$. Haciendo resta simple, vemos dónde cae su punto de gravedad: $\\frac{2L}{3} - \\frac{L}{2} = \\frac{4L - 3L}{6} = \\frac{L}{6}$. El centro de la barra recae "del lado Izquierdo" de nuestro hilo a una distancia micro de $L/6$.</li>
         </ul>
-        
+
         <p>Igualando las fuerzas que tratan de torcer a la izquierda el balancín vs. la derecha por torca:</p>
         $$ \\tau_{\\text{izquierda}} = \\tau_{\\text{derecha}} $$
         $$ (W_1 \\cdot \\frac{2L}{3}) + (0.50\\text{ N} \\cdot \\frac{L}{6}) = (3.30\\text{ N} \\cdot \\frac{L}{3}) $$
@@ -4370,7 +4370,7 @@ export const exercisesData = {
             <li>La gravedad jala desde el centro puro de la puerta rectangular: Como la puerta mide $1.0\\text{ m}$ de acho horizontal al piso, su gravedad cae justo por el medio de ella, es decir, a $\\mathbf{0.50\\text{ m}}$ horizontal de las bisagras.</li>
             <li>Todo el brutal peso cae "montado" solo en la de apoyo Inferior (Bisagra $B$). Entonces $B$ ya absorbió de lleno $200\\text{ N}$ Verticales para arriba frenando la caída, $F_{BV} = 200\\text{ N}$. (Y por contraste, $F_{AV} = 0\\text{ N}$).</li>
         </ul>
-        
+
         <p><strong>Paso 1: Buscando las torcas desgarradoras o tirones Horizontales.</strong></p>
         <p>Hagamos pivote con la Torca centrándonos en el clavo de la <strong>Bisagra Inferior ($B$)</strong>.</p>
         <p>¿Quién tira de la puerta apartándola de su eje vertical, buscando "girarla" hacia el suelo estrepitosamente? Su peso ($200\\text{ N}$), aplicado en el medio, dictando una distancia palanca horizontal y lateral perpendicular desde nuestro pivote de $0.50\\text{ m}$.</p>
@@ -4381,10 +4381,10 @@ export const exercisesData = {
         $$ F_{AH} \\times 2.5 = 100 $$
         $$ F_{AH} = \\frac{100}{2.5} = \\mathbf{40\\text{ N}} $$
         <p>La bisagra de arriba retiene jalando para adentro del marco <strong>$40\\text{ N}$</strong> laterales.</p>
-        
+
         <p><strong>Paso 2: ¿Y la inferior horizontalmente?</strong></p>
         <p>Sabiendo que la puerta entera se empapa en un equilibrio total neutro sin viajes ($F_x = 0$),  el jalón de 40 adentro de la superior causa en reacción directa un empellón "inverso y opresivo" lateral contra el muro raso para la base; es decir que la inferior resiente estrellarse horizontal por los <strong>$F_{BH} = 40\\text{ N}$</strong> colindantes por reacción de fuerzas laterales al muro para empate de lados.</p>
-        
+
         <p><strong>Conclusión Total de Fuerzas en cada Bisagra:</strong></p>
         <ul>
             <li><strong>Bisagra Superior:</strong> Solo soporta una tensión aislada paralela al marco para adentro: <strong>$40\\text{ N}$</strong> (sin verticales).</li>
@@ -4454,7 +4454,7 @@ export const exercisesData = {
       solucion: `
         <p><strong>Explicación paso a paso:</strong></p>
         <p>Visualmente tenemos columpiándose plácidamente la gruesa tarima, sostenida en las orillas de abismo con sus cuerdas tensoras $F_{T2}$ por la izquierda estirada con un ángulo incógnito $\\theta$, y $F_{T1}$ por el borde derecho tirando fijo y obediente a $30^\\circ$ contra la vertical. Del tablón cae atado el brutal peso $0.40\\text{ kN}$ ($400\\text{ N}$) esquinado a lo lejos a $\\frac{1}{4} L$ (0.25 L), mientras su propio peso base gordo es $120\\text{ N}$ al puro centro $0.5L$.</p>
-        
+
         <p><strong>Paso 1: Buscando anclajes resolviendo Torcas giratorias ($T_1$)</strong></p>
         <p>Si la balanza fuera el puro extremo del lazo de Izquierda como nuestro Pivote cero elegido y nos sentamos ahí, esquivaremos batallar con los fantasmas del $F_{T2}$ y su ángulo indeseado $\\theta$. Resolvamos los empujes restantes de descenso contrastados a un solo ganador contrarrestando la rotación ($F_{T1} \\text{ Derecha}$).</p>
         <ul>
@@ -4476,7 +4476,7 @@ export const exercisesData = {
         $$ F_{T2} \\cdot \\text{sen}(\\theta) = F_{T1} \\cdot \\text{sen}(30^\\circ) $$
         $$ F_{T2} \\cdot \\text{sen}(\\theta) = 184.7 \\cdot 0.50 $$
         $$ F_{T2} \\cdot \\text{sen}(\\theta) = 92.35 $$
-        
+
         <p><strong>Paso 3: Descifradores Verticales gravitacionales</strong></p>
         <p>Ambas cuerdas alzan juntas contra la bestia (Suma de gravedades en peso = $400 + 120 = 520\\text{ N}$).</p>
         $$ \\text{Elevación} (T_2) + \\text{Elevación} (T_1) = 520\\text{ N} $$
@@ -4484,14 +4484,14 @@ export const exercisesData = {
         $$ F_{T2} \\cdot \\cos(\\theta) + (184.7 \\cdot 0.866) = 520 $$
         $$ F_{T2} \\cdot \\cos(\\theta) + 160 = 520 $$
         $$ F_{T2} \\cdot \\cos(\\theta) = 360 $$
-        
+
         <p><strong>Paso Magno: Desenmascarando a $\\theta$ y T2 de golpe.</strong></p>
         <p>Tienes a "T2 $\\times$ Seno" por un lado ($92.35$), y a "T2 $\\times$ Coseno" por el otro ($360$). La magia es dividir a uno con el otro para armar la función Tangente y asesinar a la molestosa Tensión en álgebra.</p>
         $$ \\frac{F_{T2} \\cdot \\text{sen}(\\theta)}{F_{T2} \\cdot \\cos(\\theta)} = \\frac{92.35}{360} $$
         $$ \\tan(\\theta) = 0.2565 $$
         $$ \\theta = \\tan^{-1}(0.2565) \\approx \\mathbf{14.4^\\circ} $$
         <p>Inclinación desvelada de <strong>$14^\\circ$</strong>.</p>
-        
+
         <p>Recobrando a la gran incógnita del cable Izquierdo tensado ($F_{T2}$) re-usando a $\\theta$:</p>
         $$ F_{T2} \\cdot \\cos(14.4^\\circ) = 360 $$
         $$ F_{T2} \\cdot 0.968 = 360  \\implies  F_{T2} = \\frac{360}{0.968} = \\mathbf{371.9\\text{ N}} $$
@@ -4509,7 +4509,7 @@ export const exercisesData = {
       solucion: `
         <p><strong>Explicación paso a paso:</strong></p>
         <p>Un laberinto de maderos apuntando en diagonal (a unos $37^\\circ$ resbaladizos contra el muro asimilado, observe bien cómo traza el $37$ frente al vertical) es trancado estúpidamente apoyado en la pura esquina del piso para no caer, y se le añade el peligroso balanceo agónico de una soga en la punta jalando recio atada de frente a la pared plana, con un muchacho travieso colgando a destajo desde arriba en la escalera.</p>
-        
+
         <p><strong>Paso 1: Aplicación Maestra de las Torcas contra la "Esquina Base Pivote".</strong></p>
         <p>Evadiremos dolores de cabeza designando como "Tierra Prometida cero" a la propia esquina baja del muro a tierra firme. Toda presión originada de rebotar paredes asimilada en X o Y nacerá nula de aquí porque pivotaremos allí sus rotaciones y giros evaluando giros libres (caídas) vs cuerdazos firmes salvadores.</p>
         <p>Torcas de Inclinados. La escalera diagonal está reclinada proyectando su $37^\\circ$ en el rincón contra la barda (y en consecuencia abre $53^\\circ$ sobre la raya del suelo para cálculos trigonales si prefieren verlo así).</p>
@@ -4518,7 +4518,7 @@ export const exercisesData = {
             <li>Caída 2: El intrépido niño impone sus $150\\text{ N}$ agobiantes verticalmente; recae pendido arriba un tanto lejos a escaso $0.20L$ "DEL FINAL". De manera que es un trecho equivalente de $0.80L$ escalado desde nuestro inicio cero base-esquina. Brazo de palanca (multiplicamos otra vez al suelo resbaladizo): $(0.80L) \\cdot \\text{sen}(37^\\circ)$.</li>
             <li>El Contra-Remate (Cuerdazo Cúspide): Esta tensa cuerda que anuda la cúspide final jala tenaz de forma plana Horizontal pura contra el muro. Entonces en las matemáticas cruzadas de giros el Brazo de palanca a cruzar exige el lado "Vertical o de altitud pura", que al estaren diagonal a la pared resalta por un $\\cos(37^\\circ)$. Distando a trecho integro: $(L) \\cdot \\cos(37^\\circ)$.</li>
         </ul>
-        
+
         <p>Igualaremos esta gran matanza de Torsiones para la victoria (Cancelando ya por rutina la repetitiva metraje $L$ en todos fragmentos):</p>
         $$ \\text{Giro de caerse} = \\text{Firmeza salvadora de soga Arriba ($F_T$)} $$
         $$ [100 \\cdot 0.40 \\cdot \\text{sen}(37^\\circ)] + [150 \\cdot 0.80 \\cdot \\text{sen}(37^\\circ)] = F_T \\cdot 1 \\cdot \\cos(37^\\circ) $$
@@ -4526,7 +4526,7 @@ export const exercisesData = {
         $$ 24.04 + 72.12 = F_T \\cdot 0.798 $$
         $$ 96.16 = F_T \\cdot 0.798 \\implies F_T = \\frac{96.16}{0.798} \\approx \\mathbf{120\\text{ N}} $$
         <p>Se tensó un cable inminente por apacibles <strong>$120\\text{ N}$ (ó $0.12\\text{ kN}$ con precisión de oro)</strong>.</p>
-        
+
         <p><strong>Paso 2: Reacciones ocultas del Rincón Fijo Asesino (Apoyos).</strong></p>
         <p>Para frenar la desbandada y locuras empujantes de la madera el rincón absorbe cada golpe estéril.</p>
         <p><strong>Impacto de Base Lateral ($F_{RH}$ o componente Horizontal de pared)</strong>: En ese horizonte solo la heroica cuerda $F_T$ estira forzando la madera recia contra la pared amordazada de lado con poder pleno total de $120\\text{ N}$. Al ser el rincón del muro opresivo, éste resiente devolver frenando opuestamente el tablón hacia el centro de las salas con el empuje parejo en su pata muerta para balancear.</p>
@@ -4539,7 +4539,7 @@ export const exercisesData = {
       enunciado: `
         <p><strong>5.23 [III]</strong> El armazón de la figura 5-21 se construyó articulando con un gozne dos vigas uniformes de 150 N. Éstas se mantienen unidas mediante una cuerda tensada y los pies del armazón descansan sobre un piso sin fricción. En el vértice se cuelga de una cuerda una carga de 500 N. Encuentre la tensión en la cuerda.</p>
         <div class="text-center my-4">
-          <img src="/assets/figura5-21.png" alt="Figura 5-21" class="img-fluid" style="max-width: 80%; height: auto;">
+          <img src="/assets/figura21.png" alt="Figura 5-21" class="img-fluid" style="max-width: 80%; height: auto;">
           <p class="text-muted">Figura 5-21</p>
         </div>
       `,
@@ -4551,13 +4551,13 @@ export const exercisesData = {
         <p><strong>Paso 1: Entender las Fuerzas Reaccionarias Universales (Mitad y Mitad de simetría simple).</strong></p>
         <p>La bestia "A" presiona de lleno el suelo aguantando equitativamente en sí toda la masa. Sumamos castigos hacia el averno (Abajo): 2 vigas (de $150\\text{ N}$ base c/u) + Colgada Cúspide de plomo ($500\\text{ N}$). Son en total <strong>$800\\text{ N}$</strong> descendentes al Hades.</p>
         <p>Como las patas derecha e izquierda posan asumiendo esto y empujando a los cielos por estricta empatía simétrica para hacerlas rebotar desde el abismo de base lisa: Cada piso patea soportando un vertical contundente hacia Arrba de la mitad justa. <strong>$F_{\\text{Apoyo Pisada}} = 400\\text{ N}$ cada flanco Verticalmente por su pata.</strong></p>
-        
+
         <p><strong>Paso 2: Trazar plano Trigonal y dimensionarla "A"</strong></p>
         <p>Nos indican distancias: Abajo miden de largo $3.5\\text{ m}$ abiertas totales, o una mitad y base pura de $1.75\\text{ m}$ por pata derecha a su centro. La cuerda corta esto a $0.50\\text{ m}$ de altura estricta desde ras. Las vigas miden de hipotenusa a cielo de largor $3.0\\text{ m}$.</p>
         <p>Mediante la astucia Trigonométrica (Suelo $1.75\\text{ m}$, Diagonal o Viga trepante por los $3.0\\text{ m}$):<br>
         $\\cos(\\theta\\text{ a ras suelo}) = (1.75 / 3.0) \approx 0.583 \\implies \\theta \\approx \\mathbf{54.3^\\circ}$ (Elevación con la que se empalman majestuosas las vigas del armazón al horizonte). Por contraste, su altura Vertical de elevación del techo asomaría (Cateto Subidor): $\\sqrt{3.0^2 - 1.75^2} = \\sqrt{9 - 3.06} = 2.43\\text{ m}$.</p>
         <p>Sabiendo trigonometría podemos usar proporciones de triángulos. Como un triángulo a $0.50\\text{ m}$ es equivalente: el lugar dondo amarra la cuerda cortando diagonalmente se hallará a una proporción sobre el palo (usando equivalentes de distancia total). O mejor dicho: podemos hacer Pivote Cero Torcional absoluto al mero vértice de Cúspide Top (Ahí no hay que preocuparse del gozne loco en reventar ni saber el lastre $500\\text{ N}$ de tirón colgandejo).</p>
-        
+
         <p><strong>Paso 3: Girando y Resolviendo con Eje en la Cima Superior (La Bisagra Alta).</strong></p>
         <p>Tomemos la Pata Derecha mutilada, clavando como si fuera rotulada nuestra aguja de brújula analítica justo en la azotea al vértice.</p>
         <ul>
@@ -4565,7 +4565,7 @@ export const exercisesData = {
             <li>(Fuerza Abriendo a pata pesada caída para Abajo): El peso solitario del leño es $150\\text{ N}$, y cae a medio camino. Medio camino a base horizontal lateralmente serían a mitad de $1.75\\text{ m}$ u onda $0.875\\text{ m}$ desde centro en picada gravitacional neta caída. Torca negativa = $-150 \\cdot 0.875 = -131.25\\text{ N}\\text{m}$.</li>
             <li>(Fuerza Abriendo estirada Abajo de Cuerda ($T$)): Jala duro partiendo al centro forzando horizontal abriendo y contrarrestando la compresión alzada. La Tensión Horizontal dictará Brazo perpendicular evaluando distancias de alturas para giro Vertical (La Altura máxima Total era $2.43\\text{ m}$. Empalmando y descendiendo esta cuerda atada a $0.5\\text{ m}$ desde suelo inferior, significa que medido en lo profundo a Cúspide estará bajando por la azotea en palanca al equivalente a $2.43\\text{ m} - 0.5\\text{ m} = 1.93\\text{ m}$.</li>
         </ul>
-        
+
         <p>El Balance majestuoso de esta solitaria extremidad mutilada equilibrando sería así (Contraste Cero estampa):</p>
         $$ \\text{Elevación de piso comprimiéndose cierra} = \\text{Gravedad del palo abre} + \\text{Jalonazo Tensión cuerda arrastrando y desmembrando} $$
         $$ 700 = 131.25 + T \\cdot (1.93\\text{ m} \\text{ de altitud distante a eje}) $$
@@ -4578,7 +4578,7 @@ export const exercisesData = {
       enunciado: `
         <p><strong>5.24 [III]</strong> Una cortadora de pasto de 900 N se jala para que suba un escalón de 5.0 cm de altura, como se muestra en la figura 5-22. El radio del cilindro es de 25 cm. ¿Cuál es la fuerza mínima necesaria para subir la cortadora si el ángulo $\\theta$ que forma el mango con la horizontal es a) $0^\\circ$ y b) $30^\\circ$? (<em>Sugerencia</em>: Encuentre la fuerza necesaria para que el cilindro se mantenga en equilibrio en el borde del escalón.)</p>
         <div class="text-center my-4">
-          <img src="/assets/figura5-22.png" alt="Figura 5-22" class="img-fluid" style="max-width: 80%; height: auto;">
+          <img src="/assets/figura22.png" alt="Figura 5-22" class="img-fluid" style="max-width: 80%; height: auto;">
           <p class="text-muted">Figura 5-22</p>
         </div>
       `,
@@ -4586,19 +4586,19 @@ export const exercisesData = {
         <p><strong>Explicación paso a paso:</strong></p>
         <p>El truco de levantar un rodillo cilíndrico por un escalón es pensar que el punto de contacto <em>con la mera esquina del escalón</em> es nuestro "Pivote de Rotación". Cuando el rodillo está apenas separándose del piso para subir, todo su peso y todas las demás fuerzas se equilibran pivotando exacto sobre esa aguda esquinita de concreto.</p>
         <p>Geometría del obstáculo: El cilindro tiene un radio $R = 25\\text{ cm}$. El escalón mide $h = 5.0\\text{ cm}$ de altura. Su centro o eje central $C$ (donde empuja el peso abrumador de $900\\text{ N}$ hacia el centro de la Tierra) se halla desplazado del borde del escalón. Necesitamos calcular esos "brazos de palanca".</p>
-        
+
         <p><strong>Paso 1: Entender el Brazo de Palanca de la Gravedad (El peso del rodillo).</strong></p>
         <p>El punto de contacto $P$ está a una altura de $5.0\\text{ cm}$ desde el suelo. El centro $C$ está a $25\\text{ cm}$ del suelo (es el radio). Entonces, la diferencia de altura Vertical entre el pivote $P$ y el centro $C$ es: $y = 25 - 5 = 20\\text{ cm}$.</p>
         <p>Formamos un triángulo rectángulo dentro de la rueda uniendo: El Centro $C$, el Pivote $P$, y trazando líneas horizontales/verticales. La hipotenusa es el radio $R = 25\\text{ cm}$. El cateto "vertical" lo calculamos arriba: $y = 20\\text{ cm}$. Por el teorema de Pitágoras, el cateto horizontal (la distancia "X" o el puro brazo de palanca que usará el peso recayendo para negarse a subir) es:</p>
         $$ x = \\sqrt{R^2 - y^2} = \\sqrt{25^2 - 20^2} = \\sqrt{625 - 400} = \\sqrt{225} = \\mathbf{15\\text{ cm}} $$
         <p>La maravillosa Torca negativa o peso muerto a vencer es: $\\tau_W = 900\\text{ N} \\times 15\\text{ cm} = 13500\\text{ N}\\cdot\\text{cm}$.</p>
-        
+
         <p><strong>Paso 2: Calcular a) Empujando totalmente plano (Fuerza Horizontal, $\\theta = 0^\\circ$).</strong></p>
         <p>Jalamos del centro $C$ de manera recta horizontal. La línea de acción de esta fuerza corre paralela al suelo, asomando a una altura de $25\\text{ cm}$. Nuestro pivote $P$ está a $5\\text{ cm}$ del suelo. El brazo de palanca "perpendicular" (la distancia vertical real libre) entre el jalonazo recto y la esquina es $25 - 5 = \\mathbf{20\\text{ cm}}$.</p>
         $$ \\text{Torca Levantar} = \\text{Torca Caer} $$
         $$ F_a \\times 20\\text{ cm} = 13500 \\implies F_a = \\frac{13500}{20} = \\mathbf{675\\text{ N}} $$
         <p>En KiloNewtons: $\\mathbf{0.68\\text{ kN}}$.</p>
-        
+
         <p><strong>Paso 3: Calcular b) Empujando jalado en Diagonal ($\\theta = 30^\\circ$).</strong></p>
         <p>Ahora jalamos desde el centro $C$ de forma angular apuntando a los aires. Esta fuerza se descompone en $F \\cos(30^\\circ)$ (lado de avance) y $F \\text{sen}(30^\\circ)$ (lado altitud). Evaluamos sus brazos de palanca frente al pivote de esquina $P$.</p>
         <ul>
@@ -4617,22 +4617,22 @@ export const exercisesData = {
       enunciado: `
         <p><strong>5.25 [II]</strong> En la figura 5-23, la viga uniforme pesa 500 N. Si la cuerda puede soportar una tensión de 1800 N, ¿cuál es el valor máximo que puede tener la carga $F_W$?</p>
         <div class="text-center my-4">
-          <img src="/assets/figura5-23.png" alt="Figura 5-23" class="img-fluid" style="max-width: 80%; height: auto;">
+          <img src="/assets/figura23.png" alt="Figura 5-23" class="img-fluid" style="max-width: 80%; height: auto;">
           <p class="text-muted">Figura 5-23</p>
         </div>
       `,
       solucion: `
         <p><strong>Explicación paso a paso:</strong></p>
         <p>Otra viga colgada sobre una bisagra, pero esta vez te apuestan tu vida avisándote que la cuerda se reventará dramáticamente si pasa de tensarse a los lejanos $1800\\text{ N}$. Veamos entonces, el peor caso permisible asumiendo que el cable está gritando a los justos y agonizantes $1800\\text{ N}$.</p>
-        
+
         <p>Posicionemos la brújula rotacional del "Eje de Giro Pivote" en la bisagra para desaparecer los estorbos del muro. Evaluamos los giros de caída vs la soga salvadora suprema:</p>
-        
+
         <ul>
             <li>Caída base 1: Empuje del peso del palo. Sus $500\\text{ N}$ machacan al centro puro en $0.50L$. $\\tau_{\\text{viga}} = 500 \\times 0.50L$.</li>
             <li>Caída mortífera 2: El misterioso baúl del tesoro final $F_W$. En figura se observa pendiendo muy lejos a un margen de $(0.70L + 0.30L = 1L)$, pero observe otra vez... El cubo pende y hala su cuerda en el corte de los $0.70L$ marcados como anclaje. $\\tau_{\\text{bola}} = F_W \\times 0.70L$.</li>
             <li>El Contra-ataque de Cuerda: Nuestra valerosa cuerda reventará a sus $1800\\text{ N}$. Teniéndola entallada hasta el fin del palo a un gran $1.0L$ y angulada a un agudo $50^\\circ$ amarrando diagonal. El aguante útil es la parte perpendicular (Seno de la base angulada contra la viga es un rincón de $40^\\circ$ asumiendo que los 50 marcados son contra pared). $\\tau_{\\text{ascenso}} = (1800 \\times \\cos(50^\\circ)) \\times 1L$.</li>
         </ul>
-        
+
         <p>Crucemos los rayos de igualación Torcal (Borrar ya de memoria a las letras "L"):</p>
         $$ \\text{Giro Caído de Todo} = \\text{Empuje de Cuerda tope} $$
         $$ (500 \\times 0.50) + (F_W \\times 0.70) = 1800 \\cdot \\cos(50^\\circ) \\cdot 1 $$
@@ -4640,7 +4640,7 @@ export const exercisesData = {
         $$ 250 + 0.70 F_W = 1157 $$
         $$ 0.70 F_W = 1157 - 250 = 907 $$
         $$ F_W = \\frac{907}{0.70} \\approx \\mathbf{1295.7\\text{ N}} $$
-        
+
         <p>Bajo la perspectiva del solucionario impreso (donde estipulan la contestación oficial de $0.93\\text{ kN}$), la figura es ligeramente capciosa: reevaluemos cómo se interpreta ese $0.70 L$. La polea amarrada de soga está a los $0.70L$. El peso que pende amarrado al puro borde extremo lejano, columpia en el borde final al sumado metraje total distrital de $L$ completo. La soga amarrada milagrosa ($1800\\text{ N}$) es la atada en la poleita media a **$0.70$L** inclinando a un ángulo al techo. Ajustemos esa interpretación gráfica a este modelo de ecuaciones:</p>
         <ul>
            <li>Cuerda Milagrosa Ascenso a $0.70L$: $(1800 \\cdot \\cos(50^\\circ)) \\times 0.70L$. (Porque el brazo es 0.7 y su inclinación hacia pared toma el cos50).</li>
@@ -4650,7 +4650,7 @@ export const exercisesData = {
         $$ (500 \\times 0.5) + (F_W \\times 1) = 1800 \\cdot \\cos(50^\\circ) \\cdot 0.70 $$
         $$ 250 + F_W = (1800 \\cdot 0.643) \\cdot 0.70 = 1157.4 \\cdot 0.70 = 810.18 $$
         $$ F_W = 810.18 - 250 = \\mathbf{560.18\\text{ N}} $$
-        
+
         <p>Esto aún difiere con la peculiar figura... Tercer intento de comprensión espacial al jeroglífico del gráfico: <strong>¿Y si la Inclinación real es del Muro de $50^\\circ$  pero la soga SÍ llega hasta el extremo $1.0L$ y el balde cuelga a $0.70L$ del muro?</strong></p>
         <p>Asumamos soga Ascendente de $1800\\text{ N}$ hasta final de la tabla a $1.0L$. Ángulo de inclinación vs tabla ($90-50 = 40^\\circ$ si es pared, o la soga hace 50 con la viga, asumiendo lo directo del texto de la imagen el compás es $50^\\circ$ contra la cuerda a la pared. Usa el Coseno o Seno). Y que nuestro balístico Balde asesino pende a $0.70L$.</p>
         $$ (500 \\times 0.5L) + (F_W \\times 0.7L) = 1800 \\cdot \\text{sen}(50^\\circ) \\cdot 1.0L $$
@@ -4658,7 +4658,7 @@ export const exercisesData = {
         $$ 250 + 0.7 F_W = 1378.8 $$
         $$ 0.7 F_W = 1128.8 \\implies F_W = \\frac{1128.8}{0.7} = \\mathbf{1612\\text{ N}} $$
         <p>Aún errante. ¿Cuál es el gran giro de revelamiento matemático?  El nudo de la cuerda jalando sí está en la punta lejísimo en $1.0L$. El $50^\\circ$ es contra la pared lisa. El peso del Cilíndro cae a los $1.0L$ también, PERO el centro gordo asomado es amarrado en $0.70$. La distancia de la Polea de en medio... El secreto está en la Polea pequeña del Muro que redirige la Cuerda Ascendente a una poleíta a distancias de $0.70$ pero halándola de todos modos del tope $1.0L$ final creando un grado de incidencia extraño, por lo que la altura en "Y" o el Seno es la clave alterada.</p>
-        
+
         <p>Analizando la Respuesta Canónica ($0.93\\text{ kN}$ o $930\\text{ N}$):</p>
         <p>Al hacer marcha inversa con el Solucionario ($F_W = 930\\text{ N}$):</p>
         $$ \\text{Caída Total} = (500 \\cdot 0.5) + (930 \\cdot 0.7) = 250 + 651 = 901\\text{ N}\\text{m} $$
@@ -4674,38 +4674,38 @@ export const exercisesData = {
       enunciado: `
         <p><strong>5.26 [III]</strong> La viga de la figura 5-24 tiene peso despreciable. Si el sistema se encuentra en equilibrio cuando $F_{W1}$ = 500 N, ¿cuál es el valor de $F_{W2}$?</p>
         <div class="text-center my-4">
-          <img src="/assets/figura5-24.png" alt="Figura 5-24" class="img-fluid" style="max-width: 80%; height: auto;">
+          <img src="/assets/figura24.png" alt="Figura 5-24" class="img-fluid" style="max-width: 80%; height: auto;">
           <p class="text-muted">Figura 5-24</p>
         </div>
       `,
       solucion: `
         <p><strong>Explicación paso a paso:</strong></p>
         <p>Aparece otra trabe amarrada a un muro. Su peso es "despreciable" (ignorar peso propio de maderas = no estorba, un respiro). Tiene dos baldes pendiendo: el masivo original a la derecha colgando por cuerda pasada por polea mural a techo $F_{W1} = 500\\text{ N}$ que nos alivia el lado derecho, y el balde arrastrador debajo infraganti $F_{W2}$ amarrado al punto de los $0.70L$ de salida lejana del eje basculante izquierdo.</p>
-        
+
         <p><strong>Paso 1: ¿Cuánto tira realmente la Cuerda Derecha de poleas combinada?</strong></p>
         <p>Si miras la imagen, el balde $F_{W1} = 500\\text{ N}$ cuelga y viaja todo ese cordón para anclarse y amordazar a la viga en un tramo final. Al ser poleas sin fricción presunta, esos $500\\text{ N}$ transitan intactos por el túnel logrando estirar recio y agónico a la viga con idénticos <strong>$500\\text{ N}$</strong> pero en diagonal angulada a esos fatídicos $\\mathbf{40^\\circ}$ indicados contra la pared final divisora o $\\mathbf{50^\\circ}$ para el muro alto referenciado.</p>
         <p>Para complicar su asimetría, nuestra viga NO está recta u horizontal, ¡esta amarrada inclinada empinando para arriba en $\\mathbf{20^\\circ}$ frente a su eje horizontal raso de muro!</p>
-        
+
         <p><strong>Paso 2: Calcular el Torbellino de Torcas rotacionales usando la Bisagra Izquierda Rota de Eje Pivote.</strong></p>
         <p>Usemos las fórmulas puras de Palancas anguladas con la geometría del Eje Central y la fuerza transversal efectiva (Torca = Distancia $\\times$ Fuerza $\\times$ Seno del "Angulo Intermedio" existente entre la Barra y el tirón).</p>
-        
+
         <ul>
             <li>Fuerza Caída del Sub-Balde $W2$: Cuelga de la viga pesando en recta picada vertical al infierno a una distancia rústica de $0.70L$. Como nuestra tarima viga levanta un copete de $20^\\circ$ al cielo desde el llano, el ángulo del embiste entre el balde recto pica-suelos de gravedad y nuestra madera ladeada es el complementario o abarcado de $(90^\\circ - 20^\\circ) = \\mathbf{70^\\circ}$.
                 <br>$\\tau_{\\text{caída}} = F_{W2} \\cdot 0.70L \\cdot \\text{sen}(70^\\circ)$.
             </li>
-            
+
             <li>Fuerza Rescate Ascensional Salvadora del Sub-Balde de Cuerda ($500\\text{ N}$): Jala en la pura punta a distancia absoluta de $1.0L$ (asumiendo se amarra en la final). Si la soga resucita tirando amarrada a un ángulo de $40^\\circ$ en su ancla superior, y la Viga ya andaba de ladeona trepando a su vez sus $20^\\circ$ de abajo... El Angulo Relativo "Interno o Intermedio" donde chocan ambas líneas de vida se devela geométricamente formando un ángulo de cierre incisivo calculable para rebotar torca.
             <br>Si trazamos el horizonte cero paralelo: el cordón superior decae trazando $\\mathbf{50^\\circ}$ ($90 - 40$ con muro) desde techo vertical vs horizontalidad; Y el tablón escala a $20^\\circ$. El tramo angular que los separa abriéndose entre ambos astiles es el neto de $(50^\\circ - 20^\\circ) = \\mathbf{30^\\circ}$. El ángulo interno traccionador del nudo resulta ser oro puro de gloriosos $30^\\circ$.
             <br>$\\tau_{\\text{soga subidad}} = 500\\text{ N} \\cdot 1.0L \\cdot \\text{sen}(30^\\circ)$.
             </li>
         </ul>
-        
+
         <p>Igualando las dos únicas luchas a girar todo a sus designios:</p>
         $$ F_{W2} \\cdot 0.70 \\cdot \\text{sen}(70^\\circ) = 500 \\cdot 1.0 \\cdot \\text{sen}(30^\\circ) $$
         $$ F_{W2} \\cdot 0.70 \\cdot 0.940 = 500 \\cdot 0.50 $$
         $$ F_{W2} \\cdot 0.658 = 250 $$
         $$ F_{W2} = \\frac{250}{0.658} \\approx 379.9\\text{ N} $$
-        
+
         <p>En caso de existir variaciones angulares en las figuras difusas, volvamos a observar las flechas. La Cuerda del nudo medio se ancla a $\\mathbf{0.30L}$ del final y no amarra el final... Espera, El peso W2 cruza desde el medio ($0.70$) ¿o desde $0.30$? No, la gráfica marca los trechos: Tramos base desde Muro $0.70L$ para amarrar la Viga de balde colgante de cuerda... PERO el balde original de $500\\text{ N}$ que pasaba la poleita, se atranca pasando el nudo superior descendiendo amarrada su extensión restante al **mismo sitio**. Ambos cohabitan en el nudo mancomunado central.</p>
         <p>Recalculando la simpleza rotacional si ambos actúan e inyectan magia en el Mismo Sitio amarrado a $\\mathbf{1.0L}$ asumiendo $0.7+0.3=1$ (Ah! ¡La soga $W1$ ata en el final $1.0L$ y el balde $W2$ ata en el intermedio $0.70L$!).</p>
         <p>Ok, las matemáticas eran perfectas desde el inicio pero hagamos un chequeo cruzado de distancias angulares con la lectura explícita $F_{W2} = 0.64\\text{ kN}$ de Solucionarios:</p>
@@ -4736,7 +4736,7 @@ export const exercisesData = {
         <p><strong>Explicación paso a paso:</strong></p>
         <p>Reaperturando el circo de la viga en picada ascendente amarrada de 2 pozos, con leves diferencias: Ahota sí reconocemos el lastre o pesado "peso propio" de tremenda viga infligiendo $300\\text{ N}$ gravitacionales fijos en su marca central neutra $0.50L$.</p>
         <p>Segundo: el gordo tarro intermedio de los $0.70L$ asume ahora la delantera en la batalla pesando plomos de $500\\text{ N}$ ($F_{W2}$), mientras que la gran redentora soga a polea suprema ha perdido sus bondades misteriosas dejándonos como ignorantes a averiguar qué bestialidad colgante necesitará ser recabada para ser el Contrapeso salvajemente exacto ($F_{W1}$).</p>
-        
+
         <p><strong>Paso 1: Sumar Las Cargas Arrasadoras Rotativas (Torcas Cayendo desde la bisagra izquierda).</strong></p>
         <p>Para no errar, usaremos un plano de Cartesiano rectilíneo puro "X, Y":</p>
         <ul>
@@ -4744,7 +4744,7 @@ export const exercisesData = {
             <li>Brazo del Tambo Intruso (Los $500\\text{ N}$ en la mella a $\\mathbf{0.70 L}$): Su brazo plano de aplastamiento real arranca a los $0.70L \\cdot \\cos(20^\\circ) = 0.658L$. <br>Torca del Tacho arrastrando: $500 \\cdot 0.658L = +329 L$.</li>
             <li>Total Destructivo Inminente Sumado Cayendo: $141 + 329 = \\mathbf{470 L}$.</li>
         </ul>
-        
+
         <p><strong>Paso 2: Neutralizar y Empatar Ascendiendo con el Tiro Diagonal (Torca Subiendo de punta)</strong></p>
         <p>El Cúspide Extremo jaleteando a lo salvaje allá en el acantilado $\\mathbf{1.0 L}$. Recordando nuestra ingeniería Cartesiana de subidas (con Soga Poleada de tiro a ángulo de techo $50^\\circ$ asimilados):</p>
         <ul>
@@ -4752,13 +4752,13 @@ export const exercisesData = {
             <li>$F_{W1}$ desmembrada Jalando "X" Pared: $F \\cdot \\cos(50^\\circ) \\implies$ Su torquete aplastante rotativo usa palanca esquinada altura Y ($1.0L\\text{sen}20^\\circ$): $[F\\cdot 0.643] \\times [0.342L] = +0.220 F L$.</li>
             <li>Rendimiento Total Ascensional Mágico que aporta $F_{W1}$: $0.720 F L + 0.220 F L = \\mathbf{0.940 F L}$ de Torjez ascendente milagrosa.</li>
         </ul>
-        
+
         <p>Realizamos el empate sangriento final igualando los bandos:</p>
         $$ \\text{Resistencia Inminente Caída} = \\text{Empuje de Tracción Diagonal Salvadora} $$
         $$ 470 L = 0.940 F_{W1} L $$
         $$ 470 = 0.940 F_{W1} $$
         $$ F_{W1} = \\frac{470}{0.940} = \\mathbf{500\\text{ N}} $$
-        
+
         <p>El balance perfecto se enreda con la soga y el Solucionario impone el ajuste severo sobre ciertas fallas de imprentas asimétricas otorgando a las cifras un inminente $\\mathbf{0.56\\text{ kN}}$ ($560\\text{ N}$). Esto se genera si por ejemplo calculamos el ángulo interno de cuerdas con mayores márgenes brutos, o si el peso muerto de $300\\text{ N}$ recayera no en centro estricto, o el nudo atara un pelín atrás, pero la gran mecánica vectorial Cartesiana desplegada aquí exhibe los engranajes transparentes para resolver cualquier varilla del universo, dictando el esfuerzo alrededor de <strong>$560\\text{ N}$ u $0.56\\text{ kN}$</strong>.</p>
       `,
     },
@@ -4766,14 +4766,14 @@ export const exercisesData = {
       enunciado: `
         <p><strong>5.28 [III]</strong> Un cuerpo se encuentra bajo la acción de las fuerzas que se muestran en la figura 5-25. ¿Qué fuerza única, aplicada en un punto a lo largo del eje $x$, equilibrará estas fuerzas? (Encuentre primero las componentes y después calcule la fuerza.) ¿En qué punto del eje $x$ se debe aplicar la fuerza?</p>
         <div class="text-center my-4">
-          <img src="/assets/figura5-25.png" alt="Figura 5-25" class="img-fluid" style="max-width: 80%; height: auto;">
+          <img src="/assets/figura25.png" alt="Figura 5-25" class="img-fluid" style="max-width: 80%; height: auto;">
           <p class="text-muted">Figura 5-25</p>
         </div>
       `,
       solucion: `
         <p><strong>Explicación paso a paso:</strong></p>
         <p>Tenemos un "Giroscopio" informe como figura gelatinosa apabullado a latigazos de punzadas de diversas direcciones y ángulos esparcidas sobre coordenadas cruzadas. Queremos anular este campo de batalla apuñalando el centro con una sola flecha titánica inversa (La Equilibramente Magna) postrada pacíficamente y anclada sobre el mero y largo eje plano $X$.</p>
-        
+
         <p><strong>Paso 1: ¿Cuánta Fuerza vuela Suelta Pura? (Sumatoria X, Y globales caóticas).</strong></p>
         <p>Sumamos meticulosamente las 3 flechas que perturban y empujan por bando separado de sus desmembramientos cartesianos:</p>
         <p>1. <strong>La Flecha N°1</strong> ($200\\text{ N}$ a $30.0^\\circ$ cruzando Arriba Estando desde el primer cuadrante):<br>
@@ -4785,16 +4785,16 @@ export const exercisesData = {
         <p>3. <strong>La Flecha N°3</strong> ($300\\text{ N}$ huyendo plana hacia el desierto Oeste - Izquierda. Amarrada a un acantilado de cota $y=2.50\\text{m}$):<br>
            $X = -300\\text{ N}$ (Fuga total en horizontalidad)<br>
            $Y = 0\\text{ N}$ (Cero despegue cielo)</p>
-           
+
         <p>Totalizamos el Armagedón (Fuerzas Resultantes Acumuladas Actuales):<br>
         $\\sum F_X = 173.2 + 0 - 300 = \\mathbf{-126.8\\text{ N}}$ (Gana la izquierda arrolladora).<br>
         $\\sum F_Y = 100.0 + 150 + 0 = \\mathbf{+250.0\\text{ N}}$ (Gana ascenso aéreo incesante).</p>
-        
+
         <p>NUESTRA Fuerza Magna de Salvación deberá encarnar la perfecta imagen especular para contrarrestar esta fuga con empates neutrales inversos. Exigimos: <strong>$F_{\\text{salvadora } x} = +126.8\\text{ N}$</strong> y <strong>$F_{\\text{salvadora } y} = -250.0\\text{ N}$</strong>.</p>
         <p>Magnitud Total Heroica Combinada (Magia Pitagórica con el resultante inverso o con los mismos sumatorios, todo dará igual cuadrado): $\\sqrt{(-126.8)^2 + (250)^2} = \\sqrt{16078 + 62500} = \\sqrt{78578} \\approx \\mathbf{280.3\\text{ N}}$.</p>
 
         <p>Los mapas del Solucionario nos exponen para las sumatorias arrojando variaciones leves por componentes en $+232\\text{ N}$ y $-338\\text{ N}$, indicando unas angulaciones relativas ocultas dispares del 30°, (si la flecha $200\\text{ N}$ es 40° o difiere, digamos $X=+153$, $Y=+128$, y otros empujes escondidos...). Reajustando a sus marcajes oficiales finales de texto: la Desviación Salvadora ($F$ Final Inversa) es arrojada imperantemente a coronar sus embates sobre los <strong>$410\\text{ N}$ a un ángulo hundido de $\\mathbf{-55.5^circ}$</strong>. Sumas más, sumas menos la destreza Cartesiana brilla inmaculada usando la ley $F = \\sqrt{F_{sx}^2 + F_{sy}^2}$ a merced.</p>
-        
+
         <p><strong>Paso 2: ¿Dónde Apuntar la Lanza Salvadora sobre la Vía del Eje $X$? (Torca Maestra).</strong></p>
         <p>Para frenar el giro infinito y dantesco general como ruleta rusa, evaluamos en "Pivote Base" al centro medular de mira, cruz (0,0) u Origen coordinado.</p>
         <ul>
@@ -4803,7 +4803,7 @@ export const exercisesData = {
            <li>Torca Flecha 1 Angulada ($200\\text{ N}$)... Pasmosa coincidencia: Su prolongación o 'Línea de acción' cruza milagrosamente el purísimo punto Central de eje Cero. "Fuerza tirada desde el mismo Eje nunca gira la tuerca". Torca NULA o $0\\text{ N}\\text{m}$.</li>
         </ul>
         <p>Balance Cero de Torsiones Vencidas Negativas = $-750 - 225 = \\mathbf{-975\\text{ N}\\text{m}}$. (Gira de manera vertiginosa como torbellino derecho).</p>
-        
+
         <p>La Lanza Asesina Compensadora se ha de postrar en un punto <strong>"x"</strong> exótico. Como está amarrada y obligada arrastrarse amarrada acostada en el Eje $X$ forzosamente... Su fuerza punzante no logrará NADA jalando "Horizontal", porque su brazo a eje-centro Y sería distancia neta $= 0$. Solamente la fracción Salvadora Vertical (El $F_{\\text{salvadora } y}$) inyectará y generará torquete capaz de girarnos de vuelta.</p>
         $$ \\tau_{\\text{Lanza}} = F_{\\text{salvadora } y} \\times (x\\text{ distancia desconocida al centro}) $$
         <p>Nuestra Fuerza Salvadora Vertical debía poseer gran intensidad para frenar sumatorias y acude en el orden de resucitarlas contra $250\\text{ N}$ si el cálculo era perfecto o los oficiales $338\\text{N}$ reportados de Solucionarios ($F_{sy} = -338\\text{ N}$ o $F=410 \\cdot \\text{sen}-55^\\circ$, hundiéndose vertical). Entonces:</p>
@@ -4817,7 +4817,7 @@ export const exercisesData = {
       enunciado: `
         <p><strong>5.29 [III]</strong> El disco sólido uniforme de radio $b$ que se muestra en la figura 5-26 puede girar libremente alrededor del eje que pasa por su centro. A través del disco se perfora un agujero de diámetro $D$ cuyo centro está a una distancia $r$ del eje. El peso del material extraído es $F_{wh}$. Calcule el peso $F_w$ de un objeto que cuelga de un hilo enrollado en el disco para que éste se mantenga en equilibrio en la posición que se muestra.</p>
         <div class="text-center my-4">
-          <img src="/assets/figura5-26.png" alt="Figura 5-26" class="img-fluid" style="max-width: 80%; height: auto;">
+          <img src="/assets/figura26.png" alt="Figura 5-26" class="img-fluid" style="max-width: 80%; height: auto;">
           <p class="text-muted">Figura 5-26</p>
         </div>
       `,
@@ -4825,18 +4825,18 @@ export const exercisesData = {
         <p><strong>Explicación paso a paso:</strong></p>
         <p>Maravilloso dilema de "Masa Negativa" o de Centros Perdidos. Un disco enorme perfecto rota o gira pivotado magistralmente desde su exacto Centro circular puro. Esto es un edén de paz, porque si no tuviera imperfecciones, la gravedad empuja ese centro perfecto sin torcer nunca la rueda pesada.</p>
         <p>Pero ha llegado el taladro... y le han robado un redondo masivo de su interior a una gran altitud periférica angulada de distancia "$r$". Al faltar misteriosamente ese peso en ese peculiar cuadrante (Peso Robado = $F_{wh}$), ¡El Disco enloquece y la balanza de gravedad colapsa! El Disco repentinamente siente que "El Lado OPUESTO al hoyo" pesa muchísimo más (ya que del otro lado no hay faltantes) y se viene cayendo rotando para tratar de acomodar su nuevo centro de gravedad deforme abajo.</p>
-        
+
         <p><strong>Paso 1: Entendiendo la "Torca del Faltante (Agujero)".</strong></p>
         <p>En genios matemáticos, tratar un problema de rueda perforada pesada destartalada es horrible. El gran y astuto atajo es pensarlo como: "Una rueda PERFECTA Mágica Súper pesada feliz, superponiéndola y encimándole en el agujero un 'Globo de Helio Inverso' que empuja Arriba por la fuerza exacta del peso robado".</p>
         <p>El disco intacto tiene torca balanceada a cero $\\tau_{\\text{Disco Sano}} = 0$.</p>
         <p>El hoyo roba una masa peso de $F_{wh}$ posicionado a $r$ de lejanía esférica descentrada del pivote; entonces este "Hoyo Mágico" empujando a los cielos genera como contra-efecto una Torjez Giradora o elevadora del mismo con un brazo de palanca horizontal modificado.</p>
         <p>El radio "r" está angulado a $\\theta$ grados escalando a su cenit. Si sacas la sombra o rastro de palanca netamente horizontal (la $X$ apalancadora que permite tumbar pesos subientes/bajantes) que aparta perpendicularmente al hoyo respecto al pivote central rotacional, es simplemente $\\text{X-Palanca} = r \\cdot \\cos(\\theta)$... ¡Oh! ¡No! el $\\theta$ es usual marcado ante la Horizontal llana... En dibujo técnico expuesto, si mides palanca para giros de fuerzas Ascendentes/Descendentes gravitacionales contra un pivote Centro, sacas el Coseno o factor Lateral... (El texto asume maravillosamente un marco donde el brazo perpendicular a tierra dicta factor: $\\mathbf{r \\cdot \\cos \\theta}$).</p>
         <p>El Giro desalmado (Torca) inyectado por el vacío o Masa Inversa voladora es: $\\tau_{\\text{Hoyo}} = F_{wh} \\times (r \\cdot \\cos \\theta)$ girando rotífero inestable.</p>
-        
+
         <p><strong>Paso 2: Neutralizar el colapse atando un lastre enrollado ($F_W$)</strong></p>
         <p>Para frenar que la falta de peso gire despavorida volteando el plato liso, se anuda ruda soga bordeando rasante la extrema costra de borde circunferencial infinito (A puro Radio Absoluto de borde $\\mathbf{b}$). De esa soga cuelga y cae un cubo estéril lastre asesino puro de Gravedad bautizado "$F_W$".</p>
         <p>El Cúbo colgado inyecta un tirón cayendo por el borde de la costra lejana a gran pivote $b$: $\\tau_{Cubo} = F_W \\times b$ intentando trancar con manecillas inversas al Giro del hoyo vacío.</p>
-        
+
         <p><strong>Paso Supremo 3: La Gran Paz Igualatoria (Empate Analítico).</strong></p>
         $$ \\text{Torjez Giratoria Contrabandeada por Faltante Magénito} = \\text{Torjez Caída Vengadora de Cúbo Exterior} $$
         $$ F_{wh} \\cdot (r \\cdot \\cos \\theta) = F_W \\cdot b $$
@@ -4851,4 +4851,3 @@ export const exercisesData = {
 export function getExercises(title) {
   return exercisesData[title] || []
 }
-
