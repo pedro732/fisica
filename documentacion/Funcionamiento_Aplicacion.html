@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funcionamiento de la aplicación - Proyecto de Física</title>
+  <style>
+    @page { size: A4; margin: 18mm; }
+    :root { --ink: #1e293b; --muted: #475569; --blue: #075985; --line: #cbd5e1; --soft: #f0f9ff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; color: var(--ink); font-family: Georgia, 'Times New Roman', serif; line-height: 1.55; font-size: 11.5pt; }
+    main { max-width: 820px; margin: 0 auto; }
+    header { border-bottom: 3px solid var(--blue); padding-bottom: 18px; margin-bottom: 24px; }
+    h1 { color: var(--blue); font-size: 25pt; line-height: 1.15; margin: 0 0 8px; }
+    h2 { color: var(--blue); font-size: 16pt; margin: 25px 0 8px; border-bottom: 1px solid var(--line); padding-bottom: 4px; }
+    h3 { font-size: 12.5pt; margin: 16px 0 4px; }
+    p { margin: 7px 0; }
+    .subtitle { color: var(--muted); font-size: 12pt; margin: 0; }
+    .box { background: var(--soft); border-left: 4px solid #0284c7; padding: 12px 15px; margin: 14px 0; }
+    code { font-family: 'Courier New', monospace; font-size: 0.9em; background: #e2e8f0; padding: 1px 4px; border-radius: 3px; }
+    table { width: 100%; border-collapse: collapse; margin: 12px 0 18px; page-break-inside: avoid; }
+    th, td { border: 1px solid var(--line); padding: 8px 9px; text-align: left; vertical-align: top; }
+    th { background: var(--blue); color: white; }
+    tr:nth-child(even) td { background: #f8fafc; }
+    .flow { font-family: 'Courier New', monospace; background: #f8fafc; border: 1px solid var(--line); padding: 13px; white-space: pre-line; line-height: 1.7; }
+    li { margin: 3px 0; }
+    footer { border-top: 1px solid var(--line); margin-top: 28px; padding-top: 10px; color: var(--muted); font-size: 9.5pt; text-align: center; }
+    .page-break { page-break-before: always; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Funcionamiento de la aplicación</h1>
+      <p class="subtitle">Proyecto educativo de Física desarrollado con Vue.js y Vite</p>
+    </header>
+
+    <h2>1. Descripción general</h2>
+    <p>La aplicación es una plataforma web educativa para consultar conceptos fundamentales de física. Presenta temas teóricos, imágenes, fórmulas matemáticas, ejemplos y ejercicios resueltos mediante una interfaz interactiva.</p>
+    <p>La información se almacena localmente en archivos JSON y módulos JavaScript. Estos archivos funcionan como una base de datos estática: contienen los registros del contenido y los componentes de Vue los consultan, procesan y muestran en pantalla.</p>
+
+    <div class="box"><strong>Idea central:</strong> los archivos de datos separan el contenido educativo de la interfaz. De esta manera, es posible agregar o modificar temas y ejercicios sin cambiar la estructura principal de los componentes.</div>
+
+    <h2>2. Fuentes de información</h2>
+    <h3><code>src/assets/fisica.json</code>: índice general de temas</h3>
+    <p>Es el archivo principal del catálogo. Contiene una lista de objetos con los campos <code>title</code>, <code>image</code> y <code>description</code>. Cada objeto representa un tema disponible en la aplicación.</p>
+
+    <h3><code>src/assets/topicDetails.js</code>: contenido teórico ampliado</h3>
+    <p>Contiene un objeto cuyos identificadores son los títulos de los temas. Cada entrada incluye el título, una imagen y una explicación extensa en HTML, con fórmulas, tablas, ejemplos y recursos visuales.</p>
+
+    <h3><code>src/assets/exercisesData.js</code>: banco de ejercicios</h3>
+    <p>Organiza los ejercicios por tema. Cada tema contiene una lista de objetos con un <code>enunciado</code> y una <code>solucion</code>. El contenido puede incluir HTML, imágenes y expresiones matemáticas.</p>
+
+    <h2>3. Flujo de datos y renderizado</h2>
+    <div class="flow">fisica.json
+    ↓
+ModalIndex.vue → muestra el índice de temas
+    ↓
+CardComponent.vue → busca y muestra título, imagen y descripción
+    ↓
+TopicDetail.vue → carga la explicación completa desde topicDetails.js
+    ↓
+SolvedExercisesView.vue → carga los ejercicios desde exercisesData.js</div>
+
+    <h3>Inicio y selección de temas</h3>
+    <p><code>HomeView.vue</code> incorpora el componente <code>ModalIndex.vue</code>. Este importa <code>fisica.json</code> y recorre sus registros con <code>v-for</code> para crear una lista de botones. Al seleccionar un tema, el título se envía como parámetro a Vue Router.</p>
+
+    <h3>Consulta de la tarjeta del tema</h3>
+    <p><code>CardComponent.vue</code> recibe el título desde la ruta, busca el registro correspondiente en <code>fisica.json</code> y guarda el resultado en <code>topic</code>. Después renderiza la imagen, el título y la descripción. También ofrece navegación hacia la explicación detallada.</p>
+
+    <h3>Visualización de la teoría</h3>
+    <p><code>TopicDetail.vue</code> utiliza <code>getTopicDetails()</code> para localizar el contenido ampliado en <code>topicDetails.js</code>. Ese contenido se inserta mediante <code>v-html</code>. Posteriormente, las expresiones delimitadas por <code>$...$</code> o <code>$$...$$</code> se convierten en fórmulas visuales usando KaTeX.</p>
+
+    <h3>Visualización de ejercicios</h3>
+    <p><code>SolvedExercisesView.vue</code> llama a <code>getExercises()</code> para obtener la colección asociada al tema. Para cada ejercicio muestra el enunciado y la solución. También procesa las fórmulas con KaTeX y permite ampliar las imágenes mediante <code>ImageLightbox.vue</code>.</p>
+
+    <h2>4. Relación entre archivos</h2>
+    <table>
+      <thead><tr><th>Archivo</th><th>Responsabilidad</th><th>Resultado en la aplicación</th></tr></thead>
+      <tbody>
+        <tr><td><code>fisica.json</code></td><td>Almacenar el catálogo básico de temas.</td><td>Índice, títulos, imágenes y descripciones breves.</td></tr>
+        <tr><td><code>ModalIndex.vue</code></td><td>Recorrer el catálogo y gestionar la selección.</td><td>Lista de temas en la pantalla inicial.</td></tr>
+        <tr><td><code>CardComponent.vue</code></td><td>Buscar y presentar un registro del JSON.</td><td>Tarjeta resumen del tema.</td></tr>
+        <tr><td><code>topicDetails.js</code></td><td>Almacenar las lecciones completas.</td><td>Contenido teórico detallado.</td></tr>
+        <tr><td><code>TopicDetail.vue</code></td><td>Consultar y renderizar la teoría.</td><td>Página de explicación del tema.</td></tr>
+        <tr><td><code>exercisesData.js</code></td><td>Almacenar problemas y soluciones.</td><td>Banco de ejercicios resueltos.</td></tr>
+        <tr><td><code>SolvedExercisesView.vue</code></td><td>Consultar y presentar los ejercicios.</td><td>Enunciados, soluciones, fórmulas e imágenes.</td></tr>
+        <tr><td><code>KaTeX</code></td><td>Convertir sintaxis matemática en HTML visual.</td><td>Fórmulas correctamente formateadas.</td></tr>
+      </tbody>
+    </table>
+
+    <h2>5. Conclusión</h2>
+    <p>La aplicación sigue una arquitectura sencilla basada en datos locales. <code>fisica.json</code> actúa como catálogo principal; <code>topicDetails.js</code> amplía la información teórica; y <code>exercisesData.js</code> aporta la práctica. Los componentes Vue funcionan como la capa que consulta esos datos y los transforma en vistas interactivas.</p>
+    <p>Este diseño facilita el mantenimiento del proyecto, permite reutilizar los componentes y hace posible ampliar el contenido educativo agregando nuevos registros con la misma estructura.</p>
+
+    <footer>Documento de funcionamiento de la aplicación · Proyecto de Física · 2026</footer>
+  </main>
+</body>
+</html>
