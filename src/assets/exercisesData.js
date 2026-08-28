@@ -4846,6 +4846,21 @@ export const exercisesData = {
       `,
     },
   ],
+  'Trabajo , energía y Potencia': [
+    {
+      enunciado: `
+        <p>En la figura 6-1, suponga que el objeto se jala con una fuerza de $75\\text{ N}$ en la dirección de $28^\\circ$ sobre la horizontal. ¿Cuánto trabajo desarrolla la fuerza al tirar del objeto $8.0\\text{ m}$?</p>
+        <div class="text-center my-4">
+          <img src="/assets/6-1.png" alt="Figura 6-1" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 6-1</p>
+        </div>
+      `,
+      solucion: `
+        <p>El trabajo efectuado por la fuerza es igual al producto del desplazamiento por la componente de la fuerza que es paralela al desplazamiento:</p>
+        $$ W = (75\\text{ N})(\\cos 28^\\circ)(8.0\\text{ m}) = 0.53\\text{ kJ} $$
+      `,
+    },
+  ],
 }
 
 export function getExercises(title) {

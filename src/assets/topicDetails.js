@@ -699,6 +699,49 @@ $$ \\tau = (F) (\\text{brazo de palanca}) $$
 <p><strong>LA POSICIÓN DE LOS EJES ES ARBITRARIA:</strong> Si la suma de las torcas es cero en torno a un eje determinado para un cuerpo que cumple la condición de fuerza, será cero para todo eje paralelo al primero. Generalmente se escoge el eje de tal forma que la línea de acción de la fuerza desconocida pase por la intersección del eje de rotación y el plano de las fuerzas. Entonces el ángulo $\\theta$ entre $\\vec{r}$ y $\\vec{F}$ es cero; en consecuencia, dicha fuerza desconocida particular ejerce una torca cero y por tanto no aparece en la ecuación de la torca.</p>
     `,
   },
+  'Trabajo , energía y Potencia': {
+    title: 'Trabajo , energía y Potencia',
+    content: `
+<h2>Trabajo, energía y potencia</h2>
+
+<p><strong>El trabajo</strong> es la energía transferida cuando una fuerza desplaza un objeto. Para una fuerza constante que forma un ángulo $\\theta$ con el desplazamiento $l$, se calcula mediante:</p>
+
+$$ W = F l \\cos\\theta $$
+
+<p>El trabajo es una magnitud escalar y se mide en <strong>joules (J)</strong>. Es positivo cuando la fuerza favorece el movimiento, negativo cuando se opone y nulo cuando es perpendicular al desplazamiento.</p>
+
+<p>El <strong>teorema trabajo-energía</strong> indica que el trabajo neto realizado sobre un objeto es igual al cambio de su energía cinética:</p>
+
+$$ W_{neto}=\\Delta K $$
+
+<p>La energía cinética asociada al movimiento de un objeto de masa $m$ y velocidad $v$ es:</p>
+
+$$ K=\\frac{1}{2}mv^2 $$
+
+<p>La <strong>energía potencial gravitacional</strong> depende de la altura $h$ respecto a un nivel de referencia:</p>
+
+$$ E_p=mgh $$
+
+<p>La energía mecánica total es la suma de la energía cinética y la energía potencial. La <strong>potencia</strong> mide la rapidez con que se realiza un trabajo:</p>
+
+$$ P=\\frac{W}{t} $$
+
+<p>Cuando una fuerza produce un movimiento con velocidad $v$, la potencia también puede expresarse como $P=Fv$. Su unidad es el <strong>watt (W)</strong>, equivalente a un joule por segundo.</p>
+
+<p><strong>Conservación de la energía:</strong> la energía no se crea ni se destruye, solo se transforma de un tipo a otro. La masa puede considerarse una forma de energía; por lo general, se ignora la conversión entre masa y energía en los problemas clásicos y se conserva la energía total del sistema.</p>
+
+<p><strong>Potencia ($P$)</strong> es la tasa de tiempo con que se realiza un trabajo. La potencia promedio se calcula como el trabajo realizado por la fuerza dividido entre el tiempo necesario:</p>
+
+$$ P_{promedio}=\\frac{\\text{trabajo realizado por la fuerza}}{\\text{tiempo necesario para realizarlo}}=\\text{fuerza}\\times\\text{rapidez} $$
+
+<p>La rapidez debe medirse en la dirección de la fuerza aplicada al objeto. En el Sistema Internacional, la potencia se expresa en watts (W), donde $1\\text{ W}=1\\text{ J/s}$. Otra unidad frecuente es el <strong>caballo de fuerza</strong>: $1\\text{ hp}=746\\text{ W}$. En general, la potencia es la razón a la que se transfiere la energía.</p>
+
+<p><strong>El kilowatt-hora (kWh)</strong> es una unidad de energía. Si una fuerza realiza trabajo a una tasa de $1\\text{ kW}=1000\\text{ J/s}$ durante una hora, la energía transferida es:</p>
+
+$$ 1\\text{ kWh}=3.6\\times10^6\\text{ J}=3.6\\text{ MJ} $$
+
+    `,
+  },
 }
 
 export function getTopicDetails(title) {
