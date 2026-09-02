@@ -4854,10 +4854,29 @@ export const exercisesData = {
           <img src="/assets/6-1.png" alt="Figura 6-1" class="img-fluid" style="max-width: 100%; height: auto;">
           <p class="text-muted">Figura 6-1</p>
         </div>
+
       `,
       solucion: `
         <p>El trabajo efectuado por la fuerza es igual al producto del desplazamiento por la componente de la fuerza que es paralela al desplazamiento:</p>
         $$ W = (75\\text{ N})(\\cos 28^\\circ)(8.0\\text{ m}) = 0.53\\text{ kJ} $$
+      `,
+    },
+    {
+      enunciado: `
+        <p>Un bloque de $5.0\\text{ kg}$ se desliza sobre una superficie horizontal sin fricción. Una fuerza constante de $20\\text{ N}$ actúa en la misma dirección del movimiento y desplaza el bloque $6.0\\text{ m}$. ¿Cuál es el trabajo realizado por la fuerza y cuánto cambia la energía cinética del bloque?</p>
+        <div class="text-center my-4">
+          <img src="/assets/6-2.png" alt="Figura 6-2" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 6-2</p>
+        </div>
+      `,
+      solucion: `
+        <p>Como la fuerza y el desplazamiento tienen la misma dirección, el trabajo se calcula mediante:</p>
+        $$ W = Fd\\cos 0^\\circ $$
+        $$ W = (20\\text{ N})(6.0\\text{ m})(1) = 120\\text{ J} $$
+        <p>Por el teorema trabajo-energía, el trabajo neto es igual al cambio de energía cinética:</p>
+        $$ W_{neto} = \\Delta K $$
+        $$ \\Delta K = 120\\text{ J} $$
+        <p><strong>Respuesta:</strong> la fuerza realiza un trabajo de $120\\text{ J}$ y la energía cinética del bloque aumenta en $120\\text{ J}$.</p>
       `,
     },
   ],
