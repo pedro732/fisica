@@ -4860,6 +4860,22 @@ export const exercisesData = {
         $$ W = (75\\text{ N})(\\cos 28^\\circ)(8.0\\text{ m}) = 0.53\\text{ kJ} $$
       `,
     },
+    {
+      enunciado: `
+        <p>Un bloque de $5.0\\text{ kg}$ se desliza sobre una superficie horizontal sin fricción. Una fuerza constante de $20\\text{ N}$ actúa en la dirección del movimiento y desplaza el bloque una distancia de $3.0\\text{ m}$. ¿Cuánto trabajo realiza la fuerza y cuál es el cambio en la energía cinética del bloque?</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura6-2.png" alt="Figura 6-2" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 6-2</p>
+        </div>
+      `,
+      solucion: `
+        <p>Como la fuerza tiene la misma dirección que el desplazamiento, el ángulo entre ambas es $0^\\circ$. El trabajo realizado es:</p>
+        $$ W = Fd\\cos 0^\\circ = (20\\text{ N})(3.0\\text{ m})(1) = 60\\text{ J} $$
+        <p>Por el teorema trabajo-energía, el trabajo neto es igual al cambio en la energía cinética:</p>
+        $$ \\Delta K = W_{neto} = 60\\text{ J} $$
+        <p>Por tanto, la energía cinética del bloque aumenta en $60\\text{ J}$.</p>
+      `,
+    },
   ],
 }
 
