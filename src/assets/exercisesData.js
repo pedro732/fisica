@@ -4854,6 +4854,7 @@ export const exercisesData = {
           <img src="/assets/6-1.png" alt="Figura 6-1" class="img-fluid" style="max-width: 100%; height: auto;">
           <p class="text-muted">Figura 6-1</p>
         </div>
+
       `,
       solucion: `
         <p>El trabajo efectuado por la fuerza es igual al producto del desplazamiento por la componente de la fuerza que es paralela al desplazamiento:</p>
