@@ -4876,6 +4876,22 @@ export const exercisesData = {
         <p>Por tanto, la energía cinética del bloque aumenta en $60\\text{ J}$.</p>
       `,
     },
+    {
+      enunciado: `
+        <p>Un cuerpo de $300\\text{ g}$ se desliza $80\\text{ cm}$ a lo largo de una mesa horizontal. ¿Cuánto trabajo se realiza para superar la fricción entre el cuerpo y la mesa, si el coeficiente de fricción cinética es $0.20$?</p>
+        <div class="text-center my-4">
+          <img src="/assets/6-3.jpeg" alt="Figura 6-3" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 6-3</p>
+        </div>
+      `,
+      solucion: `
+        <p>Primero se calcula la fuerza de fricción. Como la mesa es horizontal, la fuerza normal es igual al peso del cuerpo:</p>
+        $$ F_f = \\mu_k F_N = (0.20)(0.300\\text{ kg})(9.81\\text{ m/s}^2) = 0.588\\text{ N} $$
+        <p>El trabajo realizado por la fricción es $W = F_f s\\cos\\theta$. Como la fricción tiene sentido contrario al desplazamiento, $\\theta = 180^\\circ$:</p>
+        $$ W = F_f s\\cos 180^\\circ = (0.588\\text{ N})(0.80\\text{ m})(-1) = -0.47\\text{ J} $$
+        <p>El trabajo es negativo porque la fricción frena al objeto; es decir, disminuye su energía cinética.</p>
+      `,
+    },
   ],
 }
 
