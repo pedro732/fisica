@@ -4893,6 +4893,19 @@ export const exercisesData = {
         <p>El trabajo es negativo porque la fricción frena al objeto; es decir, disminuye su energía cinética.</p>
       `,
     },
+    {
+      enunciado: `
+        <p>¿Cuánto trabajo se realiza contra la gravedad al levantar un objeto de $3.0\\text{ kg}$ a través de una distancia vertical de $40\\text{ cm}$?</p>
+      `,
+      solucion: `
+        <p>Es necesaria una fuerza externa para levantar el objeto. Si el objeto se eleva con rapidez constante, la fuerza de elevación debe ser igual al peso del objeto.</p>
+        <p>El trabajo realizado contra la gravedad se calcula como:</p>
+        $$ W = (mg)(h)\\cos(0^\\circ) = (3.0\\text{ kg})(9.81\\text{ m/s}^2)(0.40\\text{ m})(1) = 12\\text{ J} $$
+        <div class="text-center my-4">
+          <img src="/assets/6-4.jpeg" alt="Solución del ejercicio 6-4" class="img-fluid" style="max-width: 100%; height: auto;">
+        </div>
+      `,
+    },
   ],
 }
 
