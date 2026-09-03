@@ -4863,20 +4863,34 @@ export const exercisesData = {
     },
     {
       enunciado: `
-        <p>Un bloque de $5.0\\text{ kg}$ se desliza sobre una superficie horizontal sin fricción. Una fuerza constante de $20\\text{ N}$ actúa en la misma dirección del movimiento y desplaza el bloque $6.0\\text{ m}$. ¿Cuál es el trabajo realizado por la fuerza y cuánto cambia la energía cinética del bloque?</p>
+        <p>Un bloque de $5.0\\text{ kg}$ se desliza sobre una superficie horizontal sin fricción. Una fuerza constante de $20\\text{ N}$ actúa en la dirección del movimiento y desplaza el bloque una distancia de $3.0\\text{ m}$. ¿Cuánto trabajo realiza la fuerza y cuál es el cambio en la energía cinética del bloque?</p>
         <div class="text-center my-4">
-          <img src="/assets/6-2.png" alt="Figura 6-2" class="img-fluid" style="max-width: 100%; height: auto;">
+          <img src="/assets/figura6-2.png" alt="Figura 6-2" class="img-fluid" style="max-width: 100%; height: auto;">
           <p class="text-muted">Figura 6-2</p>
         </div>
       `,
       solucion: `
-        <p>Como la fuerza y el desplazamiento tienen la misma dirección, el trabajo se calcula mediante:</p>
-        $$ W = Fd\\cos 0^\\circ $$
-        $$ W = (20\\text{ N})(6.0\\text{ m})(1) = 120\\text{ J} $$
-        <p>Por el teorema trabajo-energía, el trabajo neto es igual al cambio de energía cinética:</p>
-        $$ W_{neto} = \\Delta K $$
-        $$ \\Delta K = 120\\text{ J} $$
-        <p><strong>Respuesta:</strong> la fuerza realiza un trabajo de $120\\text{ J}$ y la energía cinética del bloque aumenta en $120\\text{ J}$.</p>
+        <p>Como la fuerza tiene la misma dirección que el desplazamiento, el ángulo entre ambas es $0^\\circ$. El trabajo realizado es:</p>
+        $$ W = Fd\\cos 0^\\circ = (20\\text{ N})(3.0\\text{ m})(1) = 60\\text{ J} $$
+        <p>Por el teorema trabajo-energía, el trabajo neto es igual al cambio en la energía cinética:</p>
+        $$ \\Delta K = W_{neto} = 60\\text{ J} $$
+        <p>Por tanto, la energía cinética del bloque aumenta en $60\\text{ J}$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Un cuerpo de $300\\text{ g}$ se desliza $80\\text{ cm}$ a lo largo de una mesa horizontal. ¿Cuánto trabajo se realiza para superar la fricción entre el cuerpo y la mesa, si el coeficiente de fricción cinética es $0.20$?</p>
+        <div class="text-center my-4">
+          <img src="/assets/6-3.jpeg" alt="Figura 6-3" class="img-fluid" style="max-width: 100%; height: auto;">
+          <p class="text-muted">Figura 6-3</p>
+        </div>
+      `,
+      solucion: `
+        <p>Primero se calcula la fuerza de fricción. Como la mesa es horizontal, la fuerza normal es igual al peso del cuerpo:</p>
+        $$ F_f = \\mu_k F_N = (0.20)(0.300\\text{ kg})(9.81\\text{ m/s}^2) = 0.588\\text{ N} $$
+        <p>El trabajo realizado por la fricción es $W = F_f s\\cos\\theta$. Como la fricción tiene sentido contrario al desplazamiento, $\\theta = 180^\\circ$:</p>
+        $$ W = F_f s\\cos 180^\\circ = (0.588\\text{ N})(0.80\\text{ m})(-1) = -0.47\\text{ J} $$
+        <p>El trabajo es negativo porque la fricción frena al objeto; es decir, disminuye su energía cinética.</p>
       `,
     },
   ],
