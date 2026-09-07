@@ -4906,6 +4906,31 @@ export const exercisesData = {
         </div>
       `,
     },
+    {
+      enunciado: `
+      <p>
+      ¿Cuánto trabajo se realiza sobre un objeto por la fuerza que lo soporta conforme éste se desplaza hacia abajo una distancia vertical h? ¿Cuánto trabajo realiza la fuerza gravitacional sobre dicho objeto en el mismo
+proceso?
+      </p>
+      <div class="text-center my-4">
+          <img src="/assets/6-5.jpeg" alt="Solución del ejercicio 6-4" class="img-fluid" style="max-width: 100%; height: auto;">
+        </div>
+
+      `,
+      solucion: `
+      <p>
+     
+      
+      
+</p>
+$$ W_s = F_s h\\cos(180^\\circ) = (mg)(h)(-1) = -mgh $$
+<p>
+La fuerza de gravedad que actúa sobre el objeto también es mg, pero está dirigida hacia abajo en el mismo
+sentido que el desplazamiento. El trabajo realizado por la fuerza de gravedad sobre el objeto es entonces
+</p>
+$$ W_g = F_g h\\cos(0^\\circ) = (mg)(h)(1) = mgh $$
+      `,
+    },
   ],
 }
 
