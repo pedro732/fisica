@@ -4919,9 +4919,9 @@ proceso?
       `,
       solucion: `
       <p>
-     
-      
-      
+
+
+
 </p>
 $$ W_s = F_s h\\cos(180^\\circ) = (mg)(h)(-1) = -mgh $$
 <p>
@@ -4929,6 +4929,26 @@ La fuerza de gravedad que actúa sobre el objeto también es mg, pero está diri
 sentido que el desplazamiento. El trabajo realizado por la fuerza de gravedad sobre el objeto es entonces
 </p>
 $$ W_g = F_g h\\cos(0^\\circ) = (mg)(h)(1) = mgh $$
+      `,
+    },
+    {
+      enunciado: `
+      <p>
+      Una escalera de 3.0 m de longitud que pesa 200 N tiene su centro de gravedad a 120 cm del nivel inferior.
+En su parte más alta tiene un peso de 50 N. Calcule el trabajo necesario para levantar la escalera de una
+posición horizontal, sobre el piso, a una vertical.
+      </p>
+      <div class="text-center my-4">
+          <img src="/assets/6-6.jpeg" alt="Solución del ejercicio 6-6" class="img-fluid" style="max-width: 100%; height: auto;">
+        </div>
+      `,
+      solucion: `
+      <p>
+      El trabajo que se realiza (contra la gravedad) consta de dos partes: una es el trabajo para elevar el centro
+de gravedad a una altura de l.20 m y otra el trabajo para elevar el peso que se encuentra en la parte más alta
+hasta los 3.0 m. Entonces
+$$ W = (200 \\text{ N})(1.20 \\text{ m}) + (50 \\text{ N})(3.0 \\text{ m}) = 0.39 \\text{ kJ} $$
+      </p>
       `,
     },
   ],
