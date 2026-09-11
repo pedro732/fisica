@@ -4948,37 +4948,37 @@ posición horizontal, sobre el piso, a una vertical.
 de gravedad a una altura de l.20 m y otra el trabajo para elevar el peso que se encuentra en la parte más alta
 hasta los 3.0 m. Entonces
 $$ W = (200 \\text{ N})(1.20 \\text{ m}) + (50 \\text{ N})(3.0 \\text{ m}) = 0.39 \\text{ kJ} $$
-  Vamos a entregar una explicación más detallada de la solución entregada: Este ejercicio se comprende analizando el concepto de **trabajo realizado en contra de la gravedad** ($W = mg \cdot h$), el cual establece que la cantidad de trabajo necesaria para elevar un objeto no depende de la trayectoria recorrida, sino exclusivamente de la **altura vertical ($h$) que gana cada una de sus partes**.
+  Vamos a entregar una explicación más detallada de la solución entregada: Este ejercicio se comprende analizando el concepto de trabajo realizado en contra de la gravedad ($W = mg \\cdot h$), el cual establece que la cantidad de trabajo necesaria para elevar un objeto no depende de la trayectoria recorrida, sino exclusivamente de la altura vertical ($h$) que gana cada una de sus partes.
 
----
 
-**1. ¿De qué trata el ejercicio?**
+
+1. ¿De qué trata el ejercicio?
 
 Al levantar la escalera pivotando desde su base apoyada en el piso, cada sección se eleva a una altura distinta. Para simplificar el análisis físico sin tener que integrar punto por punto:
 
-* **Punto de aplicación del peso de la escalera:** La física permite concentrar todo el peso de un objeto uniforme en su **centro de gravedad (CG)**. Como el CG de la escalera está ubicado a **1.20 m** de la base, elevar la escalera completa equivale verticalmente a elevar su peso total ($200\text{ N}$) a una altura de **1.20 m**.
+Punto de aplicación del peso de la escalera: La física permite concentrar todo el peso de un objeto uniforme en su centro de gravedad (CG). Como el CG de la escalera está ubicado a 1.20 m de la base, elevar la escalera completa equivale verticalmente a elevar su peso total ($200\\text{ N}$) a una altura de 1.20 m.
 
 
-* **Masa adicional en el extremo:** El peso extra colocado en la punta ($50\text{ N}$) inicia al nivel del suelo ($0\text{ m}$) y termina en la parte más alta cuando la escalera queda totalmente vertical, alcanzando la longitud total de la escalera (**3.0 m**).
+Masa adicional en el extremo: El peso extra colocado en la punta ($50\\text{ N}$) inicia al nivel del suelo ($0\\text{ m}$) y termina en la parte más alta cuando la escalera queda totalmente vertical, alcanzando la longitud total de la escalera (3.0 m).
 
 
 
----
 
-**2. ¿Cómo se llega a la solución propuesta?**
+
+2. ¿Cómo se llega a la solución propuesta?**
 
 El trabajo total ($W$) equivale a la suma de los trabajos realizados para elevar ambos componentes en sentido vertical:
 
-$$W = W_{\text{escalera}} + W_{\text{peso superior}}$$
+$$W = W_{\\text{escalera}} + W_{\\text{peso superior}}$$
 
-$$\text{Trabajo} = (F_{\text{escalera}} \cdot h_{\text{CG}}) + (F_{\text{superior}} \cdot h_{\text{máxima}})$$
+$$\\text{Trabajo} = (F_{\\text{escalera}} \\cdot h_{\\text{CG}}) + (F_{\\text{superior}} \\cdot h_{\\text{máxima}})$$
 
-* **Trabajo para el cuerpo de la escalera:** $200\text{ N} \times 1.20\text{ m} = 240\text{ J}$
+Trabajo para el cuerpo de la escalera: $200\\text{ N} \\times 1.20\\text{ m} = 240\\text{ J}$
 
-* **Trabajo para la carga superior:** $50\text{ N} \times 3.0\text{ m} = 150\text{ J}$
+Trabajo para la carga superior: $50\\text{ N} \\times 3.0\\text{ m} = 150\\text{ J}$
 
 
-$$\text{Trabajo total} = 240\text{ J} + 150\text{ J} = 390\text{ J} = 0.39\text{ kJ}$$
+$$\\text{Trabajo total} = 240\\text{ J} + 150\\text{ J} = 390\\text{ J} = 0.39\\text{ kJ}$$
 
 
 
