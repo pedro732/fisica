@@ -4921,6 +4921,50 @@ proceso?
       <p>
 
 
+El cálculo del trabajo mecánico se fundamenta en la definición vectorial $W = F \\cdot h \\cdot \\cos(\\theta)$, donde la función coseno y la elección de los ángulos responden a la relación geométrica entre el vector fuerza y el vector desplazamiento.
+
+¿Por qué se utiliza la función trigonométrica Coseno?
+
+Componente paralela de la fuerza: El trabajo no depende del módulo total de la fuerza aplicada, sino únicamente de la porción de esa fuerza que actúa en la misma línea del movimiento. En trigonometría, al proyectar un vector fuerza $\\vec{F}$ sobre la dirección del desplazamiento $\\vec{h}$, la componente paralela es $F_\\parallel = F \\cos(\\theta)$.
+
+
+Proporción de energía transferida: La función coseno actúa como un ponderador escalar entre $-1$ y $1$:
+ Si la fuerza es perpendicular al movimiento ($\\theta = 90^\\circ$), $\\cos(90^\\circ) = 0$ y el trabajo es nulo ($W = 0$) porque no contribuye a desplazar el cuerpo.
+
+
+ Si la fuerza va en el mismo sentido ($\\theta = 0^\\circ$), $\\cos(0^\\circ) = 1$ y realiza el trabajo positivo máximo.
+
+
+ Si la fuerza se opone al sentido ($\\theta = 180^\\circ$), $\\cos(180^\\circ) = -1$ y realiza trabajo negativo.
+
+
+
+
+
+Elección de los Ángulos en el Ejercicio
+
+1. Fuerza de soporte ($W_s$)
+
+Orientación de los vectores: Para sostener un objeto durante su descenso, la fuerza de soporte $\vec{F}_s$ ejerce un tirón o empuje hacia arriba. Sin embargo, el desplazamiento $\vec{h}$ ocurre hacia abajo.
+
+
+Justificación del ángulo ($180^\\circ$): Dos vectores verticales que apuntan en sentidos opuestos forman entre sí un ángulo llano de $180^\\circ$.
+
+
+Significado físico: Al sustituir $\cos(180^\circ) = -1$, el resultado es $W_s = -mgh$. Un trabajo negativo significa que la fuerza de soporte frena el objeto o retira energía del sistema para evitar que caiga en caída libre.
+
+
+
+2. Fuerza gravitacional ($W_g$)
+
+Orientación de los vectores: La atracción de la gravedad (el peso $\\vec{F}_g = m\\vec{g}$) actúa apuntando verticalmente hacia abajo. El desplazamiento $\\vec{h}$ también ocurre hacia abajo.
+
+
+Justificación del ángulo ($0^\\circ$): Como ambos vectores tienen la misma dirección y el mismo sentido, se encuentran perfectamente alineados en paralelo, formando un ángulo de $0^\\circ$.
+
+
+Significado físico: Al sustituir $\\cos(0^\\circ) = 1$, el resultado es $W_g = mgh$. Un trabajo positivo indica que la gravedad favorece el desplazamiento y transfiere energía hacia el objeto al hacerlo bajar.
+
 
 </p>
 $$ W_s = F_s h\\cos(180^\\circ) = (mg)(h)(-1) = -mgh $$
