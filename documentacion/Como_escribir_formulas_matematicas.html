@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cómo escribir fórmulas matemáticas - Proyecto de Física</title>
+  <style>
+    @page { size: A4; margin: 17mm; }
+    :root { --ink: #1e293b; --muted: #475569; --blue: #075985; --line: #cbd5e1; --soft: #f0f9ff; --code: #f1f5f9; }
+    * { box-sizing: border-box; }
+    body { margin: 0; color: var(--ink); font-family: Georgia, "Times New Roman", serif; line-height: 1.48; font-size: 10.5pt; }
+    main { max-width: 820px; margin: 0 auto; }
+    header { border-bottom: 3px solid var(--blue); padding-bottom: 14px; margin-bottom: 20px; }
+    h1 { color: var(--blue); font-size: 24pt; line-height: 1.12; margin: 0 0 7px; }
+    h2 { color: var(--blue); font-size: 15pt; margin: 22px 0 7px; border-bottom: 1px solid var(--line); padding-bottom: 3px; }
+    h3 { color: var(--ink); font-size: 12pt; margin: 15px 0 4px; }
+    p { margin: 6px 0; }
+    .subtitle { color: var(--muted); font-size: 11.5pt; margin: 0; }
+    .box { background: var(--soft); border-left: 4px solid #0284c7; padding: 10px 13px; margin: 12px 0; }
+    code { font-family: "Courier New", monospace; font-size: .88em; background: var(--code); padding: 1px 3px; border-radius: 2px; }
+    pre { background: #0f172a; color: #e2e8f0; padding: 10px 12px; border-radius: 4px; white-space: pre-wrap; font: 8.5pt/1.35 "Courier New", monospace; page-break-inside: avoid; }
+    table { width: 100%; border-collapse: collapse; margin: 9px 0 14px; page-break-inside: avoid; }
+    th, td { border: 1px solid var(--line); padding: 6px 8px; text-align: left; vertical-align: top; }
+    th { background: var(--blue); color: white; }
+    tr:nth-child(even) td { background: #f8fafc; }
+    .formula { text-align: center; font: 14pt "Cambria Math", "Times New Roman", serif; margin: 8px 0; }
+    li { margin: 2px 0; }
+    .page-break { page-break-before: always; }
+    footer { border-top: 1px solid var(--line); margin-top: 22px; padding-top: 8px; color: var(--muted); font-size: 8.5pt; text-align: center; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Cómo escribir fórmulas matemáticas</h1>
+    <p class="subtitle">Tutorial para el contenido educativo del Proyecto de Física</p>
+  </header>
+
+  <h2>1. Dónde se escriben las fórmulas</h2>
+  <p>El proyecto usa <strong>KaTeX</strong> para convertir expresiones escritas con sintaxis <strong>LaTeX</strong> en fórmulas renderizadas en el navegador. El contenido se escribe en:</p>
+  <ul>
+    <li><code>src/assets/topicDetails.js</code>: teoría y explicaciones.</li>
+    <li><code>src/assets/exercisesData.js</code>: enunciados y soluciones.</li>
+  </ul>
+  <p>Las fórmulas se colocan dentro de las cadenas <code>content</code>, <code>enunciado</code> o <code>solucion</code>. No es necesario modificar los componentes de Vue para agregar una expresión.</p>
+
+  <h2>2. Delimitadores</h2>
+  <h3>Fórmula en línea: <code>$...$</code></h3>
+  <p>Se usa cuando la fórmula forma parte de un párrafo:</p>
+  <pre>enunciado: `
+La segunda ley de Newton se expresa como $F = ma$.
+`,</pre>
+  <p>Resultado: <span class="formula">F = ma</span></p>
+
+  <h3>Fórmula independiente: <code>$$...$$</code></h3>
+  <p>Se usa para ecuaciones que deben destacarse o centrarse:</p>
+  <pre>solucion: `
+&lt;p&gt;Aplicamos la segunda ley de Newton:&lt;/p&gt;
+$$ F = ma $$
+`,</pre>
+  <p class="formula">F = ma</p>
+  <div class="box"><strong>Regla práctica:</strong> usa <code>$...$</code> para símbolos breves dentro de una oración y <code>$$...$$</code> para pasos de cálculo o ecuaciones importantes.</div>
+
+  <h2>3. Escapar las barras en JavaScript</h2>
+  <p>Los contenidos están dentro de cadenas JavaScript. Por eso, cada comando LaTeX que comienza con una barra inversa debe escribirse con <strong>dos barras inversas</strong>:</p>
+  <pre>solucion: `
+$$ W = Fd\\cos(\\theta) $$
+`,</pre>
+  <p>KaTeX recibe finalmente <code>W = Fd\cos(\theta)</code>.</p>
+  <table>
+    <thead><tr><th>KaTeX debe recibir</th><th>En el archivo <code>.js</code></th></tr></thead>
+    <tbody>
+      <tr><td><code>\frac{a}{b}</code></td><td><code>\\frac{a}{b}</code></td></tr>
+      <tr><td><code>\sqrt{x}</code></td><td><code>\\sqrt{x}</code></td></tr>
+      <tr><td><code>\theta</code></td><td><code>\\theta</code></td></tr>
+      <tr><td><code>\text{metros}</code></td><td><code>\\text{metros}</code></td></tr>
+      <tr><td><code>\cdot</code></td><td><code>\\cdot</code></td></tr>
+    </tbody>
+  </table>
+
+  <h2>4. Sintaxis LaTeX útil para Física</h2>
+  <pre>$$ v = \\frac{\\Delta x}{\\Delta t} $$
+$$ E_c = \\frac{1}{2}mv^2 $$
+$$ v_x = v\\cos(\\theta) $$
+$$ a = \\sqrt{a_x^2 + a_y^2} $$
+$$ F = 12\\,\\text{N} $$</pre>
+  <p class="formula">v = Δx/Δt &nbsp;&nbsp;&nbsp; E<sub>c</sub> = ½mv² &nbsp;&nbsp;&nbsp; v<sub>x</sub> = v cos(θ)</p>
+  <p><code>\\sqrt{...}</code> crea raíces, <code>\\,</code> agrega espacio antes de una unidad, <code>\\text{...}</code> escribe texto normal y <code>\\cdot</code> muestra un punto de multiplicación.</p>
+
+  <h3>Letras griegas, vectores y sistemas</h3>
+  <pre>$\\alpha$, $\\beta$, $\\theta$, $\\Delta x$
+$$ \\vec{F} = m\\vec{a} $$
+$$ \\mathbf{v} = (v_x, v_y) $$</pre>
+  <p>Para varias líneas, usa <code>aligned</code> y recuerda escapar los saltos de línea:</p>
+  <pre>$$
+\\begin{aligned}
+\\sum F_x &amp;= ma_x \\\\
+\\sum F_y &amp;= ma_y
+\\end{aligned}
+$$</pre>
+
+  <h2>5. Combinar HTML y fórmulas</h2>
+  <p>El contenido admite HTML sencillo para explicar cada paso y colocar la fórmula debajo:</p>
+  <pre>solucion: `
+&lt;p&gt;El trabajo de una fuerza constante es:&lt;/p&gt;
+$$ W = Fd\\cos(\\theta) $$
+&lt;p&gt;Si tienen la misma dirección:&lt;/p&gt;
+$$ W = Fd $$
+`,</pre>
+  <p>Mantén el HTML bien formado y coloca cada ecuación independiente entre sus propios delimitadores.</p>
+
+  <h2>6. Ejemplo completo de un ejercicio</h2>
+  <pre>{
+  enunciado: `
+    &lt;p&gt;Un objeto de masa $m = 2\\,\\text{kg}$ se mueve con
+    aceleración $a = 3\\,\\text{m/s}^2$. ¿Cuál es la fuerza neta?&lt;/p&gt;
+  `,
+  solucion: `
+    &lt;p&gt;Aplicamos la segunda ley de Newton:&lt;/p&gt;
+    $$ F = ma $$
+    &lt;p&gt;Sustituyendo los valores:&lt;/p&gt;
+    $$ F = (2\\,\\text{kg})(3\\,\\text{m/s}^2) = 6\\,\\text{N} $$
+  `,
+},</pre>
+
+  <h2 class="page-break">7. Cómo comprobar una fórmula</h2>
+  <ol>
+    <li>Ejecuta <code>npm run dev</code>.</li>
+    <li>Abre el tema o ejercicio que contiene la fórmula.</li>
+    <li>Comprueba subíndices, exponentes, fracciones y símbolos.</li>
+    <li>Si aparece texto plano, revisa los delimitadores <code>$</code> y <code>$$</code>.</li>
+    <li>Si faltan símbolos, revisa las barras duplicadas en el archivo JavaScript.</li>
+    <li>Para ecuaciones largas, revisa las llaves y los paréntesis.</li>
+  </ol>
+  <p>La vista de ejercicios usa <code>throwOnError: false</code>. Cuando KaTeX no interpreta una expresión, conserva el texto problemático y registra el error en la consola del navegador.</p>
+
+  <h2>8. Errores frecuentes</h2>
+  <p><strong>Incorrecto:</strong> <code>$$ \frac{1}{2}mv^2 $$</code></p>
+  <p><strong>Correcto:</strong> <code>$$ \\frac{1}{2}mv^2 $$</code></p>
+  <p>Cada <code>$</code> debe tener su pareja y cada <code>$$</code> debe cerrarse con otro <code>$$</code>. Para unidades usa <code>\\text{N}</code>, no HTML dentro de la fórmula.</p>
+
+  <h2>9. Resumen rápido</h2>
+  <ul>
+    <li>Contenido: <code>topicDetails.js</code> o <code>exercisesData.js</code>.</li>
+    <li>En línea: <code>$...$</code>. Independiente: <code>$$...$$</code>.</li>
+    <li>Comandos LaTeX en JavaScript: <code>\\frac</code>, <code>\\sqrt</code>, <code>\\theta</code>.</li>
+    <li>Texto y unidades: <code>\\text{...}</code>.</li>
+    <li>Validación: <code>npm run dev</code>.</li>
+  </ul>
+
+  <footer>Proyecto de Física · Tutorial de fórmulas matemáticas</footer>
+</main>
+</body>
+</html>
