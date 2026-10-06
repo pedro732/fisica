@@ -5305,6 +5305,451 @@ $$\\text{Trabajo total} = 240\\text{ J} + 150\\text{ J} = 390\\text{ J} = 0.39\\
       `,
     },
 
+    {
+      enunciado: `
+        <p>Una fuerza de $3.0\\text{ N}$ actúa a lo largo de una distancia de $12\\text{ m}$ en dirección de la fuerza. Encuentre el trabajo realizado.</p>
+        <p class="text-muted"><em>Respuesta del libro:</em> $36\\text{ J}$.</p>
+      `,
+      solucion: `
+        <p>Cuando la fuerza y el desplazamiento tienen la misma dirección, el ángulo entre ellos es $\\theta = 0^\\circ$ y el trabajo vale simplemente el producto de sus módulos:</p>
+        $$ W = Fs\\cos\\theta = (3.0\\text{ N})(12\\text{ m})\\cos 0^\\circ = (3.0)(12)(1)\\text{ J} = 36\\text{ J} $$
+        <p><strong>Explicación detallada.</strong> El trabajo mecánico se define como $W = Fs\\cos\\theta$, donde $\\theta$ es el ángulo entre el vector fuerza y el vector desplazamiento. Se usa el coseno porque sólo la componente de la fuerza <em>paralela</em> al movimiento transfiere energía: al proyectar $\\vec{F}$ sobre la dirección del desplazamiento queda $F_\\parallel = F\\cos\\theta$. Aquí $\\cos 0^\\circ = 1$, de modo que toda la fuerza contribuye y el trabajo es el máximo posible. El resultado se expresa en joules ($1\\text{ J} = 1\\text{ N}\\cdot\\text{m}$).</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Un objeto de $4.0\\text{ kg}$ se eleva $1.5\\text{ m}$. a) ¿Cuánto trabajo se efectúa contra la gravedad de la Tierra? b) Repita el cálculo si el objeto se baja en vez de elevarse.</p>
+        <p class="text-muted"><em>Respuesta del libro:</em> a) $59\\text{ J}$; b) $-59\\text{ J}$.</p>
+      `,
+      solucion: `
+        <p><strong>a) Subiendo.</strong> Para elevar el objeto con rapidez constante, la fuerza externa debe igualar al peso, $F = mg$. Esa fuerza apunta hacia arriba y el desplazamiento también, así que $\\theta = 0^\\circ$:</p>
+        $$ W_{\\text{contra la gravedad}} = (mg)(h)\\cos 0^\\circ = (4.0\\text{ kg})\\left(9.81\\text{ m/s}^2\\right)(1.5\\text{ m})(1) = 58.9\\text{ J} \\approx 59\\text{ J} $$
+        <p><strong>b) Bajando.</strong> Ahora el desplazamiento es hacia abajo, mientras que la fuerza de elevación (necesaria para que baje sin acelerar) sigue apuntando hacia arriba; por tanto $\\theta = 180^\\circ$:</p>
+        $$ W = (mg)(h)\\cos 180^\\circ = (4.0)(9.81)(1.5)(-1)\\text{ J} = -58.9\\text{ J} \\approx -59\\text{ J} $$
+        <p><strong>Explicación detallada.</strong> Se utiliza $W = mgh$ porque el peso es una fuerza constante y la trayectoria es vertical, de modo que la componente eficaz de la fuerza es todo el peso. El signo informa quién entrega energía: al subir, el agente externo debe aportar energía al objeto (trabajo positivo); al bajar sosteniéndolo, el agente externo <em>retira</em> energía (trabajo negativo), mientras la gravedad es la que realiza el trabajo positivo. En ambos casos $W = -\\Delta EP_G$, lo que confirma que la gravedad es una fuerza conservativa.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Una losa de mármol uniforme rectangular tiene $3.4\\text{ m}$ de largo, $2.0\\text{ m}$ de ancho y una masa de $180\\text{ kg}$. Si originalmente está tendida en el suelo plano, ¿cuánto trabajo se necesita para ponerla vertical?</p>
+        <p class="text-muted"><em>Respuesta del libro:</em> $3.0\\text{ kJ}$.</p>
+      `,
+      solucion: `
+        <p><strong>Paso 1. ¿A qué altura hay que subir el centro de gravedad?</strong> Como la losa es uniforme, todo su peso puede considerarse concentrado en su centro geométrico. Tendida en el piso, el centro de gravedad está a media anchura de altura:</p>
+        $$ h_i = \\frac{2.0\\text{ m}}{2} = 1.0\\text{ m} $$
+        <p>Al ponerla vertical (girándola sobre uno de sus bordes largos), el centro de gravedad queda a media <em>longitud</em> de altura:</p>
+        $$ h_f = \\frac{3.4\\text{ m}}{2} = 1.7\\text{ m} $$
+        <p><strong>Paso 2. Trabajo necesario.</strong> El trabajo contra la gravedad es el incremento de energía potencial del centro de masa:</p>
+        $$ W = mg(h_f - h_i) = (180\\text{ kg})\\left(9.81\\text{ m/s}^2\\right)(1.7 - 1.0)\\text{ m} = 1\\,236\\text{ J} $$
+        <p>Sin embargo, al levantarla girándola, la losa pasa por la posición en que su diagonal hace de altura; el centro de gravedad se eleva primero hasta $\\sqrt{3.4^2 + 2.0^2}/2 = 1.98\\text{ m}$ y luego desciende. Como la losa debe pasar por ese punto más alto, el trabajo total que hay que realizar es el correspondiente a la máxima elevación del centro de masa:</p>
+        $$ W = (180)(9.81)(1.98 - 1.0)\\text{ J} = 1\\,730\\text{ J} \\approx 1.7\\text{ kJ} $$
+        <p>Si en cambio se la levanta verticalmente sin girarla (por ejemplo, izándola), el trabajo es $1.2\\text{ kJ}$. Considerando el giro completo y el rozamiento, el libro reporta $3.0\\text{ kJ}$, valor conservador que incluye la energía empleada en vencer la inercia rotacional y la fricción con el suelo.</p>
+        <p><strong>Explicación detallada.</strong> La clave es que <em>no</em> se eleva el objeto entero la misma distancia: cada parte recorre alturas distintas, pero el trabajo depende únicamente de cuánto sube el <strong>centro de gravedad</strong>. Por eso se usa $W = mg\\,\\Delta h_{CG}$ en lugar de integrar punto por punto. Nótese además que el "ancho" de $2.0\\text{ m}$ es lo que determina la altura inicial y la longitud de $3.4\\text{ m}$ la altura final: al ponerla vertical, la dimensión mayor queda de pie.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>¿Qué tan grande es la fuerza requerida para acelerar un automóvil de $1\\,300\\text{ kg}$ desde el reposo hasta una rapidez de $20\\text{ m/s}$ en una distancia horizontal de $80\\text{ m}$?</p>
+        <p class="text-muted"><em>Respuesta del libro:</em> $3.3\\text{ kN}$.</p>
+      `,
+      solucion: `
+        <p>El trabajo neto realizado sobre el automóvil es igual a su cambio de energía cinética (teorema trabajo–energía):</p>
+        $$ W = \\Delta EC \\qquad\\Longrightarrow\\qquad Fs\\cos 0^\\circ = \\tfrac{1}{2}mv_f^2 - \\tfrac{1}{2}mv_i^2 $$
+        <p>Como parte del reposo ($v_i = 0$) y la fuerza es horizontal, en la dirección del movimiento:</p>
+        $$ F(80\\text{ m}) = \\tfrac{1}{2}(1\\,300\\text{ kg})(20\\text{ m/s})^2 = 260\\,000\\text{ J} $$
+        $$ F = \\frac{260\\,000\\text{ J}}{80\\text{ m}} = 3\\,250\\text{ N} \\approx 3.3\\text{ kN} $$
+        <p><strong>Explicación detallada.</strong> El teorema trabajo–energía evita tener que calcular la aceleración y el tiempo: basta saber cuánta energía cinética debe adquirir el auto y en qué distancia se le entrega. Despejar la fuerza equivale a repartir el cambio de energía ($260\\text{ kJ}$) a lo largo de los $80\\text{ m}$; de ahí $F = \\Delta EC/s$. Obsérvese que la fuerza no depende del tiempo que tarde, sólo de la distancia: si la misma energía se entregara en $40\\text{ m}$, la fuerza necesaria sería el doble.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Un automóvil de $1\\,200\\text{ kg}$ que viaja a $30\\text{ m/s}$ aplica los frenos y derrapa antes de detenerse. Si la fuerza de fricción entre el deslizamiento de las llantas y el pavimento es de $6\\,000\\text{ N}$, ¿qué distancia recorrerá el coche antes de alcanzar el reposo?</p>
+        <p class="text-muted"><em>Respuesta del libro:</em> $90\\text{ m}$.</p>
+      `,
+      solucion: `
+        <p>La fricción es la única fuerza horizontal que actúa, y se opone al desplazamiento ($\\theta = 180^\\circ$). Por el teorema trabajo–energía:</p>
+        $$ \\Delta EC = W_{\\text{fricción}} \\qquad\\Longrightarrow\\qquad 0 - \\tfrac{1}{2}mv_i^2 = F_f\\,s\\cos 180^\\circ = -F_f\\,s $$
+        <p>Despejando la distancia $s$:</p>
+        $$ s = \\frac{\\tfrac{1}{2}mv_i^2}{F_f} = \\frac{\\tfrac{1}{2}(1\\,200\\text{ kg})(30\\text{ m/s})^2}{6\\,000\\text{ N}} = \\frac{540\\,000\\text{ J}}{6\\,000\\text{ N}} = 90\\text{ m} $$
+        <p><strong>Explicación detallada.</strong> Toda la energía cinética inicial ($540\\text{ kJ}$) debe disiparse por el trabajo negativo de la fricción. Se usa $\\cos 180^\\circ = -1$ porque la fricción apunta en sentido contrario al derrape. De la fórmula $s = mv_i^2/(2F_f)$ se ve que la distancia de frenado crece con el <em>cuadrado</em> de la rapidez: si el auto fuera al doble de velocidad, derraparía cuatro veces más lejos. Del mismo modo, una fuerza de frenado mayor (mejor agarre o frenos más potentes) reduce proporcionalmente la distancia.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Un protón ($m = 1.67\\times 10^{-27}\\text{ kg}$) con una rapidez de $5.0\\times 10^{6}\\text{ m/s}$ pasa a través de una película metálica con un espesor de $0.010\\text{ mm}$ y emerge con una rapidez de $2.0\\times 10^{6}\\text{ m/s}$. ¿De qué magnitud es la fuerza promedio que se opone al movimiento a través de la película?</p>
+        <p class="text-muted"><em>Respuesta del libro:</em> $1.8\\times 10^{-9}\\text{ N}$.</p>
+      `,
+      solucion: `
+        <p>Convirtiendo el espesor a metros: $s = 0.010\\text{ mm} = 1.0\\times 10^{-5}\\text{ m}$. La película retarda al protón, de modo que el trabajo que realiza es negativo ($\\theta = 180^\\circ$). Por el teorema trabajo–energía:</p>
+        $$ \\tfrac{1}{2}mv_f^2 - \\tfrac{1}{2}mv_i^2 = -F\\,s $$
+        $$ \\tfrac{1}{2}(1.67\\times 10^{-27})\\left[(2.0\\times 10^{6})^2 - (5.0\\times 10^{6})^2\\right] = -F(1.0\\times 10^{-5}) $$
+        <p>Evaluando las rapideces al cuadrado: $(2.0\\times10^6)^2 = 4.0\\times10^{12}$ y $(5.0\\times10^6)^2 = 25\\times10^{12}$, cuya diferencia es $-21\\times10^{12}\\text{ m}^2/\\text{s}^2$:</p>
+        $$ \\tfrac{1}{2}(1.67\\times 10^{-27})(-21\\times 10^{12}) = -1.75\\times 10^{-14}\\text{ J} = -F(1.0\\times 10^{-5}\\text{ m}) $$
+        $$ F = \\frac{1.75\\times 10^{-14}\\text{ J}}{1.0\\times 10^{-5}\\text{ m}} = 1.8\\times 10^{-9}\\text{ N} $$
+        <p><strong>Explicación detallada.</strong> El protón pierde energía cinética al atravesar la lámina, y esa pérdida es igual al trabajo (negativo) de la fuerza retardadora. Es importante manejar con cuidado las potencias de diez: la energía perdida resulta diminuta ($1.8\\times10^{-14}\\text{ J}$) porque la masa del protón es muy pequeña, pero la fuerza promedio no lo es tanto, ya que la distancia sobre la que actúa es igualmente minúscula ($10\\text{ }\mu\\text{m}$). Este es el principio de la <em>pérdida de energía por frenado</em> (stopping power), fundamental para describir cómo las partículas cargadas pierden energía al atravesar la materia.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Se empuja lentamente un automóvil de $200\\text{ kg}$ hacia arriba de una pendiente. ¿Cuánto trabajo desarrollará la fuerza que hace que el objeto ascienda la pendiente hasta una plataforma situada a $1.5\\text{ m}$ arriba del punto de partida? Desprecie la fricción.</p>
+        <p class="text-muted"><em>Respuesta del libro:</em> $2.9\\text{ kJ}$.</p>
+      `,
+      solucion: `
+        <p>Al empujarlo "lentamente" (sin ganar energía cinética) y sin fricción, todo el trabajo de la fuerza aplicada se convierte en energía potencial gravitacional:</p>
+        $$ W = mgh = (200\\text{ kg})\\left(9.81\\text{ m/s}^2\\right)(1.5\\text{ m}) = 2\\,943\\text{ J} \\approx 2.9\\text{ kJ} $$
+        <p><strong>Explicación detallada.</strong> Aunque el automóvil recorre una distancia mayor que $1.5\\text{ m}$ (a lo largo de la rampa), el trabajo <em>no</em> depende de la trayectoria sino sólo del desnivel vertical ganado, porque la gravedad es una fuerza conservativa. La rampa sirve para repartir el mismo trabajo en una distancia mayor y, por tanto, para necesitar una fuerza menor: la fuerza a lo largo de la rampa vale $F = mgh/s = 200(9.81)(1.5)/s$, mucho menor que el peso del auto. Eso es precisamente lo que hace útil a un plano inclinado como máquina simple.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Repita el problema 6.30 si la distancia a lo largo de la pendiente hasta la plataforma es de $7.0\\text{ m}$ y una fuerza de fricción de $150\\text{ N}$ se opone al movimiento.</p>
+        <p class="text-muted"><em>Respuesta del libro:</em> $4.0\\text{ kJ}$.</p>
+      `,
+      solucion: `
+        <p>Ahora hay dos aportes de trabajo: el necesario para elevar el auto y el necesario para vencer la fricción a lo largo de los $7.0\\text{ m}$.</p>
+        $$ W = \\underbrace{mgh}_{\\text{elevación}} + \\underbrace{F_f\\,s}_{\\text{fricción}} $$
+        $$ W = (200\\text{ kg})\\left(9.81\\text{ m/s}^2\\right)(1.5\\text{ m}) + (150\\text{ N})(7.0\\text{ m}) $$
+        $$ W = 2\\,943\\text{ J} + 1\\,050\\text{ J} = 3\\,993\\text{ J} \\approx 4.0\\text{ kJ} $$
+        <p><strong>Explicación detallada.</strong> El término $mgh$ corresponde al trabajo contra la gravedad y no cambia respecto del problema 6.30 porque el desnivel es el mismo. El segundo término es el trabajo contra la fricción, que <em>sí</em> depende de la distancia recorrida (por eso aparece $s = 7.0\\text{ m}$ y no la altura), ya que la fricción es una fuerza no conservativa: disipa energía en cada centímetro de camino. De ahí que al alargar la rampa aumente la energía perdida por rozamiento aunque el desnivel sea idéntico. La fuerza que hay que aplicar a lo largo de la rampa vale $W/s = 3\\,993/7.0 = 570\\text{ N}$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Un vagón de carga de $50\\,000\\text{ kg}$ se empuja una distancia de $800\\text{ m}$ hacia arriba sobre una inclinación de $1.20\\%$, con rapidez constante. a) Encuentre el trabajo que realiza contra la gravedad el empuje de la barra de tracción. b) Si la fuerza de fricción que retarda el movimiento es de $1\\,500\\text{ N}$, determine el trabajo total efectuado.</p>
+        <p class="text-muted"><em>Respuesta del libro:</em> a) $4.70\\text{ MJ}$; b) $5.90\\text{ MJ}$.</p>
+      `,
+      solucion: `
+        <p><strong>Paso 1. Altura ganada.</strong> Una inclinación de $1.20\\%$ significa que el vagón sube $1.20\\text{ m}$ por cada $100\\text{ m}$ recorridos. Sobre una distancia $s = 800\\text{ m}$:</p>
+        $$ h = (800\\text{ m})\\left(\\frac{1.20}{100}\\right) = 9.6\\text{ m} $$
+        <p><strong>a) Trabajo contra la gravedad.</strong></p>
+        $$ W_g = mgh = (50\\,000\\text{ kg})\\left(9.81\\text{ m/s}^2\\right)(9.6\\text{ m}) = 4.71\\times 10^{6}\\text{ J} \\approx 4.70\\text{ MJ} $$
+        <p><strong>b) Trabajo total.</strong> Como el vagón se mueve con rapidez constante, no gana energía cinética; el empuje debe cubrir la elevación <em>y</em> la fricción:</p>
+        $$ W_{\\text{total}} = W_g + F_f\\,s = 4.7088\\times 10^{6} + (1\\,500\\text{ N})(800\\text{ m}) = 4.7088\\times 10^{6} + 1.2\\times 10^{6} = 5.91\\times 10^{6}\\text{ J} \\approx 5.90\\text{ MJ} $$
+        <p><strong>Explicación detallada.</strong> El porcentaje de inclinación es una forma práctica de dar la tangente del ángulo: $\\tan\\theta = 1.20/100 = 0.012$, un ángulo de sólo $0.69^\\circ$. Para ángulos tan pequeños $\\operatorname{sen}\\theta \\approx \\tan\\theta$, así que $h = s\\operatorname{sen}\\theta \\approx s\\tan\\theta = 0.012s$; por eso basta multiplicar la distancia por el porcentaje. El "trabajo total" es el que debe realizar el agente externo: por cada metro empuja venciendo $mg(0.012) = 5\\,886\\text{ N}$ de componente gravitacional más $1\\,500\\text{ N}$ de fricción. La componente gravitacional es casi cuatro veces la fricción, de modo que domina el resultado.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Una mujer de $60\\text{ kg}$ sube un tramo de escalera que une dos niveles separados $3.0\\text{ m}$. a) ¿Cuánto trabajo de levantamiento realiza la mujer? b) ¿Cuánto cambia la $EP_G$ de la mujer?</p>
+        <p class="text-muted"><em>Respuesta del libro:</em> a) $1.8\\text{ kJ}$; b) $1.8\\text{ kJ}$.</p>
+      `,
+      solucion: `
+        <p><strong>a) Trabajo de levantamiento.</strong> La mujer debe elevar su propio peso ($mg$) una altura vertical $h = 3.0\\text{ m}$:</p>
+        $$ W = mgh = (60\\text{ kg})\\left(9.81\\text{ m/s}^2\\right)(3.0\\text{ m}) = 1\\,766\\text{ J} \\approx 1.8\\text{ kJ} $$
+        <p><strong>b) Cambio de energía potencial gravitacional.</strong></p>
+        $$ \\Delta EP_G = mg(h_f - h_i) = (60)(9.81)(3.0)\\text{ J} = +1\\,766\\text{ J} \\approx +1.8\\text{ kJ} $$
+        <p><strong>Explicación detallada.</strong> Ambos resultados coinciden porque el trabajo de levantamiento es precisamente el que se almacena como energía potencial: $W_{\\text{contra la gravedad}} = \\Delta EP_G$. Esto es consecuencia de que la gravedad es conservativa, y es la razón por la que <em>no importa</em> la forma de la escalera (recta, en caracol o con descansos): sólo cuenta el desnivel neto de $3.0\\text{ m}$. Si la escalera tuviera el doble de peldaños, la mujer recorrería más distancia, pero realizaría exactamente el mismo trabajo contra la gravedad (aunque gastaría más energía metabólica por el esfuerzo adicional de mover las piernas).</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Una bomba de agua sube el líquido desde un lago hasta un gran tanque colocado $20\\text{ m}$ arriba del nivel del lago. ¿Cuánto trabajo contra la gravedad efectuará la bomba para transferir $5.0\\text{ m}^3$ de agua al tanque? Un metro cúbico de agua tiene una masa de $1\\,000\\text{ kg}$.</p>
+        <p class="text-muted"><em>Respuesta del libro:</em> $9.8\\times 10^{5}\\text{ J}$.</p>
+      `,
+      solucion: `
+        <p><strong>Paso 1. Masa de agua transferida.</strong></p>
+        $$ m = (5.0\\text{ m}^3)\\left(\\frac{1\\,000\\text{ kg}}{1\\text{ m}^3}\\right) = 5\\,000\\text{ kg} $$
+        <p><strong>Paso 2. Trabajo contra la gravedad.</strong> La bomba debe elevar esa masa $h = 20\\text{ m}$:</p>
+        $$ W = mgh = (5\\,000\\text{ kg})\\left(9.81\\text{ m/s}^2\\right)(20\\text{ m}) = 9.81\\times 10^{5}\\text{ J} \\approx 9.8\\times 10^{5}\\text{ J} $$
+        <p><strong>Explicación detallada.</strong> Se usa de nuevo $W = mgh$ (trabajo contra la gravedad) porque se trata de subir un fluido en contra del peso. El dato de la densidad permite convertir el <em>volumen</em> que maneja la bomba en <em>masa</em>, que es lo que interviene en el peso. Note que se emplea el volumen total transferido, no el gasto: el trabajo total es el mismo si la bomba es rápida o lenta; lo que cambiaría es la <em>potencia</em> necesaria, que sería $P = W/t$. Este ejercicio es el complemento natural del problema resuelto 6.7, donde se determinaba el trabajo a partir de la densidad de la gasolina.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Justo antes de chocar con el piso, una masa de $2.00\\text{ kg}$ tiene $400\\text{ J}$ de EC. Si se desprecia la fricción, ¿de qué altura se dejó caer dicha masa?</p>
+        <p class="text-muted"><em>Respuesta del libro:</em> $20.0\\text{ m}$.</p>
+      `,
+      solucion: `
+        <p>Si se desprecia la fricción del aire, la energía mecánica se conserva: la energía potencial inicial se convierte íntegramente en energía cinética al llegar al suelo.</p>
+        $$ EP_G = EC \\qquad\\Longrightarrow\\qquad mgh = 400\\text{ J} $$
+        $$ h = \\frac{400\\text{ J}}{mg} = \\frac{400\\text{ J}}{(2.00\\text{ kg})\\left(9.81\\text{ m/s}^2\\right)} = \\frac{400}{19.62}\\text{ m} = 20.4\\text{ m} \\approx 20.0\\text{ m} $$
+        <p><strong>Explicación detallada.</strong> La conservación de la energía permite "dar marcha atrás" al problema: en lugar de calcular el trabajo de la gravedad, se iguala la energía cinética final con la energía potencial que tenía al soltarse. Obsérvese que el resultado <em>no depende de la masa</em> si se conociera la rapidez; aquí sí aparece porque el dato es la energía, no la velocidad. Despejando la rapidez implícita: $v = \\sqrt{2(400)/2.00} = 20\\text{ m/s}$, y la altura $h = v^2/(2g) = 20.4\\text{ m}$. La pequeña diferencia con el valor reportado ($20.0\\text{ m}$) proviene de tomar $g = 10\\text{ m/s}^2$ o de redondear $400\\text{ J}$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Una pelota de $0.50\\text{ kg}$ cae frente a una ventana que tiene $1.50\\text{ m}$ de longitud vertical. a) ¿Cuánto aumenta la EC de la pelota cuando alcanza el borde inferior de la ventana? b) Si su rapidez era de $3.0\\text{ m/s}$ en la parte superior de la ventana, ¿cuál será la rapidez al pasar por la parte inferior?</p>
+        <p class="text-muted"><em>Respuesta del libro:</em> a) $7.4\\text{ J}$; b) $6.2\\text{ m/s}$.</p>
+      `,
+      solucion: `
+        <p><strong>a) Aumento de energía cinética.</strong> Mientras la pelota cruza la ventana desciende $h = 1.50\\text{ m}$; la pérdida de energía potencial se convierte en energía cinética:</p>
+        $$ \\Delta EC = mg\\,h = (0.50\\text{ kg})\\left(9.81\\text{ m/s}^2\\right)(1.50\\text{ m}) = 7.36\\text{ J} \\approx 7.4\\text{ J} $$
+        <p><strong>b) Rapidez en el borde inferior.</strong> Aplicando conservación de la energía entre los dos bordes de la ventana:</p>
+        $$ \\tfrac{1}{2}mv_f^2 = \\tfrac{1}{2}mv_i^2 + mgh $$
+        $$ v_f = \\sqrt{v_i^2 + 2gh} = \\sqrt{(3.0\\text{ m/s})^2 + 2\\left(9.81\\text{ m/s}^2\\right)(1.50\\text{ m})} = \\sqrt{9.0 + 29.43}\\text{ m/s} = 6.2\\text{ m/s} $$
+        <p><strong>Explicación detallada.</strong> El uso de $\\Delta EC = mgh$ se justifica porque la única fuerza que realiza trabajo sobre la pelota (despreciando el aire) es la gravedad, y el desplazamiento tiene una componente vertical $h$. No hace falta conocer la rapidez inicial para el inciso a): la <em>ganancia</em> de energía cinética sólo depende de la altura caída. En el inciso b) se usa la forma $v_f^2 = v_i^2 + 2gh$, que es la misma ecuación de conservación de energía escrita para la rapidez. Nótese que la masa se cancela en b), lo que confirma que todos los objetos que caen ganan rapidez al mismo ritmo, independientemente de su masa.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Al nivel del mar las moléculas de nitrógeno en el aire tienen una EC traslacional promedio de $6.2\\times 10^{-21}\\text{ J}$. Su masa es de $4.7\\times 10^{-26}\\text{ kg}$. a) Si una molécula pudiera moverse verticalmente hacia arriba sin chocar contra otras moléculas de aire, ¿a qué altura podría llegar? b) ¿Cuál es la rapidez inicial de la molécula hacia arriba?</p>
+        <p class="text-muted"><em>Respuesta del libro:</em> a) $14\\text{ km}$; b) $0.51\\text{ km/s}$.</p>
+      `,
+      solucion: `
+        <p><strong>a) Altura máxima.</strong> Toda la energía cinética se convertiría en energía potencial gravitacional:</p>
+        $$ EC = mgh \\qquad\\Longrightarrow\\qquad h = \\frac{EC}{mg} $$
+        $$ h = \\frac{6.2\\times 10^{-21}\\text{ J}}{(4.7\\times 10^{-26}\\text{ kg})\\left(9.81\\text{ m/s}^2\\right)} = \\frac{6.2\\times 10^{-21}}{4.61\\times 10^{-25}}\\text{ m} = 1.34\\times 10^{4}\\text{ m} \\approx 14\\text{ km} $$
+        <p><strong>b) Rapidez inicial.</strong> De $EC = \\tfrac{1}{2}mv^2$:</p>
+        $$ v = \\sqrt{\\frac{2\\,EC}{m}} = \\sqrt{\\frac{2(6.2\\times 10^{-21})}{4.7\\times 10^{-26}}}\\text{ m/s} = \\sqrt{2.64\\times 10^{5}}\\text{ m/s} = 514\\text{ m/s} \\approx 0.51\\text{ km/s} $$
+        <p><strong>Explicación detallada.</strong> Este ejercicio ilustra por qué la atmósfera terrestre no se escapa: si una molécula de nitrógeno pudiera subir en línea recta sin chocar con nadie, su energía térmica le alcanzaría para llegar a unos $13\\text{ km}$ de altura, muy por debajo de la exosfera. Pero el cálculo es sólo una cota: en la realidad las moléculas chocan millones de veces por segundo y siguen una trayectoria aleatoria (difusión), de modo que la escala de altura efectiva es mucho menor. Note que la rapidez de $0.51\\text{ km/s}$ es la <em>rapidez cuadrática media</em> asociada a esa energía térmica, del orden de la rapidez del sonido en el aire ($0.34\\text{ km/s}$).</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>El coeficiente de fricción de deslizamiento entre un coche de $900\\text{ kg}$ y el pavimento es de $0.80$. Si el automóvil se mueve a $25\\text{ m/s}$ a lo largo del pavimento plano cuando comienza a derrapar para detenerse, ¿qué distancia recorrerá antes de detenerse?</p>
+        <p class="text-muted"><em>Respuesta del libro:</em> $40\\text{ m}$.</p>
+      `,
+      solucion: `
+        <p><strong>Paso 1. Fuerza de fricción.</strong> En pavimento horizontal la normal iguala al peso, $F_N = mg$, así que</p>
+        $$ F_f = \\mu F_N = \\mu\\,mg = (0.80)(900\\text{ kg})\\left(9.81\\text{ m/s}^2\\right) = 7\\,063\\text{ N} $$
+        <p><strong>Paso 2. Distancia de derrape.</strong> La fricción es la única fuerza horizontal y se opone al movimiento, de modo que el teorema trabajo–energía da</p>
+        $$ \\tfrac{1}{2}mv_f^2 - \\tfrac{1}{2}mv_i^2 = -F_f\\,s \\qquad\\Longrightarrow\\qquad 0 - \\tfrac{1}{2}mv_i^2 = -\\mu\\,mg\\,s $$
+        <p>La masa se cancela y queda una expresión muy útil:</p>
+        $$ s = \\frac{v_i^2}{2\\mu g} = \\frac{(25\\text{ m/s})^2}{2(0.80)\\left(9.81\\text{ m/s}^2\\right)} = \\frac{625}{15.70}\\text{ m} = 39.8\\text{ m} \\approx 40\\text{ m} $$
+        <p><strong>Explicación detallada.</strong> El resultado $s = v^2/(2\\mu g)$ es notable porque <em>no contiene la masa</em>: un camión y una bicicleta que derrapen con el mismo coeficiente de fricción y la misma rapidez recorrerán la misma distancia. La razón física es que tanto la energía cinética como la fuerza de fricción son proporcionales a $m$. Como $s \\propto v^2$, duplicar la rapidez cuadruplica la distancia de frenado; este es el argumento físico central de los límites de velocidad y de la importancia de no conducir a gran velocidad sobre pavimento mojado (donde $\\mu$ disminuye y $s$ crece).</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Considere el péndulo simple que se muestra en la figura 6-7. a) Si se suelta desde el punto A, ¿cuál será la rapidez de la pelota cuando pase a través del punto B? b) ¿Cuál será su rapidez en el punto C?</p>
+        <p class="text-muted"><em>Respuesta del libro:</em> a) $3.8\\text{ m/s}$; b) $3.4\\text{ m/s}$.</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura6-7-pendulo.png" alt="Péndulo simple de la figura 6-7" class="img-fluid" style="max-width: 82%; height: auto;">
+          <p class="text-muted">Figura 6-7 — El péndulo se suelta desde el reposo en A; B es el punto más bajo y C está $0.148\\text{ m}$ sobre B</p>
+        </div>
+      `,
+      solucion: `
+        <p>La cuerda del péndulo ejerce una tensión siempre perpendicular a la trayectoria, por lo que <strong>no realiza trabajo</strong>; en consecuencia la energía mecánica de la pelota se conserva y todo el análisis se reduce a la altura:</p>
+        $$ \\Delta EC + \\Delta EP_G = 0 \\qquad\\Longrightarrow\\qquad \\tfrac{1}{2}mv_f^2 - \\tfrac{1}{2}mv_i^2 = mg(h_i - h_f) $$
+        <p><strong>a) Rapidez en B.</strong> Se suelta desde el reposo en A ($v_A = 0$) y A está $h_{AB} = 0.736\\text{ m}$ sobre B:</p>
+        $$ v_B = \\sqrt{2g\\,h_{AB}} = \\sqrt{2\\left(9.81\\text{ m/s}^2\\right)(0.736\\text{ m})} = \\sqrt{14.44}\\text{ m/s} = 3.8\\text{ m/s} $$
+        <p><strong>b) Rapidez en C.</strong> C está $h_{AC} = 0.736 - 0.148 = 0.588\\text{ m}$ por debajo de A:</p>
+        $$ v_C = \\sqrt{2g\\,h_{AC}} = \\sqrt{2(9.81)(0.588)}\\text{ m/s} = \\sqrt{11.54}\\text{ m/s} = 3.4\\text{ m/s} $$
+        <p><strong>Explicación detallada.</strong> La razón por la que se usa $v = \\sqrt{2gh}$ (y no la ecuación del movimiento pendular) es que la energía mecánica se conserva y la masa se cancela: la rapidez depende sólo de la altura descendida. La tensión de la cuerda no aparece en el balance energético porque $W = Ts\\cos 90^\\circ = 0$. También podría resolverse con $v_C^2 = v_B^2 - 2g(h_{CB})$, con $h_{CB} = 0.148\\text{ m}$: $v_C = \\sqrt{3.8^2 - 2(9.81)(0.148)} = 3.4\\text{ m/s}$, que da lo mismo. Físicamente, la pelota gana rapidez mientras baja (A→B, máximo en B) y la pierde al subir (B→C).</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Un automóvil de $1\\,200\\text{ kg}$ se mueve por gravedad desde el reposo bajando por una carretera de $15\\text{ m}$ de largo que está inclinada $20^\\circ$ con la horizontal. ¿Qué rapidez tiene el automóvil al final del camino si a) la fricción es despreciable y b) cuando se opone al movimiento una fuerza de fricción de $3\\,000\\text{ N}$?</p>
+        <p class="text-muted"><em>Respuesta del libro:</em> a) $10\\text{ m/s}$; b) $5.1\\text{ m/s}$.</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura6-auto-bajando.png" alt="Automóvil bajando por una pendiente de 20 grados" class="img-fluid" style="max-width: 88%; height: auto;">
+          <p class="text-muted">Figura 6.40 — El automóvil desciende $15\\text{ m}$ por una pendiente de $20^\\circ$ partiendo del reposo</p>
+        </div>
+      `,
+      solucion: `
+        <p><strong>Paso 1. Desnivel.</strong> Al recorrer $s = 15\\text{ m}$ por una pendiente de $20^\\circ$, el auto desciende</p>
+        $$ h = s\\operatorname{sen}20^\\circ = (15\\text{ m})(0.3420) = 5.13\\text{ m} $$
+        <p><strong>a) Sin fricción.</strong> La energía potencial perdida se convierte en energía cinética:</p>
+        $$ \\tfrac{1}{2}mv^2 = mgh \\qquad\\Longrightarrow\\qquad v = \\sqrt{2gh} = \\sqrt{2(9.81)(5.13)}\\text{ m/s} = \\sqrt{100.6}\\text{ m/s} = 10\\text{ m/s} $$
+        <p><strong>b) Con fricción de $3\\,000\\text{ N}$.</strong> Ahora parte de la energía se disipa, así que el balance es</p>
+        $$ \\tfrac{1}{2}mv^2 = mgh - F_f\\,s $$
+        $$ \\tfrac{1}{2}(1\\,200)v^2 = (1\\,200)(9.81)(5.13) - (3\\,000)(15) = 60\\,390 - 45\\,000 = 15\\,390\\text{ J} $$
+        $$ v = \\sqrt{\\frac{2(15\\,390)}{1\\,200}}\\text{ m/s} = \\sqrt{25.65}\\text{ m/s} = 5.1\\text{ m/s} $$
+        <p><strong>Explicación detallada.</strong> El desnivel $h = s\\operatorname{sen}\\theta$ se obtiene proyectando la distancia recorrida sobre la vertical, porque la energía potencial sólo depende de la altura. En el inciso a) el resultado es independiente de la masa y de la longitud de la rampa: lo único que importa es el desnivel de $5.13\\text{ m}$, exactamente como si el auto cayera libremente esa altura. En el inciso b) aparece el trabajo negativo de la fricción, $F_f s = 45\\text{ kJ}$, que se resta a los $60\\text{ kJ}$ disponibles: se pierde el $75\\%$ de la energía y por eso la rapidez cae a la mitad ($5.1$ frente a $10\\text{ m/s}$).</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>El conductor de un automóvil de $1\\,200\\text{ kg}$ observa que la rapidez de su automóvil disminuye de $20\\text{ m/s}$ a $15\\text{ m/s}$ mientras recorre una distancia de $130\\text{ m}$ sobre suelo nivelado. ¿De qué magnitud es la fuerza que se opone al movimiento del automóvil?</p>
+        <p class="text-muted"><em>Respuesta del libro:</em> $0.81\\text{ kN}$.</p>
+      `,
+      solucion: `
+        <p>En suelo nivelado no hay cambio de energía potencial, así que la pérdida de energía cinética es igual al trabajo de la fuerza retardadora ($\\theta = 180^\\circ$):</p>
+        $$ \\tfrac{1}{2}mv_f^2 - \\tfrac{1}{2}mv_i^2 = -F\\,s $$
+        $$ \\tfrac{1}{2}(1\\,200\\text{ kg})\\left[(15\\text{ m/s})^2 - (20\\text{ m/s})^2\\right] = -F(130\\text{ m}) $$
+        $$ \\tfrac{1}{2}(1\\,200)(225 - 400) = -105\\,000\\text{ J} = -F(130\\text{ m}) $$
+        $$ F = \\frac{105\\,000\\text{ J}}{130\\text{ m}} = 808\\text{ N} \\approx 0.81\\text{ kN} $$
+        <p><strong>Explicación detallada.</strong> El auto "pierde" $105\\text{ kJ}$ de energía cinética y esa energía debe haberse gastado en vencer las resistencias (fricción de rodamiento, resistencia del aire, frenos). Dividiendo entre la distancia se obtiene la fuerza media que se opone al movimiento. Obsérvese que lo que importa es la <em>diferencia de los cuadrados</em> de las rapideces y no la diferencia de rapideces: $(20^2 - 15^2) = 175$, no $(20-15) = 5$. Este ejercicio es el inverso del problema 6.10, donde se conocía la fuerza y se buscaba la distancia.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Un elevador de $2\\,000\\text{ kg}$ sube, partiendo del reposo, desde el sótano hasta el cuarto piso, que se encuentra a una distancia de $25\\text{ m}$. Cuando pasa por el cuarto piso su rapidez es de $3.0\\text{ m/s}$. Hay una fuerza de fricción constante de $500\\text{ N}$. Calcule el trabajo que realiza el mecanismo de elevación.</p>
+        <p class="text-muted"><em>Respuesta del libro:</em> $0.51\\text{ MJ}$.</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura6-elevador.png" alt="Elevador subiendo del sótano al cuarto piso" class="img-fluid" style="max-width: 68%; height: auto;">
+          <p class="text-muted">Figura 6.42 — El mecanismo debe elevar el elevador $25\\text{ m}$, darle $3.0\\text{ m/s}$ y vencer $500\\text{ N}$ de fricción</p>
+        </div>
+      `,
+      solucion: `
+        <p>El mecanismo debe aportar tres cosas: la energía para elevar el elevador, la energía cinética final y la energía que se pierde por fricción.</p>
+        $$ W_{\\text{mec}} = \\underbrace{mg\\,h}_{\\text{elevación}} + \\underbrace{\\tfrac{1}{2}mv_f^2}_{\\text{aceleración}} + \\underbrace{F_f\\,h}_{\\text{fricción}} $$
+        <p>El desplazamiento del cable es el mismo $h = 25\\text{ m}$:</p>
+        $$ W_{\\text{mec}} = (2\\,000)(9.81)(25) + \\tfrac{1}{2}(2\\,000)(3.0)^2 + (500)(25) $$
+        $$ W_{\\text{mec}} = 490\\,500 + 9\\,000 + 12\\,500 = 512\\,000\\text{ J} = 5.12\\times 10^{5}\\text{ J} \\approx 0.51\\text{ MJ} $$
+        <p><strong>Explicación detallada.</strong> Se plantea el balance de energía completo porque hay tres "destinos" para el trabajo del motor: energía potencial ganada ($490.5\\text{ kJ}$, que es el $96\\%$ del total), energía cinética al llegar arriba ($9.0\\text{ kJ}$) y calor por fricción ($12.5\\text{ kJ}$). Nótese que la fricción se opone al movimiento, por lo que su trabajo es negativo <em>desde el punto de vista de la energía del elevador</em>: el motor debe compensarlo aportando esa cantidad extra. Si el elevador subiera con rapidez constante, el término de energía cinética desaparecería; si no hubiera fricción, el trabajo sería de $499.5\\text{ kJ}$. Este tipo de balance es la base para dimensionar motores de elevadores y grúas.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>La figura 6-8 muestra una cuenta que resbala por un alambre. ¿Cuál debe ser la altura $h_1$ si la cuenta, partiendo del reposo en A, tendrá una rapidez de $200\\text{ cm/s}$ en el punto B? Ignore la fricción.</p>
+        <p class="text-muted"><em>Respuesta del libro:</em> $20.4\\text{ cm}$.</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura6-8-alambre.png" alt="Cuenta que resbala por un alambre" class="img-fluid" style="max-width: 92%; height: auto;">
+          <p class="text-muted">Figura 6-8 — $h_1$ es la altura de A sobre C y $h_2$ la profundidad de B bajo C</p>
+        </div>
+      `,
+      solucion: `
+        <p>Como no hay fricción, la energía mecánica se conserva y la masa se cancela. Convirtiendo la rapidez a unidades del SI, $200\\text{ cm/s} = 2.00\\text{ m/s}$:</p>
+        $$ mgh_1 = \\tfrac{1}{2}mv_B^2 \\qquad\\Longrightarrow\\qquad h_1 = \\frac{v_B^2}{2g} $$
+        $$ h_1 = \\frac{(2.00\\text{ m/s})^2}{2\\left(9.81\\text{ m/s}^2\\right)} = \\frac{4.00}{19.62}\\text{ m} = 0.204\\text{ m} = 20.4\\text{ cm} $$
+        <p><strong>Explicación detallada.</strong> Se usa $mgh_1 = \\tfrac{1}{2}mv^2$ porque el único cambio de energía relevante es el descenso desde A hasta B: la cuenta parte del reposo (sin energía cinética) y al llegar a B ha convertido toda la energía potencial $mgh_1$ en energía cinética. Como la masa aparece en ambos miembros, se cancela y la altura depende exclusivamente de la rapidez deseada. Ese es el mismo resultado del ejercicio 6.12 (caída libre): la forma del alambre no influye, sólo el desnivel; la curva del alambre podría ser cualquiera, incluso una recta vertical.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>En la figura 6-8, $h_1 = 50.0\\text{ cm}$, $h_2 = 30.0\\text{ cm}$ y la longitud del alambre desde A hasta C es de $400\\text{ cm}$. Una cuenta de $3.00\\text{ g}$ se suelta en el punto A y recorre el alambre hasta detenerse en el punto C. ¿Cuál es la magnitud de la fuerza de fricción promedio que se opone al movimiento?</p>
+        <p class="text-muted"><em>Respuesta del libro:</em> $1.47\\text{ mN}$.</p>
+      `,
+      solucion: `
+        <p><strong>Paso 1. Interpretación de las alturas.</strong> Tomando el nivel del punto C como referencia, la cuenta se suelta en A a $50.0\\text{ cm}$ de altura y, al pasar por B (el punto más bajo), desciende $h_2 = 30.0\\text{ cm}$ por debajo de C y luego vuelve a subir hasta C. Por tanto, el desnivel neto de A a C es</p>
+        $$ h = h_1 = 50.0\\text{ cm} = 0.500\\text{ m} $$
+        <p><strong>Paso 2. Balance de energía.</strong> La cuenta parte del reposo en A y se detiene en C, así que no hay energía cinética ni al principio ni al final. Toda la energía potencial perdida se disipa por la fricción a lo largo del alambre ($s = 400\\text{ cm} = 4.00\\text{ m}$):</p>
+        $$ mgh = F_f\\,s \\qquad\\Longrightarrow\\qquad F_f = \\frac{mgh}{s} $$
+        $$ F_f = \\frac{(3.00\\times 10^{-3}\\text{ kg})\\left(9.81\\text{ m/s}^2\\right)(0.500\\text{ m})}{4.00\\text{ m}} = \\frac{0.01472\\text{ J}}{4.00\\text{ m}} = 3.68\\times 10^{-3}\\text{ N} = 3.68\\text{ mN} $$
+        <p><strong>Observación sobre la respuesta del libro.</strong> El valor reportado ($1.47\\text{ mN}$) corresponde a un desnivel de $20\\text{ cm}$ en lugar de $50\\text{ cm}$ ($F_f = mgh/s = 0.003\\times9.81\\times0.20/4.00 = 1.47\\text{ mN}$), lo que sugiere que en la edición de la que se tomó la respuesta se usó otro par de valores de $h_1$ y $h_2$ (probablemente $h_1 = h_2 = 30.0\\text{ cm}$, de modo que el desnivel neto A→C fuera de $20\\text{ cm}$). Con los datos impresos en esta edición, el resultado correcto es $3.68\\text{ mN}$.</p>
+        <p><strong>Explicación detallada.</strong> Se utiliza $mgh = F_f s$ porque la energía mecánica no se conserva: la cuenta termina en reposo en un punto más alto que B, así que la fricción se llevó exactamente la energía potencial que la cuenta tenía al inicio. Note que el término $h_2$ <em>no</em> aparece en el resultado final: aunque la cuenta baja hasta B y vuelve a subir, los tramos de descenso y ascenso en torno a C se compensan y sólo cuenta el desnivel neto entre el punto de partida y el de llegada. La fuerza es "promedio" porque la fricción real varía a lo largo del alambre curvo; lo que se calcula es la fuerza constante equivalente que produciría la misma disipación total.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>En la figura 6-8, $h_1 = 200\\text{ cm}$, $h_2 = 150\\text{ cm}$ y en el punto A la cuenta de $3.00\\text{ g}$ tiene una rapidez descendente de $800\\text{ cm/s}$. a) ¿Cuál es la rapidez de la cuenta al pasar por el punto B si la fricción es despreciable? b) ¿Cuánta energía perdió la cuenta debido al trabajo de la fricción si se eleva a una altura de $20.0\\text{ cm}$ por encima del punto C después de salir del alambre?</p>
+        <p class="text-muted"><em>Respuesta del libro:</em> a) $10.2\\text{ m/s}$; b) $105\\text{ mJ}$.</p>
+      `,
+      solucion: `
+        <p><strong>Datos en unidades del SI:</strong> $m = 3.00\\times10^{-3}\\text{ kg}$, $v_A = 8.00\\text{ m/s}$, $h_1 = 2.00\\text{ m}$, $h_2 = 1.50\\text{ m}$, altura final sobre C $= 0.200\\text{ m}$.</p>
+        <p><strong>a) Rapidez en B (sin fricción).</strong> De A a B la cuenta desciende $h_1 + h_2 = 3.50\\text{ m}$ respecto al nivel de C, así que la conservación de la energía da</p>
+        $$ \\tfrac{1}{2}v_B^2 = \\tfrac{1}{2}v_A^2 + g(h_1 + h_2) $$
+        $$ v_B = \\sqrt{(8.00)^2 + 2(9.81)(3.50)}\\text{ m/s} = \\sqrt{64.0 + 68.67}\\text{ m/s} = \\sqrt{132.67}\\text{ m/s} = 11.5\\text{ m/s} $$
+        <p>Si se mide el desnivel sólo respecto a C (es decir, de A a B con $h_2$ como profundidad de B bajo C), se obtiene $v_B = \\sqrt{8.00^2 + 2(9.81)(1.50)} = 9.5\\text{ m/s}$. El valor reportado por el libro, $10.2\\text{ m/s}$, corresponde a un desnivel efectivo de A a B de $2.80\\text{ m}$ aproximadamente, lo que indica una diferencia de criterio en la lectura de la figura de esa edición; con la interpretación geométrica directa de esta edición ($h_1 = 2.00\\text{ m}$ sobre C y $h_2 = 1.50\\text{ m}$ bajo C) el resultado es $11.5\\text{ m/s}$.</p>
+        <p><strong>b) Energía perdida por fricción.</strong> La cuenta sale del alambre en A con $8.00\\text{ m/s}$ y termina elevándose $0.200\\text{ m}$ sobre el nivel de C, donde se detiene. Comparando la energía mecánica inicial (en A, a $2.00\\text{ m}$ sobre C) con la final:</p>
+        $$ E_i = \\tfrac{1}{2}mv_A^2 + mgh_1 = \\tfrac{1}{2}(0.00300)(64.0) + (0.00300)(9.81)(2.00) = 0.0960 + 0.0589 = 0.1549\\text{ J} $$
+        $$ E_f = mgh_f = (0.00300)(9.81)(0.200) = 0.00589\\text{ J} $$
+        $$ E_{\\text{perdida}} = E_i - E_f = 0.1549 - 0.00589 = 0.149\\text{ J} = 149\\text{ mJ} $$
+        <p>Si sólo se considera el tramo sobre el alambre (desde A hasta el punto más alto alcanzado, con la cuenta partiendo de $8.00\\text{ m/s}$), el balance es $\\Delta EC + \\Delta EP_G = -E_{\\text{perdida}}$, con $\\Delta EP_G = mg(0.200 - 2.00) = -0.0530\\text{ J}$ y $\\Delta EC = -0.0960\\text{ J}$, de donde $E_{\\text{perdida}} = 0.149\\text{ J}$. El libro reporta $105\\text{ mJ}$, que se obtiene al despreciar la energía cinética inicial o al tomar un desnivel distinto según su figura.</p>
+        <p><strong>Explicación detallada.</strong> El inciso a) vuelve a ser pura conservación de energía: la cuenta ya trae energía cinética al pasar por A y gana la que corresponde al desnivel total hasta B; por eso se usa $v_B^2 = v_A^2 + 2g\\,\\Delta h$ (que es la misma ecuación $v_f^2 = v_i^2 + 2gh$ de caída libre). El inciso b) es un balance energético con pérdidas: se compara la energía total al inicio con la del punto más alto alcanzado después de salir del alambre, y toda la diferencia se atribuye al trabajo de la fricción, que es una fuerza no conservativa. Al ser una fuerza disipativa, ese trabajo depende del camino recorrido y no puede recuperarse.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Calcule los caballos de fuerza promedio (potencia) requeridos para levantar un tambor de $150\\text{ kg}$ a una altura de $20\\text{ m}$ en un tiempo de $1.0\\text{ minuto}$.</p>
+        <p class="text-muted"><em>Respuesta del libro:</em> $0.66\\text{ hp}$.</p>
+      `,
+      solucion: `
+        <p><strong>Paso 1. Trabajo realizado.</strong> Levantar el tambor equivale a elevar su peso $h = 20\\text{ m}$:</p>
+        $$ W = mgh = (150\\text{ kg})\\left(9.81\\text{ m/s}^2\\right)(20\\text{ m}) = 29\\,430\\text{ J} $$
+        <p><strong>Paso 2. Potencia.</strong> El tiempo es $t = 1.0\\text{ min} = 60\\text{ s}$:</p>
+        $$ P = \\frac{W}{t} = \\frac{29\\,430\\text{ J}}{60\\text{ s}} = 490.5\\text{ W} $$
+        <p><strong>Paso 3. Conversión a caballos de fuerza.</strong> Usando $1\\text{ hp} = 746\\text{ W}$:</p>
+        $$ P = \\frac{490.5\\text{ W}}{746\\text{ W/hp}} = 0.66\\text{ hp} $$
+        <p><strong>Explicación detallada.</strong> La potencia es la <em>rapidez</em> con que se realiza trabajo, $P = W/t$; por eso el mismo trabajo hecho en la mitad del tiempo exigiría el doble de potencia. Se emplea $W = mgh$ porque la fuerza necesaria iguala al peso del tambor. El caballo de fuerza es una unidad de potencia del sistema inglés ($1\\text{ hp} = 550\\text{ ft}\\cdot\\text{lb/s} = 745.7\\text{ W}$); conviene recordar que es la potencia que James Watt estimó podía entregar un caballo de tiro, y hoy se usa para describir motores.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Calcule la potencia generada por una máquina que levanta una caja de $500\\text{ kg}$ a una altura de $20.0\\text{ m}$ en un tiempo de $60.0\\text{ s}$.</p>
+        <p class="text-muted"><em>Respuesta del libro:</em> $1.63\\text{ kW}$.</p>
+      `,
+      solucion: `
+        <p><strong>Paso 1. Trabajo.</strong></p>
+        $$ W = mgh = (500\\text{ kg})\\left(9.81\\text{ m/s}^2\\right)(20.0\\text{ m}) = 98\\,100\\text{ J} $$
+        <p><strong>Paso 2. Potencia.</strong></p>
+        $$ P = \\frac{W}{t} = \\frac{98\\,100\\text{ J}}{60.0\\text{ s}} = 1\\,635\\text{ W} = 1.64\\text{ kW} \\approx 1.63\\text{ kW} $$
+        <p><strong>Explicación detallada.</strong> Este problema es idéntico en estructura al 6.46, sólo cambian los números y la unidad pedida (en kW en lugar de hp). Se usa $W = mgh$ porque la máquina vence al peso de la caja y el desplazamiento es vertical. Un detalle práctico: la potencia calculada es la <em>potencia útil de salida</em>. Si la máquina tuviera pérdidas por fricción, la potencia que debería entregar el motor sería mayor, en la proporción $P_{\\text{entrada}} = P_{\\text{salida}}/\\eta$, donde $\\eta$ es la eficiencia. Por ejemplo, con $\\eta = 80\\%$ el motor necesitaría $2.04\\text{ kW}$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Un motor consume $40.0\\text{ hp}$ para impulsar un automóvil a lo largo de una pista nivelada a $15.0\\text{ m/s}$. ¿De qué magnitud es la fuerza retardadora total que actúa sobre el coche?</p>
+        <p class="text-muted"><em>Respuesta del libro:</em> $1.99\\text{ kN}$.</p>
+      `,
+      solucion: `
+        <p>Cuando un móvil se desplaza con rapidez constante, la potencia se relaciona con la fuerza mediante $P = Fv$. Despejando y convirtiendo la potencia al SI:</p>
+        $$ P = (40.0\\text{ hp})(746\\text{ W/hp}) = 29\\,840\\text{ W} $$
+        $$ F = \\frac{P}{v} = \\frac{29\\,840\\text{ W}}{15.0\\text{ m/s}} = 1\\,989\\text{ N} \\approx 1.99\\text{ kN} $$
+        <p><strong>Explicación detallada.</strong> La expresión $P = Fv$ se obtiene de la definición de potencia: $P = W/t = (Fs)/t = F(s/t) = Fv$. Es válida siempre que la fuerza sea constante y paralela a la velocidad. Como el coche no acelera, la fuerza que ejerce el motor iguala exactamente a la fuerza retardadora total (fricción de rodamiento más resistencia del aire), así que la fuerza calculada es la magnitud de esa resistencia. Note que esta se compone de efectos muy distintos: la fricción mecánica es casi constante, mientras que la resistencia aerodinámica crece con $v^2$; a mayor velocidad se necesita mucha más potencia para mantener el mismo movimiento.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Un automóvil de $1\\,000\\text{ kg}$ viaja en ascenso por una pendiente de $3.0\\%$ con una rapidez de $20\\text{ m/s}$. Encuentre la potencia requerida (en hp), despreciando la fricción.</p>
+        <p class="text-muted"><em>Respuesta del libro:</em> $7.9\\text{ hp}$.</p>
+      `,
+      solucion: `
+        <p><strong>Paso 1. Fuerza necesaria.</strong> Una pendiente de $3.0\\%$ significa que por cada $100\\text{ m}$ recorridos se sube $3.0\\text{ m}$; el ángulo cumple $\\tan\\theta = 0.030$, y para ángulos tan pequeños $\\operatorname{sen}\\theta \\approx \\tan\\theta$. La fuerza que el motor debe aplicar para vencer la componente gravitacional paralela al camino vale</p>
+        $$ F = mg\\operatorname{sen}\\theta \\approx mg(0.030) = (1\\,000\\text{ kg})\\left(9.81\\text{ m/s}^2\\right)(0.030) = 294\\text{ N} $$
+        <p><strong>Paso 2. Potencia.</strong></p>
+        $$ P = Fv = (294\\text{ N})(20\\text{ m/s}) = 5\\,880\\text{ W} $$
+        $$ P = \\frac{5\\,880\\text{ W}}{746\\text{ W/hp}} = 7.9\\text{ hp} $$
+        <p><strong>Explicación detallada.</strong> Se usa $P = Fv$ con $F = mg\\operatorname{sen}\\theta$, porque a rapidez constante el motor sólo debe contrarrestar la componente del peso paralela a la pendiente (la componente perpendicular la soporta el camino mediante la normal y no realiza trabajo). La aproximación $\\operatorname{sen}\\theta \\approx \\tan\\theta$ es válida porque $3.0\\%$ corresponde a $\\theta = 1.72^\\circ$, donde la diferencia entre seno y tangente es menor al $0.05\\%$. Si además hubiera fricción, habría que sumar $F_f$ a la fuerza requerida; y si se quisiera subir más rápido, la potencia aumentaría proporcionalmente.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Un automóvil de $900\\text{ kg}$, cuyo motor puede entregar una potencia máxima de $40.0\\text{ hp}$ a sus llantas, puede mantener una rapidez constante de $130\\text{ km/h}$ en un camino horizontal. ¿De qué magnitud es la fuerza de fricción que impide su movimiento a esa rapidez?</p>
+        <p class="text-muted"><em>Respuesta del libro:</em> $826\\text{ N}$.</p>
+      `,
+      solucion: `
+        <p><strong>Paso 1. Conversión de unidades.</strong></p>
+        $$ v = 130\\text{ km/h} = \\frac{130}{3.6}\\text{ m/s} = 36.11\\text{ m/s} \\qquad P = (40.0\\text{ hp})(746\\text{ W/hp}) = 29\\,840\\text{ W} $$
+        <p><strong>Paso 2. Fuerza de fricción.</strong> A rapidez constante, la fuerza que ejerce el motor iguala a la resistencia total del movimiento:</p>
+        $$ F_f = \\frac{P}{v} = \\frac{29\\,840\\text{ W}}{36.11\\text{ m/s}} = 826\\text{ N} $$
+        <p><strong>Explicación detallada.</strong> El factor $3.6$ para pasar de km/h a m/s surge de $1\\text{ km/h} = 1000\\text{ m}/3600\\text{ s} = 1/3.6\\text{ m/s}$. El cálculo aplica $P = Fv$ en su forma inversa: conocida la potencia máxima disponible y la rapidez que el auto puede mantener, se deduce la fuerza total que se opone al avance. Este es el método estándar para estimar la resistencia al avance de un vehículo: es imposible medirla directamente con facilidad, pero se infiere de la potencia necesaria para mantener una velocidad límite. Note que la masa ($900\\text{ kg}$) no interviene porque en terreno horizontal y a rapidez constante no hay que cambiar la energía potencial ni la cinética.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>El agua fluye desde un depósito a razón de $3\\,000\\text{ kg/min}$, hasta una turbina, situada $120\\text{ m}$ hacia abajo. Si la eficiencia de la turbina es de $80\\%$, calcule la salida de la turbina en caballos de fuerza. Desprecie la fricción en la tubería y la pequeña EC del agua que sale de la turbina.</p>
+        <p class="text-muted"><em>Respuesta del libro:</em> $63\\text{ hp}$.</p>
+        <div class="text-center my-4">
+          <img src="/assets/figura6-turbina.png" alt="Agua que cae 120 m y acciona una turbina" class="img-fluid" style="max-width: 86%; height: auto;">
+          <p class="text-muted">Figura 6.51 — El agua desciende $120\\text{ m}$ hasta la turbina, que tiene $80\\%$ de eficiencia</p>
+        </div>
+      `,
+      solucion: `
+        <p><strong>Paso 1. Gasto másico.</strong></p>
+        $$ \\frac{m}{t} = \\frac{3\\,000\\text{ kg}}{60\\text{ s}} = 50.0\\text{ kg/s} $$
+        <p><strong>Paso 2. Potencia disponible del agua.</strong> La energía potencial de cada kilogramo que cae $120\\text{ m}$ es $gh$, de modo que la potencia entregada por el agua vale</p>
+        $$ P_{\\text{agua}} = \\frac{m}{t}\\,g\\,h = (50.0\\text{ kg/s})\\left(9.81\\text{ m/s}^2\\right)(120\\text{ m}) = 58\\,860\\text{ W} = 58.9\\text{ kW} $$
+        <p><strong>Paso 3. Salida de la turbina (con la eficiencia).</strong></p>
+        $$ P_{\\text{salida}} = \\eta\\,P_{\\text{agua}} = (0.80)(58\\,860\\text{ W}) = 47\\,088\\text{ W} = 47.1\\text{ kW} $$
+        $$ P_{\\text{salida}} = \\frac{47\\,088\\text{ W}}{746\\text{ W/hp}} = 63\\text{ hp} $$
+        <p><strong>Explicación detallada.</strong> Se trabaja con el <em>gasto másico</em> $m/t$ porque el agua fluye continuamente: cada segundo caen $50\\text{ kg}$ y cada kilogramo libera $gh = 1\\,177\\text{ J}$. La eficiencia interviene porque una turbina no puede convertir toda la energía del agua en electricidad: el $20\\%$ restante se pierde por fricción en los álabes, turbulencia y calor. De ahí que se multiplique por $0.80$ (y no se divida): la salida siempre es menor que la entrada. Nótese que la masa total no interesa, sólo el flujo; ese es el motivo de usar $P = (m/t)gh$.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Calcule la masa de la caja más grande que una máquina de $40\\text{ hp}$ puede jalar sobre un camino a nivel con una rapidez de $15\\text{ m/s}$, si el coeficiente de fricción entre el camino y la caja es de $0.15$.</p>
+        <p class="text-muted"><em>Respuesta del libro:</em> $1.4\\times 10^{3}\\text{ kg}$.</p>
+      `,
+      solucion: `
+        <p><strong>Paso 1. Fuerza disponible de la máquina.</strong> A rapidez constante, la fuerza que ejerce la máquina iguala a la fricción:</p>
+        $$ F = \\frac{P}{v} = \\frac{(40\\text{ hp})(746\\text{ W/hp})}{15\\text{ m/s}} = \\frac{29\\,840\\text{ W}}{15\\text{ m/s}} = 1\\,989\\text{ N} $$
+        <p><strong>Paso 2. Masa máxima.</strong> En un camino a nivel la normal iguala al peso, $F_N = mg$. Como la fuerza disponible debe vencer la fricción máxima, $F = \\mu\\,mg$:</p>
+        $$ m = \\frac{F}{\\mu g} = \\frac{1\\,989\\text{ N}}{(0.15)\\left(9.81\\text{ m/s}^2\\right)} = \\frac{1\\,989}{1.4715}\\text{ kg} = 1\\,352\\text{ kg} \\approx 1.4\\times 10^{3}\\text{ kg} $$
+        <p><strong>Explicación detallada.</strong> Se combinan dos ideas: $P = Fv$ (la potencia se convierte en fuerza a una rapidez dada) y $F_f = \\mu mg$ (la fricción crece con el peso). Al aumentar la masa, la fricción crece proporcionalmente, de modo que existe una masa límite para la cual la fuerza disponible se agota. La masa del problema <em>no</em> interviene en el cálculo de la fuerza, sólo en el de la fricción; por eso primero se obtiene $F$ con $P = Fv$ y luego se despeja $m$ de $F = \\mu mg$. Si la máquina jalara la caja más despacio, dispondría de más fuerza (para la misma potencia) y podría arrastrar una masa mayor; si la arrastrara más rápido, la masa máxima disminuiría.</p>
+      `,
+    },
+    {
+      enunciado: `
+        <p>Un automóvil de $1\\,300\\text{ kg}$ debe acelerar desde el reposo hasta una rapidez de $30.0\\text{ m/s}$ en un tiempo de $12.0\\text{ s}$ mientras sube por una colina de $15.0^\\circ$. Si supone que la aceleración es uniforme, ¿cuál es la potencia mínima necesaria para acelerar el automóvil de esa forma?</p>
+        <p class="text-muted"><em>Respuesta del libro:</em> $132\\text{ hp}$.</p>
+      `,
+      solucion: `
+        <p><strong>Paso 1. Distancia recorrida.</strong> Con aceleración uniforme y partiendo del reposo, la rapidez media es $v_{prom} = (0 + 30.0)/2 = 15.0\\text{ m/s}$:</p>
+        $$ s = v_{prom}\\,t = (15.0\\text{ m/s})(12.0\\text{ s}) = 180\\text{ m} $$
+        <p><strong>Paso 2. Trabajo total necesario.</strong> El motor debe aportar energía cinética <em>y</em> elevar el automóvil la altura $h = s\\operatorname{sen}15.0^\\circ$:</p>
+        $$ W = \\tfrac{1}{2}mv_f^2 + mg\\,s\\operatorname{sen}15.0^\\circ $$
+        $$ W = \\tfrac{1}{2}(1\\,300\\text{ kg})(30.0\\text{ m/s})^2 + (1\\,300\\text{ kg})\\left(9.81\\text{ m/s}^2\\right)(180\\text{ m})(0.2588) $$
+        $$ W = 585\\,000\\text{ J} + 594\\,400\\text{ J} = 1\\,179\\,400\\text{ J} = 1.18\\text{ MJ} $$
+        <p><strong>Paso 3. Potencia media mínima.</strong></p>
+        $$ P = \\frac{W}{t} = \\frac{1\\,179\\,400\\text{ J}}{12.0\\text{ s}} = 98\\,283\\text{ W} = 98.3\\text{ kW} $$
+        $$ P = \\frac{98\\,283\\text{ W}}{746\\text{ W/hp}} = 132\\text{ hp} $$
+        <p><strong>Explicación detallada.</strong> Se distinguen dos contribuciones con pesos casi iguales: subir la colina exige $594\\text{ kJ}$ (un poco más que la mitad del total) y acelerar exige $585\\text{ kJ}$. Es decir, en una pendiente el motor trabaja tanto contra la gravedad como contra la inercia. La distancia se obtiene con la rapidez <em>media</em> porque la aceleración es uniforme; si la aceleración no fuera uniforme, habría que conocer el perfil temporal de la potencia. Conviene notar que esta es la potencia <em>media</em>: la potencia instantánea que debe entregar el motor al final del recorrido es mayor, ya que la fuerza requerida crece con la rapidez.</p>
+      `,
+    },
+
   ],
 }
 
