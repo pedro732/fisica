@@ -742,6 +742,61 @@ $$ 1\\text{ kWh}=3.6\\times10^6\\text{ J}=3.6\\text{ MJ} $$
 
     `,
   },
+  'Maquinas simples': {
+    title: 'Maquinas simples',
+    image: 'https://genrysantos.wordpress.com/wp-content/uploads/2020/05/25615-gdg.jpg',
+    content: `
+      <h2>Las máquinas simples</h2>
+
+      <p>Las máquinas simples son dispositivos mecánicos básicos que cambian la dirección o la magnitud de una fuerza, facilitando la realización de un trabajo con menos esfuerzo.</p>
+
+      <p>Según la <em>Enciclopedia Británica</em>, existen 6 tipos clásicos de máquinas simples:</p>
+
+      <hr class="my-4">
+
+      <h3>1. Palanca</h3>
+      <ul>
+        <li><strong>Qué es:</strong> Una barra rígida que gira libremente sobre un punto de apoyo o fulcro.</li>
+        <li><strong>Para qué sirve:</strong> Permite levantar o mover objetos pesados aplicando menos fuerza.</li>
+        <li><strong>Ejemplos:</strong> El balancín (sube y baja), las tijeras o una palanca de obra.</li>
+      </ul>
+
+      <h3>2. Plano inclinado</h3>
+      <ul>
+        <li><strong>Qué es:</strong> Una superficie plana que se apoya formando un ángulo con el suelo (una rampa).</li>
+        <li><strong>Para qué sirve:</strong> Reduce la fuerza necesaria para elevar un objeto pesado a cierta altura, aunque se deba recorrer una distancia mayor.</li>
+        <li><strong>Ejemplos:</strong> Una rampa de acceso para sillas de ruedas o una carretera de montaña en zigzag.</li>
+      </ul>
+
+      <h3>3. Polea</h3>
+      <ul>
+        <li><strong>Qué es:</strong> Una rueda con un canal en su borde por el cual pasa una cuerda, una cadena o una correa.</li>
+        <li><strong>Para qué sirve:</strong> Cambia la dirección de la fuerza y, si se combinan varias, permite levantar cargas pesadas con mayor facilidad.</li>
+        <li><strong>Ejemplos:</strong> El sistema para extraer agua de un pozo (aljibe) o las poleas de una grúa.</li>
+      </ul>
+
+      <h3>4. Rueda y eje</h3>
+      <ul>
+        <li><strong>Qué es:</strong> Un disco o rueda grande unido a un eje o cilindro más pequeño que giran juntos.</li>
+        <li><strong>Para qué sirve:</strong> Transmite el movimiento y reduce la fricción al desplazar objetos, o multiplica la fuerza en un torno.</li>
+        <li><strong>Ejemplos:</strong> El volante de un auto, el manubrio de una bicicleta o el torno de un pozo.</li>
+      </ul>
+
+      <h3>5. Cuña</h3>
+      <ul>
+        <li><strong>Qué es:</strong> Una pieza de metal o de madera que termina en un borde afilado (dos planos inclinados juntos).</li>
+        <li><strong>Para qué sirve:</strong> Divide, corta, sujeta o levanta objetos al transformar una fuerza longitudinal en una fuerza lateral.</li>
+        <li><strong>Ejemplos:</strong> Un hacha, un cuchillo o un cincel.</li>
+      </ul>
+
+      <h3>6. Tornillo</h3>
+      <ul>
+        <li><strong>Qué es:</strong> Un plano inclinado enrollado en forma de espiral alrededor de un cilindro.</li>
+        <li><strong>Para qué sirve:</strong> Convierte un movimiento giratorio en uno de avance lineal y mantiene las piezas firmemente unidas.</li>
+        <li><strong>Ejemplos:</strong> Un tornillo de carpintero, un sacacorchos o la tapa roscada de un frasco.</li>
+      </ul>
+    `,
+  },
 }
 
 export function getTopicDetails(title) {

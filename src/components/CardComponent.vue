@@ -12,8 +12,12 @@
       <div class="card-body text-center">
         <h5 class="card-title mb-3">{{ topic.title }}</h5>
         <!-- Use v-html to render the processed HTML with KaTeX -->
-        <div class="card-text text-muted" v-html="renderedDescription"></div>
-
+        <div
+          ref="description"
+          class="card-text text-muted"
+          :style="formulaFit"
+          v-html="renderedDescription"
+        ></div>
         <div class="d-flex justify-content-between mt-4">
           <button class="btn btn-outline-secondary" @click="goBack">Regresar</button>
           <button class="btn btn-primary" @click="goToDetails">Conocer más</button>
@@ -59,11 +63,26 @@ export default {
         src: '',
         alt: '',
       },
+      /**
+       * Font size (in rem) used to draw the display formulas.  It is chosen
+       * automatically in `fitFormulas()` so that no expression is wider than
+       * the card.
+       */
+      fitFontSize: 1.21,
+      resizeObserver: null,
     }
   },
   computed: {
     decodedTitle() {
       return decodeURIComponent(this.title)
+    },
+    /**
+     * Reduce the font size of the display formulas ($$...$$) until they fit the
+     * width of the card.  KaTeX writes a 1em font-size into .katex-display, so
+     * setting `--formula-font-size` scales a formula without touching the text.
+     */
+    formulaFit() {
+      return { '--formula-font-size': `${this.fitFontSize}rem` }
     },
     renderedDescription() {
       if (!this.topic || !this.topic.description) return ''
@@ -106,10 +125,91 @@ export default {
   created() {
     this.loadTopic()
   },
+  async mounted() {
+    await this.fitFormulas()
+  },
+  beforeUnmount() {
+    if (this.resizeObserver) {
+      this.resizeObserver.disconnect()
+      this.resizeObserver = null
+    }
+  },
   methods: {
     loadTopic() {
       const cleanTitle = this.decodedTitle.toLowerCase()
       this.topic = topics.find((t) => t.title.toLowerCase() === cleanTitle) || null
+    },
+    /**
+     * Make every display formula ($$...$$) fit the width of the card.
+     *
+     * KaTeX gives each .katex-display a `font-size: 1em`, so a formula scales
+     * linearly with that font size.  A hidden copy of each formula is measured
+     * at the default size and the largest size that still fits the available
+     * width is applied to all of them at once.  The size never drops below
+     * `minFontSize`; a formula that is still too wide then stays inside the card
+     * and can be scrolled horizontally (see `updateScrollHints`).
+     */
+    async fitFormulas() {
+      await this.$nextTick()
+      const container = this.$refs.description
+      if (!container) return
+
+      const measures = []
+      for (const display of container.querySelectorAll('.katex-display')) {
+        const base = display.querySelector('.katex')
+        if (!base) continue
+        const clone = base.cloneNode(true)
+        const holder = document.createElement('div')
+        holder.setAttribute('aria-hidden', 'true')
+        holder.style.cssText =
+          'position:absolute;left:-9999px;top:0;visibility:hidden;white-space:nowrap;' +
+          'font-size:1rem;line-height:normal;'
+        holder.appendChild(clone)
+        document.body.appendChild(holder)
+        measures.push({ display, width: clone.getBoundingClientRect().width })
+        document.body.removeChild(holder)
+      }
+      if (!measures.length) return
+
+      const available = container.clientWidth - 2 // safety margin
+      const removable = measures.reduce(
+        (sum, m) => sum + Math.max(0, m.display.getBoundingClientRect().width - m.width),
+        0,
+      )
+      const needed = Math.max(...measures.map((m) => m.width)) + removable
+      const minSize = 0.85 // ~13.6 px: keep the formulas legible
+
+      const fit = Math.min(1.21, Math.max(minSize, (1.21 * available) / needed))
+      // Round to 0.01rem so tiny browser differences do not cause extra passes.
+      this.fitFontSize = Math.round(fit * 100) / 100
+
+      await this.$nextTick()
+      this.updateScrollHints()
+
+      // Keep the fit correct when the card is resized (rotation, dev tools...).
+      if (typeof ResizeObserver !== 'undefined') {
+        this.resizeObserver = new ResizeObserver(() => this.updateScrollHints())
+        this.resizeObserver.observe(container)
+      }
+    },
+    /** Fade the edge of a formula that still overflows horizontally. */
+    updateScrollHints() {
+      const container = this.$refs.description
+      if (!container) return
+      for (const display of container.querySelectorAll('.katex-display')) {
+        display.classList.add('has-scroll-hint')
+        this.setScrollHint(display)
+        display.addEventListener('scroll', this.onFormulaScroll, { passive: true })
+      }
+    },
+    onFormulaScroll(event) {
+      this.setScrollHint(event.currentTarget)
+    },
+    setScrollHint(el) {
+      const rest = el.scrollWidth - el.clientWidth
+      const fade = 'rgba(0, 0, 0, 0.18)'
+      el.style.setProperty('--hint-left', el.scrollLeft > 1 ? fade : 'transparent')
+      el.style.setProperty('--hint-right', el.scrollLeft < rest - 1 ? fade : 'transparent')
     },
     goBack() {
       this.$router.push({ name: 'Home' })
@@ -140,5 +240,35 @@ export default {
 
 .clickable-image:hover {
   opacity: 0.85;
+}
+
+/* Formula rendering inside the card.
+   The formulas come from v-html, so they need :deep() to be styled here. */
+.card-text {
+  overflow-wrap: break-word;
+}
+.card-text :deep(.katex-display) {
+  /* Size chosen by fitFormulas(); KaTeX draws display maths at 1em. */
+  font-size: var(--formula-font-size, 1.21rem);
+  margin: 0.75rem 0;
+  /* Fallback when even the smallest size does not fit (very narrow screens):
+     the formula stays inside the card and can be scrolled horizontally. */
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 2px;
+}
+.card-text :deep(.katex-display > .katex) {
+  white-space: normal;
+}
+/* Fade both edges of a formula that is wider than the card, so it is obvious
+   that it can be scrolled.  The gradients are updated from updateScrollHints(). */
+.card-text :deep(.katex-display.has-scroll-hint) {
+  background-image: linear-gradient(to right, var(--hint-left, transparent), transparent 24px),
+    linear-gradient(to left, var(--hint-right, transparent), transparent 24px);
+  background-position: left center, right center;
+  background-repeat: no-repeat;
+  background-size: 24px 70%, 24px 70%;
+  background-attachment: local, local;
 }
 </style>
