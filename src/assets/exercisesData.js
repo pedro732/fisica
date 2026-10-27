@@ -5751,6 +5751,336 @@ $$\\text{Trabajo total} = 240\\text{ J} + 150\\text{ J} = 390\\text{ J} = 0.39\\
     },
 
   ],
+  'Maquinas simples': [
+    {
+      enunciado: `      <p><strong>7.1 [I]</strong> En una cabria (aparejo, pescante), se levanta una carga $10\\text{ cm}$ por cada $70\\text{ cm}$ de desplazamiento de la cuerda utilizada para operar el dispositivo. ¿Cuál es la mínima fuerza de entrada necesaria para levantar una carga de $5.0\\text{ kN}$?</p>
+      <div class="text-center my-4">
+        <img src="/assets/figura7-8-cabria-pescante.png" alt="Cabria o pescante con su cuerda y la carga" class="img-fluid" style="max-width: 90%; height: auto;">
+        <p class="text-muted">Figura 7-8 — Cabria (pescante): la carga sube $10\\text{ cm}$ mientras la cuerda se desplaza $70\\text{ cm}$.</p>
+      </div>
+      `,
+      solucion: `      <p><strong>Paso 1. La situación más ventajosa posible.</strong> Todo el trabajo de entrada se utiliza para levantar la carga; es decir, se desprecian la fricción y los demás mecanismos de pérdida. En tales casos:</p>
+      $$ \\text{Trabajo de entrada} = \\text{trabajo de levantamiento} $$
+      <p><strong>Paso 2. Los dos trabajos.</strong> Si la carga se levanta una distancia $s$, el trabajo de levantamiento es $(5.0\\text{ kN})(s)$. La fuerza de entrada $F$ se aplica a lo largo de la cuerda, que se desplaza $70/10 = 7.0$ veces la distancia que sube la carga, o sea $7.0s$. La igualdad anterior se convierte en</p>
+      $$ (F)(7.0s) = (5.0\\text{ kN})(s) $$
+      <p><strong>Paso 3. Fuerza mínima.</strong> Al simplificar la distancia $s$ en ambos miembros:</p>
+      $$ F = \\frac{5.0\\text{ kN}}{7.0} = 0.71\\text{ kN} = 7.1\\times 10^{2}\\text{ N} $$
+      <p>Esa es la fuerza mínima requerida; con fricción habría que aplicar una fuerza mayor.</p>
+      <p><strong>Explicación detallada.</strong> En una máquina ideal el trabajo de entrada es igual al trabajo útil de salida, y por eso una fuerza pequeña puede vencer una carga grande: la fuerza se aplica a lo largo de un recorrido siete veces mayor y el producto $F\\,d$ se conserva. Ese cociente de distancias, $70\\text{ cm}/10\\text{ cm} = 7.0$, es la <em>ventaja mecánica ideal</em> $VMI$ de la cabria; como aquí no se considera la fricción, la ventaja mecánica real coincide con ella y la eficiencia vale $1.0$ ($100\\%$). Si la cuerda se desplazara menos por cada $10\\text{ cm}$ de subida, la fuerza necesaria sería mayor, porque el trabajo se repartiría en un recorrido más corto.</p>
+      `,
+    },
+    {
+      enunciado: `      <p><strong>7.2 [III]</strong> Una máquina de aparejos levanta una carga de $3\\,000\\text{ kg}$ a una altura de $8.00\\text{ m}$ en un tiempo de $20.0\\text{ s}$. Al mecanismo se le suministra una potencia de $18.0\\text{ hp}$. Calcule a) el trabajo de salida, b) la potencia de salida y la potencia de entrada y c) la eficiencia del mecanismo y del sistema de aparejos.</p>
+      <div class="text-center my-4">
+        <img src="/assets/figura7-2-aparejos.png" alt="Máquina de aparejos que eleva una carga" class="img-fluid" style="max-width: 90%; height: auto;">
+        <p class="text-muted">Figura 7-2 — Máquina de aparejos: recibe $18.0\\text{ hp}$ y sube $3\\,000\\text{ kg}$ una altura de $8.00\\text{ m}$.</p>
+      </div>
+      `,
+      solucion: `      <p><strong>Paso 1. Trabajo de salida.</strong> Es el trabajo necesario para elevar la carga:</p>
+      $$ W_{sal} = (\\text{fuerza de levantamiento})(\\text{altura}) = (3\\,000\\times 9.81\\text{ N})(8.00\\text{ m}) = 2.35\\times 10^{5}\\text{ J} = 235\\text{ kJ} $$
+      <p><strong>Paso 2. Potencia de salida.</strong> Es el trabajo de salida dividido entre el tiempo consumido:</p>
+      $$ P_{sal} = \\frac{235\\text{ kJ}}{20.0\\text{ s}} = 11.8\\text{ kW} $$
+      <p><strong>Paso 3. Potencia de entrada.</strong> Se convierte el suministro de $18.0\\text{ hp}$ a kilowatts con $1\\text{ hp} = 0.746\\text{ kW}$:</p>
+      $$ P_{ent} = (18.0\\text{ hp})\\left(\\frac{0.746\\text{ kW}}{1\\text{ hp}}\\right) = 13.4\\text{ kW} $$
+      <p><strong>Paso 4. Eficiencia.</strong> Comparando potencias:</p>
+      $$ \\eta = \\frac{P_{sal}}{P_{ent}} = \\frac{11.8\\text{ kW}}{13.4\\text{ kW}} = 0.881 = 88.1\\% $$
+      <p>O bien, comparando trabajos (la potencia de entrada entrega $13.4\\text{ kJ}$ cada segundo):</p>
+      $$ \\eta = \\frac{W_{sal}}{W_{ent}} = \\frac{235\\text{ kJ}}{(13.4\\text{ kJ/s})(20.0\\text{ s})} = 0.877 = 87.7\\% $$
+      <p>La eficiencia es de $88\\%$; las diferencias se originan en el proceso de redondeo.</p>
+      <p><strong>Explicación detallada.</strong> La eficiencia compara lo que se obtiene con lo que se paga: el trabajo útil de elevar la carga frente al trabajo total que entrega la fuente. El trabajo de salida se calcula con $mgh$ porque la fuerza de levantamiento debe igualar, como mínimo, al peso $mg$ y actúa a lo largo de la altura $h$. La potencia es trabajo entre tiempo, de modo que dividir entre $20.0\\text{ s}$ convierte energía en rapidez de entrega. Al convertir los caballos de fuerza a kilowatts se usa el factor $0.746$, y así ambos miembros de la razón quedan en las mismas unidades; expresar la eficiencia como cociente de trabajos o como cociente de potencias da el mismo resultado porque el tiempo es el mismo en los dos procesos. El $12\\%$ restante se disipa, sobre todo, en la fricción de las poleas y del cable.</p>
+      `,
+    },
+    {
+      enunciado: `      <p><strong>7.3 [II]</strong> ¿Qué potencia en kW se suministra a un motor de $12.0\\text{ hp}$ que tiene una eficiencia de $90.0\\%$ cuando desarrolla toda su potencia nominal?</p>
+      <div class="text-center my-4">
+        <img src="/assets/figura7-13-motor-electrico.png" alt="Motor eléctrico con su potencia de entrada y de salida" class="img-fluid" style="max-width: 90%; height: auto;">
+        <p class="text-muted">Figura 7-13 — Un motor de $12.0\\text{ hp}$ con eficiencia de $90.0\\%$: la potencia de entrada debe ser mayor que la de salida.</p>
+      </div>
+      `,
+      solucion: `      <p><strong>Paso 1. Despejar la potencia de entrada.</strong> De la definición de eficiencia,</p>
+      $$ \\eta = \\frac{P_{sal}}{P_{ent}} \\quad\\Longrightarrow\\quad P_{ent} = \\frac{P_{sal}}{\\eta} $$
+      <p><strong>Paso 2. Potencia de salida en kW.</strong> El motor entrega toda su potencia nominal, $12.0\\text{ hp}$:</p>
+      $$ P_{sal} = (12.0\\text{ hp})(0.746\\text{ kW/hp}) = 8.95\\text{ kW} $$
+      <p><strong>Paso 3. Potencia de entrada.</strong></p>
+      $$ P_{ent} = \\frac{(12.0\\text{ hp})(0.746\\text{ kW/hp})}{0.900} = \\frac{8.95\\text{ kW}}{0.900} = 9.95\\text{ kW} \\approx 10.0\\text{ kW} $$
+      <p><strong>Explicación detallada.</strong> La eficiencia es menor que la unidad, por lo que la potencia de entrada siempre es <em>mayor</em> que la de salida: dividir entre $0.900$ equivale a multiplicar por $1.11$. El dato de $12.0\\text{ hp}$ es la potencia <em>mecánica útil</em> en el eje; el $10\\%$ que falta se pierde en el cobre y el hierro del motor (calor), de modo que la compañía eléctrica debe suministrar esos $9.95\\text{ kW}$. Note que el factor de conversión $0.746\\text{ kW/hp}$ se aplica antes de dividir entre la eficiencia: primero se lleva la salida a kW y luego se corrige por las pérdidas.</p>
+      `,
+    },
+    {
+      enunciado: `      <p><strong>7.4 [II]</strong> Para las tres palancas que se muestran en la figura 7-1, determine las fuerzas verticales $F_1$, $F_2$ y $F_3$ que se requieren para sostener la carga $F_W = 90\\text{ N}$. Desprecie los pesos de las palancas. Calcule también la $VMR$, la $VMI$ y la eficiencia para cada sistema.</p>
+      <div class="text-center my-4">
+        <img src="/assets/figura7-1-palancas.png" alt="Tres palancas con el fulcro en un extremo" class="img-fluid" style="max-width: 90%; height: auto;">
+        <p class="text-muted">Figura 7-1 — (a) carga a $2.0\\text{ m}$ del fulcro y fuerza a $4.0\\text{ m}$; (b) $1.0\\text{ m}$ y $3.0\\text{ m}$; (c) fuerza a $5.0\\text{ m}$ que forma $60^\\circ$ con la barra.</p>
+      </div>
+      `,
+      solucion: `      <p><strong>Paso 1. Condición de equilibrio.</strong> En cada caso se toma el momento de torsión alrededor del punto del fulcro como eje. Si se supone que el levantamiento se hace lentamente y con rapidez constante, los sistemas están en equilibrio y los momentos de torsión en el sentido de las manecillas del reloj balancean a los del sentido opuesto (recuerde que momento de torsión $= rF\\operatorname{sen}\\theta$):</p>
+      $$ \\text{Momentos de torsión en el sentido del reloj} = \\text{momentos de torsión en sentido opuesto al reloj} $$
+      <p><strong>Paso 2. Las tres fuerzas.</strong> La carga de $90\\text{ N}$ se cuelga verticalmente; en (a) y en (b) la fuerza también es vertical, mientras que en (c) la fuerza forma $60^\\circ$ con la barra.</p>
+      $$ \\text{a)}\\quad (2.0\\text{ m})(90\\text{ N})(1) = (4.0\\text{ m})(F_1)(1) \\quad\\Longrightarrow\\quad F_1 = 45\\text{ N} $$
+      $$ \\text{b)}\\quad (1.0\\text{ m})(90\\text{ N})(1) = (3.0\\text{ m})(F_2)(1) \\quad\\Longrightarrow\\quad F_2 = 30\\text{ N} $$
+      $$ \\text{c)}\\quad (2.0\\text{ m})(90\\text{ N})(1) = (5.0\\text{ m})(F_3)\\operatorname{sen}60^\\circ \\quad\\Longrightarrow\\quad F_3 = \\frac{180}{4.33} = 41.6\\text{ N} \\approx 42\\text{ N} $$
+      <p><strong>Paso 3. Ventaja mecánica ideal.</strong> En la figura 7-1a la carga se desplaza sólo la mitad de la distancia que recorre la fuerza aplicada, entonces</p>
+      $$ VMI = \\text{razón de distancias} = \\frac{4.0\\text{ m}}{2.0\\text{ m}} = 2.0 $$
+      <p>De la misma manera, en la figura 7-1b, $VMI = 3.0/1.0 = 3.0$. Sin embargo, en la figura 7-1c el brazo de palanca es $(5.0\\text{ m})\\operatorname{sen}60^\\circ = 4.33\\text{ m}$ y la razón de distancias es $4.33/2.0 = 2.16 \\approx 2.2$.</p>
+      <p><strong>Paso 4. Ventaja mecánica real y eficiencia.</strong> La $VMR$ es el cociente entre la carga y la fuerza aplicada:</p>
+      $$ VMR_a = \\frac{90\\text{ N}}{45\\text{ N}} = 2.0 \\qquad VMR_b = \\frac{90\\text{ N}}{30\\text{ N}} = 3.0 \\qquad VMR_c = \\frac{90\\text{ N}}{41.6\\text{ N}} = 2.2 $$
+      <p>Como se despreció la fricción en el fulcro, $VMR = VMI$ y la eficiencia es $1.0$ en los tres casos. En resumen:</p>
+      <div class="table-responsive">
+        <table class="table table-sm table-bordered text-center">
+          <thead><tr><th>Palanca</th><th>(a)</th><th>(b)</th><th>(c)</th></tr></thead>
+          <tbody>
+            <tr><td>$VMI$</td><td>$2.0$</td><td>$3.0$</td><td>$2.2$</td></tr>
+            <tr><td>$VMR$</td><td>$2.0$</td><td>$3.0$</td><td>$2.2$</td></tr>
+            <tr><td>Eficiencia</td><td>$1.0$</td><td>$1.0$</td><td>$1.0$</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p><strong>Explicación detallada.</strong> El momento de torsión $rF\\operatorname{sen}\\theta$ mide la eficacia de una fuerza para hacer girar un cuerpo alrededor de un eje: sólo cuenta la componente perpendicular a la barra, y por eso en (c) aparece $\\operatorname{sen}60^\\circ$ (la fuerza no es perpendicular a la palanca y su brazo efectivo se reduce a $4.33\\text{ m}$ en lugar de $5.0\\text{ m}$). Los momentos se igualan porque el sistema no gira: si el momento de la carga excediera al de la fuerza, la palanca giraría en ese sentido. La $VMI$ se obtiene de la geometría (cociente de distancias) y la $VMR$ de las fuerzas; al despreciar la fricción ambos números coinciden, de modo que la eficiencia vale $1.0$. Con fricción en el fulcro, la $VMR$ sería menor que la $VMI$ y la eficiencia quedaría por debajo de $1$.</p>
+      `,
+    },
+    {
+      enunciado: `      <p><strong>7.5 [II]</strong> Determine la fuerza $F$ que se requiere para levantar una carga $F_W = 100\\text{ N}$ con cada uno de los sistemas de poleas que se muestran en la figura 7-2. Desprecie la fricción y los pesos de las poleas.</p>
+      <div class="text-center my-4">
+        <img src="/assets/figura7-2-poleas.png" alt="Cinco sistemas de poleas" class="img-fluid" style="max-width: 90%; height: auto;">
+        <p class="text-muted">Figura 7-2 — En (a) y (b) dos ramales de cuerda sostienen la carga; en (c), (d) y (e) son cuatro ramales.</p>
+      </div>
+      `,
+      solucion: `      <p><strong>Paso 1. Regla general.</strong> En un sistema ideal de poleas, la carga $F_W$ se reparte por igual entre todos los ramales de cuerda que la sostienen. Si son $n$ ramales y la cuerda es continua, cada uno soporta la tensión $F_T = F$, de modo que</p>
+      $$ F = \\frac{F_W}{n} $$
+      <p><strong>Paso 2. Los casos (a) y (b): dos ramales.</strong> La carga está sostenida por dos cuerdas; cada cuerda tira hacia arriba con una tensión $F_T = F_W/2$. Puesto que la cuerda es continua y no hay fricción en las poleas, $F_T = F$. Entonces</p>
+      $$ 2F = F_W \\quad\\Longrightarrow\\quad F = \\tfrac{1}{2}F_W = \\tfrac{1}{2}(100\\text{ N}) = 50\\text{ N} $$
+      <p>En (b) la carga también está sostenida por la tensión de dos cuerdas, $F_{T1}$ y $F_{T2}$, y como la cuerda es la misma, $F_{T1} = F_{T2} = F$:</p>
+      $$ F_{T1} + F_{T2} = F_W \\quad\\Longrightarrow\\quad F = \\tfrac{1}{2}F_W = 50\\text{ N} $$
+      <p><strong>Paso 3. Los casos (c), (d) y (e): cuatro ramales.</strong> Al combinar dos poleas móviles cada una de ellas vuelve a dividir entre dos la tensión: si $F_{T1}$ es la tensión de la primera polea móvil y $F_{T2}$ la de la segunda,</p>
+      $$ 2F_{T1} = F_W \\quad\\Longrightarrow\\quad F_{T1} = \\tfrac{1}{2}F_W = 50\\text{ N} $$
+      $$ 2F_{T2} = F_{T1} \\quad\\Longrightarrow\\quad F_{T2} = \\tfrac{1}{2}F_{T1} = \\tfrac{1}{4}F_W = 25\\text{ N} $$
+      <p>y como $F = F_{T2}$, resulta $F = 25\\text{ N}$. En (d) cuatro cuerdas, cada una con la misma tensión $F_T$, sostienen la carga, por lo que</p>
+      $$ 4F_T = F_W \\quad\\Longrightarrow\\quad F = F_T = \\tfrac{1}{4}(100\\text{ N}) = 25\\text{ N} $$
+      <p>En (e) se observa primero que $F = F_{T1}$. El equilibrio de la polea de la izquierda exige</p>
+      $$ F_{T2} - F_{T1} - F = 0 \\quad\\Longrightarrow\\quad F_{T2} = 2F $$
+      <p>y el de la polea de la derecha,</p>
+      $$ F_{T1} + F_{T2} + F_{T1} - F_W = 0 $$
+      <p>Al sustituir $F_{T1} = F$ y $F_{T2} = 2F$ se obtiene $4F = F_W$, de donde $F = 25\\text{ N}$.</p>
+      <p><strong>Paso 4. Resumen.</strong> (a) $50\\text{ N}$; (b) $50\\text{ N}$; (c) $25\\text{ N}$; (d) $25\\text{ N}$; (e) $25\\text{ N}$. La $VMI$ de cada sistema es igual al número de ramales ($2$ o $4$) y, al no haber fricción, la eficiencia es $1.0$.</p>
+      <p><strong>Explicación detallada.</strong> Una polea <em>fija</em> sólo cambia la dirección de la fuerza, mientras que una polea <em>móvil</em> reparte la carga entre los ramales de cuerda que la sostienen; por eso el criterio práctico para hallar la ventaja mecánica ideal de un polipasto es simplemente contar cuántos segmentos de cuerda tiran hacia arriba de la carga. Cada ramal soporta la misma tensión porque la cuerda es continua y las poleas carecen de fricción: si una tensión fuese mayor, la cuerda se deslizaría. Al sumar las fuerzas verticales sobre el bloque móvil (hacia arriba $nF_T$, hacia abajo $F_W$) se obtiene $nF_T = F_W$. Todo esto supone poleas sin masa; si las poleas pesaran, habría que sumar su peso a la carga.</p>
+      `,
+    },
+    {
+      enunciado: `      <p><strong>7.6 [II]</strong> La cabria de la figura 7-3 se utiliza para levantar una carga de $400\\text{ N}$ aplicando una fuerza de $50\\text{ N}$ en el borde de la rueda. Los radios de la rueda ($R$) y del eje ($r$) son $85\\text{ cm}$ y $6.0\\text{ cm}$, respectivamente. Determine la $VMI$, la $VMR$ y la eficiencia de la máquina.</p>
+      <div class="text-center my-4">
+        <img src="/assets/figura7-3-cabria.png" alt="Cabria formada por una rueda y un eje" class="img-fluid" style="max-width: 90%; height: auto;">
+        <p class="text-muted">Figura 7-3 — Cabria (rueda y eje): $R = 85\\text{ cm}$ y $r = 6.0\\text{ cm}$.</p>
+      </div>
+      `,
+      solucion: `      <p><strong>Paso 1. Ventaja mecánica ideal.</strong> En una vuelta completa de la cabria, la cuerda enredada o desenredada en el árbol es igual a la circunferencia del eje, mientras que la fuerza recorre la circunferencia de la rueda. Por tanto</p>
+      $$ VMI = \\frac{\\text{distancia que se desplaza } F}{\\text{distancia que se desplaza } F_W} = \\frac{2\\pi R}{2\\pi r} = \\frac{R}{r} = \\frac{85\\text{ cm}}{6.0\\text{ cm}} = 14.2 \\approx 14 $$
+      <p><strong>Paso 2. Ventaja mecánica real.</strong> Es el cociente entre la carga y la fuerza aplicada:</p>
+      $$ VMR = \\text{razón de fuerzas} = \\frac{400\\text{ N}}{50\\text{ N}} = 8.0 $$
+      <p><strong>Paso 3. Eficiencia.</strong></p>
+      $$ \\eta = \\frac{VMR}{VMI} = \\frac{8.0}{14.2} = 0.56 = 56\\% $$
+      <p><strong>Explicación detallada.</strong> La cabria es una palanca giratoria: al aplicar la fuerza en el borde de la rueda grande, el brazo de palanca es $R$, mientras que la carga cuelga del árbol de radio $r$. En una vuelta, la fuerza recorre $2\\pi R$ y la carga sube sólo $2\\pi r$; ese cociente de distancias es la $VMI$ y equivale a la razón de radios. La $VMR$, en cambio, se mide con fuerzas reales y resulta $8.0$, menor que $14.2$: la diferencia ($56\\%$ de rendimiento) se debe a la fricción del eje y al peso de la propia cabria. Si la máquina fuese ideal, con $F = 50\\text{ N}$ se podrían levantar $50\\times 14.2 = 710\\text{ N}$; en la realidad sólo se levantan $400\\text{ N}$.</p>
+      `,
+    },
+    {
+      enunciado: `      <p><strong>7.7 [II]</strong> El plano inclinado que se muestra en la figura 7-4 tiene $15\\text{ m}$ de longitud y $3.0\\text{ m}$ de altura. a) ¿Qué fuerza mínima $F$ paralela al plano inclinado se requiere para deslizar hacia arriba una caja de $20\\text{ kg}$, si la fricción es despreciable? b) ¿Cuál es la $VMI$ del plano? c) Calcule la $VMR$ y la eficiencia si se requiere una fuerza de $64\\text{ N}$.</p>
+      <div class="text-center my-4">
+        <img src="/assets/figura7-4-plano-inclinado.png" alt="Plano inclinado de 15 m de longitud y 3.0 m de altura" class="img-fluid" style="max-width: 90%; height: auto;">
+        <p class="text-muted">Figura 7-4 — Plano inclinado: $15\\text{ m}$ de longitud y $3.0\\text{ m}$ de altura; la caja de $20\\text{ kg}$ pesa $196\\text{ N}$.</p>
+      </div>
+      `,
+      solucion: `      <p><strong>Paso 1. Fuerza mínima (método de energías).</strong> Como no hay fricción, el trabajo hecho por la fuerza, $(F)(15\\text{ m})$, debe ser igual al trabajo de levantamiento, $(20\\text{ kg})(9.81\\text{ m/s}^2)(3.0\\text{ m})$:</p>
+      $$ (F)(15\\text{ m}) = (20\\text{ kg})(9.81\\text{ m/s}^2)(3.0\\text{ m}) $$
+      $$ F = \\frac{588.6\\text{ J}}{15\\text{ m}} = 39.2\\text{ N} \\approx 39\\text{ N} $$
+      <p><strong>Paso 2. Ventaja mecánica ideal.</strong> Es el cociente entre la distancia que se desplaza la fuerza y la que se eleva la carga:</p>
+      $$ VMI = \\frac{\\text{distancia que se desplaza } F}{\\text{distancia que se eleva } F_W} = \\frac{15\\text{ m}}{3.0\\text{ m}} = 5.0 $$
+      <p><strong>Paso 3. Ventaja mecánica real.</strong> El peso de la caja es $F_W = mg = (20)(9.81) = 196\\text{ N}$; con la fuerza real de $64\\text{ N}$:</p>
+      $$ VMR = \\text{razón de fuerzas} = \\frac{F_W}{F} = \\frac{196\\text{ N}}{64\\text{ N}} = 3.06 \\approx 3.1 $$
+      <p><strong>Paso 4. Eficiencia.</strong></p>
+      $$ \\eta = \\frac{VMR}{VMI} = \\frac{3.06}{5.0} = 0.61 = 61\\% $$
+      <p>Como comprobación, comparando trabajos:</p>
+      $$ \\eta = \\frac{\\text{trabajo de salida}}{\\text{trabajo de entrada}} = \\frac{(F_W)(3.0\\text{ m})}{(F)(15\\text{ m})} = \\frac{(196)(3.0)}{(64)(15)} = \\frac{588}{960} = 0.61 $$
+      <p><strong>Explicación detallada.</strong> El plano inclinado permite cambiar fuerza por distancia: subir la caja $3.0\\text{ m}$ en vertical exige vencer $196\\text{ N}$, pero hacerlo a lo largo de una rampa de $15\\text{ m}$ reparte ese trabajo en un recorrido cinco veces mayor, de modo que la fuerza ideal se reduce a $196/5 = 39\\text{ N}$. Esto es consecuencia de la conservación de la energía: el trabajo $F d$ sobre la rampa debe igualar a $mgh$ cuando no hay pérdidas. Con fricción la fuerza necesaria sube a $64\\text{ N}$, porque además hay que vencer la resistencia del rozamiento; por eso la $VMR$ ($3.1$) queda por debajo de la $VMI$ ($5.0$) y la eficiencia es del $61\\%$. Note que la altura y la longitud son datos geométricos que definen la rampa, mientras que la masa y la fuerza real determinan el rendimiento.</p>
+      `,
+    },
+    {
+      enunciado: `      <p><strong>7.8 [III]</strong> Como se muestra en la figura 7-5, un gato tiene un brazo de palanca de $40\\text{ cm}$ y un paso de $5.0\\text{ mm}$. Si la eficiencia es de $30\\%$, ¿qué fuerza horizontal $F$ aplicada perpendicularmente en el extremo del brazo de palanca se requiere para levantar una carga $F_W$ de $270\\text{ kg}$?</p>
+      <div class="text-center my-4">
+        <img src="/assets/figura7-5-gato.png" alt="Gato de tornillo con brazo de palanca y paso de rosca" class="img-fluid" style="max-width: 90%; height: auto;">
+        <p class="text-muted">Figura 7-5 — Gato de tornillo: brazo de palanca $r = 40\\text{ cm}$ y paso $= 5.0\\text{ mm}$.</p>
+      </div>
+      `,
+      solucion: `      <p><strong>Paso 1. Ventaja mecánica ideal.</strong> Cuando la palanca del gato completa una vuelta, la fuerza aplicada se mueve una distancia $2\\pi r = 2\\pi(0.40\\text{ m})$, mientras que la carga sube sólo un paso, $0.0050\\text{ m}$. Entonces</p>
+      $$ VMI = \\frac{2\\pi(0.40\\text{ m})}{0.0050\\text{ m}} = \\frac{2.51\\text{ m}}{0.0050\\text{ m}} = 0.50\\times 10^{3} = 502 $$
+      <p><strong>Paso 2. Ventaja mecánica real.</strong> Como $\\eta = VMR/VMI$:</p>
+      $$ VMR = (\\eta)(VMI) = (0.30)(502) = 151 $$
+      <p><strong>Paso 3. Fuerza necesaria.</strong> Pero $VMR = (\\text{carga levantada})/(\\text{fuerza suministrada})$, por lo que</p>
+      $$ F = \\frac{F_W}{VMR} = \\frac{(270\\text{ kg})(9.81\\text{ m/s}^2)}{151} = \\frac{2\\,649\\text{ N}}{151} = 17.5\\text{ N} \\approx 18\\text{ N} $$
+      <p><strong>Explicación detallada.</strong> El gato de tornillo combina dos máquinas simples: una palanca (el brazo de $40\\text{ cm}$, que multiplica la fuerza por la circunferencia recorrida) y un plano inclinado enrollado (la rosca, cuyo paso indica cuánto avanza el tornillo por vuelta). Por eso la $VMI$ es enorme, del orden de $500$: una vuelta del brazo recorre $2.51\\text{ m}$ para elevar la carga apenas $5.0\\text{ mm}$. La eficiencia del $30\\%$ es baja precisamente porque la rosca tiene mucha fricción, y aun así la ventaja real sigue siendo de $151$, suficiente para que $18\\text{ N}$ levanten $270\\text{ kg}$ ($2\\,649\\text{ N}$). Conviene aplicar la fuerza <em>perpendicular</em> al brazo: así su brazo de momento es máximo y la componente útil es toda la fuerza.</p>
+      `,
+    },
+    {
+      enunciado: `      <p><strong>7.9 [III]</strong> Una polea diferencial (aparejo diferencial) se muestra en la figura 7-6. Dos poleas dentadas de radios $r = 10\\text{ cm}$ y $R = 11\\text{ cm}$ están unidas entre sí y giran sobre el mismo eje. Una cadena sinfín pasa sobre la polea pequeña ($10\\text{ cm}$), después alrededor de la polea móvil colocada en la parte más baja y finalmente alrededor de la polea de $11\\text{ cm}$. El operador ejerce una fuerza descendente $F$ sobre la cadena para levantar una carga $F_W$. a) Determine la $VMI$. b) ¿Cuál es la eficiencia de la máquina si se requiere aplicar una fuerza de $50\\text{ N}$ para levantar una carga de $700\\text{ N}$?</p>
+      <div class="text-center my-4">
+        <img src="/assets/figura7-6-polea-diferencial.png" alt="Polea diferencial con dos poleas solidarias y una polea móvil" class="img-fluid" style="max-width: 90%; height: auto;">
+        <p class="text-muted">Figura 7-6 — Polea diferencial: dos poleas solidarias de radios $r = 10\\text{ cm}$ y $R = 11\\text{ cm}$, y la polea móvil que sostiene la carga.</p>
+      </div>
+      `,
+      solucion: `      <p><strong>Paso 1. Qué ocurre en una vuelta.</strong> Suponga que la fuerza $F$ se mueve hacia abajo una distancia suficiente para que el sistema rígido superior de poleas gire una revolución. Entonces la polea superior más pequeña <em>desenreda</em> una longitud de cadena igual a su circunferencia, $2\\pi r$, mientras que la polea superior grande <em>enreda</em> una de $2\\pi R$.</p>
+      <p><strong>Paso 2. Cuánto sube la carga.</strong> Como resultado, la cadena que sostiene a la polea inferior se acorta en una longitud $2\\pi R - 2\\pi r$. La carga $F_W$ sube la mitad de esta distancia, o sea</p>
+      $$ \\Delta h = \\tfrac{1}{2}(2\\pi R - 2\\pi r) = \\pi(R - r) $$
+      <p>mientras que la fuerza suministrada se desplaza $2\\pi R$. En consecuencia,</p>
+      $$ VMI = \\frac{\\text{distancia que se desplaza } F}{\\text{distancia que se desplaza } F_W} = \\frac{2\\pi R}{\\pi(R - r)} = \\frac{2R}{R - r} = \\frac{2(11\\text{ cm})}{1.0\\text{ cm}} = 22 $$
+      <p><strong>Paso 3. Ventaja mecánica real.</strong> De los datos,</p>
+      $$ VMR = \\frac{\\text{carga levantada}}{\\text{fuerza suministrada}} = \\frac{700\\text{ N}}{50\\text{ N}} = 14 $$
+      <p><strong>Paso 4. Eficiencia.</strong></p>
+      $$ \\eta = \\frac{VMR}{VMI} = \\frac{14}{22} = 0.64 = 64\\% $$
+      <p><strong>Explicación detallada.</strong> La polea diferencial obtiene su gran ventaja mecánica de la <em>diferencia</em> entre dos circunferencias casi iguales: si $R$ y $r$ fueran idénticos, la cadena enredada igualaría a la desenredada, la carga no subiría y la $VMI$ sería infinita (la máquina se bloquearía). Por eso el cociente $2R/(R-r)$ crece mucho cuando $R - r$ es pequeño: con $11$ y $10\\text{ cm}$ vale $22$. La carga sube sólo la mitad del acortamiento de la cadena porque la polea móvil está sostenida por dos ramales, y esa es la razón del factor $1/2$ y del $2$ en la fórmula. El rendimiento del $64\\%$ refleja la fricción de la cadena en las gargantas dentadas; si fuese ideal bastaría $700/22 = 32\\text{ N}$.</p>
+      `,
+    },
+    {
+      enunciado: `      <p><strong>7.10 [I]</strong> Un motor proporciona $120\\text{ hp}$ a un dispositivo que levanta una carga de $5\\,000\\text{ kg}$ a una altura de $13.0\\text{ m}$ en un tiempo de $20\\text{ s}$. Encuentre la eficiencia de la máquina.</p>
+      <div class="text-center my-4">
+        <img src="/assets/figura7-9-motor-malacate.png" alt="Motor que alimenta un malacate" class="img-fluid" style="max-width: 90%; height: auto;">
+        <p class="text-muted">Figura 7-9 — El motor entrega $120\\text{ hp}$ al malacate, que sube $5\\,000\\text{ kg}$ una altura de $13.0\\text{ m}$.</p>
+      </div>
+      <p class="text-muted"><em>Respuesta del libro:</em> $36\\%$.</p>
+      `,
+      solucion: `      <p><strong>Paso 1. Potencia útil de salida.</strong> La máquina realiza el trabajo de elevar la carga en $20\\text{ s}$:</p>
+      $$ P_{sal} = \\frac{mgh}{t} = \\frac{(5\\,000\\text{ kg})(9.81\\text{ m/s}^2)(13.0\\text{ m})}{20\\text{ s}} = \\frac{637\\,650\\text{ J}}{20\\text{ s}} = 31\\,883\\text{ W} = 31.9\\text{ kW} $$
+      <p><strong>Paso 2. Potencia de entrada.</strong> Se convierte el suministro del motor a watts con $1\\text{ hp} = 746\\text{ W}$:</p>
+      $$ P_{ent} = (120\\text{ hp})(746\\text{ W/hp}) = 89\\,520\\text{ W} = 89.5\\text{ kW} $$
+      <p><strong>Paso 3. Eficiencia.</strong></p>
+      $$ \\eta = \\frac{P_{sal}}{P_{ent}} = \\frac{31.9\\text{ kW}}{89.5\\text{ kW}} = 0.356 = 36\\% $$
+      <p><strong>Explicación detallada.</strong> La eficiencia se obtiene comparando lo que la máquina entrega (energía potencial gravitacional ganada por la carga) con lo que recibe del motor. El trabajo útil es $mgh$ porque la carga se eleva a velocidad aproximadamente constante y la fuerza necesaria iguala a su peso; dividir entre $20\\text{ s}$ lo convierte en potencia. Al expresar ambas potencias en las mismas unidades, el cociente es adimensional y da $0.356$. Es decir, de cada $100\\text{ J}$ que entrega el motor, sólo $36\\text{ J}$ se convierten en energía útil de la carga: el resto se disipa en la fricción del cable y del tambor, en el calor del motor y en la energía cinética que se pierde al frenar. Resulta ilustrativo comparar con el caso ideal: un motor de $120\\text{ hp}$ sin pérdidas subiría la misma carga en $637\\,650/89\\,520 = 7.1\\text{ s}$.</p>
+      `,
+    },
+    {
+      enunciado: `      <p><strong>7.11 [I]</strong> Vea la figura 7-2d. Si se requiere una fuerza de $200\\text{ N}$ para levantar una carga de $50\\text{ kg}$, encuentre la $VMI$, la $VMR$ y la eficiencia del sistema.</p>
+      <div class="text-center my-4">
+        <img src="/assets/figura7-2-poleas.png" alt="Sistemas de poleas; interesa el montaje (d)" class="img-fluid" style="max-width: 90%; height: auto;">
+        <p class="text-muted">Figura 7-2 — El montaje (d) es el de cuatro ramales de cuerda.</p>
+      </div>
+      <p class="text-muted"><em>Respuesta del libro:</em> $4$, $2.5$, $61\\%$.</p>
+      `,
+      solucion: `      <p><strong>Paso 1. Ventaja mecánica ideal.</strong> En el montaje (d) la carga está sostenida por cuatro ramales de cuerda, de modo que la ventaja mecánica ideal es igual al número de ramales:</p>
+      $$ VMI = 4.0 $$
+      <p><strong>Paso 2. Ventaja mecánica real.</strong> La carga pesa</p>
+      $$ F_W = mg = (50\\text{ kg})(9.81\\text{ m/s}^2) = 490.5\\text{ N} $$
+      <p>y la fuerza real aplicada es $200\\text{ N}$, por lo que</p>
+      $$ VMR = \\frac{F_W}{F} = \\frac{490.5\\text{ N}}{200\\text{ N}} = 2.45 \\approx 2.5 $$
+      <p><strong>Paso 3. Eficiencia.</strong></p>
+      $$ \\eta = \\frac{VMR}{VMI} = \\frac{2.45}{4.0} = 0.61 = 61\\% $$
+      <p><strong>Explicación detallada.</strong> La $VMI$ sale de la geometría del montaje: con cuatro cuerdas tirando hacia arriba, si el extremo libre se desplaza $4\\text{ cm}$ la carga sube $1\\text{ cm}$, y esa razón de distancias es la ventaja ideal. La $VMR$ se mide con fuerzas reales y resulta menor porque hay que vencer, además del peso de la carga, la fricción de las poleas y el peso propio de los bloques; por eso se necesitan $200\\text{ N}$ en lugar de los $490.5/4 = 123\\text{ N}$ que pediría la máquina ideal. El cociente entre ambas ventajas es la eficiencia: la máquina aprovecha el $61\\%$ del trabajo que se le entrega.</p>
+      `,
+    },
+    {
+      enunciado: `      <p><strong>7.12 [II]</strong> En la figura 7-7, la carga de $300\\text{ N}$ está en equilibrio con una fuerza $F$ en ambos sistemas. Si supone eficiencias de $100\\%$, ¿cuál es la magnitud de la fuerza en cada sistema? Suponga que todas las cuerdas están verticales.</p>
+      <div class="text-center my-4">
+        <img src="/assets/figura7-7-poleas.png" alt="Dos sistemas de poleas que sostienen una carga de 300 N" class="img-fluid" style="max-width: 90%; height: auto;">
+        <p class="text-muted">Figura 7-7 — (a) tres ramales sostienen la carga; (b) cuatro ramales.</p>
+      </div>
+      <p class="text-muted"><em>Respuesta del libro:</em> a) $100\\text{ N}$; b) $75.0\\text{ N}$.</p>
+      `,
+      solucion: `      <p><strong>Paso 1. Criterio de equilibrio.</strong> Con eficiencia del $100\\%$ la ventaja mecánica real iguala a la ideal, y la carga se reparte por igual entre los ramales verticales que la sostienen. Por tanto</p>
+      $$ F = \\frac{F_W}{n} $$
+      <p><strong>Paso 2. Sistema (a).</strong> Tres ramales sostienen la carga de $300\\text{ N}$:</p>
+      $$ F_a = \\frac{300\\text{ N}}{3} = 100\\text{ N} $$
+      <p><strong>Paso 3. Sistema (b).</strong> Cuatro ramales sostienen la carga:</p>
+      $$ F_b = \\frac{300\\text{ N}}{4} = 75.0\\text{ N} $$
+      <p><strong>Explicación detallada.</strong> Si todas las cuerdas son verticales y las poleas no tienen fricción ni peso, la suma de las tensiones hacia arriba debe igualar al peso que cuelga; como la cuerda es continua, todas las tensiones valen lo mismo ($F$) y basta contar los ramales. La eficiencia del $100\\%$ garantiza que no hay pérdidas, de modo que la ventaja mecánica real coincide con la ideal (tres y cuatro, respectivamente) y la fuerza se obtiene dividiendo. En una máquina real las poleas pesarían y la fricción obligaría a aplicar una fuerza mayor que la calculada.</p>
+      `,
+    },
+    {
+      enunciado: `      <p><strong>7.13 [II]</strong> Con cierta máquina, la fuerza aplicada se mueve $3.3\\text{ m}$ para levantar una carga $8.0\\text{ cm}$. Encuentre a) la $VMI$ y b) la $VMR$ si la eficiencia es de $60\\%$. ¿Qué carga se puede levantar con una fuerza de $50\\text{ N}$ si la eficiencia es c) $100\\%$ y d) $60\\%$?</p>
+      <div class="text-center my-4">
+        <img src="/assets/figura7-12-maquina-generica.png" alt="Esquema de una máquina genérica" class="img-fluid" style="max-width: 90%; height: auto;">
+        <p class="text-muted">Figura 7-12 — La fuerza aplicada recorre $3.3\\text{ m}$ mientras la carga sube $8.0\\text{ cm}$.</p>
+      </div>
+      <p class="text-muted"><em>Respuesta del libro:</em> a) $41$; b) $25$; c) $2.1\\text{ kN}$; d) $1.2\\text{ kN}$.</p>
+      `,
+      solucion: `      <p><strong>Paso 1. Ventaja mecánica ideal.</strong> Es el cociente entre las distancias, con la carga expresada en metros:</p>
+      $$ VMI = \\frac{d_{F}}{d_W} = \\frac{3.3\\text{ m}}{0.080\\text{ m}} = 41.25 \\approx 41 $$
+      <p><strong>Paso 2. Ventaja mecánica real.</strong> Con una eficiencia del $60\\%$:</p>
+      $$ VMR = (\\eta)(VMI) = (0.60)(41.25) = 24.75 \\approx 25 $$
+      <p><strong>Paso 3. Carga levantada con $F = 50\\text{ N}$ y eficiencia del $100\\%$.</strong> Si la máquina fuese ideal, $VMR = VMI$:</p>
+      $$ F_W = (VMI)(F) = (41.25)(50\\text{ N}) = 2\\,062\\text{ N} \\approx 2.1\\text{ kN} $$
+      <p><strong>Paso 4. Carga levantada con la misma fuerza y eficiencia del $60\\%$.</strong></p>
+      $$ F_W = (VMR)(F) = (24.75)(50\\text{ N}) = 1\\,238\\text{ N} \\approx 1.2\\text{ kN} $$
+      <p><strong>Explicación detallada.</strong> La $VMI$ depende sólo de la geometría de la máquina: la fuerza recorre $3.3\\text{ m}$ mientras la carga sube $8.0\\text{ cm}$, es decir, la fuerza se aplica sobre un recorrido $41$ veces mayor y por eso podría vencer una carga $41$ veces más grande si no hubiera pérdidas. La $VMR$ descuenta esas pérdidas multiplicando por la eficiencia: sólo $25$ de los $41$ se aprovechan. Al buscar la carga que puede levantarse se invierte la definición de ventaja mecánica ($VMR = F_W/F$), y se obtienen $2.1\\text{ kN}$ en el caso ideal y $1.2\\text{ kN}$ en el real: la diferencia entre ambos valores es exactamente el $40\\%$ de energía que se disipa en la fricción y en el peso de las partes móviles.</p>
+      `,
+    },
+    {
+      enunciado: `      <p><strong>7.14 [II]</strong> Con una cabria, una fuerza de $80\\text{ N}$ aplicada al borde de la rueda puede levantar una carga de $640\\text{ N}$. Los diámetros de la rueda y del árbol son $36\\text{ cm}$ y $4.0\\text{ cm}$, respectivamente. Determine la $VMR$, la $VMI$ y la eficiencia de la máquina.</p>
+      <div class="text-center my-4">
+        <img src="/assets/figura7-14-cabria-2.png" alt="Cabria con rueda de 36 cm de diámetro y árbol de 4.0 cm" class="img-fluid" style="max-width: 90%; height: auto;">
+        <p class="text-muted">Figura 7-14 — Cabria de este problema: diámetro de la rueda $36\\text{ cm}$ y del árbol $4.0\\text{ cm}$.</p>
+      </div>
+      <p class="text-muted"><em>Respuesta del libro:</em> $8.0$, $9.0$, $89\\%$.</p>
+      `,
+      solucion: `      <p><strong>Paso 1. Ventaja mecánica real.</strong> Es el cociente entre la carga y la fuerza aplicada:</p>
+      $$ VMR = \\frac{640\\text{ N}}{80\\text{ N}} = 8.0 $$
+      <p><strong>Paso 2. Ventaja mecánica ideal.</strong> En una vuelta, la fuerza recorre la circunferencia de la rueda y la carga sube la circunferencia del árbol; el cociente de distancias se reduce al cociente de radios, que es igual al cociente de diámetros:</p>
+      $$ VMI = \\frac{2\\pi R}{2\\pi r} = \\frac{R}{r} = \\frac{D}{d} = \\frac{36\\text{ cm}}{4.0\\text{ cm}} = 9.0 $$
+      <p><strong>Paso 3. Eficiencia.</strong></p>
+      $$ \\eta = \\frac{VMR}{VMI} = \\frac{8.0}{9.0} = 0.889 \\approx 89\\% $$
+      <p><strong>Explicación detallada.</strong> La cabria vuelve a comportarse como una palanca con dos brazos: el de la fuerza ($R = D/2$) y el de la carga ($r = d/2$). Como ambos diámetros se dividen entre dos al pasar a radios, el cociente $D/d$ es directamente la ventaja mecánica ideal, sin necesidad de convertir a metros. La máquina real rinde el $89\\%$, un valor alto porque una cabria bien construida tiene poca fricción en su eje; con las poleas del ejemplo anterior el rendimiento era mucho menor por la fricción de la cuerda. Si la cabria fuese ideal, los $80\\text{ N}$ levantarían $80	imes 9.0 = 720\\text{ N}$.</p>
+      `,
+    },
+    {
+      enunciado: `      <p><strong>7.15 [II]</strong> En una gasolinera, un gato hidráulico levanta un auto de $900\\text{ kg}$ a una altura de $0.25\\text{ cm}$ cuando una fuerza de $150\\text{ N}$ empuja un pistón desplazándolo $20\\text{ cm}$. Encuentre la $VMI$, la $VMR$ y la eficiencia.</p>
+      <div class="text-center my-4">
+        <img src="/assets/figura7-10-gato-hidraulico.png" alt="Gato hidráulico con pistón pequeño y pistón grande" class="img-fluid" style="max-width: 90%; height: auto;">
+        <p class="text-muted">Figura 7-10 — Gato hidráulico: el pistón pequeño recorre $20\\text{ cm}$ y el grande eleva el auto $0.25\\text{ cm}$.</p>
+      </div>
+      <p class="text-muted"><em>Respuesta del libro:</em> $80$, $59$, $74\\%$.</p>
+      `,
+      solucion: `      <p><strong>Paso 1. Ventaja mecánica ideal.</strong> Se obtiene con el cociente de los desplazamientos:</p>
+      $$ VMI = \\frac{d_1}{d_2} = \\frac{20\\text{ cm}}{0.25\\text{ cm}} = 80 $$
+      <p><strong>Paso 2. Ventaja mecánica real.</strong> El peso del automóvil es $F_W = mg = (900)(9.81) = 8\\,829\\text{ N}$ y la fuerza aplicada es $F = 150\\text{ N}$:</p>
+      $$ VMR = \\frac{F_W}{F} = \\frac{8\\,829\\text{ N}}{150\\text{ N}} = 58.9 \\approx 59 $$
+      <p><strong>Paso 3. Eficiencia.</strong></p>
+      $$ \\eta = \\frac{VMR}{VMI} = \\frac{58.9}{80} = 0.736 \\approx 74\\% $$
+      <p><strong>Explicación detallada.</strong> El gato hidráulico transmite la presión de un líquido: por el principio de Pascal, la presión $F/A$ es la misma en los dos pistones, de modo que una fuerza pequeña sobre el pistón de área pequeña genera una fuerza grande en el de área grande. El precio que se paga es el desplazamiento: el volumen de líquido que se bombea es el mismo, así que $A_1 d_1 = A_2 d_2$ y el pistón grande se mueve mucho menos. Ese cociente $d_1/d_2 = 80$ es la ventaja mecánica ideal. La real es algo menor ($59$) porque parte del trabajo se emplea en vencer la fricción de los sellos y en mover el propio aceite; de ahí el rendimiento del $74\\%$.</p>
+      `,
+    },
+    {
+      enunciado: `      <p><strong>7.16 [II]</strong> El tornillo de una prensa tiene un paso de $0.20\\text{ cm}$. El diámetro de la rueda a la cual se aplica una fuerza tangencial $F$ para girarla es de $55\\text{ cm}$. Si la eficiencia es de $40\\%$, ¿qué tan grande debe ser $F$ para producir en la prensa una fuerza de $12\\text{ kN}$?</p>
+      <div class="text-center my-4">
+        <img src="/assets/figura7-11-prensa-tornillo.png" alt="Prensa de tornillo con volante de 55 cm de diámetro" class="img-fluid" style="max-width: 90%; height: auto;">
+        <p class="text-muted">Figura 7-11 — Prensa de tornillo: volante de $55\\text{ cm}$ de diámetro y paso de $0.20\\text{ cm}$.</p>
+      </div>
+      <p class="text-muted"><em>Respuesta del libro:</em> $35\\text{ N}$.</p>
+      `,
+      solucion: `      <p><strong>Paso 1. Ventaja mecánica ideal.</strong> En una vuelta, la fuerza recorre la circunferencia de la rueda, $2\\pi R = 2\\pi(0.275\\text{ m})$, y el tornillo avanza un paso, $p = 0.20\\text{ cm} = 0.0020\\text{ m}$:</p>
+      $$ VMI = \\frac{2\\pi R}{p} = \\frac{2\\pi(0.275\\text{ m})}{0.0020\\text{ m}} = \\frac{1.728\\text{ m}}{0.0020\\text{ m}} = 864 $$
+      <p><strong>Paso 2. Ventaja mecánica real.</strong> Con una eficiencia del $40\\%$:</p>
+      $$ VMR = (\\eta)(VMI) = (0.40)(864) = 345.6 $$
+      <p><strong>Paso 3. Fuerza necesaria.</strong> Como $VMR = F_W/F$ con $F_W = 12\\text{ kN}$:</p>
+      $$ F = \\frac{F_W}{VMR} = \\frac{12\\,000\\text{ N}}{345.6} = 34.7\\text{ N} \\approx 35\\text{ N} $$
+      <p><strong>Explicación detallada.</strong> En la prensa de tornillo se combinan otra vez la palanca (la rueda de $55\\text{ cm}$ de diámetro, cuyo radio es $27.5\\text{ cm}$) y el plano inclinado de la rosca. El paso es la distancia que avanza el tornillo en cada vuelta completa: como es muy pequeño, la ventaja ideal es enorme ($864$). El rendimiento es bajo (tarda en transformarse en fuerza de compresión) porque la rosca tiene gran superficie de contacto y mucha fricción; aun así, el $40\\%$ deja una ventaja real de $346$, de modo que basta una fuerza de $35\\text{ N}$ —equivalente a sostener unos $3.5\\text{ kg}$— para generar $12\\text{ kN}$ (unas $1.2$ toneladas). Observe que se usó el <em>radio</em> $0.275\\text{ m}$ y no el diámetro: la circunferencia recorrida por la fuerza tangencial depende del radio.</p>
+      `,
+    },
+    {
+      enunciado: `      <p><strong>7.17 [II]</strong> Los diámetros de las dos poleas superiores de un aparejo diferencial (montacarga de cadena) (figura 7-6) son $18\\text{ cm}$ y $16\\text{ cm}$. Si la eficiencia del aparejo es de $45\\%$, ¿qué fuerza se requiere para levantar un cesto de $400\\text{ kg}$?</p>
+      <div class="text-center my-4">
+        <img src="/assets/figura7-17-polea-diferencial-2.png" alt="Polea diferencial con poleas de 18 cm y 16 cm" class="img-fluid" style="max-width: 90%; height: auto;">
+        <p class="text-muted">Figura 7-17 — Aparejo diferencial: radios $R = 9.0\\text{ cm}$ y $r = 8.0\\text{ cm}$.</p>
+      </div>
+      <p class="text-muted"><em>Respuesta del libro:</em> $0.48\\text{ kN}$.</p>
+      `,
+      solucion: `      <p><strong>Paso 1. Radios de las poleas.</strong> A partir de los diámetros,</p>
+      $$ R = \\frac{18\\text{ cm}}{2} = 9.0\\text{ cm} \\qquad r = \\frac{16\\text{ cm}}{2} = 8.0\\text{ cm} $$
+      <p><strong>Paso 2. Ventaja mecánica ideal.</strong> Para la polea diferencial, deducida en el problema 7.9:</p>
+      $$ VMI = \\frac{2R}{R - r} = \\frac{2(9.0\\text{ cm})}{9.0\\text{ cm} - 8.0\\text{ cm}} = \\frac{18\\text{ cm}}{1.0\\text{ cm}} = 18 $$
+      <p><strong>Paso 3. Ventaja mecánica real.</strong> Con una eficiencia del $45\\%$:</p>
+      $$ VMR = (\\eta)(VMI) = (0.45)(18) = 8.1 $$
+      <p><strong>Paso 4. Fuerza necesaria.</strong> El peso del cesto es $F_W = mg = (400)(9.81) = 3\\,924\\text{ N}$, de modo que</p>
+      $$ F = \\frac{F_W}{VMR} = \\frac{3\\,924\\text{ N}}{8.1} = 484\\text{ N} \\approx 0.48\\text{ kN} $$
+      <p><strong>Explicación detallada.</strong> El aparejo diferencial aprovecha que las dos poleas superiores giran solidarias pero tienen radios distintos: en una vuelta, la cadena que se enreda en la polea grande ($2\\pi R$) supera a la que se desenreda de la pequeña ($2\\pi r$), y la polea móvil sube la mitad de esa diferencia. De ahí $VMI = 2R/(R-r)$: cuanto más próximos están los radios, mayor es la ventaja, porque la diferencia $R - r$ aparece en el denominador. Con $9.0$ y $8.0\\text{ cm}$ la ventaja ideal vale $18$, y el rendimiento del $45\\%$ la reduce a $8.1$ en la práctica (la cadena articulada sobre gargantas dentadas pierde bastante energía). Por eso, para levantar $3\\,924\\text{ N}$ se necesitan $484\\text{ N}$: la máquina multiplica la fuerza por algo más de ocho.</p>
+      `,
+    },
+  ],
+
 }
 
 export function getExercises(title) {
