@@ -744,7 +744,7 @@ $$ 1\\text{ kWh}=3.6\\times10^6\\text{ J}=3.6\\text{ MJ} $$
   },
   'Maquinas simples': {
     title: 'Maquinas simples',
-    image: 'https://genrysantos.wordpress.com/wp-content/uploads/2020/05/25615-gdg.jpg',
+    image: '/assets/figura7-2-poleas.png',
     content: `
       <h2>Las máquinas simples</h2>
 
@@ -795,6 +795,38 @@ $$ 1\\text{ kWh}=3.6\\times10^6\\text{ J}=3.6\\text{ MJ} $$
         <li><strong>Para qué sirve:</strong> Convierte un movimiento giratorio en uno de avance lineal y mantiene las piezas firmemente unidas.</li>
         <li><strong>Ejemplos:</strong> Un tornillo de carpintero, un sacacorchos o la tapa roscada de un frasco.</li>
       </ul>
+
+      <hr class="my-4">
+
+      <h2>El principio de trabajo</h2>
+
+      <p>El principio de trabajo de una máquina en operación continua es el siguiente:</p>
+
+      $$ \\text{Trabajo de entrada} = \\text{trabajo útil de salida} + \\text{trabajo para vencer la fricción} $$
+
+      <p>En las máquinas con tiempos de operación cortos, parte del trabajo de entrada se puede utilizar para almacenar energía dentro de la máquina. Por ejemplo, estirar un resorte interno o elevar una polea móvil.</p>
+
+      <h2>Ventaja mecánica</h2>
+
+      <p>La <strong>ventaja mecánica real</strong> ($VMR$) de una máquina se define como la razón de fuerzas:</p>
+
+      $$ VMR = \\frac{\\text{fuerza ejercida por la máquina sobre la carga}}{\\text{fuerza utilizada para operar la máquina}} $$
+
+      <p>La <strong>ventaja mecánica ideal</strong> ($VMI$) de una máquina es la razón de distancias:</p>
+
+      $$ VMI = \\frac{\\text{desplazamiento de la fuerza de entrada}}{\\text{desplazamiento de la carga}} $$
+
+      <p>Como siempre hay fricción, la $VMR$ es menor que la $VMI$. En general, tanto la $VMR$ como la $VMI$ son mayores que uno.</p>
+
+      <h2>La eficiencia</h2>
+
+      <p>La eficiencia de una máquina se define como el cociente entre el trabajo (o la potencia) de salida y el de entrada, y también es igual a la razón $VMR/VMI$:</p>
+
+      $$ \\text{Eficiencia} = \\frac{\\text{trabajo de salida}}{\\text{trabajo de entrada}} = \\frac{\\text{potencia de salida}}{\\text{potencia de entrada}} = \\frac{VMR}{VMI} $$
+
+      <div class="alert alert-info">
+        <strong>Convención útil:</strong> $1\\text{ hp} = 746\\text{ W} = 0.746\\text{ kW}$. Con esta equivalencia se pasa de caballos de fuerza a kilowatts, como se hace en los ejercicios 7.2, 7.3 y 7.10.
+      </div>
     `,
   },
 }

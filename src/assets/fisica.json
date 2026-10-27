@@ -41,7 +41,7 @@
   },
   {
     "title": "Maquinas simples",
-    "image": "https://i.pinimg.com/1200x/0d/4d/c1/0d4dc101d96b0bf5c25a2928ab72e4d1.jpg",
+    "image": "/assets/figura7-2-poleas.png",
     "description": "<strong>UNA MÁQUINA</strong> es cualquier dispositivo con el cual se puede cambiar la magnitud, la dirección o el método de aplicación de una fuerza para obtener algún provecho. Ejemplos de máquinas simples son la palanca, el plano inclinado, la polea, la biela (manivela) y el árbol (eje) y el gato.\n\n## El principio de trabajo\n\nEl principio de trabajo de una máquina en operación continua es el siguiente:\n\n$$\\text{Trabajo de entrada} = \\text{trabajo útil de salida} + \\text{trabajo para vencer la fricción}$$\n\nEn las máquinas con tiempos de operación cortos, parte del trabajo de entrada se puede utilizar para almacenar energía dentro de la máquina. Por ejemplo, estirar un resorte interno o elevar una polea móvil.\n\n## Ventaja mecánica\n\nLa ventaja mecánica real ($VMR$) de una máquina se define como:\n\n$$VMR = \\text{razón de fuerzas} = \\frac{\\text{fuerza ejercida por la máquina sobre la carga}}{\\text{fuerza utilizada para operar la máquina}}$$\n\nLa ventaja mecánica ideal ($VMI$) de una máquina es la razón de distancias:\n\n$$VMI = \\frac{\\text{desplazamiento de la fuerza de entrada}}{\\text{desplazamiento de la carga}}$$\n\nComo siempre hay fricción, la $VMR$ siempre es menor que la $VMI$. En general, tanto la $VMR$ como la $VMI$ son mayores que uno.\n\n## La eficiencia\n\nLa eficiencia de una máquina se define como:\n\n$$\\text{Eficiencia} = \\frac{\\text{trabajo de salida}}{\\text{trabajo de entrada}} = \\frac{\\text{potencia de salida}}{\\text{potencia de entrada}}$$\n\nLa eficiencia también es igual a la razón $VMR/VMI$."
   }
 ]
